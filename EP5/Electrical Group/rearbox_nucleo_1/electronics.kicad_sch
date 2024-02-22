@@ -1005,89 +1005,6 @@
         )
       )
     )
-    (symbol "Motor:Fan" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "M" (at 2.54 5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "Fan" (at 2.54 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "" (at 0 0.254 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0.254 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "Fan Motor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Fan" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "PinHeader*P2.54mm* TerminalBlock*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Fan_0_1"
-        (arc (start -2.54 -0.508) (mid 0.0028 0.9121) (end 0 3.81)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -5.08)
-            (xy 0 -4.572)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -2.2352)
-            (xy 0 -2.6416)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 4.2672)
-            (xy 0 4.6228)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 4.572)
-            (xy 0 5.08)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 1.016) (radius 3.2512)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (arc (start 0 3.81) (mid 0.053 0.921) (end 2.54 -0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 2.54 -0.508) (mid 0 1.0618) (end -2.54 -0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "Fan_1_1"
-        (pin passive line (at 0 7.62 270) (length 2.54)
-          (name "+" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -5.08 90) (length 2.54)
-          (name "-" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "SamacSys_Parts:CTM1051AM" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
       (property "Reference" "IC" (at 24.13 7.62 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -1680,9 +1597,6 @@
   (junction (at 25.4 85.09) (diameter 0) (color 0 0 0 0)
     (uuid 33b4b370-8b04-4b18-8c7e-557b68c4d6a4)
   )
-  (junction (at 27.94 105.41) (diameter 0) (color 0 0 0 0)
-    (uuid 3a75b74b-10e4-4535-a11a-239e26c65092)
-  )
   (junction (at 220.98 147.32) (diameter 0) (color 0 0 0 0)
     (uuid 3cd6b8e4-5515-4259-8ca6-1c617806f340)
   )
@@ -1748,9 +1662,6 @@
   )
   (junction (at 229.87 105.41) (diameter 0) (color 0 0 0 0)
     (uuid c5a85b92-eb61-4e4c-8ea6-58e75dab719f)
-  )
-  (junction (at 27.94 107.95) (diameter 0) (color 0 0 0 0)
-    (uuid c6ede0d1-a710-4b91-a29a-54c8f5021515)
   )
   (junction (at 260.35 133.35) (diameter 0) (color 0 0 0 0)
     (uuid d43d9bdd-7923-4a2d-83a2-63793001bcbe)
@@ -1880,10 +1791,6 @@
   (wire (pts (xy 146.05 147.32) (xy 177.8 147.32))
     (stroke (width 0) (type default))
     (uuid 419d088d-b864-498b-a248-030f759ea2c2)
-  )
-  (wire (pts (xy 30.48 100.33) (xy 38.1 100.33))
-    (stroke (width 0) (type default))
-    (uuid 41d5e08a-1480-4a57-9923-dbf0a986203b)
   )
   (wire (pts (xy 218.44 147.32) (xy 220.98 147.32))
     (stroke (width 0) (type default))
@@ -2117,14 +2024,6 @@
     (stroke (width 0) (type default))
     (uuid a2bfef3f-79aa-41fb-8136-d5a327af0a43)
   )
-  (wire (pts (xy 38.1 113.03) (xy 30.48 113.03))
-    (stroke (width 0) (type default))
-    (uuid a4a386b6-cc65-4bc6-8072-da13434959e4)
-  )
-  (wire (pts (xy 27.94 105.41) (xy 30.48 105.41))
-    (stroke (width 0) (type default))
-    (uuid a5dbb0e2-91b8-4577-a105-7a1ed7d5af45)
-  )
   (wire (pts (xy 237.49 91.44) (xy 220.98 91.44))
     (stroke (width 0) (type default))
     (uuid a600e582-d252-4ee2-94f4-2027cdc9a0af)
@@ -2184,10 +2083,6 @@
   (wire (pts (xy 229.87 97.79) (xy 237.49 97.79))
     (stroke (width 0) (type default))
     (uuid c3f1caa4-d580-48d7-925f-7dc36bf5ad77)
-  )
-  (wire (pts (xy 30.48 113.03) (xy 30.48 107.95))
-    (stroke (width 0) (type default))
-    (uuid c5be4929-3a86-4eb8-83fc-d17ac24076a6)
   )
   (wire (pts (xy 64.77 77.47) (xy 64.77 78.74))
     (stroke (width 0) (type default))
@@ -2249,10 +2144,6 @@
     (stroke (width 0) (type default))
     (uuid f1dc21bb-5fda-452a-8e73-18bb5179323b)
   )
-  (wire (pts (xy 30.48 105.41) (xy 30.48 100.33))
-    (stroke (width 0) (type default))
-    (uuid f78b608b-d819-4e65-afbd-191a3d56d0f2)
-  )
   (wire (pts (xy 228.6 139.7) (xy 240.03 139.7))
     (stroke (width 0) (type default))
     (uuid f96be636-77e4-40ad-9d56-dd8b1bb10d77)
@@ -2260,10 +2151,6 @@
   (wire (pts (xy 171.45 132.08) (xy 177.8 132.08))
     (stroke (width 0) (type default))
     (uuid f9e4dff8-4925-4ba9-bbd7-16be87b1f3fe)
-  )
-  (wire (pts (xy 27.94 107.95) (xy 30.48 107.95))
-    (stroke (width 0) (type default))
-    (uuid fa6b0f8e-a4a3-4d9c-a00e-7fbcf8fd4864)
   )
   (wire (pts (xy 25.4 146.05) (xy 29.21 146.05))
     (stroke (width 0) (type default))
@@ -2760,6 +2647,11 @@
           (reference "BT1") (unit 1)
         )
       )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "BT1") (unit 1)
+        )
+      )
     )
   )
 
@@ -2789,6 +2681,11 @@
     (instances
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
+          (reference "U2") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
           (reference "U2") (unit 1)
         )
       )
@@ -2851,6 +2748,11 @@
     (instances
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
+          (reference "R16") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
           (reference "R16") (unit 1)
         )
       )
@@ -3049,7 +2951,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR0113") (unit 1)
         )
       )
     )
@@ -3074,6 +2976,11 @@
     (instances
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
+          (reference "#PWR038") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
           (reference "#PWR038") (unit 1)
         )
       )
@@ -3145,6 +3052,11 @@
           (reference "U3") (unit 1)
         )
       )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "U3") (unit 1)
+        )
+      )
     )
   )
 
@@ -3177,7 +3089,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR0119") (unit 1)
         )
       )
     )
@@ -3276,6 +3188,11 @@
           (reference "R10") (unit 1)
         )
       )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "R10") (unit 1)
+        )
+      )
     )
   )
 
@@ -3308,7 +3225,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR0112") (unit 1)
         )
       )
     )
@@ -3369,6 +3286,37 @@
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
           (reference "#PWR034") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "#PWR0125") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 33.02 107.95 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2e7102ee-0414-4011-bec5-0fbce56fb771)
+    (property "Reference" "J1" (at 33.02 99.06 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "fan" (at 33.02 101.6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 33.02 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 33.02 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid fc64094b-8fa9-4c42-a4af-1aade6bdc528))
+    (pin "1" (uuid 25b70ff1-f7db-42a8-932c-8aeaf4673764))
+    (instances
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -3460,6 +3408,11 @@
     (instances
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
+          (reference "J16") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
           (reference "J16") (unit 1)
         )
       )
@@ -3567,7 +3520,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
       )
     )
@@ -3594,6 +3547,36 @@
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
           (reference "MES1") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "MES1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 38.1 107.95 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 69f19f37-1d71-4467-bc20-52012297256e)
+    (property "Reference" "#PWR020" (at 38.1 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 38.1 113.03 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 38.1 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 38.1 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid de198688-276f-4bcf-b18c-df42628b268d))
+    (instances
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -3629,32 +3612,6 @@
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
           (reference "#PWR013") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Motor:Fan") (at 38.1 107.95 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 783bed06-a59b-42a2-8010-6515995f2d2d)
-    (property "Reference" "M1" (at 43.18 106.68 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fan" (at 43.18 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 38.1 107.696 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 38.1 107.696 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 9a933012-e114-4079-8608-914647a0082d))
-    (pin "1" (uuid ce2048d1-8881-40d1-b037-e11653ad5db4))
-    (instances
-      (project "electronics"
-        (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
-          (reference "M1") (unit 1)
         )
       )
     )
@@ -3761,7 +3718,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR0109") (unit 1)
         )
       )
     )
@@ -3817,6 +3774,11 @@
     (instances
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
+          (reference "#PWR037") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
           (reference "#PWR037") (unit 1)
         )
       )
@@ -3882,7 +3844,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR0123") (unit 1)
         )
       )
     )
@@ -3917,7 +3879,32 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR0101") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 38.1 105.41 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 95bcefd0-49e3-48c4-88eb-6ad7dc4067ac)
+    (property "Reference" "#PWR019" (at 38.1 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 38.1 100.33 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 38.1 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 38.1 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid bc63d4b3-4fd8-4118-b209-4e4cb363d525))
+    (instances
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -4067,7 +4054,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR0118") (unit 1)
         )
       )
     )
@@ -4266,6 +4253,11 @@
           (reference "R14") (unit 1)
         )
       )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "R14") (unit 1)
+        )
+      )
     )
   )
 
@@ -4298,7 +4290,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR0111") (unit 1)
         )
       )
     )
@@ -4324,6 +4316,11 @@
     (instances
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
+          (reference "R15") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
           (reference "R15") (unit 1)
         )
       )
@@ -4386,6 +4383,11 @@
     (instances
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
+          (reference "R13") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
           (reference "R13") (unit 1)
         )
       )
@@ -4487,7 +4489,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR0107") (unit 1)
         )
       )
     )
@@ -4701,7 +4703,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR0114") (unit 1)
         )
       )
     )
@@ -4802,7 +4804,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR0121") (unit 1)
         )
       )
     )
@@ -4837,7 +4839,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR0115") (unit 1)
         )
       )
     )
@@ -4863,6 +4865,11 @@
     (instances
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
+          (reference "R11") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
           (reference "R11") (unit 1)
         )
       )
@@ -4924,6 +4931,11 @@
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
           (reference "#PWR032") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "#PWR0126") (unit 1)
         )
       )
     )
@@ -4995,7 +5007,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR0120") (unit 1)
         )
       )
     )
@@ -5021,6 +5033,11 @@
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
           (reference "#PWR06") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "#PWR0103") (unit 1)
         )
       )
     )
@@ -5055,7 +5072,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR0116") (unit 1)
         )
       )
     )
@@ -5090,7 +5107,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR0122") (unit 1)
         )
       )
     )
@@ -5160,7 +5177,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR0110") (unit 1)
         )
       )
     )
@@ -5195,7 +5212,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR0117") (unit 1)
         )
       )
     )
@@ -5404,7 +5421,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -5479,6 +5496,11 @@
           (reference "U4") (unit 1)
         )
       )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "U4") (unit 1)
+        )
+      )
     )
   )
 
@@ -5506,7 +5528,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR0106") (unit 1)
         )
       )
     )
@@ -5536,7 +5558,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR0108") (unit 1)
         )
       )
     )
@@ -5605,6 +5627,11 @@
           (reference "R12") (unit 1)
         )
       )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
+          (reference "R12") (unit 1)
+        )
+      )
     )
   )
 
@@ -5650,7 +5677,7 @@
     (property "Reference" "J5" (at 22.86 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x02" (at 22.86 101.6 0)
+    (property "Value" "fan" (at 22.86 101.6 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 22.86 107.95 0)
@@ -5664,6 +5691,11 @@
     (instances
       (project "electronics"
         (path "/239911ef-4de3-4ee1-9706-b5564c5a650c"
+          (reference "J5") (unit 1)
+        )
+      )
+      (project "rearbox_nucleo"
+        (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
           (reference "J5") (unit 1)
         )
       )
@@ -5699,7 +5731,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
     )
@@ -5734,7 +5766,7 @@
       )
       (project "rearbox_nucleo"
         (path "/957c9b64-3a36-4921-bfa5-a0799df86262/c515a9bb-7036-4636-b08a-91eff0ae6c71"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR0124") (unit 1)
         )
       )
     )
