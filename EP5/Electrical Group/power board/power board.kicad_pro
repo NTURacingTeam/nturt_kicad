@@ -471,6 +471,7 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/24V_circuitry/LV_powertrain": "power",
       "Net-(FL1-BIAS)": "power_thick",
       "Net-(FL1-POWER_SUPPLY_GND)": "power_thick"
     },
@@ -485,7 +486,7 @@
       },
       {
         "netclass": "power",
-        "pattern": "*24*"
+        "pattern": "*+24V*"
       },
       {
         "netclass": "gnd",
@@ -502,6 +503,10 @@
       {
         "netclass": "power",
         "pattern": "*5V_*"
+      },
+      {
+        "netclass": "power",
+        "pattern": "*LV_*"
       }
     ]
   },
@@ -511,7 +516,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "power board.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
