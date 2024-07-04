@@ -4,6 +4,16 @@
 
   (paper "A4")
 
+  (title_block
+    (title "EP5 dasthboard board3")
+    (date "2024-05-08")
+    (rev "2.0")
+    (company "NTURacing")
+    (comment 1 "郭哲明")
+    (comment 2 "Electrical group")
+    (comment 3 "connector board")
+  )
+
   (lib_symbols
     (symbol "Connector_Generic:Conn_01x05" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 7.62 0)
@@ -953,43 +963,6 @@
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x08") (at 173.99 68.58 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 62bad309-3103-483d-894c-e13cfac083a0)
-    (property "Reference" "J3" (at 173.99 82.55 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MCU" (at 173.99 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_JST:JST_XH_S8B-XH-A_1x08_P2.50mm_Horizontal" (at 173.99 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 173.99 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9e720716-472f-42f2-a790-e347320f33b3))
-    (pin "2" (uuid 7971cbf9-8e82-4863-a81b-70c32fc9e51a))
-    (pin "3" (uuid 780396a9-0484-4f1c-86fc-465696c5f71c))
-    (pin "4" (uuid 213c388b-8923-48fb-8a60-764e2d88332a))
-    (pin "5" (uuid 186ecbb6-adb6-44fb-b2f5-ebbd21c188bc))
-    (pin "6" (uuid 39b26ffe-fb01-445a-9099-f5e64868bead))
-    (pin "7" (uuid 40f96bc2-b0d8-46e9-991c-1b5e43c26cc6))
-    (pin "8" (uuid ef068ccd-d846-4e08-b758-6f51e072815f))
-    (instances
-      (project "EP5 dashboard DIYbox board2"
-        (path "/3c7b8569-fa29-4f45-83ba-f9f301dbb05a"
-          (reference "J3") (unit 1)
-        )
-      )
-      (project "EP5 dashboard DIYbox board3"
-        (path "/6143922d-77ee-449a-bfcc-265358772c63"
-          (reference "J3") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 149.86 66.04 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6bcdec27-cb3a-47e1-a1e8-75466bf3bdad)
@@ -1219,6 +1192,43 @@
       (project "EP5 dashboard DIYbox board3"
         (path "/6143922d-77ee-449a-bfcc-265358772c63"
           (reference "#PWR015") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_01x08") (at 173.99 66.04 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a7881bfb-2248-46bf-bb9a-50bcab08f475)
+    (property "Reference" "J3" (at 173.99 52.07 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "MCU" (at 173.99 54.61 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_JST:JST_XH_S8B-XH-A_1x08_P2.50mm_Horizontal" (at 173.99 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 173.99 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 625c8adb-af39-4efe-8794-e8469da7e404))
+    (pin "2" (uuid 29cc73fa-5513-4db6-a0e1-0febbcf7ea55))
+    (pin "3" (uuid 23548ef0-5198-4349-91a2-0495758a5a9e))
+    (pin "4" (uuid b95e2430-7419-4cdf-a27e-6f757f604c9f))
+    (pin "5" (uuid 89bb7132-5d81-456e-9206-fcdeecfb1172))
+    (pin "6" (uuid dd288629-239c-4ea9-b24a-48701b188890))
+    (pin "7" (uuid 150d197f-08ef-400d-a680-9f8569ff4148))
+    (pin "8" (uuid 1bb58451-abe3-40a2-8aa6-f5d208f6c454))
+    (instances
+      (project "EP5 dashboard DIYbox board2"
+        (path "/3c7b8569-fa29-4f45-83ba-f9f301dbb05a"
+          (reference "J3") (unit 1)
+        )
+      )
+      (project "EP5 dashboard DIYbox board3"
+        (path "/6143922d-77ee-449a-bfcc-265358772c63"
+          (reference "J3") (unit 1)
         )
       )
     )
