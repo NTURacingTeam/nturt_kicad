@@ -45,10 +45,16 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -165,8 +171,15 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -399,7 +412,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -410,6 +423,23 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "CAN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -460,7 +490,7 @@
         "name": "power_thick",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 2.5,
+        "track_width": 2.0,
         "via_diameter": 1.6,
         "via_drill": 0.8,
         "wire_width": 6
@@ -471,9 +501,19 @@
     },
     "net_colors": null,
     "netclass_assignments": {
-      "/24V_circuitry/LV_powertrain": "power",
-      "Net-(FL1-BIAS)": "power_thick",
-      "Net-(FL1-POWER_SUPPLY_GND)": "power_thick"
+      "/outbox/24V_powertrain1": "power_thick",
+      "/outbox/24V_powertrain2": "power_thick",
+      "/outbox/24V_powertrain3": "power_thick",
+      "Net-(FL1-CIRCUIT+BIAS)": "power_thick",
+      "Net-(FL1-CIRCUIT_GROUND_1)": "power_thick",
+      "Net-(FL2-CIRCUIT+BIAS)": "power_thick",
+      "Net-(FL2-CIRCUIT_GROUND_1)": "power_thick",
+      "Net-(FL3-BIAS)": "power_thick",
+      "Net-(FL3-POWER_SUPPLY_GND)": "power_thick",
+      "Net-(FL4-BIAS)": "power_thick",
+      "Net-(FL4-POWER_SUPPLY_GND)": "power_thick",
+      "Net-(FL5-BIAS)": "power_thick",
+      "Net-(FL5-POWER_SUPPLY_GND)": "power_thick"
     },
     "netclass_patterns": [
       {
@@ -485,11 +525,11 @@
         "pattern": "VCC"
       },
       {
-        "netclass": "power",
-        "pattern": "*+24V*"
+        "netclass": "power_thick",
+        "pattern": "*24V_powertrain*"
       },
       {
-        "netclass": "gnd",
+        "netclass": "Default",
         "pattern": "GND"
       },
       {
@@ -501,12 +541,32 @@
         "pattern": "+3.3V"
       },
       {
-        "netclass": "power",
+        "netclass": "Default",
         "pattern": "*5V_*"
       },
       {
         "netclass": "power",
         "pattern": "*LV_*"
+      },
+      {
+        "netclass": "power_thick",
+        "pattern": "*+24V_*"
+      },
+      {
+        "netclass": "power_thick",
+        "pattern": "VD"
+      },
+      {
+        "netclass": "power_thick",
+        "pattern": "VDC"
+      },
+      {
+        "netclass": "power",
+        "pattern": "+24V"
+      },
+      {
+        "netclass": "CAN",
+        "pattern": "CAN*"
       }
     ]
   },
@@ -569,12 +629,16 @@
       ""
     ],
     [
-      "1a69e1ff-3b0e-4857-9610-9c7106ab30e3",
-      "24V_circuitry"
+      "80d1c5c9-220d-48c3-82a0-691038908f33",
+      "power"
     ],
     [
-      "6f136872-4f12-481d-858f-97d888276ccd",
-      "isolated_interface"
+      "860391e1-85ad-4fe9-b655-cf30e1281705",
+      "inbox"
+    ],
+    [
+      "41537f65-7a50-484c-996f-21b342b92005",
+      "outbox"
     ]
   ],
   "text_variables": {}
