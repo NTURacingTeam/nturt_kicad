@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "rear box nucleo board 1")
-		(date "2024-07-22")
+		(date "2024-08-05")
 		(rev "3.0")
 		(company "NTURacing")
 		(comment 1 "郭哲明")
@@ -467,6 +467,127 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -4417,6 +4538,12 @@
 			)
 		)
 	)
+	(junction
+		(at 78.74 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c6e1744-7761-4822-a482-716f3cde954c")
+	)
 	(no_connect
 		(at 43.18 111.76)
 		(uuid "1536f151-76a1-4d37-99b9-4ea1dbe6e541")
@@ -4587,6 +4714,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 134.62) (xy 78.74 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27636bef-06a5-433c-97f9-5ca9fda47568")
+	)
+	(wire
+		(pts
 			(xy 40.64 109.22) (xy 43.18 109.22)
 		)
 		(stroke
@@ -4594,6 +4731,16 @@
 			(type default)
 		)
 		(uuid "2cee5a7c-56f5-4b15-8f00-0664d6edbedd")
+	)
+	(wire
+		(pts
+			(xy 78.74 139.7) (xy 78.74 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e00c52c-014d-454f-8c48-a49f992d7584")
 	)
 	(wire
 		(pts
@@ -4634,6 +4781,26 @@
 			(type default)
 		)
 		(uuid "511246c7-b937-4d0c-b72e-6324493d6358")
+	)
+	(wire
+		(pts
+			(xy 83.82 133.35) (xy 78.74 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7721cf1a-2ade-414a-9cdf-2db1c213774b")
+	)
+	(wire
+		(pts
+			(xy 93.98 133.35) (xy 91.44 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "779cf3c3-8728-4928-8392-c143bbc7b4a2")
 	)
 	(wire
 		(pts
@@ -4704,6 +4871,16 @@
 			(type default)
 		)
 		(uuid "ba481552-0656-4488-bc70-503957a04dbc")
+	)
+	(wire
+		(pts
+			(xy 78.74 133.35) (xy 78.74 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6e2b707-1624-4a38-b342-39268acbbaee")
 	)
 	(wire
 		(pts
@@ -5065,6 +5242,28 @@
 			)
 		)
 	)
+	(global_label "UART5_TX"
+		(shape input)
+		(at 139.7 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2f5413d6-dc3b-4b8c-a856-4dd69b302841")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 125.285 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "UART5_RX"
 		(shape input)
 		(at 78.74 83.82 0)
@@ -5241,6 +5440,28 @@
 			)
 		)
 	)
+	(global_label "UART5_RX"
+		(shape input)
+		(at 139.7 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "68ca31a8-171d-4807-ad00-c31c77265461")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.9826 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SPI3_SCK"
 		(shape input)
 		(at 43.18 81.28 180)
@@ -5287,7 +5508,7 @@
 	)
 	(global_label "24Vcurrent"
 		(shape input)
-		(at 78.74 127 0)
+		(at 93.98 133.35 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5297,7 +5518,7 @@
 		)
 		(uuid "807a553c-5d4a-474f-b7fa-c999a223f128")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.0061 127 0)
+			(at 107.2461 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6514,6 +6735,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 78.74 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d2fbd25-5662-4787-9d50-971ae9b29a63")
+		(property "Reference" "C46"
+			(at 81.28 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0u1"
+			(at 81.28 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 78.74 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36b35a61-96b0-4461-aa42-6d7afbfb7f57")
+		)
+		(pin "2"
+			(uuid "1d11189d-f3b1-4dee-9e3c-b92790d7811d")
+		)
+		(instances
+			(project "rearbox_nucleo_1"
+				(path "/957c9b64-3a36-4921-bfa5-a0799df86262"
+					(reference "C46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "nturt_kicad_lib:1056")
 		(at 232.41 82.55 0)
 		(unit 1)
@@ -6700,6 +6990,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 78.74 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a7a3252-b10d-4c09-b29b-985f9e95e0ae")
+		(property "Reference" "#PWR0172"
+			(at 78.74 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20a4a8f3-e687-4c99-a727-f4fe9987fb14")
+		)
+		(instances
+			(project "rearbox_nucleo_1"
+				(path "/957c9b64-3a36-4921-bfa5-a0799df86262"
+					(reference "#PWR0172")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 198.12 39.37 0)
 		(unit 1)
@@ -6759,6 +7116,74 @@
 			(project "rearbox_nucleo_1"
 				(path "/957c9b64-3a36-4921-bfa5-a0799df86262"
 					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 87.63 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51e95fa3-eae2-4f8c-91b3-56b833ac113b")
+		(property "Reference" "R60"
+			(at 87.63 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 87.63 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 87.63 135.128 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 87.63 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c56ac9e1-fc25-417e-80a4-e4a65eb5e346")
+		)
+		(pin "2"
+			(uuid "8cadbab2-d634-4014-8a13-7afb87fbec29")
+		)
+		(instances
+			(project "rearbox_nucleo_1"
+				(path "/957c9b64-3a36-4921-bfa5-a0799df86262"
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -8116,6 +8541,76 @@
 			(project "rearbox_nucleo_1"
 				(path "/957c9b64-3a36-4921-bfa5-a0799df86262"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 144.78 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd73799f-e868-4c55-83c5-5eaae23fa796")
+		(property "Reference" "J17"
+			(at 147.32 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "UART5"
+			(at 147.32 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 144.78 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 144.78 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be2119da-2af5-4e65-aa67-a163d95cd297")
+		)
+		(pin "2"
+			(uuid "3570a978-136f-43c3-8adc-3a978a9b6ab5")
+		)
+		(instances
+			(project ""
+				(path "/957c9b64-3a36-4921-bfa5-a0799df86262"
+					(reference "J17")
 					(unit 1)
 				)
 			)
