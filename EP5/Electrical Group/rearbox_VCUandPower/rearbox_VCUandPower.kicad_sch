@@ -9,7 +9,7 @@
 		(date "2024-08-07")
 		(rev "1.0")
 		(company "NTURacing")
-		(comment 1 "郭哲明")
+		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Electrical group")
 	)
 	(lib_symbols
@@ -1449,10 +1449,11 @@
 			)
 		)
 		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers hide)
 			(pin_names
 				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
+			(exclude_from_sim yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
 				(at 0 2.032 0)
@@ -4264,8 +4265,8 @@
 			(pin_names
 				(offset 1.016)
 			)
-			(exclude_from_sim no)
-			(in_bom yes)
+			(exclude_from_sim yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
 				(at 0 5.08 0)
@@ -5547,9 +5548,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5647,8 +5648,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5881,6 +5882,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "power:VBUS"
 			(power)
 			(pin_numbers hide)
@@ -6045,6 +6142,12 @@
 		(uuid "2f8f37c5-8be8-4850-b6d5-fdb08e9b8311")
 	)
 	(junction
+		(at 251.46 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3392a834-3e08-41c4-a5f8-066d3268786c")
+	)
+	(junction
 		(at 273.05 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6109,6 +6212,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6671a999-34fe-49d0-b8a5-0499e6f54873")
+	)
+	(junction
+		(at 129.54 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b96045d-6ce9-4d04-94eb-c83c69c570c5")
 	)
 	(junction
 		(at 140.97 31.75)
@@ -6213,16 +6322,152 @@
 		(uuid "fd96bbdf-010a-40d3-a78f-455c2c3135ab")
 	)
 	(no_connect
+		(at 96.52 87.63)
+		(uuid "0586906b-4837-4e4a-9f31-bdb14ac69210")
+	)
+	(no_connect
+		(at 149.86 173.99)
+		(uuid "1b706556-b36e-4199-a615-413b3e6ff3ca")
+	)
+	(no_connect
+		(at 96.52 140.97)
+		(uuid "1cc2d28d-866f-4ef1-abe4-ee257e676203")
+	)
+	(no_connect
+		(at 149.86 146.05)
+		(uuid "23e2ddb0-442a-495b-a8a0-04dcb8957259")
+	)
+	(no_connect
+		(at 149.86 143.51)
+		(uuid "2d033787-aea9-45d6-ba87-aaee7a6a0e7b")
+	)
+	(no_connect
+		(at 96.52 82.55)
+		(uuid "3110aec1-2b80-47cf-a7eb-87eecc13c4de")
+	)
+	(no_connect
+		(at 96.52 130.81)
+		(uuid "35d2d144-d7d9-411c-a9bf-0516fdd72f70")
+	)
+	(no_connect
+		(at 149.86 153.67)
+		(uuid "3770a1eb-b945-4534-9ec5-0ff3c87c084b")
+	)
+	(no_connect
+		(at 149.86 148.59)
+		(uuid "3fcef19e-0241-47be-880b-d53a386deb1a")
+	)
+	(no_connect
 		(at 236.22 83.82)
 		(uuid "40341081-32a7-4b44-b6af-65cfa4d2f82b")
+	)
+	(no_connect
+		(at 149.86 80.01)
+		(uuid "4901bca3-7fca-4793-a1ca-227c049cb7a0")
+	)
+	(no_connect
+		(at 96.52 105.41)
+		(uuid "507b9fc4-c037-4122-8268-d3b322a18c3f")
 	)
 	(no_connect
 		(at 198.12 156.21)
 		(uuid "54d83f7e-7b6b-41fe-b98b-756d8dd82aba")
 	)
 	(no_connect
+		(at 149.86 156.21)
+		(uuid "59b652ce-e72e-48ca-b4c6-790d0e0706ce")
+	)
+	(no_connect
+		(at 96.52 110.49)
+		(uuid "5b5ccb83-5f8c-4de7-91c7-56d5871b22ce")
+	)
+	(no_connect
+		(at 96.52 143.51)
+		(uuid "6fabe414-4782-43f9-97f3-bc0b58cfdc10")
+	)
+	(no_connect
 		(at 266.7 105.41)
 		(uuid "74677683-99f8-440a-96c0-beeea3644828")
+	)
+	(no_connect
+		(at 96.52 125.73)
+		(uuid "7d1ce7cd-8627-4bff-b551-5dbb90170360")
+	)
+	(no_connect
+		(at 96.52 148.59)
+		(uuid "827cbaa4-d028-41a1-bc6a-17f70d6d1f85")
+	)
+	(no_connect
+		(at 96.52 146.05)
+		(uuid "82d8f696-5b83-482d-9fe2-2d734d3332bc")
+	)
+	(no_connect
+		(at 96.52 118.11)
+		(uuid "8633dd88-3036-45c0-87eb-bd729c6f66d9")
+	)
+	(no_connect
+		(at 149.86 105.41)
+		(uuid "8cb50b6a-5bcb-408d-a914-60baf6ba9b89")
+	)
+	(no_connect
+		(at 149.86 113.03)
+		(uuid "91a37f58-2f18-44b1-aa95-681beaa399e4")
+	)
+	(no_connect
+		(at 149.86 67.31)
+		(uuid "aa97ce79-c146-44dd-80f2-4652fdd095d2")
+	)
+	(no_connect
+		(at 149.86 69.85)
+		(uuid "ab40c8a7-22a3-41b4-934f-ec1436bc1257")
+	)
+	(no_connect
+		(at 96.52 102.87)
+		(uuid "abe234bd-315b-406b-9073-0cf42c348cde")
+	)
+	(no_connect
+		(at 149.86 158.75)
+		(uuid "b176414e-4d6c-47d1-8657-7c52a2fb427a")
+	)
+	(no_connect
+		(at 149.86 140.97)
+		(uuid "b497510f-f898-491f-9e5a-6f9aaf304d0d")
+	)
+	(no_connect
+		(at 149.86 77.47)
+		(uuid "bedc8636-9b02-4eff-9004-39bfe4443bc3")
+	)
+	(no_connect
+		(at 83.82 92.71)
+		(uuid "c1420b07-5972-41c2-8eea-4d964bb65db8")
+	)
+	(no_connect
+		(at 149.86 135.89)
+		(uuid "c1ebc544-1618-462f-9930-93c6a6fea191")
+	)
+	(no_connect
+		(at 96.52 123.19)
+		(uuid "c2c4863f-4150-4a18-87b7-e6ba8f899148")
+	)
+	(no_connect
+		(at 96.52 133.35)
+		(uuid "cd34eca1-5d5f-44e0-9d9c-15f0c22d3982")
+	)
+	(no_connect
+		(at 149.86 125.73)
+		(uuid "d3f5f152-5727-4f03-b425-d7911dc91a25")
+	)
+	(no_connect
+		(at 96.52 100.33)
+		(uuid "e2b94c24-6d17-445c-b41f-f41444af6332")
+	)
+	(no_connect
+		(at 96.52 97.79)
+		(uuid "ea5d47a8-4c2a-4b45-8015-92735246f3cf")
+	)
+	(no_connect
+		(at 96.52 156.21)
+		(uuid "ea71cf74-5c07-4956-90cf-947f08c91e96")
 	)
 	(no_connect
 		(at 269.24 35.56)
@@ -6450,6 +6695,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 107.95) (xy 96.52 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25a7fb29-d6c9-42eb-8e3f-4e424d3adaa6")
+	)
+	(wire
+		(pts
 			(xy 191.77 152.4) (xy 198.12 152.4)
 		)
 		(stroke
@@ -6610,6 +6865,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 151.13) (xy 96.52 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3db63c7d-e95b-4c7b-9243-07b70f44b54e")
+	)
+	(wire
+		(pts
 			(xy 81.28 138.43) (xy 96.52 138.43)
 		)
 		(stroke
@@ -6670,7 +6935,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 95.25) (xy 260.35 95.25)
+			(xy 243.84 95.25) (xy 251.46 95.25)
 		)
 		(stroke
 			(width 0)
@@ -7350,6 +7615,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 95.25) (xy 260.35 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b170001d-0807-4292-80ce-c3d6d3ac0191")
+	)
+	(wire
+		(pts
 			(xy 198.12 153.67) (xy 198.12 152.4)
 		)
 		(stroke
@@ -7720,16 +7995,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 151.13) (xy 96.52 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e52e4728-c3f9-40b6-a632-1eaea2d7c2e6")
-	)
-	(wire
-		(pts
 			(xy 41.91 74.93) (xy 36.83 74.93)
 		)
 		(stroke
@@ -7860,13 +8125,13 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 148.59) (xy 96.52 148.59)
+			(xy 86.36 153.67) (xy 96.52 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f8ca8370-443f-4a01-8827-dd619bb7d758")
+		(uuid "f8418b4b-9f6f-4f79-8448-7ac008a9a93c")
 	)
 	(wire
 		(pts
@@ -8141,28 +8406,6 @@
 		)
 		(uuid "07256f0e-263c-4343-a02d-3e90ae88348f")
 	)
-	(label "UART4_RX"
-		(at 86.36 151.13 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0b81ee72-cbee-4d87-8f71-2e636d9028ac")
-	)
-	(label "SCL1_SDA"
-		(at 36.83 149.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0b996d76-e42d-4d9a-9846-8e88dc6abe39")
-	)
 	(label "SDMMC1_D1"
 		(at 269.24 22.86 0)
 		(fields_autoplaced yes)
@@ -8207,7 +8450,7 @@
 		)
 		(uuid "1f7697a7-104b-40ce-a04c-45939a77e98f")
 	)
-	(label "SCL1_SDA"
+	(label "I2C1_SDA"
 		(at 149.86 118.11 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8218,8 +8461,8 @@
 		)
 		(uuid "1f9837e1-1272-4570-be0f-6382e400b0b2")
 	)
-	(label "UART4_TX"
-		(at 86.36 148.59 0)
+	(label "SPI4_MISO"
+		(at 83.82 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8227,7 +8470,18 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2a8f55b7-8967-47e7-a5c2-25984d94c4fa")
+		(uuid "233bef67-4045-4c35-b112-0983ae64fb69")
+	)
+	(label "UART4_RX"
+		(at 86.36 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "244666fe-7089-47cf-b2b3-b32f205b0772")
 	)
 	(label "UART4_RX"
 		(at 36.83 50.8 0)
@@ -8283,17 +8537,6 @@
 			(justify left bottom)
 		)
 		(uuid "4001c946-391e-42bc-982d-41642e0a72bb")
-	)
-	(label "SPI4_MISO"
-		(at 83.82 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4004f51d-39b4-491e-8717-87dbd399188b")
 	)
 	(label "SDMMC1_D3"
 		(at 149.86 168.91 0)
@@ -8427,6 +8670,17 @@
 		)
 		(uuid "64e362a1-6965-48b9-b7ed-9c878c172584")
 	)
+	(label "SPI4_CS"
+		(at 83.82 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "65832885-e31d-457c-819c-b824c33368ad")
+	)
 	(label "FDCAN1_TX"
 		(at 41.91 74.93 0)
 		(fields_autoplaced yes)
@@ -8459,6 +8713,17 @@
 			(justify left bottom)
 		)
 		(uuid "6ac826e7-6207-45c4-ac71-eb34bed663a5")
+	)
+	(label "SPI4_SCK"
+		(at 83.82 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6b01a4b2-9b1c-493c-aff2-14e37f599667")
 	)
 	(label "brakemicro"
 		(at 83.82 113.03 0)
@@ -8514,6 +8779,17 @@
 			(justify left bottom)
 		)
 		(uuid "783ab9bf-c1e6-4856-bda5-c64b825b837d")
+	)
+	(label "SPI4_MOSI"
+		(at 83.82 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a6b7cc6-e1cf-4c99-a469-2c485162b36e")
 	)
 	(label "brakemicro"
 		(at 41.91 71.12 0)
@@ -8835,7 +9111,7 @@
 		(uuid "a157b702-74de-4ade-87e8-f0021de520d1")
 	)
 	(label "24V_lowTrig"
-		(at 66.04 152.4 0)
+		(at 83.82 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8889,17 +9165,6 @@
 		)
 		(uuid "a4a723a2-637c-430a-9620-2b5c78c04130")
 	)
-	(label "SPI4_CS"
-		(at 83.82 92.71 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a8684ec4-e811-45eb-99d0-6976c77979a2")
-	)
 	(label "UART5_RX"
 		(at 36.83 59.69 0)
 		(fields_autoplaced yes)
@@ -8921,6 +9186,17 @@
 			(justify left bottom)
 		)
 		(uuid "acf898f3-8cf7-48e0-9396-50d49582d9e3")
+	)
+	(label "I2C1_SDA"
+		(at 36.83 149.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae9c8d6b-4b37-47d4-a8db-7cc619877749")
 	)
 	(label "I_measure_5v"
 		(at 35.56 38.1 0)
@@ -9098,17 +9374,6 @@
 		)
 		(uuid "ce917bbd-5d86-4653-bccb-891865361fbe")
 	)
-	(label "SPI4_MOSI"
-		(at 83.82 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d541689b-2dbd-4147-82db-703b63df1ce0")
-	)
 	(label "JTDI{slash}SWO"
 		(at 153.67 95.25 0)
 		(fields_autoplaced yes)
@@ -9120,7 +9385,7 @@
 		)
 		(uuid "d55a4b33-b1dd-40bc-9cec-ab63d04b612d")
 	)
-	(label "SCL1_SCL"
+	(label "I2C1_SCL"
 		(at 149.86 115.57 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9163,17 +9428,6 @@
 			(justify left bottom)
 		)
 		(uuid "df18aab6-7075-489f-abb4-50eae910225f")
-	)
-	(label "SPI4_SCK"
-		(at 83.82 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "df9104cf-ce0a-4bf6-983f-c48493f77dbf")
 	)
 	(label "24V_measure_all"
 		(at 38.1 19.05 0)
@@ -9274,7 +9528,7 @@
 		)
 		(uuid "f4df8e60-caaf-4bf4-8a41-9f34899f6c9b")
 	)
-	(label "SCL1_SCL"
+	(label "I2C1_SCL"
 		(at 36.83 153.67 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9283,7 +9537,18 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "fe427d48-d4d0-4157-878e-92809c089619")
+		(uuid "f8866e93-2b81-4a4f-a8bc-9acb71c5c9a7")
+	)
+	(label "UART4_TX"
+		(at 86.36 151.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc14b852-58ed-4548-b188-599445616adb")
 	)
 	(label "SDMMC1_D2"
 		(at 149.86 166.37 0)
@@ -9937,7 +10202,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 16V"
+		(property "Value" "2u2 16V"
 			(at 88.9 173.9963 0)
 			(effects
 				(font
@@ -10074,7 +10339,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1"
+		(property "Value" "1u"
 			(at 166.37 154.94 0)
 			(effects
 				(font
@@ -10211,7 +10476,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1"
+		(property "Value" "1u"
 			(at 196.85 76.2 0)
 			(effects
 				(font
@@ -10508,7 +10773,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 76.2 135.89 0)
 			(effects
 				(font
@@ -10686,7 +10951,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1"
+		(property "Value" "1u"
 			(at 177.8 63.5 0)
 			(effects
 				(font
@@ -10738,6 +11003,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 251.46 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ca3dac6-607e-43ea-89f5-648fe7eb9215")
+		(property "Reference" "#FLG05"
+			(at 251.46 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 251.46 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 251.46 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8a6b560-d0bf-42e3-9b15-6ad27a910adc")
+		)
+		(instances
+			(project "rearbox_VCUandPower"
+				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 16.51 179.07 0)
 		(unit 1)
@@ -10782,7 +11112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 16.51 179.07 0)
 			(effects
 				(font
@@ -11423,7 +11753,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 156.21 43.18 90)
 			(effects
 				(font
@@ -12241,7 +12571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 16.51 185.42 0)
 			(effects
 				(font
@@ -12730,7 +13060,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 16.51 193.04 0)
 			(effects
 				(font
@@ -12793,7 +13123,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 16.51 171.45 0)
 			(effects
 				(font
@@ -12963,7 +13293,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "45V 2A (VSSAF5L45HM3_A_H)"
+		(property "Value" "45V 3A (VSSAF5L45HM3_A_H)"
 			(at 254.254 76.708 0)
 			(effects
 				(font
@@ -13285,7 +13615,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 189.23 68.58 90)
 			(effects
 				(font
@@ -14281,6 +14611,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 129.54 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d35012c7-dda8-4bd1-9fec-0513916c5ca4")
+		(property "Reference" "#FLG06"
+			(at 129.54 22.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 129.54 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 129.54 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5ed14ce-ecea-44d8-8f56-f8495d132e52")
+		)
+		(instances
+			(project "rearbox_VCUandPower"
+				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378"
+					(reference "#FLG06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 163.83 156.21 0)
 		(mirror y)
@@ -14366,7 +14761,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1"
+		(property "Value" "1u"
 			(at 175.26 78.74 0)
 			(effects
 				(font
@@ -14708,7 +15103,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 170.18 55.88 90)
 			(effects
 				(font
@@ -15073,7 +15468,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 16V"
+		(property "Value" "2u2 16V"
 			(at 74.93 170.1863 0)
 			(effects
 				(font
@@ -15275,7 +15670,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1"
+		(property "Value" "1u"
 			(at 163.83 50.8 0)
 			(effects
 				(font
@@ -15410,7 +15805,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 167.64 71.12 90)
 			(effects
 				(font

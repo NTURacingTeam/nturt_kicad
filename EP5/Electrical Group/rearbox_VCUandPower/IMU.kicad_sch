@@ -9,7 +9,7 @@
 		(date "2024-08-07")
 		(rev "1.0")
 		(company "NTURacing")
-		(comment 1 "郭哲明")
+		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Electrical group")
 	)
 	(lib_symbols
@@ -410,10 +410,11 @@
 			)
 		)
 		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers hide)
 			(pin_names
 				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
+			(exclude_from_sim yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
 				(at 0 2.032 0)
@@ -958,9 +959,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1058,8 +1059,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1078,9 +1079,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1154,8 +1155,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1200,6 +1201,14 @@
 	(no_connect
 		(at 106.68 118.11)
 		(uuid "5cde25c4-41f9-416e-8a43-4d1760302051")
+	)
+	(no_connect
+		(at 106.68 123.19)
+		(uuid "9ef7eb41-bc49-4e0a-939c-ce42197edf87")
+	)
+	(no_connect
+		(at 53.34 125.73)
+		(uuid "ae48f030-a169-4e17-b993-40a8639adb21")
 	)
 	(no_connect
 		(at 106.68 120.65)
@@ -1666,7 +1675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 46.99 109.22 0)
 			(effects
 				(font
@@ -1733,7 +1742,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 62.23 137.16 0)
 			(effects
 				(font
@@ -1802,7 +1811,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 93.98 100.33 0)
 			(effects
 				(font
@@ -1869,7 +1878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 67.31 121.92 0)
 			(effects
 				(font
@@ -1935,7 +1944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 72.39 143.51 0)
 			(effects
 				(font
@@ -2000,7 +2009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 55.88 109.22 0)
 			(effects
 				(font
@@ -2070,7 +2079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 204.47 102.87 0)
 			(effects
 				(font
@@ -2136,7 +2145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 116.84 130.81 0)
 			(effects
 				(font
@@ -2176,7 +2185,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LSM6DSOXTR"
+		(property "Value" "LSM6DSO32"
 			(at 93.6341 105.41 0)
 			(effects
 				(font
@@ -2205,7 +2214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IMUs - Inertial Measurement Units iNEMO inertial module: always-on 3D accelerometer and 3D gyroscope"
 			(at 71.12 118.11 0)
 			(effects
 				(font
@@ -2361,7 +2370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 63.5 113.03 0)
 			(effects
 				(font
@@ -2430,7 +2439,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 62.23 134.62 0)
 			(effects
 				(font
@@ -2495,7 +2504,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 207.01 118.11 0)
 			(effects
 				(font
@@ -2565,7 +2574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 63.5 115.57 0)
 			(effects
 				(font
@@ -2632,7 +2641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 116.84 133.35 0)
 			(effects
 				(font
@@ -2701,7 +2710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 110.49 133.35 0)
 			(effects
 				(font
@@ -2767,7 +2776,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 228.6 110.49 0)
 			(effects
 				(font
@@ -2837,7 +2846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 95.25 143.51 0)
 			(effects
 				(font
@@ -2902,7 +2911,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 207.01 107.95 0)
 			(effects
 				(font
@@ -2972,7 +2981,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 62.23 139.7 0)
 			(effects
 				(font
@@ -3039,7 +3048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 116.84 135.89 0)
 			(effects
 				(font
