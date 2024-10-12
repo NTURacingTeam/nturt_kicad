@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "EP5 dashboard screen board")
-		(date "2024-07-20")
-		(rev "2.2")
+		(date "2024-08-28")
+		(rev "2.3")
 		(company "NTURacing")
 		(comment 1 "郭哲明")
 		(comment 2 "electrical group")
@@ -3013,7 +3013,7 @@
 				)
 			)
 		)
-		(symbol "Jumper:SolderJumper_3_Bridged12"
+		(symbol "Jumper:SolderJumper_3_Open"
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim yes)
@@ -3027,7 +3027,7 @@
 					)
 				)
 			)
-			(property "Value" "SolderJumper_3_Bridged12"
+			(property "Value" "SolderJumper_3_Open"
 				(at 0 2.794 0)
 				(effects
 					(font
@@ -3053,7 +3053,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
+			(property "Description" "Solder Jumper, 3-pole, open"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3071,7 +3071,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SolderJumper*Bridged12*"
+			(property "ki_fp_filters" "SolderJumper*Open*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3080,18 +3080,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SolderJumper_3_Bridged12_0_1"
-				(rectangle
-					(start -1.016 0.508)
-					(end -0.508 -0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "SolderJumper_3_Open_0_1"
 				(arc
 					(start -1.016 1.016)
 					(mid -2.0276 0)
@@ -3212,7 +3201,7 @@
 					)
 				)
 			)
-			(symbol "SolderJumper_3_Bridged12_1_1"
+			(symbol "SolderJumper_3_Open_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -4241,12 +4230,6 @@
 		(uuid "caea10d3-5e39-40e0-b80f-a2e570b69a12")
 	)
 	(junction
-		(at 68.58 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cca455d1-57d5-497d-9585-d027186791bc")
-	)
-	(junction
 		(at 74.93 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4370,7 +4353,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 113.03) (xy 165.1 107.95)
+			(xy 176.53 115.57) (xy 176.53 110.49)
 		)
 		(stroke
 			(width 0)
@@ -4790,16 +4773,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 44.45) (xy 68.58 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31bc4033-0110-42c9-a928-ec46fac0eb6c")
-	)
-	(wire
-		(pts
 			(xy 97.79 95.25) (xy 99.06 95.25)
 		)
 		(stroke
@@ -5100,6 +5073,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 52.07) (xy 146.05 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5148758b-8064-4a27-afa8-045b029e747a")
+	)
+	(wire
+		(pts
 			(xy 50.8 158.75) (xy 45.72 158.75)
 		)
 		(stroke
@@ -5280,7 +5263,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 104.14) (xy 160.02 104.14)
+			(xy 170.18 106.68) (xy 171.45 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5460,7 +5443,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 113.03) (xy 161.29 113.03)
+			(xy 176.53 115.57) (xy 172.72 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5670,7 +5653,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 118.11) (xy 161.29 118.11)
+			(xy 175.26 120.65) (xy 172.72 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5890,6 +5873,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 85.09) (xy 152.4 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f608193-669d-4537-abdb-c7aa77620a72")
+	)
+	(wire
+		(pts
 			(xy 120.65 168.91) (xy 115.57 168.91)
 		)
 		(stroke
@@ -5940,6 +5933,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 71.12) (xy 146.05 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a584c4d5-c5bf-4364-af1c-7878a7aa9033")
+	)
+	(wire
+		(pts
 			(xy 254 114.3) (xy 259.08 114.3)
 		)
 		(stroke
@@ -5970,7 +5973,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 104.14) (xy 175.26 104.14)
+			(xy 185.42 106.68) (xy 186.69 106.68)
 		)
 		(stroke
 			(width 0)
@@ -6090,7 +6093,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 107.95) (xy 180.34 115.57)
+			(xy 191.77 110.49) (xy 191.77 118.11)
 		)
 		(stroke
 			(width 0)
@@ -6370,7 +6373,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 115.57) (xy 180.34 115.57)
+			(xy 172.72 118.11) (xy 191.77 118.11)
 		)
 		(stroke
 			(width 0)
@@ -6430,7 +6433,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 120.65) (xy 161.29 120.65)
+			(xy 175.26 123.19) (xy 172.72 123.19)
 		)
 		(stroke
 			(width 0)
@@ -6497,6 +6500,16 @@
 			(type default)
 		)
 		(uuid "de536ab3-524c-4e6c-8a4b-b25e66af3f8e")
+	)
+	(wire
+		(pts
+			(xy 135.89 104.14) (xy 151.13 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfb52958-10e7-41fc-96da-d7ce06939ba9")
 	)
 	(wire
 		(pts
@@ -6878,7 +6891,7 @@
 	)
 	(global_label "ButtonR3_raw"
 		(shape input)
-		(at 142.24 73.66 180)
+		(at 152.4 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6888,7 +6901,7 @@
 		)
 		(uuid "1e91b67a-8c8d-4e38-a184-d693ff549ca3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.3736 73.66 0)
+			(at 136.5336 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6922,7 +6935,7 @@
 	)
 	(global_label "SCL"
 		(shape input)
-		(at 163.83 118.11 0)
+		(at 175.26 120.65 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6932,7 +6945,7 @@
 		)
 		(uuid "21c64484-d087-4bd6-a15f-a1d4fdb45f0d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.3228 118.11 0)
+			(at 181.7528 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7384,7 +7397,7 @@
 	)
 	(global_label "ButtonRTDlight"
 		(shape input)
-		(at 130.81 127 180)
+		(at 104.14 134.62 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7394,7 +7407,7 @@
 		)
 		(uuid "64eee476-8c1b-4493-97d8-6ab25f0b7013")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.8551 127 0)
+			(at 87.1851 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7450,7 +7463,7 @@
 	)
 	(global_label "SDA"
 		(shape input)
-		(at 163.83 120.65 0)
+		(at 175.26 123.19 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7460,7 +7473,7 @@
 		)
 		(uuid "6da002bf-9655-4107-90b5-221ccf7f1c50")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.3833 120.65 0)
+			(at 181.8133 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7472,7 +7485,7 @@
 	)
 	(global_label "ButtonL1_raw"
 		(shape input)
-		(at 142.24 92.71 180)
+		(at 154.94 129.54 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7482,7 +7495,7 @@
 		)
 		(uuid "6df5dbde-1637-4888-bd81-b72e53fc3ebb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.6155 92.71 0)
+			(at 139.3155 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7802,7 +7815,7 @@
 	)
 	(global_label "ButtonRTD_raw"
 		(shape input)
-		(at 130.81 129.54 180)
+		(at 104.14 137.16 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7812,7 +7825,7 @@
 		)
 		(uuid "a6b2d145-85a5-4c7d-9378-d8adf97bd133")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.9155 129.54 0)
+			(at 87.2455 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7934,7 +7947,7 @@
 	)
 	(global_label "ButtonR4_raw"
 		(shape input)
-		(at 142.24 82.55 180)
+		(at 151.13 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7944,7 +7957,7 @@
 		)
 		(uuid "c12f41e1-6021-4388-90e5-b48fcc1e305d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.3736 82.55 0)
+			(at 135.2636 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8088,7 +8101,7 @@
 	)
 	(global_label "ButtonR2_raw"
 		(shape input)
-		(at 142.24 64.77 180)
+		(at 146.05 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8098,7 +8111,7 @@
 		)
 		(uuid "e16373b6-8787-4917-b55d-a524d32a7d67")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.3736 64.77 0)
+			(at 130.1836 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8286,7 +8299,7 @@
 	)
 	(global_label "ButtonR1_raw"
 		(shape input)
-		(at 142.24 54.61 180)
+		(at 146.05 49.53 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8296,7 +8309,7 @@
 		)
 		(uuid "f43024d1-e6a6-4b20-8e61-d10f7d88f642")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.3736 54.61 0)
+			(at 130.1836 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8325,6 +8338,73 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 133.35 90.17 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0061a2f1-96a0-4895-9084-aa4ab38a5105")
+		(property "Reference" "#PWR091"
+			(at 133.35 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e364a9d4-2f23-407a-86cf-a3f5f3987589")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "#PWR091")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -8410,7 +8490,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 186.69 25.4 90)
 			(effects
 				(font
@@ -8550,7 +8630,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 243.84 31.75 90)
 			(effects
 				(font
@@ -8617,7 +8697,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 74.93 132.08 90)
 			(effects
 				(font
@@ -8861,7 +8941,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 243.84 29.21 90)
 			(effects
 				(font
@@ -9333,7 +9413,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 74.93 152.4 90)
 			(effects
 				(font
@@ -9400,7 +9480,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 207.01 72.39 90)
 			(effects
 				(font
@@ -9519,6 +9599,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 132.08 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f9fc0dc-18f4-4b61-977d-48ceb167b1d1")
+		(property "Reference" "#PWR047"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 132.08 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65525f3d-4d10-4ab3-819b-99b53ddbc688")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 208.28 132.08 0)
 		(unit 1)
@@ -9537,7 +9682,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 210.82 133.3563 0)
 			(effects
 				(font
@@ -9691,7 +9836,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 88.9 123.1963 0)
 			(effects
 				(font
@@ -10692,7 +10837,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "510R"
 			(at 179.07 151.1299 0)
 			(effects
 				(font
@@ -10842,7 +10987,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 264.16 73.66 90)
 			(effects
 				(font
@@ -11042,7 +11187,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 264.16 55.88 90)
 			(effects
 				(font
@@ -11310,7 +11455,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 264.16 58.42 90)
 			(effects
 				(font
@@ -11443,7 +11588,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 142.24 146.05 90)
 			(effects
 				(font
@@ -11862,7 +12007,7 @@
 				)
 			)
 		)
-		(property "Value" "Seg2"
+		(property "Value" "Seg2 GREEN .56"
 			(at 217.17 54.61 0)
 			(effects
 				(font
@@ -12087,7 +12232,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 142.24 158.75 90)
 			(effects
 				(font
@@ -12154,7 +12299,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 243.84 39.37 90)
 			(effects
 				(font
@@ -12223,7 +12368,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 171.45 86.3663 0)
 			(effects
 				(font
@@ -12464,7 +12609,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 60.96 189.2363 0)
 			(effects
 				(font
@@ -12551,7 +12696,7 @@
 				)
 			)
 		)
-		(property "Value" "Seg4"
+		(property "Value" "Seg4 BLUE .8"
 			(at 274.32 50.8 0)
 			(effects
 				(font
@@ -12643,7 +12788,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 186.69 27.94 90)
 			(effects
 				(font
@@ -12859,7 +13004,7 @@
 				)
 			)
 		)
-		(property "Value" "pedal2-2"
+		(property "Value" "pedal2-2 GREEN"
 			(at 133.35 144.78 0)
 			(effects
 				(font
@@ -13113,7 +13258,7 @@
 				)
 			)
 		)
-		(property "Value" "pedal1-1"
+		(property "Value" "pedal1-1 RED"
 			(at 62.23 19.05 0)
 			(effects
 				(font
@@ -13218,8 +13363,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 180.34 104.14 0)
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 191.77 106.68 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -13228,7 +13373,7 @@
 		(dnp no)
 		(uuid "44589b8e-96ac-4963-a0f4-4993623ed45c")
 		(property "Reference" "JP2"
-			(at 180.34 97.79 0)
+			(at 191.77 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13236,15 +13381,15 @@
 			)
 		)
 		(property "Value" "OLED_P2"
-			(at 180.34 100.33 0)
+			(at 191.77 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
-			(at 180.34 104.14 0)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 191.77 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13253,7 +13398,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 104.14 0)
+			(at 191.77 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13261,8 +13406,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-			(at 180.34 104.14 0)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 191.77 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13441,7 +13586,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 143.51 24.1363 0)
 			(effects
 				(font
@@ -13592,7 +13737,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 74.93 137.16 90)
 			(effects
 				(font
@@ -13659,7 +13804,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 186.69 43.18 90)
 			(effects
 				(font
@@ -13726,7 +13871,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 74.93 147.32 90)
 			(effects
 				(font
@@ -13927,7 +14072,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 264.16 63.5 90)
 			(effects
 				(font
@@ -14129,7 +14274,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 186.69 38.1 90)
 			(effects
 				(font
@@ -14575,6 +14720,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 133.35 85.09 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5cc6324b-2ee6-4c96-a5bd-1fb9397db704")
+		(property "Reference" "JP5"
+			(at 130.81 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OLED_P1"
+			(at 130.81 86.3599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 133.35 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 133.35 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "82a3ff7c-3caf-424e-a959-e10b1337091b")
+		)
+		(pin "1"
+			(uuid "0f5eefb9-7c53-4266-9f0b-8da9525408c4")
+		)
+		(pin "3"
+			(uuid "fa4ae52a-327f-41c3-a770-283b978f623e")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "JP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 243.84 39.37 90)
 		(unit 1)
@@ -14591,7 +14809,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 243.84 36.83 90)
 			(effects
 				(font
@@ -14636,6 +14854,79 @@
 			(project "EP5 dashboard DIYbox board1"
 				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
 					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 127 52.07 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d23d431-24bb-4a3c-85cd-7b3dde010339")
+		(property "Reference" "JP3"
+			(at 124.46 50.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OLED_P1"
+			(at 124.46 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 127 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 127 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f75bc1ce-281c-47d1-8f8b-2521c29ad599")
+		)
+		(pin "1"
+			(uuid "7ce3bfdc-53cf-4684-a66a-cf0df1a8eccf")
+		)
+		(pin "3"
+			(uuid "abeda07c-4fee-4481-afda-7236d86e5baa")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -14727,7 +15018,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 74.93 149.86 90)
 			(effects
 				(font
@@ -14949,7 +15240,7 @@
 				)
 			)
 		)
-		(property "Value" "Seg3"
+		(property "Value" "Seg3 BLUE .8"
 			(at 254 16.51 0)
 			(effects
 				(font
@@ -15172,7 +15463,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 264.16 68.58 90)
 			(effects
 				(font
@@ -15429,7 +15720,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 147.32 82.55 0)
+		(at 156.21 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15438,7 +15729,7 @@
 		(fields_autoplaced yes)
 		(uuid "6568048d-8da0-4d15-aa24-b480114413a3")
 		(property "Reference" "J8"
-			(at 149.86 82.55 0)
+			(at 158.75 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15447,7 +15738,7 @@
 			)
 		)
 		(property "Value" "L4"
-			(at 149.86 85.09 0)
+			(at 158.75 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15456,7 +15747,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 147.32 82.55 0)
+			(at 156.21 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15465,7 +15756,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 82.55 0)
+			(at 156.21 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15474,7 +15765,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 82.55 0)
+			(at 156.21 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15677,6 +15968,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 127 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "685c25c6-7cb5-4b53-a5c4-cdde9dbf87e3")
+		(property "Reference" "#PWR051"
+			(at 127 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 127 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "008d83f9-b209-4672-85cf-18edda8343af")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 259.08 121.92 0)
 		(mirror y)
@@ -15743,6 +16099,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 125.73 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a2f779e-9ee0-4083-bf50-babd802d98db")
+		(property "Reference" "#PWR050"
+			(at 125.73 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 125.73 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b9c589b-bc68-4e85-88c4-85ebfe44948a")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 142.24 166.37 90)
 		(unit 1)
@@ -15759,7 +16180,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 142.24 163.83 90)
 			(effects
 				(font
@@ -15938,6 +16359,73 @@
 			(project "EP5 dashboard DIYbox board1"
 				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 57.15 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ef5489e-c2f7-499a-abca-c5bc35a404c5")
+		(property "Reference" "#PWR012"
+			(at 127 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27f20837-e45e-4bd8-ac3b-ce2e08cbe716")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -16229,7 +16717,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 185.42 104.14 0)
+		(at 196.85 106.68 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16238,7 +16726,7 @@
 		(dnp no)
 		(uuid "7270a4e2-9252-4aee-80a6-58368fc61d26")
 		(property "Reference" "#PWR088"
-			(at 185.42 110.49 0)
+			(at 196.85 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16247,7 +16735,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 185.42 109.22 0)
+			(at 196.85 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16256,7 +16744,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 104.14 0)
+			(at 196.85 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16265,7 +16753,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 104.14 0)
+			(at 196.85 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16274,7 +16762,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 185.42 104.14 0)
+			(at 196.85 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16365,7 +16853,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 156.21 115.57 0)
+		(at 167.64 118.11 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16374,7 +16862,7 @@
 		(dnp no)
 		(uuid "73e3854d-438e-43cc-9cc3-d31a2722d62d")
 		(property "Reference" "J10"
-			(at 153.67 115.57 0)
+			(at 165.1 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16383,7 +16871,7 @@
 			)
 		)
 		(property "Value" "12864"
-			(at 153.67 118.11 0)
+			(at 165.1 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16392,7 +16880,7 @@
 			)
 		)
 		(property "Footprint" "nturt_kicad_lib:12864_1.3_I2C"
-			(at 156.21 115.57 0)
+			(at 167.64 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16401,7 +16889,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 115.57 0)
+			(at 167.64 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16410,7 +16898,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 156.21 115.57 0)
+			(at 167.64 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16456,7 +16944,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 207.01 69.85 90)
 			(effects
 				(font
@@ -16508,7 +16996,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 132.08 0)
+		(at 104.14 139.7 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16517,7 +17005,7 @@
 		(dnp no)
 		(uuid "7419f58c-c471-4f54-9101-6f1fdea2e336")
 		(property "Reference" "#PWR013"
-			(at 130.81 138.43 0)
+			(at 104.14 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16526,7 +17014,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 137.16 0)
+			(at 104.14 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16535,7 +17023,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 132.08 0)
+			(at 104.14 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16544,7 +17032,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 132.08 0)
+			(at 104.14 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16553,7 +17041,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 132.08 0)
+			(at 104.14 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16705,73 +17193,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 142.24 57.15 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "77f02b10-355c-4e15-bddd-4dd1e360bb2d")
-		(property "Reference" "#PWR051"
-			(at 142.24 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "73b28b8c-7407-4e1e-b43f-c110b05c24fc")
-		)
-		(instances
-			(project "EP5 dashboard DIYbox board1"
-				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
-					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 186.69 35.56 90)
 		(unit 1)
@@ -16788,7 +17209,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 186.69 33.02 90)
 			(effects
 				(font
@@ -17017,7 +17438,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 147.32 73.66 0)
+		(at 157.48 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17026,7 +17447,7 @@
 		(fields_autoplaced yes)
 		(uuid "7a550cb0-1e9c-4ac0-a608-84848faf9157")
 		(property "Reference" "J7"
-			(at 149.86 73.66 0)
+			(at 160.02 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17035,7 +17456,7 @@
 			)
 		)
 		(property "Value" "L3"
-			(at 149.86 76.2 0)
+			(at 160.02 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17044,7 +17465,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 147.32 73.66 0)
+			(at 157.48 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17053,7 +17474,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 73.66 0)
+			(at 157.48 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17062,7 +17483,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 73.66 0)
+			(at 157.48 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17486,6 +17907,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 154.94 132.08 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fae5c14-da94-41fb-be49-c45e50a2686f")
+		(property "Reference" "#PWR049"
+			(at 154.94 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec797a6b-081e-4e3b-ad8b-b74e50363996")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 264.16 153.67 90)
 		(unit 1)
@@ -17630,7 +18118,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 207.01 77.47 90)
 			(effects
 				(font
@@ -17901,7 +18389,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 276.6274 93.8163 0)
 			(effects
 				(font
@@ -18109,6 +18597,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 125.73 76.2 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f391698-195b-44cc-88fe-b764055fea1b")
+		(property "Reference" "#PWR089"
+			(at 125.73 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.73 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21024155-eb75-47ce-9079-771026c88603")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 143.51 35.56 0)
 		(unit 1)
@@ -18191,7 +18746,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 142.24 161.29 90)
 			(effects
 				(font
@@ -18258,7 +18813,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 142.24 168.91 90)
 			(effects
 				(font
@@ -18394,7 +18949,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 243.84 24.13 90)
 			(effects
 				(font
@@ -18445,6 +19000,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 125.73 71.12 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96065874-69cd-4e6f-a3f1-58d7db6af632")
+		(property "Reference" "JP4"
+			(at 123.19 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OLED_P1"
+			(at 123.19 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 125.73 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 125.73 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bc2de77f-2650-4e61-aa40-24a443828893")
+		)
+		(pin "1"
+			(uuid "5fa95caa-33c9-452b-b2c9-82b85dc049bc")
+		)
+		(pin "3"
+			(uuid "98f707c1-36e9-4728-abde-a44eb3077b91")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "JP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 142.24 156.21 90)
 		(unit 1)
@@ -18461,7 +19089,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 142.24 153.67 90)
 			(effects
 				(font
@@ -18662,7 +19290,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 243.84 34.29 90)
 			(effects
 				(font
@@ -18924,7 +19552,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 264.16 71.12 90)
 			(effects
 				(font
@@ -19056,7 +19684,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 264.16 60.96 90)
 			(effects
 				(font
@@ -19387,7 +20015,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 74.93 144.78 90)
 			(effects
 				(font
@@ -19520,7 +20148,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 142.24 148.59 90)
 			(effects
 				(font
@@ -19565,73 +20193,6 @@
 			(project "EP5 dashboard DIYbox board1"
 				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
 					(reference "R60")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 142.24 85.09 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a4604516-38ae-4a57-aaa7-f800441bea76")
-		(property "Reference" "#PWR048"
-			(at 142.24 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "472b87c0-05ee-4e09-8b23-0cdfca42d232")
-		)
-		(instances
-			(project "EP5 dashboard DIYbox board1"
-				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
-					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -19791,7 +20352,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 135.89 127 0)
+		(at 109.22 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19800,7 +20361,7 @@
 		(fields_autoplaced yes)
 		(uuid "a52684b5-9ae6-4f57-8392-7425b0b16e94")
 		(property "Reference" "J9"
-			(at 138.43 127 0)
+			(at 111.76 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19809,7 +20370,7 @@
 			)
 		)
 		(property "Value" "RTD"
-			(at 138.43 129.54 0)
+			(at 111.76 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19818,7 +20379,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal"
-			(at 135.89 127 0)
+			(at 109.22 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19827,7 +20388,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 127 0)
+			(at 109.22 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19836,7 +20397,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.89 127 0)
+			(at 109.22 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19884,7 +20445,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 83.82 43.1863 0)
 			(effects
 				(font
@@ -19970,7 +20531,7 @@
 				)
 			)
 		)
-		(property "Value" "pedal2-1"
+		(property "Value" "pedal2-1 GREEN"
 			(at 66.04 128.27 0)
 			(effects
 				(font
@@ -20144,7 +20705,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 147.32 64.77 0)
+		(at 151.13 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20153,7 +20714,7 @@
 		(fields_autoplaced yes)
 		(uuid "a6642dc0-89c3-42ee-acb2-005731620fc8")
 		(property "Reference" "J6"
-			(at 149.86 64.77 0)
+			(at 153.67 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20162,7 +20723,7 @@
 			)
 		)
 		(property "Value" "L2"
-			(at 149.86 67.31 0)
+			(at 153.67 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20171,7 +20732,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 147.32 64.77 0)
+			(at 151.13 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20180,7 +20741,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 64.77 0)
+			(at 151.13 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20189,7 +20750,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 64.77 0)
+			(at 151.13 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20229,7 +20790,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 74.93 139.7 90)
 			(effects
 				(font
@@ -20280,6 +20841,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 132.08 109.22 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa67e153-7490-43fc-97c8-1e1099bb606e")
+		(property "Reference" "#PWR048"
+			(at 132.08 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17f0def6-c176-434b-9a3d-871cf34bd0d1")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 207.01 67.31 90)
 		(unit 1)
@@ -20296,7 +20924,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 207.01 64.77 90)
 			(effects
 				(font
@@ -20927,7 +21555,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 186.69 40.64 90)
 			(effects
 				(font
@@ -20994,7 +21622,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 186.7398 30.48 90)
 			(effects
 				(font
@@ -21046,7 +21674,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 173.99 104.14 0)
+		(at 185.42 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21055,7 +21683,7 @@
 		(fields_autoplaced yes)
 		(uuid "b558f3b3-3539-4b43-a170-33b52ce107a1")
 		(property "Reference" "#PWR087"
-			(at 173.99 107.95 0)
+			(at 185.42 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21064,7 +21692,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 173.99 99.06 0)
+			(at 185.42 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21072,7 +21700,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 104.14 0)
+			(at 185.42 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21081,7 +21709,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 104.14 0)
+			(at 185.42 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21090,7 +21718,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 104.14 0)
+			(at 185.42 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21112,7 +21740,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 170.18 104.14 0)
+		(at 181.61 106.68 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21121,7 +21749,7 @@
 		(dnp no)
 		(uuid "b8c8015f-5513-402b-8a49-24d8b4812003")
 		(property "Reference" "#PWR086"
-			(at 170.18 110.49 0)
+			(at 181.61 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21130,7 +21758,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.18 109.22 0)
+			(at 181.61 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21139,7 +21767,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 170.18 104.14 0)
+			(at 181.61 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21148,7 +21776,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 104.14 0)
+			(at 181.61 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21157,7 +21785,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 170.18 104.14 0)
+			(at 181.61 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21244,73 +21872,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 142.24 76.2 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bb2956d5-2827-4135-81d2-4170828a11b3")
-		(property "Reference" "#PWR049"
-			(at 142.24 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ef2b6afd-852e-44f8-afb5-a9da7d6b2ebf")
-		)
-		(instances
-			(project "EP5 dashboard DIYbox board1"
-				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 243.84 114.3 90)
 		(unit 1)
@@ -21378,73 +21939,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 142.24 95.25 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bd47fb84-1673-45cf-9698-6017ed66154e")
-		(property "Reference" "#PWR047"
-			(at 142.24 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5ee6b3cf-05f3-4bfa-993e-4a8c41b25f84")
-		)
-		(instances
-			(project "EP5 dashboard DIYbox board1"
-				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 142.24 153.67 90)
 		(unit 1)
@@ -21461,7 +21955,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 142.24 151.13 90)
 			(effects
 				(font
@@ -21512,8 +22006,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 165.1 104.14 0)
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 176.53 106.68 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -21522,7 +22016,7 @@
 		(fields_autoplaced yes)
 		(uuid "be44354d-6865-4299-aa4d-9591d3f419ab")
 		(property "Reference" "JP1"
-			(at 165.1 97.79 0)
+			(at 176.53 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21530,15 +22024,15 @@
 			)
 		)
 		(property "Value" "OLED_P1"
-			(at 165.1 100.33 0)
+			(at 176.53 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
-			(at 165.1 104.14 0)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 176.53 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21547,7 +22041,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 104.14 0)
+			(at 176.53 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21555,8 +22049,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-			(at 165.1 104.14 0)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 176.53 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21715,7 +22209,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 147.32 54.61 0)
+		(at 151.13 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21724,7 +22218,7 @@
 		(fields_autoplaced yes)
 		(uuid "c259a06b-251b-4c9e-b998-5e9df17a10bc")
 		(property "Reference" "J5"
-			(at 149.86 54.61 0)
+			(at 153.67 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21733,7 +22227,7 @@
 			)
 		)
 		(property "Value" "L1"
-			(at 149.86 57.15 0)
+			(at 153.67 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21742,7 +22236,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 147.32 54.61 0)
+			(at 151.13 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21751,7 +22245,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 54.61 0)
+			(at 151.13 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21760,7 +22254,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 54.61 0)
+			(at 151.13 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21800,7 +22294,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 142.24 166.37 90)
 			(effects
 				(font
@@ -21867,7 +22361,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 207.01 67.31 90)
 			(effects
 				(font
@@ -22202,73 +22696,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 142.24 67.31 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c86caac1-c164-4a6c-831d-20eb1314e494")
-		(property "Reference" "#PWR050"
-			(at 142.24 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a75f4def-7b89-4f01-ba2b-fad044c4ce70")
-		)
-		(instances
-			(project "EP5 dashboard DIYbox board1"
-				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
-					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 62.23 69.85 0)
 		(unit 1)
@@ -22287,7 +22714,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 64.77 71.1263 0)
 			(effects
 				(font
@@ -22506,7 +22933,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 270.51 29.2163 0)
 			(effects
 				(font
@@ -22773,7 +23200,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 222.25 160.0263 0)
 			(effects
 				(font
@@ -23440,7 +23867,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 142.24 156.21 90)
 			(effects
 				(font
@@ -23507,7 +23934,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 243.84 21.59 90)
 			(effects
 				(font
@@ -23643,7 +24070,7 @@
 				)
 			)
 		)
-		(property "Value" "Seg1"
+		(property "Value" "Seg1 GREEN .56"
 			(at 199.39 20.32 0)
 			(effects
 				(font
@@ -24003,7 +24430,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 130.81 124.46 0)
+		(at 104.14 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24012,7 +24439,7 @@
 		(fields_autoplaced yes)
 		(uuid "e1c923a3-1a88-4ef3-9d66-df149a371ab1")
 		(property "Reference" "#PWR017"
-			(at 130.81 128.27 0)
+			(at 104.14 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24021,7 +24448,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 130.81 119.38 0)
+			(at 104.14 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24029,7 +24456,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 124.46 0)
+			(at 104.14 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24038,7 +24465,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 124.46 0)
+			(at 104.14 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24047,7 +24474,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 124.46 0)
+			(at 104.14 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24151,6 +24578,79 @@
 			(project "BMS_MASTER_STM32F105RC"
 				(path "/e5085236-ac30-4f83-9352-634c0444a0fb/0e2abc4c-ea9b-411f-9f60-d4a2989f735a"
 					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 132.08 104.14 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2551388-7f10-4a10-928c-968f2a5fd149")
+		(property "Reference" "JP6"
+			(at 129.54 102.8699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OLED_P1"
+			(at 129.54 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 132.08 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 132.08 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e913cf2c-32a4-43e0-8a05-6088ce9d5c97")
+		)
+		(pin "1"
+			(uuid "f89ac245-1d4c-427a-bfb9-e2e4b518171b")
+		)
+		(pin "3"
+			(uuid "feb4e419-25de-4f8b-a566-7f7273a3387e")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "JP6")
 					(unit 1)
 				)
 			)
@@ -24307,7 +24807,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1 16V"
+		(property "Value" "0u1"
 			(at 152.4 161.2963 0)
 			(effects
 				(font
@@ -24594,7 +25094,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 207.01 59.69 90)
 			(effects
 				(font
@@ -24661,7 +25161,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 207.01 74.93 90)
 			(effects
 				(font
@@ -24994,7 +25494,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 147.32 92.71 0)
+		(at 160.02 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25003,7 +25503,7 @@
 		(fields_autoplaced yes)
 		(uuid "ebdfb496-e51a-4d55-b661-3478ce9571df")
 		(property "Reference" "J4"
-			(at 149.86 92.71 0)
+			(at 162.56 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25012,7 +25512,7 @@
 			)
 		)
 		(property "Value" "R1"
-			(at 149.86 95.25 0)
+			(at 162.56 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25021,7 +25521,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 147.32 92.71 0)
+			(at 160.02 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25030,7 +25530,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 92.71 0)
+			(at 160.02 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25039,7 +25539,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 92.71 0)
+			(at 160.02 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25213,7 +25713,7 @@
 				)
 			)
 		)
-		(property "Value" "pedal1-2"
+		(property "Value" "pedal1-2 RED"
 			(at 63.5 83.82 0)
 			(effects
 				(font
@@ -25469,7 +25969,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 243.84 26.67 90)
 			(effects
 				(font
@@ -25536,7 +26036,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 74.93 129.54 90)
 			(effects
 				(font
@@ -25670,7 +26170,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 207.01 62.23 90)
 			(effects
 				(font
@@ -25849,7 +26349,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 74.93 142.24 90)
 			(effects
 				(font
@@ -26328,7 +26828,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 158.75 104.14 0)
+		(at 170.18 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26337,7 +26837,7 @@
 		(fields_autoplaced yes)
 		(uuid "fc61d985-c04e-4eb3-9749-6f47fefb6bc9")
 		(property "Reference" "#PWR017"
-			(at 158.75 107.95 0)
+			(at 170.18 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26346,7 +26846,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 158.75 99.06 0)
+			(at 170.18 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26354,7 +26854,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 104.14 0)
+			(at 170.18 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26363,7 +26863,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 104.14 0)
+			(at 170.18 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26372,7 +26872,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 158.75 104.14 0)
+			(at 170.18 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26415,7 +26915,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "390R"
 			(at 186.69 35.56 90)
 			(effects
 				(font
@@ -26482,7 +26982,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "330R"
 			(at 74.93 134.62 90)
 			(effects
 				(font
@@ -26549,7 +27049,7 @@
 				)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "180R"
 			(at 264.16 66.04 90)
 			(effects
 				(font
@@ -26594,6 +27094,71 @@
 			(project "EP5 dashboard DIYbox board1"
 				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
 					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 133.35 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ffaf6e55-4e05-4bd8-a745-5d09f711bfa6")
+		(property "Reference" "#PWR090"
+			(at 133.35 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 133.35 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2af96c8b-c047-4f8d-97db-4af3957396af")
+		)
+		(instances
+			(project "EP5 dashboard DIYbox board1"
+				(path "/908c3159-6080-4622-954d-fc9f41ab9f22"
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
