@@ -1,4 +1,4 @@
-(footprint "WP-03F3-09-11"
+(footprint "M12-5P-ground"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -7,7 +7,7 @@
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "836eecb0-3ee4-4076-a51f-9cf171c99bee")
+		(uuid "1b813d01-d208-4567-8b2a-3efbf1305224")
 		(effects
 			(font
 				(size 1 1)
@@ -15,11 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "WP-03F3-09-11"
+	(property "Value" "M12-5P-ground"
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "4a4fa927-3074-4d3b-aa94-5d2ef8a9884a")
+		(uuid "3db011bd-1dbe-4a60-815d-f9bd47b5489d")
 		(effects
 			(font
 				(size 1 1)
@@ -29,36 +29,39 @@
 	)
 	(property "Footprint" ""
 		(at 0 0 0)
+		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "819fdb0f-69ec-40d4-b668-da8d222f59be")
+		(uuid "738e6848-d0be-498f-9ef4-73c060b59144")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
 	)
-	(property "Datasheet" "http://www.nian-yeong.com.tw/uploads/product/pdf/2529/QC10772.pdf"
+	(property "Datasheet" "http://www.nian-yeong.com.tw/uploads/product/pdf/601/QC5580.pdf"
 		(at 0 0 0)
+		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d5da7bf7-713f-48bf-95f3-61b9607bfe38")
+		(uuid "0f00e880-404c-4de7-a3b6-9321fc50a8ac")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
 	)
 	(property "Description" ""
 		(at 0 0 0)
+		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "31d638d0-3d83-4777-ad08-512792e709eb")
+		(uuid "dea029c9-ff3b-4c59-a9f7-c4b6bd3d6f22")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -66,31 +69,31 @@
 	(attr through_hole)
 	(fp_circle
 		(center 0 0)
-		(end 6 0)
+		(end 9.5 0)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(fill none)
 		(layer "F.SilkS")
-		(uuid "eed0f201-bde9-4634-a04b-3a3b590695e5")
+		(uuid "752c42ba-6a89-4cb4-8c7d-a71c09e5273b")
 	)
 	(fp_circle
 		(center 0 0)
-		(end 6.25 0)
+		(end 10 0)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(fill none)
 		(layer "F.CrtYd")
-		(uuid "11731797-3ab7-420f-8380-006e8ebd674a")
+		(uuid "5a9d1bde-e8bf-4dae-9ac1-8fb83a82b183")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "b87cb087-2e10-4cd9-a755-412e0fc572e2")
+		(uuid "ad3b0112-e11a-477f-9292-6b5da9da6e9b")
 		(effects
 			(font
 				(size 1 1)
@@ -99,43 +102,51 @@
 		)
 	)
 	(pad "1" thru_hole circle
-		(at 1.75 0)
-		(size 1.8 1.8)
-		(drill 1.2)
+		(at 1.7678 -1.7678)
+		(size 1.5 1.5)
+		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "33f95bdb-c370-443e-8ba2-e7ec77a737df")
+		(uuid "b2712d43-0148-4e59-b244-9d0ed52b0304")
+	)
+	(pad "2" thru_hole circle
+		(at -1.7678 -1.7678)
+		(size 1.5 1.5)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cf1e9bbf-1d3b-4df1-a461-e615f5a158d9")
 	)
 	(pad "3" thru_hole circle
-		(at -1.75 0)
-		(size 1.8 1.8)
-		(drill 1.2)
+		(at -1.7678 1.7678)
+		(size 1.5 1.5)
+		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "332f7e4b-12ad-49cb-ab5c-595be215a4c4")
+		(uuid "d3f767d5-cd7d-466f-b4b0-53af211b559f")
 	)
 	(pad "4" thru_hole circle
-		(at 0 -1.75)
-		(size 1.8 1.8)
-		(drill 1.2)
+		(at 1.7678 1.7678)
+		(size 1.5 1.5)
+		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "56ba1bf1-b321-4457-9897-7a0c87bc277d")
+		(uuid "436fee80-37bf-435b-bc67-cebcb686086a")
 	)
 	(pad "5" thru_hole circle
-		(at -6.25 0)
-		(size 4.5 4.5)
-		(drill 3)
+		(at 0 0)
+		(size 1.5 1.5)
+		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "cd4829b7-7d67-43f5-ae0e-d3d687a1e07d")
+		(uuid "eb424e2e-0278-4144-9c22-b2d740d3536e")
 	)
-	(pad "5" thru_hole circle
-		(at 6.25 0)
-		(size 4.5 4.5)
-		(drill 3)
+	(pad "6" thru_hole circle
+		(at 0 7.25)
+		(size 1.5 1.5)
+		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "4679853c-2941-4443-a0e4-ff87cec9841e")
+		(uuid "cbda1733-e4fa-443f-ada0-ad32b3499417")
 	)
 )
