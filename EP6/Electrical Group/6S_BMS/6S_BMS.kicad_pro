@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -181,7 +181,12 @@
       ],
       "track_widths": [
         0.0,
-        0.4
+        0.25,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -485,24 +490,77 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.3,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Danger",
+        "pcb_color": "rgb(132, 132, 0)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.6,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 19,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 1.5,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.5,
+        "via_diameter": 1.0,
+        "via_drill": 0.4,
+        "wire_width": 19
       }
     ],
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "+3V3": "rgb(255, 153, 0)",
+      "+3V3LDO": "rgb(204, 102, 0)",
+      "+5V": "rgb(255, 0, 255)",
+      "/AFE/BAT": "rgb(0, 194, 194)",
+      "/AFE/REGSRC": "rgb(0, 194, 194)",
+      "/CELLS+": "rgb(0, 194, 0)",
+      "/REGOUT": "rgb(204, 102, 0)",
+      "/VC5X": "rgb(0, 194, 194)",
+      "CELL-": "rgb(0, 194, 0)",
+      "GND": "rgb(132, 132, 132)"
+    },
     "netclass_assignments": {
+      "/Balance Node 1/cell+": "Power",
+      "/Balance Node 1/cell-": "Danger",
+      "/Balance Node 2/cell-": "Danger",
+      "/Balance Node 4/cell-": "Danger",
+      "/Balance Node 5/cell-": "Danger",
       "/CANH": "CAN",
       "/CANL": "CAN",
       "/CELLS+": "Power",
       "/CHG_EXT": "Power",
+      "/COMMON_S": "Power",
       "/CT0": "Power",
+      "/CT3": "Danger",
       "/CT6": "Power",
       "/EXT Ideal Diode/A": "Power",
       "/MCU/CAN1_H": "CAN",
       "/MCU/CAN1_L": "CAN",
       "/PACK+": "Power",
       "/PACK-": "Power",
+      "CELL-": "Power",
       "Net-(Q1-PadS)": "Power",
       "Net-(U2-CANH)": "CAN",
       "Net-(U2-CANL)": "CAN",
@@ -511,7 +569,12 @@
       "Net-(U6-CANH)": "CAN",
       "Net-(U6-CANL)": "CAN"
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "+24V"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -615,6 +678,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
