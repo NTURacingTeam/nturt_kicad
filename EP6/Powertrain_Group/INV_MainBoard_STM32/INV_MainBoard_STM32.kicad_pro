@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.6
         }
       },
       "diff_pair_dimensions": [
@@ -178,7 +178,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.4,
+        0.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -210,6 +212,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.9,
+          "drill": 0.45
         }
       ],
       "zones_allow_external_fillets": false
@@ -487,7 +493,11 @@
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "+24V": "rgb(132, 0, 0)",
+      "+3V3": "rgb(255, 153, 0)",
+      "+5V": "rgb(255, 0, 255)"
+    },
     "netclass_assignments": {
       "/MCU/CAN1H": "CAN",
       "/MCU/CAN1L": "CAN",

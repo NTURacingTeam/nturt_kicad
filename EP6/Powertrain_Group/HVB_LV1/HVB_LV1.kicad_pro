@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -180,7 +180,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.25,
+        0.4,
+        0.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -557,9 +560,15 @@
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "+5V": "rgb(255, 0, 236)",
+      "GND": "rgb(132, 132, 132)"
+    },
     "netclass_assignments": {
       "/BRAKE_LIGHT": "power_thick",
+      "/BrightLight/RTML amber/Vout": "power_thick",
+      "/BrightLight/TSSI brakelight/Vout": "power_thick",
+      "/BrightLight/TSSI red/Vout": "power_thick",
       "/Power/5V_buck": "power_thick",
       "/RTML_AMBER": "power_thick",
       "/TSSI_GREEN": "power_thick",
@@ -795,16 +804,16 @@
       "TSSI green"
     ],
     [
+      "ddaae622-b118-4fd3-998e-0a697aef1314",
+      "TSSI brakelight"
+    ],
+    [
       "cf0ac5ad-08a8-4631-85d6-9cff8dd87046",
       "RTML pulse"
     ],
     [
       "29a87f4b-f706-4aba-808e-8a65efdacd66",
       "TSSI red pulse"
-    ],
-    [
-      "ddaae622-b118-4fd3-998e-0a697aef1314",
-      "TSSI green1"
     ]
   ],
   "text_variables": {}
