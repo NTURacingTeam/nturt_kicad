@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.4
         }
       },
       "diff_pair_dimensions": [
@@ -149,9 +149,9 @@
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
-          "td_length_ratio": 0.5,
+          "td_length_ratio": 0.3,
           "td_maxheight": 2.0,
-          "td_maxlen": 1.0,
+          "td_maxlen": 0.6,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_round_shape",
           "td_width_to_size_filter_ratio": 0.9
@@ -181,7 +181,12 @@
       ],
       "track_widths": [
         0.0,
-        0.4
+        0.25,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -468,21 +473,108 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "CAN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.3,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Danger",
+        "pcb_color": "rgb(132, 132, 0)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.6,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 19,
+        "clearance": 0.3,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 1.5,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.5,
+        "via_diameter": 1.0,
+        "via_drill": 0.4,
+        "wire_width": 19
       }
     ],
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "+3V3": "rgb(255, 153, 0)",
+      "+3V3LDO": "rgb(204, 102, 0)",
+      "+5V": "rgb(255, 0, 255)",
+      "/AFE/BAT": "rgb(0, 194, 194)",
+      "/AFE/REGSRC": "rgb(0, 194, 194)",
+      "/CELLS+": "rgb(0, 194, 0)",
+      "/REGOUT": "rgb(204, 102, 0)",
+      "/VC5X": "rgb(0, 194, 194)",
+      "CELL-": "rgb(0, 194, 0)",
+      "GND": "rgb(132, 132, 132)"
+    },
     "netclass_assignments": {
+      "/Balance Node 1/cell+": "Power",
+      "/Balance Node 1/cell-": "Danger",
+      "/Balance Node 2/cell-": "Danger",
+      "/Balance Node 4/cell-": "Danger",
+      "/Balance Node 5/cell-": "Danger",
       "/CANH": "CAN",
       "/CANL": "CAN",
+      "/CELLS+": "Power",
+      "/CHG_EXT": "Power",
+      "/COMMON_S": "Power",
+      "/CT0": "Power",
+      "/CT3": "Danger",
+      "/CT6": "Power",
+      "/EXT Ideal Diode/A": "Power",
       "/MCU/CAN1_H": "CAN",
       "/MCU/CAN1_L": "CAN",
+      "/PACK+": "Power",
+      "/PACK-": "Power",
+      "CELL-": "Power",
+      "Net-(Q1-PadS)": "Power",
+      "Net-(U2-CANH)": "CAN",
+      "Net-(U2-CANL)": "CAN",
+      "Net-(U4-CANH)": "CAN",
+      "Net-(U4-CANL)": "CAN",
       "Net-(U6-CANH)": "CAN",
       "Net-(U6-CANL)": "CAN"
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "+24V"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -586,6 +678,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -603,48 +703,44 @@
       "Root"
     ],
     [
+      "5bb41511-5a6f-4d28-8a69-c6a8979591ee",
+      "AFE"
+    ],
+    [
       "f6078346-a1aa-4834-b607-6dc83c597a3b",
       "MCU"
     ],
     [
-      "f5831c27-c88b-4d58-89ce-d1774d91f98d",
-      "AFE"
+      "b862f066-845f-4efd-a09d-7bc868f7ecb3",
+      "EXT Ideal Diode"
     ],
     [
-      "069c73e4-0a1e-4c35-872d-0fc7eaa53b9a",
-      "D_ideal"
+      "8cdfc8a8-e74f-4198-87ef-7f931d327daa",
+      "Balance Node 1"
     ],
     [
-      "0194e785-1da9-4cc5-afa1-7ff0a9ea45bc",
-      "D_ideal1"
+      "52dfc651-89b8-4cbc-8d60-c4ae9fe4057d",
+      "Balance Node 2"
     ],
     [
-      "83cfee2e-408d-40a7-bf01-d9ac25e22570",
-      "balancing"
+      "d0b81097-a7cf-4d08-9411-1236a5f1861b",
+      "Balance Node 3"
     ],
     [
-      "63aca3df-dee2-4b0d-a743-1b615d189ff0",
-      "balancingNode1"
+      "f57ef34a-2774-492f-8a82-625e3b6c6734",
+      "Balance Node 4"
     ],
     [
-      "89576bde-1fcf-4de4-9955-7bcb048dc99b",
-      "balancingNode2"
+      "92fdac40-2976-4651-87ac-086c10e148fd",
+      "Balance Node 5"
     ],
     [
-      "2496e47e-950d-49e2-81cc-a2e01e6d4b4d",
-      "balancingNode3"
+      "d47f883f-ac19-4acb-9090-d30d2c19de6d",
+      "Balance Node 6"
     ],
     [
-      "ff60350a-f620-4d4d-8cd3-61c8b4c9341d",
-      "balancingNode4"
-    ],
-    [
-      "4cf7010a-af65-400f-bd8d-8e96a3e6d35b",
-      "balancingNode5"
-    ],
-    [
-      "ff97bc71-11b5-4975-af7b-7b2a4b1f2067",
-      "balancingNode6"
+      "1b67401b-80bc-4213-a9df-31dbbebac05f",
+      "PSU"
     ]
   ],
   "text_variables": {}

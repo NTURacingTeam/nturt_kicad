@@ -1,0 +1,2646 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "4a813b49-6776-489c-9e48-a239ab8269d3")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Comparator:LMV7219M5"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -1.27 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LMV7219M5"
+				(at -1.27 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at -2.54 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmv7219.pdf"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Low-Power High-Speed Push-Pull Output Comparator, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cmp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LMV7219M5_0_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LMV7219M5_1_1"
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Diode:1N4148W"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148W"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-123"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?123*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148W_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148W_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 110.49 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51d2b171-0f08-4267-ad2c-ebcca652e56d")
+	)
+	(junction
+		(at 148.59 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59fe179e-aa71-43d4-bda7-162c3fa4d6ad")
+	)
+	(junction
+		(at 148.59 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "934ea35c-c4fd-4b01-a791-010082d5833d")
+	)
+	(junction
+		(at 114.3 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9deed9b1-649e-4af3-a7d6-5b54fb5effc6")
+	)
+	(wire
+		(pts
+			(xy 127 93.98) (xy 148.59 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aa2541d-8dd7-4417-917d-9d9340d6687c")
+	)
+	(wire
+		(pts
+			(xy 148.59 58.42) (xy 127 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "170040ae-f794-43c4-bb64-6893efae2ac1")
+	)
+	(wire
+		(pts
+			(xy 127 68.58) (xy 127 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a4e42f7-4146-41b4-918b-8d63109f496d")
+	)
+	(wire
+		(pts
+			(xy 118.11 78.74) (xy 118.11 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e64c243-6a20-4b3b-b4ab-1172c36f8723")
+	)
+	(wire
+		(pts
+			(xy 110.49 113.03) (xy 121.92 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "941363b5-6387-4ce1-8cb9-efa724e05a1a")
+	)
+	(wire
+		(pts
+			(xy 118.11 78.74) (xy 121.92 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2ca1020-8ce2-4ac9-a268-7e308ab5cf9b")
+	)
+	(wire
+		(pts
+			(xy 127 102.87) (xy 127 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3e67231-40e8-4a23-bdda-64f183058dd1")
+	)
+	(wire
+		(pts
+			(xy 137.16 110.49) (xy 151.13 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfa7042b-dc9c-4ffe-a8ae-16f7acffedad")
+	)
+	(wire
+		(pts
+			(xy 151.13 76.2) (xy 137.16 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e846fb8b-84bd-4f29-9377-df219a3e9f8e")
+	)
+	(wire
+		(pts
+			(xy 121.92 107.95) (xy 118.11 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1307896-9832-4925-bb15-a28848a52cf0")
+	)
+	(wire
+		(pts
+			(xy 114.3 73.66) (xy 121.92 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbe24904-dc32-412e-913c-f2f9388d389a")
+	)
+	(global_label "Gate_EN"
+		(shape input)
+		(at 158.75 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "01378a0b-523e-4e80-8596-40b600aad65b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 169.4156 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Gate_EN"
+		(shape input)
+		(at 158.75 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0b5e3b4d-7bda-4c52-bb51-430076ff879f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 169.4156 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "IN"
+		(shape input)
+		(at 118.11 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6686b0f3-1601-4029-9682-2a66d4ddbc5e")
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 154.94 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "074e24df-319d-4cc1-a7cf-4f14abffb028")
+		(property "Reference" "D901"
+			(at 154.94 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 154.94 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 154.94 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 154.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 154.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 154.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 154.94 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f317a89d-c5ec-4acb-a334-bb6b282c072f")
+		)
+		(pin "2"
+			(uuid "10577a57-6adc-44b1-88bd-dd7c77788455")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "D901")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "D1001")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "D1101")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "D1201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1801cdf4-eeca-4f33-9b2a-cdeda5ecc8ee")
+		(property "Reference" "#PWR0909"
+			(at 127 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "24b422a7-896a-4d1c-8cfd-63badbda201d")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "#PWR0909")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "#PWR01009")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "#PWR01109")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "#PWR01209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 110.49 109.22 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "382c7ee3-b6fb-4824-b6c5-e507d725fa23")
+		(property "Reference" "R901"
+			(at 105.41 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "45.3k"
+			(at 107.95 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 112.268 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 110.49 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b9052c00-2407-4829-8bbe-d1f22e2b2b01")
+		)
+		(pin "1"
+			(uuid "f24b3d10-19d4-4bde-8115-4cdb0be91333")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "R901")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "R1001")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "R1101")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "R1201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 148.59 62.23 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4be997f7-b2a2-4350-b917-58d51dda5f01")
+		(property "Reference" "C901"
+			(at 152.4 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 152.4 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 147.6248 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 148.59 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b1b2b2e-0a83-4647-b619-2c14cdf99caa")
+		)
+		(pin "2"
+			(uuid "7e6c5121-e4b2-4ef7-9b0e-eb713080e721")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "C901")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "C1001")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "C1101")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "C1201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 114.3 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "534b029c-38d5-4f30-a7c6-d906f3c3c820")
+		(property "Reference" "#PWR0907"
+			(at 118.11 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VP"
+			(at 116.84 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 114.3 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "587eb2ec-daeb-4a8f-8cd0-905e967fa581")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "#PWR0907")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "#PWR01007")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "#PWR01107")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "#PWR01207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 148.59 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56bd733b-b09e-4b76-ad1c-622b71a5794f")
+		(property "Reference" "#PWR0911"
+			(at 152.4 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VP"
+			(at 151.13 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 148.59 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4109534-9fec-4fda-9d02-2e301b3af5ae")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "#PWR0911")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "#PWR01011")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "#PWR01111")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "#PWR01211")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 110.49 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "654d5de9-ba19-420e-9471-62453402d16a")
+		(property "Reference" "#PWR0905"
+			(at 114.3 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VP"
+			(at 113.03 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 110.49 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26b718e9-b7f1-4bd7-bbdd-69e1b94e9884")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "#PWR0905")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "#PWR01005")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "#PWR01105")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "#PWR01205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 110.49 116.84 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7446e7f9-10b2-4015-a3a9-75be6fb5c052")
+		(property "Reference" "R902"
+			(at 105.41 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 107.95 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 112.268 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 110.49 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e17dfc98-503a-45f3-8b48-dd80871bfac8")
+		)
+		(pin "1"
+			(uuid "4a8ffb7e-9fe3-440d-ad34-5cd727e394e5")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "R902")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "R1002")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "R1102")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "R1202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 154.94 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ae40a94-ddc9-4dd3-8540-54b90ddf54ca")
+		(property "Reference" "D902"
+			(at 154.94 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 154.94 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 154.94 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 154.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 154.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 154.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 154.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a09601d4-2442-4ef9-9ec1-bcf37e24d45c")
+		)
+		(pin "2"
+			(uuid "c70c1b3b-ebc7-473f-b218-e39f2b8ecb0c")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "D902")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "D1002")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "D1102")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "D1202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LMV7219M5")
+		(at 129.54 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b48e62e-31a4-401d-82d7-c21a0b208364")
+		(property "Reference" "U902"
+			(at 142.24 104.1714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMV7219M5"
+			(at 142.24 106.7114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 127 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmv7219.pdf"
+			(at 129.54 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Low-Power High-Speed Push-Pull Output Comparator, SOT-23-5"
+			(at 129.54 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "aa89cff0-92af-4385-b7d3-c9b616098aaa")
+		)
+		(pin "5"
+			(uuid "9c0f6e08-fac5-46fa-bbec-b2c612af719b")
+		)
+		(pin "2"
+			(uuid "e6a7819f-452c-47f3-9dc1-f91ff6f0cca8")
+		)
+		(pin "3"
+			(uuid "eec27c64-c712-4b82-b908-5ef7a200fc94")
+		)
+		(pin "1"
+			(uuid "17a8dedd-eee4-4d50-b716-fe7b46b7cd06")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "U902")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "U1002")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "U1102")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "U1202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e07d20e-4cd0-4658-9d33-3a24df2bea1d")
+		(property "Reference" "#PWR0910"
+			(at 127 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e03b3e1-f682-4e32-ae95-ca6bb249aeb0")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "#PWR0910")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "#PWR01010")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "#PWR01110")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "#PWR01210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LMV7219M5")
+		(at 129.54 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0a509f0-9a50-4607-848e-114edde9e5b5")
+		(property "Reference" "U901"
+			(at 142.24 69.8814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMV7219M5"
+			(at 142.24 72.4214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 127 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmv7219.pdf"
+			(at 129.54 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Low-Power High-Speed Push-Pull Output Comparator, SOT-23-5"
+			(at 129.54 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "03e0d346-839e-42c3-aac9-fb8367a58c9c")
+		)
+		(pin "5"
+			(uuid "5013737e-8061-4863-af47-fe022b3328d9")
+		)
+		(pin "2"
+			(uuid "1aad102d-6d82-4e23-981d-875c114cfc76")
+		)
+		(pin "3"
+			(uuid "375de2fa-c6ed-4a3c-845c-390989422867")
+		)
+		(pin "1"
+			(uuid "c7992765-e0be-4a86-b0e8-66e2f6e5a093")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "U901")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "U1001")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "U1101")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "U1201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 148.59 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0e7b8c8-c089-4932-9c82-d27299cd2d46")
+		(property "Reference" "C902"
+			(at 152.4 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 152.4 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 147.6248 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 148.59 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f003ab45-b490-4bbd-aecc-39f0493c0995")
+		)
+		(pin "2"
+			(uuid "d4d9b6eb-4555-4469-a70f-1c95f4c5d839")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "C902")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "C1002")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "C1102")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "C1202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 148.59 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc5efeef-6b1b-4a77-ab0f-4be3974a0c01")
+		(property "Reference" "#PWR0912"
+			(at 148.59 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 148.59 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 148.59 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7490514a-8c23-405a-b5e6-375086992635")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "#PWR0912")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "#PWR01012")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "#PWR01112")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "#PWR01212")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e04c7bc5-2b6c-4577-967d-828102a6db7b")
+		(property "Reference" "#PWR0906"
+			(at 110.49 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1ee73e4-b204-4104-8ffc-dee88539c8fa")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "#PWR0906")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "#PWR01006")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "#PWR01106")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "#PWR01206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 114.3 69.85 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e8e9cd99-fda5-4b42-9751-a89ea9db58fe")
+		(property "Reference" "R903"
+			(at 109.22 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 111.76 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 116.078 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 114.3 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "faa1bcda-1171-458b-a7dc-2db37a0d894f")
+		)
+		(pin "1"
+			(uuid "5e4b8d33-523b-44f1-b7d8-9fa1fd163d36")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "R903")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "R1003")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "R1103")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "R1203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb02ae57-b9cd-4be9-b4fb-ed7c36bb7f64")
+		(property "Reference" "#PWR0908"
+			(at 114.3 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ed7d8b8-62a3-46f2-8023-d9710f4bac4f")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "#PWR0908")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "#PWR01008")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "#PWR01108")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "#PWR01208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 148.59 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4386668-2dd5-4931-8e56-1166c88b85a6")
+		(property "Reference" "#PWR0913"
+			(at 152.4 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VP"
+			(at 151.13 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 148.59 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f10c26f-8bbf-4a5e-acc0-8808ba95a857")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "#PWR0913")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "#PWR01013")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "#PWR01113")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "#PWR01213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 148.59 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f47bda36-1cba-46aa-bf10-df03ad7cd918")
+		(property "Reference" "#PWR0914"
+			(at 148.59 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 148.59 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 148.59 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cff294e0-9607-435f-a5ad-4886d6ba5445")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "#PWR0914")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "#PWR01014")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "#PWR01114")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "#PWR01214")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 114.3 77.47 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4a2aa17-8aaf-4a0c-ba43-e6c57024c933")
+		(property "Reference" "R904"
+			(at 109.22 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "45.3k"
+			(at 111.76 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 116.078 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 114.3 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "47b5394f-8d81-4a8e-9350-5d06dc6ac775")
+		)
+		(pin "1"
+			(uuid "aa209544-72fb-4988-b0b9-b1dda13f95e1")
+		)
+		(instances
+			(project "InverterMainBoard_STM32"
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/93f2cc36-e393-426a-8299-15d50225b1c0"
+					(reference "R904")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/87140d37-67ce-474e-8846-9704a24e6965"
+					(reference "R1004")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/e970ae58-dee5-4ec8-9e03-e711f97d1964"
+					(reference "R1104")
+					(unit 1)
+				)
+				(path "/fd9cce1e-4791-47a4-a01e-68a8fc7258c4/2966d305-14a7-47bb-9114-871e70636467/7c5e22d5-0e5c-43a7-847b-13020cdbe466"
+					(reference "R1204")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

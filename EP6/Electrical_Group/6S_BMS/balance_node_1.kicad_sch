@@ -1,0 +1,1794 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "c1c609f0-b75b-4040-81b4-b1158863157b")
+	(paper "A4")
+	(title_block
+		(title "6S_BMS")
+		(date "2024-11-17")
+		(rev "1.0")
+		(company "NTURacing")
+		(comment 1 "Jerrymk, Jack Kuo")
+	)
+	(lib_symbols
+		(symbol "Device:D_Zener_Small_Filled"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener_Small_Filled"
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode, small symbol, filled shape"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_Small_Filled_0_1"
+				(polyline
+					(pts
+						(xy 0.762 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.762 1.016) (xy -0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.016) (xy -0.762 0) (xy 0.762 -1.016) (xy 0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "D_Zener_Small_Filled_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:LED_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LED_Small"
+				(at -4.445 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode light-emitting-diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Small_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PCM_Transistor_MOSFET_AKL:Q_PMOS-E_Generic_GSD"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_PMOS-E_Generic_GSD"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "P-MOSFET enchancement mode transistor, generic symbol, Alternate KiCAD Library"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "enchancement mosfet pmosfet p-mosfet pmos p-mos emos emosfet generic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_PMOS-E_Generic_GSD_0_1"
+				(polyline
+					(pts
+						(xy 0.254 -1.905) (xy 0.254 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -2.286) (xy 0.762 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 2.54 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -0.508) (xy 0.762 0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.27) (xy 0.762 2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 -0.381) (xy 1.27 0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Q_PMOS-E_Generic_GSD_1_1"
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.1778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin input line
+					(at -3.81 1.27 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 128.27 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49703934-5d2c-43a4-8347-22f39fcffc41")
+	)
+	(junction
+		(at 173.99 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72cef20c-c148-4159-a689-d25a4899ff61")
+	)
+	(junction
+		(at 140.97 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "887704f3-3860-418f-9071-ad182b820eea")
+	)
+	(junction
+		(at 140.97 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f2ce97b-afa3-44fc-b769-9e6ada17009f")
+	)
+	(junction
+		(at 128.27 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9189ee01-16b3-4890-bf44-520ec9fe45ff")
+	)
+	(junction
+		(at 128.27 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "996e5de3-8483-482f-99dc-4903f7ee64eb")
+	)
+	(junction
+		(at 158.75 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae9907ce-90ff-4657-92ed-bed4e3d40b93")
+	)
+	(wire
+		(pts
+			(xy 173.99 106.68) (xy 184.15 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0089661c-cb98-41de-868c-6f7377875931")
+	)
+	(wire
+		(pts
+			(xy 134.62 91.44) (xy 140.97 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "058d3197-f5ba-453b-93a7-48e465b77341")
+	)
+	(wire
+		(pts
+			(xy 120.65 83.82) (xy 128.27 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dd43a08-5945-4c21-8e36-f71594d710d8")
+	)
+	(wire
+		(pts
+			(xy 173.99 91.44) (xy 173.99 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ac33d0b-78aa-48ff-8f77-62ef1bded005")
+	)
+	(wire
+		(pts
+			(xy 140.97 83.82) (xy 128.27 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be36eab-2a86-422e-be44-7e4e5e300eed")
+	)
+	(wire
+		(pts
+			(xy 133.35 116.84) (xy 128.27 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41667bef-c017-4fee-814a-204e3cc52c60")
+	)
+	(wire
+		(pts
+			(xy 170.18 91.44) (xy 173.99 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44cee62e-78ee-4093-8000-6b80d4db16b2")
+	)
+	(wire
+		(pts
+			(xy 128.27 83.82) (xy 128.27 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cf43d7f-9c5f-4492-8f41-e08d35761768")
+	)
+	(wire
+		(pts
+			(xy 133.35 101.6) (xy 128.27 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c7b6bac-77f4-429f-854c-c673c1f19182")
+	)
+	(wire
+		(pts
+			(xy 140.97 90.17) (xy 140.97 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78f86219-3a37-46b4-91c9-62491e4e0ec0")
+	)
+	(wire
+		(pts
+			(xy 173.99 91.44) (xy 184.15 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "843914a9-d9a8-4bfe-a891-b3fd3c3f3a57")
+	)
+	(wire
+		(pts
+			(xy 140.97 83.82) (xy 158.75 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9117abd2-1536-4700-9a2b-4c5ceb8d1334")
+	)
+	(wire
+		(pts
+			(xy 133.35 107.95) (xy 133.35 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae6455bf-8bcf-4c2c-898c-048e61fb3761")
+	)
+	(wire
+		(pts
+			(xy 128.27 97.79) (xy 128.27 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b05bed9b-0643-4bdb-930a-5374c23acb3b")
+	)
+	(wire
+		(pts
+			(xy 128.27 111.76) (xy 128.27 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf1d22a5-9212-408a-a723-740cd1a451f0")
+	)
+	(wire
+		(pts
+			(xy 121.92 116.84) (xy 128.27 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9839f17-8dd7-4aa2-8a75-fdf102d447c4")
+	)
+	(wire
+		(pts
+			(xy 140.97 85.09) (xy 140.97 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d87a7d4e-ac75-4ab9-949e-265f1fc6ee9b")
+	)
+	(wire
+		(pts
+			(xy 158.75 91.44) (xy 165.1 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd2c201e-7536-4bcd-9d3d-f12bac5d1924")
+	)
+	(wire
+		(pts
+			(xy 158.75 83.82) (xy 158.75 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df457edf-1e19-4bce-8a23-9222490fbe86")
+	)
+	(wire
+		(pts
+			(xy 173.99 101.6) (xy 173.99 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e220aa8c-033c-41a3-aab4-9ab057cb94fb")
+	)
+	(wire
+		(pts
+			(xy 133.35 115.57) (xy 133.35 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e225f67e-6d93-468e-bd47-8890e7b99bb1")
+	)
+	(wire
+		(pts
+			(xy 128.27 101.6) (xy 128.27 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5211691-3eda-4afb-9632-ae6ec5f05e35")
+	)
+	(wire
+		(pts
+			(xy 158.75 90.17) (xy 158.75 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6950322-4746-4d25-9a8b-e1ab950e7649")
+	)
+	(wire
+		(pts
+			(xy 140.97 91.44) (xy 158.75 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8c634eb-cfda-4f3f-a138-045270c855ac")
+	)
+	(wire
+		(pts
+			(xy 133.35 102.87) (xy 133.35 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc0256a5-a8ef-4127-9b03-48c8badc3994")
+	)
+	(text "10R\nBalance current MAX: 420mA\nResistor power dissipation: 1.764W"
+		(exclude_from_sim no)
+		(at 146.05 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a92cacb-6269-41b8-a3bd-420f89613304")
+	)
+	(text "Circuit reference:\nhttps://www.ti.com/lit/ug/slvu925c/slvu925c.pdf\nBQ76930 Evaluation Module"
+		(exclude_from_sim no)
+		(at 146.05 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa58253a-9003-4301-8fff-89a4424d1e10")
+	)
+	(hierarchical_label "cell-"
+		(shape input)
+		(at 121.92 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4a027f16-7e70-4eb1-a69d-566772903fe3")
+	)
+	(hierarchical_label "VC+"
+		(shape input)
+		(at 184.15 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b0ee621c-2a04-45e2-94b6-e711b5a20354")
+	)
+	(hierarchical_label "cell+"
+		(shape input)
+		(at 120.65 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b93ddc15-3488-4db4-8736-8f1b2c789fdf")
+	)
+	(hierarchical_label "VC-"
+		(shape input)
+		(at 184.15 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eb62c151-13c3-4811-a9cb-a106094a88a0")
+	)
+	(symbol
+		(lib_id "PCM_Transistor_MOSFET_AKL:Q_PMOS-E_Generic_GSD")
+		(at 130.81 92.71 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03d1f5e5-fcc6-4bcf-951c-899378e60455")
+		(property "Reference" "Q8"
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SI2301CDS-T1-GE3"
+			(at 124.46 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 125.73 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET enchancement mode transistor, generic symbol, Alternate KiCAD Library"
+			(at 130.81 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e3fd16eb-7d8e-4098-b703-07f225b8dfbb")
+		)
+		(pin "3"
+			(uuid "2c661ccb-bb44-4f47-af93-a58b9ac32972")
+		)
+		(pin "2"
+			(uuid "e81de634-0749-479f-bab2-0f521aa602f4")
+		)
+		(instances
+			(project "6S_BMS"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/52dfc651-89b8-4cbc-8d60-c4ae9fe4057d"
+					(reference "Q8")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8cdfc8a8-e74f-4198-87ef-7f931d327daa"
+					(reference "Q7")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/92fdac40-2976-4651-87ac-086c10e148fd"
+					(reference "Q11")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d0b81097-a7cf-4d08-9411-1236a5f1861b"
+					(reference "Q9")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d47f883f-ac19-4acb-9090-d30d2c19de6d"
+					(reference "Q12")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f57ef34a-2774-492f-8a82-625e3b6c6734"
+					(reference "Q10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 128.27 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3077c26b-98c2-4f42-909a-c88c4980e033")
+		(property "Reference" "R46"
+			(at 127 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10R 2W 2512"
+			(at 127 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 128.27 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 128.27 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b74d971d-4aa8-4d6e-a98f-dfe73c814815")
+		)
+		(pin "2"
+			(uuid "9dfbc4c5-2181-48c2-8e73-5f7b60c2e432")
+		)
+		(instances
+			(project "6S_BMS"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/52dfc651-89b8-4cbc-8d60-c4ae9fe4057d"
+					(reference "R46")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8cdfc8a8-e74f-4198-87ef-7f931d327daa"
+					(reference "R42")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/92fdac40-2976-4651-87ac-086c10e148fd"
+					(reference "R58")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d0b81097-a7cf-4d08-9411-1236a5f1861b"
+					(reference "R50")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d47f883f-ac19-4acb-9090-d30d2c19de6d"
+					(reference "R62")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f57ef34a-2774-492f-8a82-625e3b6c6734"
+					(reference "R54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 133.35 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5614f9e0-b64c-47bd-a649-5f640ff7e827")
+		(property "Reference" "R47"
+			(at 135.89 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 135.89 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 133.35 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 133.35 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "088358fa-5db0-4ab5-a600-7e23d8a6ea36")
+		)
+		(pin "2"
+			(uuid "a0974d86-76ff-442f-8a78-351412c7c890")
+		)
+		(instances
+			(project "6S_BMS"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/52dfc651-89b8-4cbc-8d60-c4ae9fe4057d"
+					(reference "R47")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8cdfc8a8-e74f-4198-87ef-7f931d327daa"
+					(reference "R43")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/92fdac40-2976-4651-87ac-086c10e148fd"
+					(reference "R59")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d0b81097-a7cf-4d08-9411-1236a5f1861b"
+					(reference "R51")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d47f883f-ac19-4acb-9090-d30d2c19de6d"
+					(reference "R63")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f57ef34a-2774-492f-8a82-625e3b6c6734"
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small_Filled")
+		(at 173.99 99.06 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92896687-e0bb-4fa4-b86e-cf0be1da546c")
+		(property "Reference" "D14"
+			(at 176.53 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZT52C6V8S"
+			(at 176.53 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 173.99 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol, filled shape"
+			(at 173.99 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "090c1102-9352-443f-8c10-8387932c168c")
+		)
+		(pin "1"
+			(uuid "c9adc495-2df0-435b-8455-44f5ed297660")
+		)
+		(instances
+			(project "6S_BMS"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/52dfc651-89b8-4cbc-8d60-c4ae9fe4057d"
+					(reference "D14")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8cdfc8a8-e74f-4198-87ef-7f931d327daa"
+					(reference "D11")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/92fdac40-2976-4651-87ac-086c10e148fd"
+					(reference "D23")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d0b81097-a7cf-4d08-9411-1236a5f1861b"
+					(reference "D17")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d47f883f-ac19-4acb-9090-d30d2c19de6d"
+					(reference "D26")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f57ef34a-2774-492f-8a82-625e3b6c6734"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 133.35 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5e8118d-2bad-4a97-a480-b64f8b393ee7")
+		(property "Reference" "D12"
+			(at 135.89 104.0764 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "BAL_1"
+			(at 135.89 106.6164 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 133.35 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 133.35 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "acb46384-28c0-4581-a3f9-397b89915e78")
+		)
+		(pin "2"
+			(uuid "8b394ca5-bb39-47f3-a305-e04581b61bfc")
+		)
+		(instances
+			(project "6S_BMS"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/52dfc651-89b8-4cbc-8d60-c4ae9fe4057d"
+					(reference "D12")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8cdfc8a8-e74f-4198-87ef-7f931d327daa"
+					(reference "D9")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/92fdac40-2976-4651-87ac-086c10e148fd"
+					(reference "D21")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d0b81097-a7cf-4d08-9411-1236a5f1861b"
+					(reference "D15")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d47f883f-ac19-4acb-9090-d30d2c19de6d"
+					(reference "D24")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f57ef34a-2774-492f-8a82-625e3b6c6734"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 158.75 87.63 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc197a0e-24d3-482f-a3c9-7f0789c37960")
+		(property "Reference" "R48"
+			(at 160.02 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1M"
+			(at 160.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 158.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 158.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64d7263a-4851-4914-a201-07f5e37783a6")
+		)
+		(pin "2"
+			(uuid "fcccb761-a0fc-47de-9df4-8b9597ec79ec")
+		)
+		(instances
+			(project "6S_BMS"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/52dfc651-89b8-4cbc-8d60-c4ae9fe4057d"
+					(reference "R48")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8cdfc8a8-e74f-4198-87ef-7f931d327daa"
+					(reference "R44")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/92fdac40-2976-4651-87ac-086c10e148fd"
+					(reference "R60")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d0b81097-a7cf-4d08-9411-1236a5f1861b"
+					(reference "R52")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d47f883f-ac19-4acb-9090-d30d2c19de6d"
+					(reference "R64")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f57ef34a-2774-492f-8a82-625e3b6c6734"
+					(reference "R56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small_Filled")
+		(at 140.97 87.63 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9a3819b-a3ca-4b2a-a8bf-19165ebfc607")
+		(property "Reference" "D13"
+			(at 143.51 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZT52C6V8S"
+			(at 143.51 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 140.97 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol, filled shape"
+			(at 140.97 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "97e312be-0356-4726-b693-d9aedd9e810e")
+		)
+		(pin "1"
+			(uuid "477beba5-3548-44bf-b26f-71b938697946")
+		)
+		(instances
+			(project "6S_BMS"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/52dfc651-89b8-4cbc-8d60-c4ae9fe4057d"
+					(reference "D13")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8cdfc8a8-e74f-4198-87ef-7f931d327daa"
+					(reference "D10")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/92fdac40-2976-4651-87ac-086c10e148fd"
+					(reference "D22")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d0b81097-a7cf-4d08-9411-1236a5f1861b"
+					(reference "D16")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d47f883f-ac19-4acb-9090-d30d2c19de6d"
+					(reference "D25")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f57ef34a-2774-492f-8a82-625e3b6c6734"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 167.64 91.44 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f300b53c-6919-4838-9d60-c8c0bb3a1e6d")
+		(property "Reference" "R49"
+			(at 165.1 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 168.91 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 167.64 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 167.64 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ad65b10-3952-4203-9415-261a2d5b9283")
+		)
+		(pin "2"
+			(uuid "54dc5924-7037-4fdd-aafb-7dcd6f97fd83")
+		)
+		(instances
+			(project "6S_BMS"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/52dfc651-89b8-4cbc-8d60-c4ae9fe4057d"
+					(reference "R49")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8cdfc8a8-e74f-4198-87ef-7f931d327daa"
+					(reference "R45")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/92fdac40-2976-4651-87ac-086c10e148fd"
+					(reference "R61")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d0b81097-a7cf-4d08-9411-1236a5f1861b"
+					(reference "R53")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d47f883f-ac19-4acb-9090-d30d2c19de6d"
+					(reference "R65")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f57ef34a-2774-492f-8a82-625e3b6c6734"
+					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
