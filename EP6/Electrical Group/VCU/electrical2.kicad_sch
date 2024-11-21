@@ -2996,6 +2996,12 @@
 		(uuid "d1e296b1-c227-4beb-b996-81b7a7e24dfd")
 	)
 	(junction
+		(at 85.09 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2f6ba88-96b5-449b-9aa7-874774bcb23a")
+	)
+	(junction
 		(at 101.6 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3439,6 +3445,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 41.91) (xy 76.2 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4048ece2-196c-4400-be41-7eed9ce81d1a")
+	)
+	(wire
+		(pts
 			(xy 54.61 121.92) (xy 64.77 121.92)
 		)
 		(stroke
@@ -3869,6 +3885,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 36.83) (xy 85.09 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e90953a-0cc0-453d-ae31-a69e2730a8f1")
+	)
+	(wire
+		(pts
 			(xy 50.8 41.91) (xy 40.64 41.91)
 		)
 		(stroke
@@ -3879,7 +3905,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 41.91) (xy 76.2 41.91)
+			(xy 87.63 41.91) (xy 85.09 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5626,6 +5652,28 @@
 			)
 		)
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 85.09 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2fead58-30ca-40e0-a1c0-61ce277d2b05")
+		(property "Netclass" "power"
+			(at 83.82 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 203.2 128.27 0)
@@ -7304,7 +7352,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical_SMD"
 			(at 255.27 135.89 0)
 			(effects
 				(font
@@ -9874,13 +9922,13 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse_Small")
-		(at 115.57 41.91 270)
+		(at 115.57 41.91 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "82756fa1-5c84-4d8c-b777-15fd13644431")
 		(property "Reference" "F4"
 			(at 115.57 35.56 90)
@@ -9899,7 +9947,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
-			(at 110.49 43.18 0)
+			(at 120.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
