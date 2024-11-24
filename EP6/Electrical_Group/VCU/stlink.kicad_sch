@@ -4247,6 +4247,12 @@
 		(uuid "53212d52-194d-485c-8557-5d65653c346d")
 	)
 	(junction
+		(at 26.67 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54251c18-d093-4251-94db-6c19ddbd073f")
+	)
+	(junction
 		(at 64.77 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4413,10 +4419,6 @@
 	(no_connect
 		(at 34.29 129.54)
 		(uuid "d6f89c1e-6aa2-4a1d-a225-77cb1dd3f7cf")
-	)
-	(no_connect
-		(at 34.29 142.24)
-		(uuid "fca36344-b090-42e1-a751-ee71c3b43524")
 	)
 	(bus_entry
 		(at 194.31 126.746)
@@ -5088,6 +5090,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 142.24) (xy 34.29 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52e59720-94bd-4cee-b4b4-da6095912549")
+	)
+	(wire
+		(pts
 			(xy 245.11 68.58) (xy 255.27 68.58)
 		)
 		(stroke
@@ -5415,6 +5427,16 @@
 			(type default)
 		)
 		(uuid "8db4770d-d8d1-42d8-9a2c-326ea17f3fd8")
+	)
+	(wire
+		(pts
+			(xy 24.13 132.08) (xy 26.67 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f12c116-aa16-4402-ae23-f923eaff80aa")
 	)
 	(wire
 		(pts
@@ -5848,6 +5870,16 @@
 	)
 	(wire
 		(pts
+			(xy 15.24 142.24) (xy 16.51 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3e9ff50-2e28-4c37-9149-1ed837b2711f")
+	)
+	(wire
+		(pts
 			(xy 157.48 142.24) (xy 157.48 140.97)
 		)
 		(stroke
@@ -6075,16 +6107,6 @@
 			)
 		)
 		(uuid "42672760-727b-41fb-96f3-347117bdf336")
-	)
-	(text "GNDDetect"
-		(exclude_from_sim no)
-		(at 27.432 141.986 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "62a9210b-fc3a-4b6f-bf8a-b471102e651e")
 	)
 	(text "NC"
 		(exclude_from_sim no)
@@ -8022,10 +8044,10 @@
 		(lib_id "Switch:SW_SPDT")
 		(at 53.34 118.11 180)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "50f47ec9-ad21-4631-a8e2-0b83d37921d0")
 		(property "Reference" "SW2"
 			(at 53.34 110.49 0)
@@ -8279,6 +8301,74 @@
 			(project "VCU"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/8cfc0c25-167d-4741-83fd-c9c2a0704b89"
 					(reference "U15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 19.05 142.24 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "662452f5-5c2b-4a0e-bc34-9a137be94692")
+		(property "Reference" "R2"
+			(at 19.05 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 19.05 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 19.05 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 19.05 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5520479e-0f0c-4031-a800-cf235dc19b9f")
+		)
+		(pin "1"
+			(uuid "561d8d37-0f2e-4b94-b633-4d197de39104")
+		)
+		(instances
+			(project ""
+				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/8cfc0c25-167d-4741-83fd-c9c2a0704b89"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8761,6 +8851,73 @@
 			(project "VCU"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/8cfc0c25-167d-4741-83fd-c9c2a0704b89"
 					(reference "#PWR0197")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 15.24 142.24 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fb3a150-9d26-4c72-9207-7a41248f49a7")
+		(property "Reference" "#PWR042"
+			(at 8.89 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 10.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 15.24 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 15.24 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 15.24 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03064e20-1561-4e8d-b07f-dd3416bc8f4d")
+		)
+		(instances
+			(project "VCU"
+				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/8cfc0c25-167d-4741-83fd-c9c2a0704b89"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -9308,6 +9465,73 @@
 			(project "VCU"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/8cfc0c25-167d-4741-83fd-c9c2a0704b89"
 					(reference "#FLG012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 24.13 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b00a161a-21a7-4b92-81c6-d384fd328ce3")
+		(property "Reference" "#PWR04"
+			(at 27.94 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 20.32 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 24.13 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ceee816-2f50-418a-94d6-472ef06bfcab")
+		)
+		(instances
+			(project "VCU"
+				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/8cfc0c25-167d-4741-83fd-c9c2a0704b89"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -9968,10 +10192,10 @@
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 38.1 102.87 180)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c9121059-153b-43a7-b087-87981e999a01")
 		(property "Reference" "J2"
