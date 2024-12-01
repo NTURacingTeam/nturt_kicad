@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HVB_LV1")
-		(date "2024-10-25")
-		(rev "1.0")
+		(date "2024-12-01")
+		(rev "2.0")
 		(company "NTURacing")
 		(comment 1 "Powertrain")
 		(comment 2 "郭哲明 Jack Kuo")
@@ -2291,12 +2291,6 @@
 		)
 	)
 	(junction
-		(at 74.93 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0040e59e-e043-499c-9e10-a75baa75a490")
-	)
-	(junction
 		(at 62.23 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2484,7 +2478,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 86.36) (xy 80.01 86.36)
+			(xy 62.23 86.36) (xy 80.01 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2501,16 +2495,6 @@
 			(type default)
 		)
 		(uuid "63cec3ce-9c6e-4c49-a3ea-6db542345971")
-	)
-	(wire
-		(pts
-			(xy 62.23 86.36) (xy 74.93 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64b92e10-c7ea-4ba9-adf0-f5593ce2e357")
 	)
 	(wire
 		(pts
@@ -2574,16 +2558,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 88.9) (xy 74.93 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9865c2ec-f218-4f3c-bae9-ad432c83fc51")
-	)
-	(wire
-		(pts
 			(xy 92.71 83.82) (xy 87.63 83.82)
 		)
 		(stroke
@@ -2631,16 +2605,6 @@
 			(type default)
 		)
 		(uuid "c0c62b7c-c64c-44d8-af9c-15f68ffc683c")
-	)
-	(wire
-		(pts
-			(xy 74.93 96.52) (xy 74.93 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c334ef01-6a65-4eb6-b435-d3f5af7c4179")
 	)
 	(wire
 		(pts
@@ -2752,19 +2716,7 @@
 		)
 		(uuid "8152bb88-447a-4955-97fc-0463ce8ae66c")
 	)
-	(hierarchical_label "BUTTON_LED"
-		(shape input)
-		(at 74.93 99.06 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9db8fc33-b552-464a-9f31-2f445a5aee92")
-	)
-	(hierarchical_label "DASH_LED"
+	(hierarchical_label "INDICATE_LED"
 		(shape input)
 		(at 62.23 99.06 270)
 		(fields_autoplaced yes)
@@ -4346,90 +4298,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 74.93 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e50b12f-f41c-4971-8c3e-09ec4e4e1fc1")
-		(property "Reference" "R4"
-			(at 77.47 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0R"
-			(at 77.47 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 73.152 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 74.93 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a6cc0867-64c5-483c-a6b1-bc193a1449d6")
-		)
-		(pin "2"
-			(uuid "d4cd5bf3-0108-453e-b125-0e05e35e5565")
-		)
-		(instances
-			(project "SC_Latch_V0_20230703"
-				(path "/d1166f91-fccd-49c5-997e-737453ba8ff0"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-			(project "SC_Board"
-				(path "/e268df90-efd0-451f-9c39-af40eeef0439/87f00b8d-98be-405d-9ea9-6f410ee414ca"
-					(reference "R20")
-					(unit 1)
-				)
-				(path "/e268df90-efd0-451f-9c39-af40eeef0439/98971240-c248-4cbd-8d9a-054aa3a3ef73"
-					(reference "R14")
-					(unit 1)
-				)
-				(path "/e268df90-efd0-451f-9c39-af40eeef0439/aa1efdc0-c6f7-4629-b108-267bc0719b5b"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Timer:NE555D")
 		(at 135.89 85.09 0)
 		(mirror y)
@@ -5149,7 +5017,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
 			(at 96.52 40.64 0)
 			(effects
 				(font
