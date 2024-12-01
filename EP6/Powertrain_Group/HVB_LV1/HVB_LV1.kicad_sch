@@ -1730,6 +1730,233 @@
 				)
 			)
 		)
+		(symbol "nturt_kicad_lib_EP6:AL8807"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 8.382 -17.272 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AL8807"
+				(at 8.128 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.5x1.8mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2009211103_Diodes-Incorporated-AL8807MP-13_C99346.pdf"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AL8807_0_0"
+				(pin input line
+					(at 0 0 0)
+					(length 2.54)
+					(name "SET"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 0)
+					(length 2.54)
+					(name "CTRL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 16.51 -7.62 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 16.51 -5.08 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 16.51 -2.54 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 16.51 0 180)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "AL8807_0_1"
+				(rectangle
+					(start 2.54 1.905)
+					(end 13.97 -13.335)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AL8807_1_0"
+				(pin free line
+					(at 0 -11.43 0)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers hide)
@@ -2176,8 +2403,48 @@
 		(uuid "bd2dd8c1-fd55-4b7d-996b-2238e590f73d")
 	)
 	(no_connect
+		(at 119.38 168.91)
+		(uuid "2bc66e53-cf65-411f-8463-b61e5f7011d7")
+	)
+	(no_connect
+		(at 119.38 163.83)
+		(uuid "3149c829-a75c-4faa-b3d7-233428fa3787")
+	)
+	(no_connect
 		(at 48.26 113.03)
 		(uuid "50fbf1fa-b616-4d4e-89d2-9479655b837b")
+	)
+	(no_connect
+		(at 135.89 171.45)
+		(uuid "87890f3a-b605-452b-b67b-a87a5cb7082e")
+	)
+	(no_connect
+		(at 220.98 115.57)
+		(uuid "898619b1-af73-47ab-a122-20015b23dbcd")
+	)
+	(no_connect
+		(at 135.89 175.26)
+		(uuid "915c2eb1-4bd4-40e1-8aa3-37966d0ada4e")
+	)
+	(no_connect
+		(at 135.89 163.83)
+		(uuid "959a0b48-a24a-4c19-bde5-2ed4b19abacd")
+	)
+	(no_connect
+		(at 119.38 171.45)
+		(uuid "bb658f63-61c1-4207-999a-f3f5dc9fbd53")
+	)
+	(no_connect
+		(at 135.89 168.91)
+		(uuid "d789424a-e8c4-4fa3-92a4-6144e03bf142")
+	)
+	(no_connect
+		(at 135.89 166.37)
+		(uuid "e82c8803-00c8-4e81-92e5-0a14a512bbc3")
+	)
+	(no_connect
+		(at 208.28 115.57)
+		(uuid "fc7db584-80e0-4e8f-b8cb-421f0bacac23")
 	)
 	(wire
 		(pts
@@ -4505,6 +4772,95 @@
 			(project "HVB_LV1"
 				(path "/e268df90-efd0-451f-9c39-af40eeef0439"
 					(reference "J17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nturt_kicad_lib_EP6:AL8807")
+		(at 135.89 163.83 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9952c027-0ac6-4bde-8c5b-ce371da8f51b")
+		(property "Reference" "U11"
+			(at 127.635 158.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AL8807"
+			(at 127.635 160.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.5x1.8mm"
+			(at 135.89 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2009211103_Diodes-Incorporated-AL8807MP-13_C99346.pdf"
+			(at 135.89 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 135.89 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "713bb8cf-f9e6-437b-ac7b-63b0cb8f9886")
+		)
+		(pin "8"
+			(uuid "4ad5b1e7-d05c-4631-b79c-5e83566d3fc7")
+		)
+		(pin "2"
+			(uuid "8061134b-96db-484b-8834-51cf86d29fa5")
+		)
+		(pin "1"
+			(uuid "496ee1ce-2217-498f-906b-ee506acc8cfd")
+		)
+		(pin "5"
+			(uuid "25ff40cd-34e6-4800-9a63-c55414e79153")
+		)
+		(pin "9"
+			(uuid "7d216dd2-d62e-4f54-9558-d4ca0395189e")
+		)
+		(pin "6"
+			(uuid "a4dbb090-0334-4d0c-94ee-c292999bab04")
+		)
+		(pin "3"
+			(uuid "c038f22b-83b0-4b56-8740-7fecc59cbfca")
+		)
+		(pin "4"
+			(uuid "a7bd2829-02f2-4503-b37e-08103654ac58")
+		)
+		(instances
+			(project "HVB_LV1"
+				(path "/e268df90-efd0-451f-9c39-af40eeef0439"
+					(reference "U11")
 					(unit 1)
 				)
 			)
