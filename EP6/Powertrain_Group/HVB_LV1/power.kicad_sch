@@ -2125,6 +2125,12 @@
 		(uuid "53980795-9638-4bbf-98b4-c2c30da13ac2")
 	)
 	(junction
+		(at 27.94 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66c46341-ebb4-4546-b2d0-3a178b7ec916")
+	)
+	(junction
 		(at 69.85 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2221,6 +2227,16 @@
 			(type default)
 		)
 		(uuid "04718829-da2a-4290-aed6-6b4074820cb1")
+	)
+	(wire
+		(pts
+			(xy 27.94 27.94) (xy 16.51 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "057067a5-7d6d-4e3c-8b13-4dc122703545")
 	)
 	(wire
 		(pts
@@ -2391,6 +2407,16 @@
 			(type default)
 		)
 		(uuid "4e4fe5ef-54ff-4e16-ba07-c64b1a7e99c8")
+	)
+	(wire
+		(pts
+			(xy 27.94 38.1) (xy 27.94 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5492aebe-e2c0-4528-8634-b82990a516a1")
 	)
 	(wire
 		(pts
@@ -2584,6 +2610,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 26.67) (xy 27.94 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4f4b924-e8b4-48f8-b9bc-3c376bc896af")
+	)
+	(wire
+		(pts
 			(xy 157.48 36.83) (xy 157.48 35.56)
 		)
 		(stroke
@@ -2741,6 +2777,16 @@
 			(type default)
 		)
 		(uuid "e2185152-48a8-4e6f-8410-98ee046cc445")
+	)
+	(wire
+		(pts
+			(xy 27.94 46.99) (xy 27.94 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5c0825a-5281-4ed5-b537-d8e62fd8f9e0")
 	)
 	(wire
 		(pts
@@ -3731,7 +3777,7 @@
 				)
 			)
 		)
-		(property "Value" "0.5A"
+		(property "Value" "2A"
 			(at 203.2 26.67 0)
 			(effects
 				(font
@@ -3845,6 +3891,72 @@
 			(project "HVB_LV1"
 				(path "/e268df90-efd0-451f-9c39-af40eeef0439/8ccb6400-0ecc-48e8-87c6-ba8bc9bb1e9c"
 					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 27.94 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87edc25a-7689-44c1-bca5-a5909577617c")
+		(property "Reference" "#PWR0114"
+			(at 27.94 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 27.94 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 27.94 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3beaa4a4-48d2-4132-af7f-a54b1849666a")
+		)
+		(instances
+			(project "HVB_LV1"
+				(path "/e268df90-efd0-451f-9c39-af40eeef0439/8ccb6400-0ecc-48e8-87c6-ba8bc9bb1e9c"
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -4127,6 +4239,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 27.94 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad12f9bf-6225-411f-af30-9e52477885e9")
+		(property "Reference" "D16"
+			(at 31.75 32.0675 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RED LED"
+			(at 31.75 34.6075 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 27.94 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0761c25f-b0c8-4b59-adbf-f704ca2f62c1")
+		)
+		(pin "2"
+			(uuid "34a70f34-9451-4361-8314-a9e8cadbfa2b")
+		)
+		(instances
+			(project "HVB_LV1"
+				(path "/e268df90-efd0-451f-9c39-af40eeef0439/8ccb6400-0ecc-48e8-87c6-ba8bc9bb1e9c"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 157.48 33.02 0)
 		(unit 1)
@@ -4213,7 +4395,7 @@
 				)
 			)
 		)
-		(property "Value" "22uH 3.7A (SRF1260-220M)"
+		(property "Value" "22uH 4.95A (SMDRI129-220MT)"
 			(at 144.78 26.67 90)
 			(effects
 				(font
@@ -4343,7 +4525,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca907347-8f35-411e-8d02-38eada4b3cd5")
 		(property "Reference" "D15"
-			(at 217.17 34.6074 90)
+			(at 217.17 34.6075 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4351,8 +4533,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RED 5V"
-			(at 217.17 37.1474 90)
+		(property "Value" "RED LED"
+			(at 217.17 37.1475 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4487,7 +4669,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SMBJ5339B"
+		(property "Value" "5.6V (C19077402)"
 			(at 229.87 40.64 90)
 			(effects
 				(font
@@ -4603,6 +4785,209 @@
 			(project "HVB_LV1"
 				(path "/e268df90-efd0-451f-9c39-af40eeef0439/8ccb6400-0ecc-48e8-87c6-ba8bc9bb1e9c"
 					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 27.94 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3643f2f-4b24-4d66-b9c9-153e92704e1e")
+		(property "Reference" "R8"
+			(at 30.48 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 30.48 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 26.162 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 27.94 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e485996-d900-4f46-a859-f698428eef93")
+		)
+		(pin "2"
+			(uuid "2d8b90f1-64e7-48ea-b913-74d711e9bad8")
+		)
+		(instances
+			(project "HVB_LV1"
+				(path "/e268df90-efd0-451f-9c39-af40eeef0439/8ccb6400-0ecc-48e8-87c6-ba8bc9bb1e9c"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 16.51 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e39ec3b0-bf92-4c9e-9e02-520aaf5a9780")
+		(property "Reference" "TP16"
+			(at 19.05 23.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Vbus"
+			(at 19.05 25.908 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 21.59 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 16.51 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d31752a-9b58-48c3-9ae2-663e47a344a0")
+		)
+		(instances
+			(project "HVB_LV1"
+				(path "/e268df90-efd0-451f-9c39-af40eeef0439/8ccb6400-0ecc-48e8-87c6-ba8bc9bb1e9c"
+					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 27.94 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea1c2ca8-2106-4006-b778-04588aa0f852")
+		(property "Reference" "#PWR0113"
+			(at 27.94 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 27.94 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab2cee1e-6a02-4542-9015-be24bb7e31a7")
+		)
+		(instances
+			(project "HVB_LV1"
+				(path "/e268df90-efd0-451f-9c39-af40eeef0439/8ccb6400-0ecc-48e8-87c6-ba8bc9bb1e9c"
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
