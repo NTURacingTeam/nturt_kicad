@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HVB_LV1")
-		(date "2024-12-01")
-		(rev "2.0")
+		(date "2024-12-05")
+		(rev "2.2")
 		(company "NTURacing")
 		(comment 1 "Powertrain")
 		(comment 2 "郭哲明 Jack Kuo")
@@ -3328,7 +3328,7 @@
 		(fields_autoplaced yes)
 		(uuid "32d976aa-a4bb-47b5-9446-d90dc704c3db")
 		(property "Reference" "R1"
-			(at 50.8 88.8999 0)
+			(at 50.8 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3336,8 +3336,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 50.8 91.4399 0)
+		(property "Value" "10k"
+			(at 50.8 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3722,6 +3722,79 @@
 				)
 				(path "/e268df90-efd0-451f-9c39-af40eeef0439/aa1efdc0-c6f7-4629-b108-267bc0719b5b"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 106.68 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4fc7f79d-d251-499f-b850-86d7e9f06d4b")
+		(property "Reference" "#PWR023"
+			(at 106.68 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 106.68 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 106.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b7d214b-2d14-4ce6-9dc5-51965669cb9b")
+		)
+		(instances
+			(project "HVB_LV1"
+				(path "/e268df90-efd0-451f-9c39-af40eeef0439/87f00b8d-98be-405d-9ea9-6f410ee414ca"
+					(reference "#PWR053")
+					(unit 1)
+				)
+				(path "/e268df90-efd0-451f-9c39-af40eeef0439/98971240-c248-4cbd-8d9a-054aa3a3ef73"
+					(reference "#PWR038")
+					(unit 1)
+				)
+				(path "/e268df90-efd0-451f-9c39-af40eeef0439/aa1efdc0-c6f7-4629-b108-267bc0719b5b"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -4212,86 +4285,6 @@
 				)
 				(path "/e268df90-efd0-451f-9c39-af40eeef0439/aa1efdc0-c6f7-4629-b108-267bc0719b5b"
 					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 106.68 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "71de24bf-4e3b-4e48-92c9-286ee0311c34")
-		(property "Reference" "#PWR0111"
-			(at 106.68 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 106.68 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 106.68 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 106.68 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c1806284-e092-449f-9b5b-eb538da89dc1")
-		)
-		(instances
-			(project "SC_Latch_V0_20230703"
-				(path "/d1166f91-fccd-49c5-997e-737453ba8ff0"
-					(reference "#PWR0111")
-					(unit 1)
-				)
-			)
-			(project "SC_Board"
-				(path "/e268df90-efd0-451f-9c39-af40eeef0439/87f00b8d-98be-405d-9ea9-6f410ee414ca"
-					(reference "#PWR053")
-					(unit 1)
-				)
-				(path "/e268df90-efd0-451f-9c39-af40eeef0439/98971240-c248-4cbd-8d9a-054aa3a3ef73"
-					(reference "#PWR038")
-					(unit 1)
-				)
-				(path "/e268df90-efd0-451f-9c39-af40eeef0439/aa1efdc0-c6f7-4629-b108-267bc0719b5b"
-					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -5251,7 +5244,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 35.56 67.31 0)
 			(effects
 				(font
