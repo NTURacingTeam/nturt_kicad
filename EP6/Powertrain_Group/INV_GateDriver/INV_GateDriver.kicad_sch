@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "INV_GateDriver")
-		(date "2025-02-13")
-		(rev "1.0")
+		(date "2025-02-18")
+		(rev "1.1")
 		(company "NTURacing")
 		(comment 1 "Jack Kuo 郭哲明")
 	)
@@ -131,6 +131,177 @@
 					(at 0 -2.54 90)
 					(length 2.032)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:LED_Small_Filled"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LED_Small_Filled"
+				(at -4.445 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, small symbol, filled shape"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode light-emitting-diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Small_Filled_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Small_Filled_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -351,6 +522,266 @@
 				)
 			)
 		)
+		(symbol "PCM_Transistor_MOSFET_AKL:2N7002"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "2N7002"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:SOT-23"
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.tme.eu/Document/7df5cae36abdfcedddb681f5be886f05/2N7000.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SOT-23 N-MOSFET enchancement mode transistor, 60V, 115mA, 200mW, Alternate KiCAD Library"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "enchancement mosfet nmosfet n-mosfet nmos n-mos emos emosfet 2N7002"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "2N7002_0_1"
+				(polyline
+					(pts
+						(xy 0.254 -1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 2.54 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.1778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "2N7002_1_1"
+				(pin input line
+					(at -3.81 -1.27 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Linear:L78L05_SOT89"
 			(pin_names
 				(offset 0.254)
@@ -475,6 +906,146 @@
 					(at -7.62 0 0)
 					(length 2.54)
 					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Regulator_Linear:XC6206PxxxMR"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "XC6206PxxxMR"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Torex LDO Voltage Regulator Fixed Positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23?3*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XC6206PxxxMR_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "XC6206PxxxMR_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3226,6 +3797,126 @@
 				)
 			)
 		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers hide)
@@ -3442,126 +4133,6 @@
 				)
 			)
 		)
-		(symbol "power:VCC"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
 		(at 205.74 72.39)
@@ -3580,6 +4151,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0fe6bb82-263c-405d-ae3a-bd3f10768ca4")
+	)
+	(junction
+		(at 26.67 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1466e378-cb6a-42e7-b182-872f6b135607")
 	)
 	(junction
 		(at 165.1 114.3)
@@ -3676,6 +4253,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "88c0dca4-10f5-4028-8cda-8c2716106474")
+	)
+	(junction
+		(at 52.07 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b364e71-fa93-4901-8c55-850348401f35")
 	)
 	(junction
 		(at 63.5 43.18)
@@ -3863,6 +4446,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 134.62) (xy 52.07 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "063fdeed-5318-4164-bfee-d365261372b7")
+	)
+	(wire
+		(pts
 			(xy 121.92 191.77) (xy 121.92 194.31)
 		)
 		(stroke
@@ -3970,6 +4563,16 @@
 			(type default)
 		)
 		(uuid "1359327b-7aa2-4bec-b41e-9455a0e3176d")
+	)
+	(wire
+		(pts
+			(xy 73.66 181.61) (xy 73.66 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13eef7aa-12f9-437c-9a2c-c37236b087dd")
 	)
 	(wire
 		(pts
@@ -4523,6 +5126,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 134.62) (xy 33.02 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a795f69-a9c4-4021-acae-953beb09d73c")
+	)
+	(wire
+		(pts
 			(xy 226.06 40.64) (xy 226.06 41.91)
 		)
 		(stroke
@@ -4570,6 +5183,16 @@
 			(type default)
 		)
 		(uuid "4e66d713-f7db-41dd-9292-49c21e11933f")
+	)
+	(wire
+		(pts
+			(xy 52.07 134.62) (xy 52.07 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5102cfdf-eda2-4e1a-b622-7a21cddfe248")
 	)
 	(wire
 		(pts
@@ -4910,6 +5533,16 @@
 			(type default)
 		)
 		(uuid "800e465f-1a48-42cb-a51e-a4c2e230b543")
+	)
+	(wire
+		(pts
+			(xy 52.07 140.97) (xy 52.07 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8152c542-e2b2-41a4-ac93-1e3c060ecd11")
 	)
 	(wire
 		(pts
@@ -5583,6 +6216,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 140.97) (xy 26.67 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d621097e-f96a-40c2-9ada-7c3a5b0179cd")
+	)
+	(wire
+		(pts
 			(xy 119.38 105.41) (xy 139.7 105.41)
 		)
 		(stroke
@@ -5740,6 +6383,16 @@
 			(type default)
 		)
 		(uuid "efa37658-44ad-4551-8dd5-f3d2e534e301")
+	)
+	(wire
+		(pts
+			(xy 26.67 134.62) (xy 26.67 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f038ed99-6ff0-4365-be85-2b7b15d2b199")
 	)
 	(wire
 		(pts
@@ -5984,6 +6637,18 @@
 		(uuid 4efa343f-b992-4167-af72-349de0e90f6d)
 	)
 	(rectangle
+		(start 17.78 123.19)
+		(end 64.77 147.32)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 94788670-96f5-4048-95dd-5d8c7d867713)
+	)
+	(rectangle
 		(start 194.31 15.24)
 		(end 276.86 148.59)
 		(stroke
@@ -6005,6 +6670,19 @@
 			(justify left top)
 		)
 		(uuid "383af9ec-23db-43c4-82ab-9d07728add81")
+	)
+	(text "all logic using 3V3!"
+		(exclude_from_sim no)
+		(at 52.07 94.488 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "50378f3a-44a1-4911-97b5-e0d2866563f1")
 	)
 	(text "400k PWM"
 		(exclude_from_sim no)
@@ -6071,6 +6749,16 @@
 			(justify right bottom)
 		)
 		(uuid "9620d920-0b4b-433a-9b22-e641df4190ef")
+	)
+	(text "3V3 LDO\n"
+		(exclude_from_sim no)
+		(at 22.86 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9baff259-3cd6-43c7-a5cb-eeb4df0ec002")
 	)
 	(text "00 degreeC: 14k\n25 degreeC: 5k\n75 degreeC: 1k\n175 degreeC: 100R\n\nR_ntc= 5k * exp [B25/80(1/T2 - 1/(298.15 K)) (Kelvin)"
 		(exclude_from_sim no)
@@ -6276,6 +6964,16 @@
 		)
 		(uuid "2b640e62-ce04-4264-b79d-eafca621476b")
 	)
+	(label "GATE_EN"
+		(at 44.45 180.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "320189f9-1d71-4dae-9b39-e9f17db77996")
+	)
 	(label "RDY"
 		(at 99.06 105.41 180)
 		(effects
@@ -6435,6 +7133,16 @@
 			(justify left bottom)
 		)
 		(uuid "5fe855d6-9afd-40d5-ba1e-172fb46caedb")
+	)
+	(label "RDY"
+		(at 16.51 181.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6239baa3-72b1-43a0-8dce-2e945cabe7b1")
 	)
 	(label "WH"
 		(at 99.06 62.23 180)
@@ -6625,6 +7333,16 @@
 			(justify left bottom)
 		)
 		(uuid "98b11d2b-d98a-4dcd-a8b4-429b3a5730c4")
+	)
+	(label "FLTN"
+		(at 73.66 181.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a1c15f26-1188-4940-b76f-76ec4dd23137")
 	)
 	(label "VU"
 		(at 123.19 156.21 0)
@@ -6941,6 +7659,73 @@
 			(project "INV_GateDriver"
 				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 22.86 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f4ffdb7-e5f4-4b57-97ab-51f64232d680")
+		(property "Reference" "#PWR039"
+			(at 22.86 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 22.86 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 22.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "114736e9-a6ba-44c8-9100-84a9c6248852")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -7428,6 +8213,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 22.86 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "236f6e35-b904-47e5-8c4e-fafa4cd2a9c3")
+		(property "Reference" "#PWR033"
+			(at 22.86 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 22.86 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 22.86 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51b43a55-b1ec-4e2c-8320-2471eb9d759b")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 165.1 48.26 180)
 		(unit 1)
@@ -7492,6 +8343,72 @@
 			(project "INV_GateDriver"
 				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
 					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 73.66 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a158eba-2f6a-4233-acb8-40d33276748f")
+		(property "Reference" "#PWR030"
+			(at 73.66 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 73.66 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 73.66 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c40df67a-1f0a-44b3-9c2c-d09a1a0ecb51")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -7638,6 +8555,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 73.66 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3413cef6-bc3d-40d3-8ea0-2fb04dbd2d6d")
+		(property "Reference" "R39"
+			(at 76.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2k2"
+			(at 76.2 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 73.66 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 73.66 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6558ac64-4d56-405d-b216-3c10846642b1")
+		)
+		(pin "2"
+			(uuid "18a05817-f3f2-40d8-bdc4-da4f28d2decd")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+24V")
 		(at 69.85 35.56 0)
 		(mirror y)
@@ -7705,6 +8692,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 40.64 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "387b649f-7363-452c-8641-7c697259a91d")
+		(property "Reference" "#PWR021"
+			(at 40.64 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 40.64 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 40.64 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6d44a1a-eee6-492c-bc8f-355f63e762a8")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 24.13 38.1 0)
 		(unit 1)
@@ -7765,6 +8819,73 @@
 			(project "INV_GateDriver"
 				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 26.67 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a24afb2-be98-4e7d-880e-a05b774b5d15")
+		(property "Reference" "#PWR023"
+			(at 26.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.67 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 26.67 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59334bad-a94a-4764-a503-171a3d90c26b")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -8196,6 +9317,143 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED_Small_Filled")
+		(at 73.66 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40851d9e-ff3d-4c0b-bffe-4bc5a4f4fc88")
+		(property "Reference" "D14"
+			(at 76.2 167.5765 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RED"
+			(at 76.2 170.1165 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 73.66 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol, filled shape"
+			(at 73.66 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d081c248-b24f-4548-94e5-85095d1840e2")
+		)
+		(pin "2"
+			(uuid "b2b3bb62-de08-4f92-b90a-f3737b4510da")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 52.07 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4220617a-1845-4027-a4fd-82a55543377c")
+		(property "Reference" "#PWR022"
+			(at 52.07 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e4d26e9-ba8b-4b56-b051-531e3c696209")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 163.83 190.5 0)
 		(unit 1)
@@ -8259,6 +9517,79 @@
 			(project "INV_GateDriver"
 				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Transistor_MOSFET_AKL:2N7002")
+		(at 20.32 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46ba572d-93d6-4261-9f93-c114c6b95282")
+		(property "Reference" "Q3"
+			(at 26.67 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 26.67 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 25.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/7df5cae36abdfcedddb681f5be886f05/2N7000.pdf"
+			(at 20.32 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOT-23 N-MOSFET enchancement mode transistor, 60V, 115mA, 200mW, Alternate KiCAD Library"
+			(at 20.32 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "5f2449d2-636f-463d-b98d-a2049823ba20")
+		)
+		(pin "1"
+			(uuid "11715a14-cee1-4e43-92dc-6c3c4db4fe3a")
+		)
+		(pin "2"
+			(uuid "e13e3878-2f50-4f33-aefe-edf22808c6c6")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -8329,6 +9660,78 @@
 			(project "INV_GateDriver"
 				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:XC6206PxxxMR")
+		(at 40.64 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b8d17b8-3715-487c-925c-6d705e681f9b")
+		(property "Reference" "U17"
+			(at 40.64 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XC6206P332MR-G"
+			(at 40.64 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 40.64 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
+			(at 40.64 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
+			(at 40.64 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6f954023-6fb6-4c62-b5c6-b6cf75288966")
+		)
+		(pin "2"
+			(uuid "62d25688-edf3-468a-91a9-f03668ff7663")
+		)
+		(pin "1"
+			(uuid "66626135-157c-4c2d-8b3b-01ae41a914cb")
+		)
+		(instances
+			(project ""
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "U17")
 					(unit 1)
 				)
 			)
@@ -8609,6 +10012,143 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED_Small_Filled")
+		(at 50.8 166.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "626f21be-1282-402f-9784-0d9e84e60a21")
+		(property "Reference" "D13"
+			(at 53.34 165.0365 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GREEN LED"
+			(at 53.34 167.5765 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 50.8 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol, filled shape"
+			(at 50.8 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5540433-8976-40b6-b43d-ab308c60f48d")
+		)
+		(pin "2"
+			(uuid "56176d11-507a-40ac-906c-54ba9c54c9e5")
+		)
+		(instances
+			(project ""
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66328ec5-0787-41d5-acd0-2dc98bdd9b75")
+		(property "Reference" "#PWR028"
+			(at 50.8 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fae7149-5275-4d32-b357-7a3a0694c759")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Linear:L78L05_SOT89")
 		(at 215.9 72.39 0)
 		(unit 1)
@@ -8675,6 +10215,76 @@
 			(project "INV_GateDriver"
 				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
 					(reference "U15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small_Filled")
+		(at 22.86 167.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73ac65e4-3f35-4c7e-a8d4-8c64b0bf55e1")
+		(property "Reference" "D15"
+			(at 25.4 166.3065 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "WHITE LED"
+			(at 25.4 168.8465 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 22.86 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol, filled shape"
+			(at 22.86 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b135656-b58a-419d-8d60-6773beefbfd4")
+		)
+		(pin "2"
+			(uuid "d287799b-1fa7-4d02-b855-2d0b355d2797")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -9014,7 +10624,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P1031X265-8N"
+		(property "Footprint" "SamacSys_Parts_EP6:SOIC127P1031X265-8N"
 			(at 95.25 281.61 0)
 			(effects
 				(font
@@ -9427,6 +11037,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 26.67 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c947d1f-fc76-4ec0-a9f9-b881b98a9cd4")
+		(property "Reference" "#PWR025"
+			(at 26.67 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 26.67 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 26.67 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2c5c557-3d99-457e-926a-ebb93494e6fc")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 205.74 124.46 0)
 		(mirror y)
@@ -9704,6 +11380,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 50.8 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9451e9e0-f0ba-4ce4-bb34-4300b1ccad51")
+		(property "Reference" "R38"
+			(at 53.34 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2k2"
+			(at 53.34 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 50.8 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 50.8 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f823f807-3fe3-48b7-8edf-3a607a42dbc5")
+		)
+		(pin "2"
+			(uuid "abbbe11b-4d84-4822-b73d-3d8c3b220bf2")
+		)
+		(instances
+			(project ""
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "nturt_kicad_lib_EP6:InverterSiCModule")
 		(at 229.87 49.53 270)
 		(unit 4)
@@ -9928,6 +11674,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 26.67 138.43 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d3b1ca6-7f82-4786-a52c-12e81a815728")
+		(property "Reference" "C61"
+			(at 29.21 137.1535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 29.21 139.6935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 26.67 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 26.67 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f605ebc-194f-49bd-ada6-b8bb61d60013")
+		)
+		(pin "2"
+			(uuid "85666af4-348e-46fc-8ec6-cd0204120889")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "C61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 168.91 218.44 180)
 		(unit 1)
@@ -10056,72 +11872,6 @@
 			(project "INV_GateDriver"
 				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
 					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 90.17 186.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a3f10f4e-9374-438c-85b9-005ce2e2c540")
-		(property "Reference" "#PWR03"
-			(at 90.17 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 90.17 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 90.17 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ad05a07b-f598-46d1-ada6-113241396050")
-		)
-		(instances
-			(project "INV_GateDriver"
-				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -10697,6 +12447,215 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 22.86 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "baa62117-be4c-478b-8ef9-4a4326c2953b")
+		(property "Reference" "R40"
+			(at 25.4 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2k2"
+			(at 25.4 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 22.86 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 22.86 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4cb8d801-78a7-48a0-8dd6-3faa2c3caf02")
+		)
+		(pin "2"
+			(uuid "56d85188-a123-4894-b436-89400689a5c7")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Transistor_MOSFET_AKL:2N7002")
+		(at 48.26 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bde9f578-18e4-4af7-9678-4895a2663a11")
+		(property "Reference" "Q1"
+			(at 54.61 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 54.61 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 53.34 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/7df5cae36abdfcedddb681f5be886f05/2N7000.pdf"
+			(at 48.26 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SOT-23 N-MOSFET enchancement mode transistor, 60V, 115mA, 200mW, Alternate KiCAD Library"
+			(at 48.26 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6ccd536d-abde-4714-892b-115aacfa7f18")
+		)
+		(pin "1"
+			(uuid "3ad7a27e-ffcb-4258-aea5-80f010b8099e")
+		)
+		(pin "2"
+			(uuid "7d224cbe-bb5c-44af-9998-b20fa793748b")
+		)
+		(instances
+			(project ""
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 52.07 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c48247a6-0ded-4f69-a1bd-7ce2cc287b46")
+		(property "Reference" "#PWR024"
+			(at 52.07 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 52.07 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 52.07 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3af4dea-30b8-4eae-8a79-a119e4faf736")
+		)
+		(instances
+			(project ""
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 165.1 67.31 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11191,6 +13150,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 52.07 138.43 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db32119f-e9b4-4545-9b72-8a465529e241")
+		(property "Reference" "C62"
+			(at 54.61 137.1535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 54.61 139.6935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 52.07 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 52.07 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3c273c0-9af8-443b-ad15-1a8f3851d820")
+		)
+		(pin "2"
+			(uuid "c0a75fde-b40b-4cdb-be0f-102161bca5a6")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "C62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 90.17 186.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e43c97fb-50a0-4891-8437-6cdeaec58891")
+		(property "Reference" "#PWR03"
+			(at 90.17 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 90.17 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 90.17 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f2f0bac-fec7-4807-9846-c5d842cbb542")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "nturt_kicad_lib_EP6:InverterSiCModule")
 		(at 229.87 147.32 270)
 		(unit 6)
@@ -11340,6 +13435,72 @@
 				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
 					(reference "M1")
 					(unit 6)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 50.8 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5455522-5b2e-49a2-a19e-612c733d282e")
+		(property "Reference" "#PWR029"
+			(at 50.8 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 50.8 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 50.8 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "001afa8c-daad-4d0e-8ee0-81a666672ce3")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#PWR029")
+					(unit 1)
 				)
 			)
 		)
