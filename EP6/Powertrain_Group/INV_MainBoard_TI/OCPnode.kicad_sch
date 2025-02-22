@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "INV_MainBoard_TI")
-		(date "2025-02-19")
-		(rev "1.0")
+		(date "2025-02-22")
+		(rev "1.1")
 		(company "NTURacing Team")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Powertrain Group")
@@ -692,7 +692,7 @@
 				)
 			)
 		)
-		(symbol "power:+5V"
+		(symbol "power:+3V3"
 			(power)
 			(pin_numbers hide)
 			(pin_names
@@ -709,7 +709,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+5V"
+			(property "Value" "+3V3"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -735,7 +735,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -753,7 +753,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "+3V3_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -791,7 +791,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1281,27 +1281,17 @@
 		)
 		(uuid "fae77240-1575-4078-8564-69feec4a80b1")
 	)
-	(text "1V"
-		(exclude_from_sim no)
-		(at 91.948 127 0)
+	(label "filt3V3"
+		(at 130.81 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(uuid "7ee0a2fb-84ca-4006-8d91-344110d2b4bc")
+		(uuid "1196ed03-7bc8-4674-a38a-d9e4c559c209")
 	)
-	(text "3V"
-		(exclude_from_sim no)
-		(at 94.234 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a49de448-2d38-4e00-9ec2-2cced4340059")
-	)
-	(label "filt5V"
+	(label "filt3V3"
 		(at 104.14 57.15 0)
 		(effects
 			(font
@@ -1311,7 +1301,7 @@
 		)
 		(uuid "5e52a1b5-25b9-43a4-9c1f-81d46a374811")
 	)
-	(label "filt5V"
+	(label "filt3V3"
 		(at 146.05 35.56 0)
 		(effects
 			(font
@@ -1319,19 +1309,9 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "628b8f9d-1ec4-4faf-8977-a9c3b4561018")
+		(uuid "96720cee-fdbd-46ab-ad32-8cd44018ada9")
 	)
-	(label "filt5V"
-		(at 130.81 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "67441304-d844-4a36-910b-c671f28097be")
-	)
-	(label "filt5V"
+	(label "filt3V3"
 		(at 102.87 110.49 0)
 		(effects
 			(font
@@ -1339,7 +1319,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7153ba06-fd2f-45ed-b38a-3e49a8a5088b")
+		(uuid "d50de488-7d15-4447-a347-0a626110918b")
 	)
 	(hierarchical_label "IsenseIn"
 		(shape input)
@@ -1373,7 +1353,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "041cc538-1a9b-47a7-b4aa-1cbc4a42ea9e")
-		(property "Reference" "#PWR0128"
+		(property "Reference" "#PWR0130"
 			(at 113.03 58.42 0)
 			(effects
 				(font
@@ -1452,7 +1432,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ce6399d-be7b-470e-b886-31e3471a7e35")
-		(property "Reference" "#PWR0129"
+		(property "Reference" "#PWR0132"
 			(at 104.14 83.82 0)
 			(effects
 				(font
@@ -1531,7 +1511,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d82771f-58c6-4949-8201-88ec3b46242c")
-		(property "Reference" "R54"
+		(property "Reference" "R60"
 			(at 100.33 121.92 0)
 			(effects
 				(font
@@ -1540,7 +1520,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "82k"
+		(property "Value" "${Res2}"
 			(at 100.33 124.46 0)
 			(effects
 				(font
@@ -1613,7 +1593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c7ee284-abbf-4729-884f-92ceb367db97")
-		(property "Reference" "FB1"
+		(property "Reference" "FB9"
 			(at 105.3592 36.83 90)
 			(effects
 				(font
@@ -1693,7 +1673,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f00c890-9357-4e7f-94b6-38500eb4451f")
-		(property "Reference" "R30"
+		(property "Reference" "R53"
 			(at 101.6 72.39 0)
 			(effects
 				(font
@@ -1702,7 +1682,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "82k"
+		(property "Value" "${Res2}"
 			(at 101.6 74.93 0)
 			(effects
 				(font
@@ -1775,7 +1755,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "87dfc7a4-ce14-412c-8604-7d2d906459cf")
-		(property "Reference" "R29"
+		(property "Reference" "R52"
 			(at 101.6 62.23 0)
 			(effects
 				(font
@@ -1784,7 +1764,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "${Res1}"
 			(at 101.6 64.77 0)
 			(effects
 				(font
@@ -1848,6 +1828,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 96.52 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ea4a202-8b11-405b-ac41-6faefcaf4c2c")
+		(property "Reference" "#PWR0118"
+			(at 96.52 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 96.52 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 96.52 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec605f8d-52cd-4c83-9a46-1fe9c9c57ccb")
+		)
+		(instances
+			(project ""
+				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/a0162c5f-8dd7-4593-88b2-0f24e86ee5a0"
+					(reference "#PWR0118")
+					(unit 1)
+				)
+				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/c1723ad8-cc3f-4769-a58d-f7c6ef8f3681"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/ceaa5b7a-21ef-4490-9d0f-66aa661daa3d"
+					(reference "#PWR099")
+					(unit 1)
+				)
+				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/ebd095ab-b364-4f92-88fd-2a6c5803cc4a"
+					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 113.03 48.26 0)
 		(unit 1)
@@ -1856,7 +1914,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "94d2f180-0d7a-4afd-9c13-af5a8309b67f")
-		(property "Reference" "C46"
+		(property "Reference" "C49"
 			(at 115.57 46.9963 0)
 			(effects
 				(font
@@ -1865,7 +1923,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0u1"
+		(property "Value" "100n"
 			(at 115.57 49.5363 0)
 			(effects
 				(font
@@ -1929,84 +1987,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 96.52 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99ed46df-f6e6-4a18-afdc-d855088b444f")
-		(property "Reference" "#PWR080"
-			(at 96.52 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 96.52 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 96.52 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 96.52 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "17e32e32-d623-422d-b376-b44d9cdb7d3c")
-		)
-		(instances
-			(project ""
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/a0162c5f-8dd7-4593-88b2-0f24e86ee5a0"
-					(reference "#PWR0127")
-					(unit 1)
-				)
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/c1723ad8-cc3f-4769-a58d-f7c6ef8f3681"
-					(reference "#PWR0118")
-					(unit 1)
-				)
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/ceaa5b7a-21ef-4490-9d0f-66aa661daa3d"
-					(reference "#PWR080")
-					(unit 1)
-				)
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/ebd095ab-b364-4f92-88fd-2a6c5803cc4a"
-					(reference "#PWR0122")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Comparator:LM2903")
 		(at 148.59 43.18 0)
 		(unit 3)
@@ -2016,7 +1996,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bbdcc34a-e0a3-4ab1-8eeb-a228bd20b41b")
-		(property "Reference" "U10"
+		(property "Reference" "U13"
 			(at 147.32 41.91 0)
 			(effects
 				(font
@@ -2116,7 +2096,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bcdb20c5-07e9-4d51-b0e3-a6db84f066ac")
-		(property "Reference" "R55"
+		(property "Reference" "R61"
 			(at 100.33 132.08 0)
 			(effects
 				(font
@@ -2125,7 +2105,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "${Res1}"
 			(at 100.33 134.62 0)
 			(effects
 				(font
@@ -2198,7 +2178,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf27b8be-8b87-44e7-8a1a-dd00feef90a5")
-		(property "Reference" "U10"
+		(property "Reference" "U13"
 			(at 124.46 60.96 0)
 			(effects
 				(font
@@ -2375,7 +2355,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef3afb10-852a-4606-bff1-0496d54c9da1")
-		(property "Reference" "#PWR0134"
+		(property "Reference" "#PWR0133"
 			(at 102.87 143.51 0)
 			(effects
 				(font
@@ -2454,7 +2434,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2c820d5-35d6-4077-9c81-8f1c1b59e856")
-		(property "Reference" "U10"
+		(property "Reference" "U13"
 			(at 124.46 115.57 0)
 			(effects
 				(font
@@ -2552,7 +2532,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f433ad84-a429-4041-a1c4-4b4ced0eab9d")
-		(property "Reference" "#FLG015"
+		(property "Reference" "#FLG0107"
 			(at 123.19 42.545 0)
 			(effects
 				(font
