@@ -877,7 +877,7 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x03"
+		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -891,8 +891,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x03"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -917,7 +917,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -944,7 +944,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x03_1_1"
+			(symbol "Conn_01x04_1_1"
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -1.27 -2.413)
 					(end 0 -2.667)
@@ -980,7 +991,7 @@
 				)
 				(rectangle
 					(start -1.27 3.81)
-					(end 1.27 -3.81)
+					(end 1.27 -6.35)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1036,6 +1047,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2642,88 +2671,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-			)
-		)
-		(symbol "Mechanical:MountingHole"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mounting Hole without connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 			)
@@ -5586,6 +5533,12 @@
 		(uuid "3975c997-6ae8-4cf7-a84e-5339ddb8eae7")
 	)
 	(junction
+		(at 74.93 237.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c0790dd-dc14-451b-9a0a-da6667eb95ce")
+	)
+	(junction
 		(at 133.35 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5674,12 +5627,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "68baeddd-e1c4-432d-b7c8-4be34c56d794")
-	)
-	(junction
-		(at 246.38 259.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6a287fe2-fb11-4d8e-a278-5f02bb5aafc0")
 	)
 	(junction
 		(at 133.35 220.98)
@@ -5794,6 +5741,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a64926d7-88e1-4fe3-98aa-d54502b1803e")
+	)
+	(junction
+		(at 74.93 240.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a83dc313-263e-400d-a484-b8aeb57b1e59")
 	)
 	(junction
 		(at 133.35 119.38)
@@ -5916,10 +5869,10 @@
 		(uuid "e1d9f81c-7751-4fdd-8a34-f37dee1c7574")
 	)
 	(junction
-		(at 246.38 256.54)
+		(at 74.93 242.57)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e5e9443b-06ef-44d6-aa84-f00f58f80ea6")
+		(uuid "e5681ac9-5b8e-4c01-85e7-36aa44eb23e6")
 	)
 	(junction
 		(at 44.45 67.31)
@@ -6418,16 +6371,6 @@
 			(type default)
 		)
 		(uuid "11f22614-5aa9-486c-92bd-fa5a356d2ea8")
-	)
-	(wire
-		(pts
-			(xy 255.27 259.08) (xy 270.51 259.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1282fa49-6b7b-483a-80c1-4ab4eda3c14d")
 	)
 	(wire
 		(pts
@@ -7221,6 +7164,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 237.49) (xy 74.93 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37197761-dbfe-4ac2-af40-d717d4f7d07a")
+	)
+	(wire
+		(pts
 			(xy 149.86 212.09) (xy 154.94 212.09)
 		)
 		(stroke
@@ -7381,6 +7334,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 237.49) (xy 74.93 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f6bd49f-6a66-4e2c-8930-03ef0869f8c4")
+	)
+	(wire
+		(pts
 			(xy 358.14 34.29) (xy 358.14 30.48)
 		)
 		(stroke
@@ -7488,6 +7451,16 @@
 			(type default)
 		)
 		(uuid "46d1c3ef-7637-4354-bb81-4b754246867a")
+	)
+	(wire
+		(pts
+			(xy 73.66 242.57) (xy 74.93 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46efe22a-bfdd-459d-939d-7ae58f260cb1")
 	)
 	(wire
 		(pts
@@ -7608,16 +7581,6 @@
 			(type default)
 		)
 		(uuid "4c913951-114b-40bb-a086-75d936334b82")
-	)
-	(wire
-		(pts
-			(xy 246.38 259.08) (xy 246.38 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cde5668-6560-4680-976f-759e4be3ab8e")
 	)
 	(wire
 		(pts
@@ -8041,6 +8004,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 237.49) (xy 74.93 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cdce0fb-d3d5-4362-bd5c-91afe142ef6f")
+	)
+	(wire
+		(pts
 			(xy 228.6 44.45) (xy 233.68 44.45)
 		)
 		(stroke
@@ -8128,16 +8101,6 @@
 			(type default)
 		)
 		(uuid "5f52d239-4cb7-4a44-a262-036902b7f096")
-	)
-	(wire
-		(pts
-			(xy 250.19 259.08) (xy 246.38 259.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f6c7a1e-a0ac-4b88-8ee0-e28a5adf132c")
 	)
 	(wire
 		(pts
@@ -8561,16 +8524,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 254) (xy 246.38 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72c539bd-5b64-4b69-b59b-9e9a0fddb603")
-	)
-	(wire
-		(pts
 			(xy 25.4 44.45) (xy 44.45 44.45)
 		)
 		(stroke
@@ -8818,16 +8771,6 @@
 			(type default)
 		)
 		(uuid "7d0038d0-406c-40e4-95c8-8dd169ac573d")
-	)
-	(wire
-		(pts
-			(xy 261.62 261.62) (xy 270.51 261.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7dd68a7a-5b14-4a27-b4a3-4d156dcf4d27")
 	)
 	(wire
 		(pts
@@ -9458,16 +9401,6 @@
 			(type default)
 		)
 		(uuid "9aca8b25-0e36-4db6-b2ea-314bc135a129")
-	)
-	(wire
-		(pts
-			(xy 246.38 261.62) (xy 246.38 259.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b65b26a-a0be-44d2-a360-3a1e7a13300f")
 	)
 	(wire
 		(pts
@@ -10171,6 +10104,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 243.84) (xy 74.93 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b93bf69e-8695-4805-a16f-6b9c54b0ef53")
+	)
+	(wire
+		(pts
 			(xy 149.86 220.98) (xy 158.75 220.98)
 		)
 		(stroke
@@ -10218,16 +10161,6 @@
 			(type default)
 		)
 		(uuid "bb0156f7-fd05-434c-852a-11073c03b20d")
-	)
-	(wire
-		(pts
-			(xy 256.54 261.62) (xy 246.38 261.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb6e3f28-a049-449e-972a-0df38f75709b")
 	)
 	(wire
 		(pts
@@ -10821,6 +10754,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 234.95) (xy 74.93 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6dc1c3d-8465-47ed-a934-7ad12c498a8d")
+	)
+	(wire
+		(pts
 			(xy 173.99 232.41) (xy 179.07 232.41)
 		)
 		(stroke
@@ -10838,16 +10781,6 @@
 			(type default)
 		)
 		(uuid "d828bacc-c601-4bde-9feb-93b0451e1ccd")
-	)
-	(wire
-		(pts
-			(xy 246.38 256.54) (xy 256.54 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8ed7483-3dc3-4d34-ae3c-a131d6dd4333")
 	)
 	(wire
 		(pts
@@ -10878,16 +10811,6 @@
 			(type default)
 		)
 		(uuid "da91c395-6c6c-4cc1-923c-bd4dd71bc834")
-	)
-	(wire
-		(pts
-			(xy 261.62 256.54) (xy 270.51 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db6095ea-8289-4d0e-8c5f-b7a8e15bed60")
 	)
 	(wire
 		(pts
@@ -11211,6 +11134,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 240.03) (xy 74.93 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9120c07-79a9-41f2-b891-e2d45fbb938b")
+	)
+	(wire
+		(pts
 			(xy 328.93 199.39) (xy 342.9 199.39)
 		)
 		(stroke
@@ -11408,6 +11341,16 @@
 			(type default)
 		)
 		(uuid "f1d057fc-ad03-462d-ac2e-24496cb0da47")
+	)
+	(wire
+		(pts
+			(xy 73.66 240.03) (xy 74.93 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2790c5a-8592-4634-a04c-730faa5df09b")
 	)
 	(wire
 		(pts
@@ -11898,6 +11841,7 @@
 	)
 	(label "GPIO1"
 		(at 167.64 316.23 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11908,6 +11852,7 @@
 	)
 	(label "S14"
 		(at 154.94 121.92 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11918,6 +11863,7 @@
 	)
 	(label "DRIVE"
 		(at 375.92 54.61 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11926,18 +11872,9 @@
 		)
 		(uuid "02c15d91-e29a-46c8-a440-3c9571ec1c24")
 	)
-	(label "GPIO4"
-		(at 262.89 259.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "02eb043b-831d-4f57-b919-5a9f22ce84f1")
-	)
 	(label "CT9"
 		(at 95.25 77.47 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11948,6 +11885,7 @@
 	)
 	(label "S5"
 		(at 154.94 212.09 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11958,6 +11896,7 @@
 	)
 	(label "C15"
 		(at 312.42 91.44 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11968,6 +11907,7 @@
 	)
 	(label "C3"
 		(at 179.07 232.41 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11978,6 +11918,7 @@
 	)
 	(label "C18"
 		(at 312.42 76.2 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11988,6 +11929,7 @@
 	)
 	(label "S10"
 		(at 154.94 161.29 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11998,6 +11940,7 @@
 	)
 	(label "S11"
 		(at 154.94 149.86 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12008,6 +11951,7 @@
 	)
 	(label "CT13"
 		(at 95.25 97.79 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12018,6 +11962,7 @@
 	)
 	(label "T16"
 		(at 85.09 129.54 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12028,6 +11973,7 @@
 	)
 	(label "C3"
 		(at 365.76 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12038,6 +11984,7 @@
 	)
 	(label "S2"
 		(at 383.54 106.68 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12048,6 +11995,7 @@
 	)
 	(label "C2"
 		(at 179.07 243.84 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12058,6 +12006,7 @@
 	)
 	(label "T26"
 		(at 209.55 92.71 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12068,6 +12017,7 @@
 	)
 	(label "S8"
 		(at 342.9 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12078,6 +12028,7 @@
 	)
 	(label "T20"
 		(at 209.55 59.69 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12088,6 +12039,7 @@
 	)
 	(label "T7"
 		(at 209.55 39.37 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12098,6 +12050,7 @@
 	)
 	(label "T17"
 		(at 209.55 80.01 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12108,6 +12061,7 @@
 	)
 	(label "C5"
 		(at 355.6 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12118,6 +12072,7 @@
 	)
 	(label "CT8"
 		(at 128.27 170.18 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12128,6 +12083,7 @@
 	)
 	(label "T16"
 		(at 209.55 85.09 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12138,6 +12094,7 @@
 	)
 	(label "CT1"
 		(at 128.27 255.27 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12148,6 +12105,7 @@
 	)
 	(label "S3"
 		(at 383.54 111.76 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12158,6 +12116,7 @@
 	)
 	(label "CT5"
 		(at 95.25 57.15 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12168,6 +12127,7 @@
 	)
 	(label "CT11"
 		(at 128.27 130.81 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12178,6 +12138,7 @@
 	)
 	(label "GPIO7"
 		(at 287.02 57.15 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12188,6 +12149,7 @@
 	)
 	(label "GPIO3"
 		(at 219.71 132.08 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12198,6 +12160,7 @@
 	)
 	(label "C8"
 		(at 179.07 181.61 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12208,6 +12171,7 @@
 	)
 	(label "T10"
 		(at 209.55 118.11 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12218,6 +12182,7 @@
 	)
 	(label "C16"
 		(at 312.42 86.36 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12228,6 +12193,7 @@
 	)
 	(label "VREF2"
 		(at 238.76 22.86 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12238,6 +12204,7 @@
 	)
 	(label "C12"
 		(at 179.07 140.97 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12248,6 +12215,7 @@
 	)
 	(label "S4"
 		(at 154.94 223.52 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12258,6 +12226,7 @@
 	)
 	(label "IN_N"
 		(at 318.77 46.99 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12268,6 +12237,7 @@
 	)
 	(label "C9"
 		(at 335.28 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12278,6 +12248,7 @@
 	)
 	(label "CT12"
 		(at 128.27 119.38 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12288,6 +12259,7 @@
 	)
 	(label "GPIO3"
 		(at 383.54 91.44 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12298,6 +12270,7 @@
 	)
 	(label "S9"
 		(at 154.94 172.72 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12308,6 +12281,7 @@
 	)
 	(label "T31"
 		(at 85.09 209.55 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12318,6 +12292,7 @@
 	)
 	(label "T1"
 		(at 36.83 132.08 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12328,6 +12303,7 @@
 	)
 	(label "C2"
 		(at 383.54 109.22 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12338,6 +12314,7 @@
 	)
 	(label "T0"
 		(at 36.83 129.54 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12348,6 +12325,7 @@
 	)
 	(label "GPIO8"
 		(at 383.54 78.74 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12358,6 +12336,7 @@
 	)
 	(label "CT2"
 		(at 128.27 243.84 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12368,6 +12347,7 @@
 	)
 	(label "CT5"
 		(at 128.27 209.55 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12378,6 +12358,7 @@
 	)
 	(label "S16"
 		(at 312.42 88.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12388,6 +12369,7 @@
 	)
 	(label "CT15"
 		(at 128.27 85.09 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12398,6 +12380,7 @@
 	)
 	(label "T28"
 		(at 85.09 199.39 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12408,6 +12391,7 @@
 	)
 	(label "DRIVE"
 		(at 151.13 26.67 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12418,6 +12402,7 @@
 	)
 	(label "GPIO2"
 		(at 383.54 93.98 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12426,18 +12411,9 @@
 		)
 		(uuid "440333a9-74be-480e-85c9-f86521da1e14")
 	)
-	(label "GPIO3"
-		(at 262.89 256.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "456420bc-e019-4a74-80ee-4567a328f8c2")
-	)
 	(label "C12"
 		(at 312.42 106.68 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12448,6 +12424,7 @@
 	)
 	(label "T5"
 		(at 36.83 144.78 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12458,6 +12435,7 @@
 	)
 	(label "T0"
 		(at 209.55 110.49 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12468,6 +12446,7 @@
 	)
 	(label "V-"
 		(at 179.07 267.97 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12478,6 +12457,7 @@
 	)
 	(label "T9"
 		(at 209.55 113.03 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12488,6 +12468,7 @@
 	)
 	(label "T14"
 		(at 36.83 207.01 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12498,6 +12479,7 @@
 	)
 	(label "T14"
 		(at 209.55 41.91 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12508,6 +12490,7 @@
 	)
 	(label "C1"
 		(at 179.07 255.27 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12518,6 +12501,7 @@
 	)
 	(label "C6"
 		(at 350.52 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12528,6 +12512,7 @@
 	)
 	(label "T12"
 		(at 36.83 199.39 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12538,6 +12523,7 @@
 	)
 	(label "T20"
 		(at 85.09 142.24 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12548,6 +12534,7 @@
 	)
 	(label "C17"
 		(at 312.42 81.28 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12558,6 +12545,7 @@
 	)
 	(label "T17"
 		(at 85.09 132.08 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12568,6 +12556,7 @@
 	)
 	(label "S17"
 		(at 312.42 83.82 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12578,6 +12567,7 @@
 	)
 	(label "GPIO6"
 		(at 287.02 36.83 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12588,6 +12578,7 @@
 	)
 	(label "OUT_P"
 		(at 394.97 181.61 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12598,6 +12589,7 @@
 	)
 	(label "T5"
 		(at 209.55 29.21 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12608,6 +12600,7 @@
 	)
 	(label "GPIO2"
 		(at 167.64 318.77 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12618,6 +12611,7 @@
 	)
 	(label "C6"
 		(at 179.07 203.2 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12628,6 +12622,7 @@
 	)
 	(label "T6"
 		(at 36.83 149.86 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12638,6 +12633,7 @@
 	)
 	(label "T18"
 		(at 209.55 97.79 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12648,6 +12644,7 @@
 	)
 	(label "GPIO5"
 		(at 383.54 86.36 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12658,6 +12655,7 @@
 	)
 	(label "S5"
 		(at 358.14 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12668,6 +12666,7 @@
 	)
 	(label "S17"
 		(at 154.94 87.63 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12678,6 +12677,7 @@
 	)
 	(label "C0"
 		(at 179.07 265.43 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12688,6 +12688,7 @@
 	)
 	(label "C13"
 		(at 179.07 130.81 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12697,7 +12698,8 @@
 		(uuid "5fb95913-98df-4163-8ae8-9aebe8eab189")
 	)
 	(label "GPIO5"
-		(at 219.71 134.62 0)
+		(at 219.71 129.54 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12708,6 +12710,7 @@
 	)
 	(label "C4"
 		(at 179.07 220.98 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12718,6 +12721,7 @@
 	)
 	(label "OUT_N"
 		(at 394.97 189.23 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12728,6 +12732,7 @@
 	)
 	(label "T26"
 		(at 85.09 194.31 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12738,6 +12743,7 @@
 	)
 	(label "T22"
 		(at 209.55 72.39 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12748,6 +12754,7 @@
 	)
 	(label "T1"
 		(at 209.55 105.41 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12758,6 +12765,7 @@
 	)
 	(label "S1"
 		(at 154.94 257.81 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12768,6 +12776,7 @@
 	)
 	(label "S3"
 		(at 154.94 234.95 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12778,6 +12787,7 @@
 	)
 	(label "C5"
 		(at 179.07 209.55 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12788,6 +12798,7 @@
 	)
 	(label "CT4"
 		(at 95.25 52.07 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12798,6 +12809,7 @@
 	)
 	(label "CT10"
 		(at 95.25 82.55 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12808,6 +12820,7 @@
 	)
 	(label "S7"
 		(at 347.98 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12818,6 +12831,7 @@
 	)
 	(label "CT7"
 		(at 128.27 181.61 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12828,6 +12842,7 @@
 	)
 	(label "T29"
 		(at 85.09 201.93 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12838,6 +12853,7 @@
 	)
 	(label "V-"
 		(at 318.77 44.45 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12848,6 +12864,7 @@
 	)
 	(label "S4"
 		(at 363.22 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12858,6 +12875,7 @@
 	)
 	(label "T28"
 		(at 209.55 57.15 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12868,6 +12886,7 @@
 	)
 	(label "T19"
 		(at 85.09 139.7 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12878,6 +12897,7 @@
 	)
 	(label "CT12"
 		(at 95.25 92.71 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12888,6 +12908,7 @@
 	)
 	(label "T30"
 		(at 85.09 207.01 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12898,6 +12919,7 @@
 	)
 	(label "GPIO9"
 		(at 383.54 76.2 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12908,6 +12930,7 @@
 	)
 	(label "T3"
 		(at 36.83 139.7 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12918,6 +12941,7 @@
 	)
 	(label "T11"
 		(at 36.83 196.85 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12928,6 +12952,7 @@
 	)
 	(label "T7"
 		(at 36.83 152.4 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12938,6 +12963,7 @@
 	)
 	(label "C7"
 		(at 345.44 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12948,6 +12974,7 @@
 	)
 	(label "T25"
 		(at 85.09 189.23 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12958,6 +12985,7 @@
 	)
 	(label "C17"
 		(at 179.07 85.09 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12968,6 +12996,7 @@
 	)
 	(label "C11"
 		(at 179.07 147.32 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12978,6 +13007,7 @@
 	)
 	(label "S16"
 		(at 154.94 99.06 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12988,6 +13018,7 @@
 	)
 	(label "IN_P"
 		(at 318.77 49.53 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12998,6 +13029,7 @@
 	)
 	(label "C11"
 		(at 312.42 111.76 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13008,6 +13040,7 @@
 	)
 	(label "CT9"
 		(at 128.27 158.75 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13018,6 +13051,7 @@
 	)
 	(label "CT13"
 		(at 128.27 107.95 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13028,6 +13062,7 @@
 	)
 	(label "VREF2"
 		(at 375.92 52.07 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13038,6 +13073,7 @@
 	)
 	(label "CT3"
 		(at 95.25 46.99 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13048,6 +13084,7 @@
 	)
 	(label "T24"
 		(at 85.09 186.69 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13058,6 +13095,7 @@
 	)
 	(label "T21"
 		(at 209.55 54.61 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13068,6 +13106,7 @@
 	)
 	(label "C10"
 		(at 330.2 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13078,6 +13117,7 @@
 	)
 	(label "S13"
 		(at 154.94 133.35 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13088,6 +13128,7 @@
 	)
 	(label "T15"
 		(at 36.83 209.55 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13098,6 +13139,7 @@
 	)
 	(label "T4"
 		(at 209.55 34.29 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13108,6 +13150,7 @@
 	)
 	(label "T23"
 		(at 209.55 64.77 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13118,6 +13161,7 @@
 	)
 	(label "T19"
 		(at 209.55 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13128,6 +13172,7 @@
 	)
 	(label "S11"
 		(at 327.66 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13138,6 +13183,7 @@
 	)
 	(label "T15"
 		(at 209.55 44.45 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13148,6 +13194,7 @@
 	)
 	(label "GPIO6"
 		(at 383.54 83.82 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13158,6 +13205,7 @@
 	)
 	(label "C8"
 		(at 340.36 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13168,6 +13216,7 @@
 	)
 	(label "CT8"
 		(at 95.25 72.39 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13178,6 +13227,7 @@
 	)
 	(label "CT7"
 		(at 95.25 67.31 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13188,6 +13238,7 @@
 	)
 	(label "T3"
 		(at 209.55 115.57 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13198,6 +13249,7 @@
 	)
 	(label "CT15"
 		(at 128.27 57.15 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13208,6 +13260,7 @@
 	)
 	(label "S14"
 		(at 312.42 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13218,6 +13271,7 @@
 	)
 	(label "T12"
 		(at 209.55 31.75 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13228,6 +13282,7 @@
 	)
 	(label "T22"
 		(at 85.09 149.86 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13238,6 +13293,7 @@
 	)
 	(label "CT14"
 		(at 95.25 102.87 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13248,6 +13304,7 @@
 	)
 	(label "IN_P"
 		(at 394.97 194.31 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13258,6 +13315,7 @@
 	)
 	(label "CT6"
 		(at 128.27 193.04 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13268,6 +13326,7 @@
 	)
 	(label "T10"
 		(at 36.83 194.31 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13278,6 +13337,7 @@
 	)
 	(label "CT15"
 		(at 95.25 107.95 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13288,6 +13348,7 @@
 	)
 	(label "T2"
 		(at 36.83 137.16 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13298,6 +13359,7 @@
 	)
 	(label "CT4"
 		(at 128.27 220.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13308,6 +13370,7 @@
 	)
 	(label "CT14"
 		(at 128.27 96.52 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13318,6 +13381,7 @@
 	)
 	(label "S15"
 		(at 312.42 93.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13328,6 +13392,7 @@
 	)
 	(label "T31"
 		(at 209.55 69.85 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13338,6 +13403,7 @@
 	)
 	(label "GPIO1"
 		(at 383.54 96.52 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13348,6 +13414,7 @@
 	)
 	(label "T13"
 		(at 36.83 201.93 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13358,6 +13425,7 @@
 	)
 	(label "T8"
 		(at 36.83 186.69 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13368,6 +13436,7 @@
 	)
 	(label "T6"
 		(at 209.55 46.99 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13378,6 +13447,7 @@
 	)
 	(label "C7"
 		(at 179.07 193.04 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13388,6 +13458,7 @@
 	)
 	(label "C9"
 		(at 179.07 170.18 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13398,6 +13469,7 @@
 	)
 	(label "VP"
 		(at 179.07 57.15 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13408,6 +13480,7 @@
 	)
 	(label "C0"
 		(at 383.54 99.06 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13418,6 +13491,7 @@
 	)
 	(label "GPIO8"
 		(at 287.02 97.79 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13428,6 +13502,7 @@
 	)
 	(label "T4"
 		(at 36.83 142.24 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13438,6 +13513,7 @@
 	)
 	(label "T18"
 		(at 85.09 137.16 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13448,6 +13524,7 @@
 	)
 	(label "T8"
 		(at 209.55 107.95 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13458,6 +13535,7 @@
 	)
 	(label "S7"
 		(at 154.94 195.58 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13468,6 +13546,7 @@
 	)
 	(label "T2"
 		(at 209.55 123.19 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13478,6 +13557,7 @@
 	)
 	(label "CT0"
 		(at 95.25 31.75 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13488,6 +13568,7 @@
 	)
 	(label "CT10"
 		(at 128.27 147.32 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13498,6 +13579,7 @@
 	)
 	(label "CT11"
 		(at 95.25 87.63 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13508,6 +13590,7 @@
 	)
 	(label "CT0"
 		(at 128.27 265.43 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13518,6 +13601,7 @@
 	)
 	(label "S9"
 		(at 337.82 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13526,18 +13610,9 @@
 		)
 		(uuid "c70cb882-584f-4689-a1fc-166eb07ff796")
 	)
-	(label "GPIO5"
-		(at 262.89 261.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8248569-a969-4265-a984-b8f47426d5eb")
-	)
 	(label "T13"
 		(at 209.55 36.83 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13548,6 +13623,7 @@
 	)
 	(label "C13"
 		(at 312.42 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13558,6 +13634,7 @@
 	)
 	(label "CT3"
 		(at 128.27 232.41 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13568,6 +13645,7 @@
 	)
 	(label "T24"
 		(at 209.55 82.55 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13578,6 +13656,7 @@
 	)
 	(label "C14"
 		(at 179.07 119.38 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13588,6 +13667,7 @@
 	)
 	(label "T21"
 		(at 85.09 144.78 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13598,6 +13678,7 @@
 	)
 	(label "CT2"
 		(at 95.25 41.91 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13608,6 +13689,7 @@
 	)
 	(label "T23"
 		(at 85.09 152.4 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13618,6 +13700,7 @@
 	)
 	(label "C4"
 		(at 360.68 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13628,6 +13711,7 @@
 	)
 	(label "C15"
 		(at 179.07 107.95 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13638,6 +13722,7 @@
 	)
 	(label "T30"
 		(at 209.55 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13648,6 +13733,7 @@
 	)
 	(label "C14"
 		(at 312.42 96.52 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13658,6 +13744,7 @@
 	)
 	(label "GPIO9"
 		(at 287.02 77.47 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13668,6 +13755,7 @@
 	)
 	(label "S2"
 		(at 154.94 246.38 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13678,6 +13766,7 @@
 	)
 	(label "S13"
 		(at 312.42 104.14 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13688,6 +13777,7 @@
 	)
 	(label "CT1"
 		(at 95.25 36.83 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13698,6 +13788,7 @@
 	)
 	(label "OUT_N"
 		(at 318.77 52.07 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13708,6 +13799,7 @@
 	)
 	(label "T11"
 		(at 209.55 120.65 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13718,6 +13810,7 @@
 	)
 	(label "CT6"
 		(at 95.25 62.23 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13728,6 +13821,7 @@
 	)
 	(label "GPIO4"
 		(at 383.54 88.9 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13738,6 +13832,7 @@
 	)
 	(label "T25"
 		(at 209.55 87.63 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13748,6 +13843,7 @@
 	)
 	(label "GPIO3"
 		(at 167.64 321.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13758,6 +13854,7 @@
 	)
 	(label "T27"
 		(at 85.09 196.85 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13768,6 +13865,7 @@
 	)
 	(label "GPIO7"
 		(at 383.54 81.28 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13778,6 +13876,7 @@
 	)
 	(label "C16"
 		(at 179.07 96.52 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13788,6 +13887,7 @@
 	)
 	(label "C10"
 		(at 179.07 158.75 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13798,6 +13898,7 @@
 	)
 	(label "S8"
 		(at 154.94 184.15 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13808,6 +13909,7 @@
 	)
 	(label "T9"
 		(at 36.83 189.23 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13818,6 +13920,7 @@
 	)
 	(label "S1"
 		(at 383.54 101.6 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13828,6 +13931,7 @@
 	)
 	(label "C1"
 		(at 383.54 104.14 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13837,7 +13941,8 @@
 		(uuid "e9de996a-797c-4fe8-997d-a0c9912a6bd0")
 	)
 	(label "GPIO4"
-		(at 219.71 129.54 0)
+		(at 219.71 134.62 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13848,6 +13953,7 @@
 	)
 	(label "T27"
 		(at 209.55 95.25 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13858,6 +13964,7 @@
 	)
 	(label "S15"
 		(at 154.94 110.49 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13868,6 +13975,7 @@
 	)
 	(label "S10"
 		(at 332.74 133.35 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13878,6 +13986,7 @@
 	)
 	(label "OUT_P"
 		(at 318.77 54.61 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13888,6 +13997,7 @@
 	)
 	(label "IN_N"
 		(at 394.97 201.93 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13898,6 +14008,7 @@
 	)
 	(label "VP"
 		(at 312.42 73.66 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13908,6 +14019,7 @@
 	)
 	(label "C18"
 		(at 179.07 78.74 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13918,6 +14030,7 @@
 	)
 	(label "CT15"
 		(at 128.27 29.21 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13928,6 +14041,7 @@
 	)
 	(label "T29"
 		(at 209.55 62.23 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14371,70 +14485,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 381 232.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "085305bd-11d8-4d36-8442-97653dce016d")
-		(property "Reference" "H2"
-			(at 383.54 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 383.54 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 381 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 381 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 381 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "BMS_Slave_V1(ADBMS1818)"
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x10")
 		(at 20.32 139.7 0)
 		(mirror y)
@@ -14712,6 +14762,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 74.93 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16987ae0-04f2-4741-8eb4-0b0111e348ff")
+		(property "Reference" "#PWR013"
+			(at 74.93 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 74.93 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9da741ba-c019-4622-8187-6480975176d5")
+		)
+		(instances
+			(project "ACC_BMSslave"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 356.87 52.07 0)
 		(unit 1)
@@ -14844,139 +14961,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
-		(at 246.38 254 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "17dc13b9-d419-4668-97cb-be85cff4fc5b")
-		(property "Reference" "#PWR013"
-			(at 246.38 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VREG"
-			(at 246.38 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 246.38 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 246.38 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0dbd18b1-46da-44a0-9439-658a452c52b5")
-		)
-		(instances
-			(project "ACC_BMSslave"
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 259.08 261.62 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "1b3c4ee7-2a0c-435b-baba-f8c4eec31f61")
-		(property "Reference" "R9"
-			(at 259.08 266.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 259.08 264.16 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 259.08 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 259.08 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 259.08 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ab2963ba-9601-484d-a4c7-d368809775c8")
-		)
-		(pin "1"
-			(uuid "ad5308e5-564b-4b6c-9775-a24d82cfa1f6")
-		)
-		(instances
-			(project "ACC_BMSslave"
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:RJ45")
 		(at 304.8 199.39 0)
 		(unit 1)
@@ -15056,70 +15040,6 @@
 			(project "BMS_Slave_V1(ADBMS1818)"
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
 					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 381 245.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f3c0b89-46a3-4729-bbf5-d71a4529ccf7")
-		(property "Reference" "H4"
-			(at 383.54 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 383.54 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 381 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 381 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 381 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "BMS_Slave_V1(ADBMS1818)"
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
-					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -15462,70 +15382,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 381 226.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2bd48188-1127-4ae0-a7ef-10240db16572")
-		(property "Reference" "H1"
-			(at 383.54 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 383.54 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 381 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 381 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 381 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "BMS_Slave_V1(ADBMS1818)"
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 25.4 191.77 90)
 		(unit 1)
@@ -15728,70 +15584,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 381 238.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2fa0e09d-0454-4476-809b-d613ebb53823")
-		(property "Reference" "H3"
-			(at 383.54 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 383.54 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
-			(at 381 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 381 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 381 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "BMS_Slave_V1(ADBMS1818)"
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 148.59 67.31 0)
 		(unit 1)
@@ -15853,74 +15645,6 @@
 			(project "BMS_Slave_V1(ADBMS1818)"
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 259.08 256.54 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "36cdf11b-4a48-48df-b2fc-d96406f2d9fe")
-		(property "Reference" "R8"
-			(at 259.08 251.46 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 259.08 254 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 259.08 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 259.08 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 259.08 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a5788105-ac31-4437-876b-eb78067bdb55")
-		)
-		(pin "1"
-			(uuid "0a3acd9c-7afb-4d23-9ea7-f4c03ebae1c3")
-		)
-		(instances
-			(project "ACC_BMSslave"
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -16177,6 +15901,81 @@
 			(project "BMS_Slave_V1(ADBMS1818)"
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
 					(reference "F10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 68.58 237.49 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48884f9a-9205-489d-982f-b27442ef2001")
+		(property "Reference" "J7"
+			(at 68.58 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B2B_DUMMY"
+			(at 68.58 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 68.58 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 68.58 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "80577e58-5cfb-4bfd-9236-47381bba0051")
+		)
+		(pin "1"
+			(uuid "aa1f732e-3283-4663-8023-fc1a25987318")
+		)
+		(pin "3"
+			(uuid "03bb3a18-4b2c-4e39-8a4c-17362b2949f8")
+		)
+		(pin "4"
+			(uuid "1c9ec553-9f07-41db-a293-18a20b84b0c0")
+		)
+		(instances
+			(project ""
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -17483,79 +17282,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 275.59 259.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "717ede9d-0a45-4ba8-808b-a597e2bae4b4")
-		(property "Reference" "J7"
-			(at 278.13 257.8099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GPIO"
-			(at 278.13 260.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 275.59 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 275.59 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 275.59 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1460caa7-9ec0-4b95-bdbb-4c2e2820ac67")
-		)
-		(pin "3"
-			(uuid "07a13518-2526-47c5-8d4b-aab3e5a0456a")
-		)
-		(pin "2"
-			(uuid "da495223-a4ed-43e1-81f0-d9803ff3b1e7")
-		)
-		(instances
-			(project ""
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Amplifier_Operational:LM324")
 		(at 251.46 36.83 0)
 		(unit 4)
@@ -18635,73 +18361,6 @@
 			(project "BMS_Slave_V1(ADBMS1818)"
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
 					(reference "F14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 252.73 259.08 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "97c51af8-f753-499e-8ba7-8bf5640152de")
-		(property "Reference" "R7"
-			(at 252.73 252.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 252.73 255.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 252.73 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 252.73 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 252.73 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a42e9041-75dd-44a6-8357-c9cccaa045fc")
-		)
-		(pin "1"
-			(uuid "75068930-f31a-423f-becc-8045d6feaab4")
-		)
-		(instances
-			(project "ACC_BMSslave"
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41"
-					(reference "R7")
 					(unit 1)
 				)
 			)
