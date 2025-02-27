@@ -118,12 +118,12 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
@@ -218,7 +218,7 @@
           "drill": 0.45
         }
       ],
-      "zones_allow_external_fillets": false
+      "zones_allow_external_fillets": true
     },
     "ipc2581": {
       "dist": "",
@@ -494,9 +494,9 @@
       "version": 3
     },
     "net_colors": {
-      "+24V": "rgb(132, 0, 0)",
-      "+3V3": "rgb(255, 153, 0)",
-      "+5V": "rgb(255, 0, 255)"
+      "+24V": "rgb(255, 0, 0)",
+      "+3V3": "rgb(0, 255, 0)",
+      "+5V": "rgb(0, 255, 255)"
     },
     "netclass_assignments": {
       "/MCU/CAN1H": "CAN",
@@ -505,9 +505,19 @@
       "/MCU/CAN2L": "CAN",
       "/MCU/CANH": "CAN",
       "/MCU/CANL": "CAN",
+      "/Peripherals/CAN1H": "CAN",
+      "/Peripherals/CAN1L": "CAN",
+      "/Peripherals/CAN2H": "CAN",
+      "/Peripherals/CAN2L": "CAN",
+      "/Peripherals/CANAH": "CAN",
+      "/Peripherals/CANAL": "CAN",
+      "/Peripherals/CANBH": "CAN",
+      "/Peripherals/CANBL": "CAN",
       "/Power/5V_buck": "power_thick",
       "Net-(U22-CANH)": "CAN",
       "Net-(U22-CANL)": "CAN",
+      "Net-(U4-CANH)": "CAN",
+      "Net-(U4-CANL)": "CAN",
       "Net-(U6-CANH)": "CAN",
       "Net-(U6-CANL)": "CAN"
     },
@@ -521,7 +531,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../../Users/jerry/Desktop/INV_MainBoard_STM32.step",
+      "step": "INV_MainBoard_STM32.step",
       "svg": "",
       "vrml": ""
     },
@@ -730,16 +740,16 @@
       "EncoderDifVconverter"
     ],
     [
-      "e38607e1-1db2-49df-b2a3-c48216eec22d",
-      "EncoderDifVconverterNode"
-    ],
-    [
-      "3091ce8b-e218-4dd4-8839-60d1f84e123e",
-      "EncoderDifVconverterNode1"
+      "43af1007-23d7-420f-9312-a31b9051bdb7",
+      "Peripherals"
     ],
     [
       "a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb",
-      "Isense_OCP"
+      "Isense&motT_OCP&OTP"
+    ],
+    [
+      "ccffa259-b260-4956-b252-e9d1e4251166",
+      "MotTempNode"
     ],
     [
       "97b2285d-e253-4192-9d34-3485d34b69ed",
@@ -747,15 +757,15 @@
     ],
     [
       "efaf255e-21cd-49b0-97ef-d31b1246f664",
-      "IsenseNode1"
+      "IsenseNodeU"
     ],
     [
       "9c5bbb0a-2580-4d02-8902-b12414adbbad",
-      "IsenseNode2"
+      "IsenseNodeV"
     ],
     [
       "74fc3311-ddff-43b5-ac8e-b50fc21a9c49",
-      "IsenseNode3"
+      "IsenseNodeW"
     ],
     [
       "ceaa5b7a-21ef-4490-9d0f-66aa661daa3d",
@@ -774,12 +784,8 @@
       "OCPnode3"
     ],
     [
-      "c2bb5151-c939-43a0-9ecf-9ecd29813b86",
-      "Vref1.65V"
-    ],
-    [
       "dd92cad6-9a10-4627-9dab-df8419a856cb",
-      "Vref1.65V1"
+      "Vref1.65V_1"
     ]
   ],
   "text_variables": {}
