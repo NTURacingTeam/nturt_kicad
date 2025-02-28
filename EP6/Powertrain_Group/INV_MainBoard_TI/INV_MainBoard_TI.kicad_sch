@@ -7,7 +7,7 @@
 	(title_block
 		(title "INV_MainBoard_TI")
 		(date "2025-02-28")
-		(rev "1.3")
+		(rev "1.4")
 		(company "NTURacing Team")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Powertrain Group")
@@ -3508,6 +3508,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 78.74) (xy 199.39 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "401011b9-ab19-47fa-aabc-9fd707858246")
+	)
+	(wire
+		(pts
 			(xy 156.21 50.8) (xy 172.72 50.8)
 		)
 		(stroke
@@ -4248,7 +4258,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 78.74) (xy 199.39 78.74)
+			(xy 191.77 83.82) (xy 199.39 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4683,6 +4693,16 @@
 		)
 		(uuid "1dbff17b-287e-4279-8363-d65e6c080ffa")
 	)
+	(label "OCPFLTN"
+		(at 191.77 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1e548e2a-dd03-46da-adcb-3630f8e492d4")
+	)
 	(label "Vsense_filt_DC"
 		(at 196.85 87.63 180)
 		(effects
@@ -4763,7 +4783,7 @@
 		)
 		(uuid "4bd1af6e-c39b-4408-b71a-6737bda03917")
 	)
-	(label "FLTN"
+	(label "OCPFLTN"
 		(at 252.73 147.32 0)
 		(effects
 			(font
@@ -4964,7 +4984,7 @@
 		(uuid "a3421c0e-e819-4987-bfcf-65d9e6d93cfb")
 	)
 	(label "RDY"
-		(at 191.77 78.74 180)
+		(at 191.77 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5443,7 +5463,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RED"
+		(property "Value" "RED LED"
 			(at 168.91 139.6365 90)
 			(effects
 				(font
@@ -5881,7 +5901,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts_EP6:FX2630P1SV"
+		(property "Footprint" "FX2630P1SV"
 			(at -39.04 181.61 0)
 			(effects
 				(font
@@ -7061,7 +7081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:SOT-23"
 			(at 118.11 147.32 0)
 			(effects
 				(font
@@ -8771,7 +8791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:SOT-23"
 			(at 146.05 146.05 0)
 			(effects
 				(font
@@ -9324,7 +9344,7 @@
 			(uuid "0bafad3b-7dd5-4852-af6f-781cad650dfc")
 		)
 		(pin "driverReady" input
-			(at 199.39 78.74 180)
+			(at 199.39 83.82 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9602,6 +9622,16 @@
 				(justify right)
 			)
 			(uuid "575bfe31-d4cb-4be6-a647-a387c628a6b8")
+		)
+		(pin "OCP_Nfault" input
+			(at 199.39 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "dad17991-1506-4b95-91d0-83460c5add0f")
 		)
 		(instances
 			(project "INV_MainBoard_TI"

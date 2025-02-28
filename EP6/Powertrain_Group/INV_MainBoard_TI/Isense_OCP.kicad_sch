@@ -7,13 +7,13 @@
 	(title_block
 		(title "INV_MainBoard_TI")
 		(date "2025-02-28")
-		(rev "1.3")
+		(rev "1.4")
 		(company "NTURacing Team")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Powertrain Group")
 	)
 	(lib_symbols
-		(symbol "Comparator:LM2903"
+		(symbol "Comparator:LM393"
 			(pin_names
 				(offset 0.127)
 			)
@@ -28,7 +28,7 @@
 					)
 				)
 			)
-			(property "Value" "LM2903"
+			(property "Value" "LM393"
 				(at 6.35 -3.81 0)
 				(effects
 					(font
@@ -54,7 +54,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8"
+			(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -89,7 +89,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM2903_1_1"
+			(symbol "LM393_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -170,7 +170,7 @@
 					)
 				)
 			)
-			(symbol "LM2903_2_1"
+			(symbol "LM393_2_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -251,7 +251,7 @@
 					)
 				)
 			)
-			(symbol "LM2903_3_1"
+			(symbol "LM393_3_1"
 				(pin power_in line
 					(at -2.54 -7.62 90)
 					(length 3.81)
@@ -1757,233 +1757,6 @@
 				)
 			)
 		)
-		(symbol "PCM_4ms_Connector:Conn_01x04"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x04"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "4ms_Connector:Pins_1x04_2.54mm_TH_SWD"
-				(at 0 6.985 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "HEADER 1x4 MALE PINS 0.100” 180deg"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Specifications" "HEADER 1x4 MALE PINS 0.100” 180deg"
-				(at -3.175 -14.605 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "TAD"
-				(at -2.54 -9.398 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Part Number" "1-0401FBV0T"
-				(at -2.54 -10.922 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Conn_01x04"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_??x*mm* Connector*:*1x??x*mm* Pin?Header?Straight?1X* Pin?Header?Angled?1X* Socket?Strip?Straight?1X* Socket?Strip?Angled?1X*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x04_1_1"
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -6.35)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers hide)
@@ -2320,6 +2093,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 38.1 64.77)
@@ -2440,6 +2309,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d46cd04c-4fae-4c22-a342-1994d1a004a5")
+	)
+	(junction
+		(at 107.95 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9f3d328-40ad-4079-a8e8-c5e0356f5c4f")
 	)
 	(junction
 		(at 95.25 144.78)
@@ -2628,6 +2503,16 @@
 			(type default)
 		)
 		(uuid "20203fe5-bd4e-48c3-86d9-0a865bbc2d03")
+	)
+	(wire
+		(pts
+			(xy 107.95 176.53) (xy 111.76 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "202e76c7-9f46-49f9-a11a-1a7a8655df97")
 	)
 	(wire
 		(pts
@@ -3211,7 +3096,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 176.53) (xy 111.76 176.53)
+			(xy 99.06 176.53) (xy 107.95 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3779,7 +3664,7 @@
 		(uuid "d983ff1c-4a1e-4cf4-8854-0c71cd91547e")
 	)
 	(symbol
-		(lib_id "PCM_4ms_Connector:Conn_01x04")
+		(lib_id "Connector_Generic:Conn_01x04")
 		(at 52.07 33.02 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3804,15 +3689,6 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-			(at 52.07 40.005 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
 			(at 52.07 33.02 0)
 			(effects
 				(font
@@ -3821,7 +3697,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "HEADER 1x4 MALE PINS 0.100” 180deg"
+		(property "Datasheet" "~"
+			(at 52.07 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 52.07 33.02 0)
 			(effects
 				(font
@@ -4083,7 +3968,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM2903")
+		(lib_id "Comparator:LM393")
 		(at 140.97 149.86 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -4100,7 +3985,7 @@
 				)
 			)
 		)
-		(property "Value" "LM2903"
+		(property "Value" "LM393"
 			(at 140.97 142.24 0)
 			(effects
 				(font
@@ -4126,7 +4011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8"
+		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
 			(at 140.97 149.86 0)
 			(effects
 				(font
@@ -4506,6 +4391,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 107.95 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b040f8a-456e-498b-b418-449f9fad3528")
+		(property "Reference" "#FLG011"
+			(at 107.95 174.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 107.95 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 107.95 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15df717d-347a-444f-88fe-2205b9df16ae")
+		)
+		(instances
+			(project ""
+				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb"
+					(reference "#FLG011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 40.64 148.59 0)
 		(unit 1)
@@ -4640,7 +4591,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM2903")
+		(lib_id "Comparator:LM393")
 		(at 130.81 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4657,7 +4608,7 @@
 				)
 			)
 		)
-		(property "Value" "LM2903"
+		(property "Value" "LM393"
 			(at 130.81 176.53 0)
 			(effects
 				(font
@@ -4683,7 +4634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8"
+		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
 			(at 130.81 184.15 0)
 			(effects
 				(font
@@ -5638,7 +5589,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM2903")
+		(lib_id "Comparator:LM393")
 		(at 114.3 184.15 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -5656,7 +5607,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LM2903"
+		(property "Value" "LM393"
 			(at 113.03 185.42 0)
 			(effects
 				(font
@@ -5683,7 +5634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8"
+		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
 			(at 114.3 184.15 0)
 			(effects
 				(font
@@ -6432,7 +6383,7 @@
 				(justify left)
 			)
 		)
-		(property "Res2" "28k"
+		(property "Res2" "27k"
 			(at 139.7 80.264 0)
 			(show_name yes)
 			(effects
@@ -6509,7 +6460,7 @@
 				(justify left)
 			)
 		)
-		(property "Res2" "28k"
+		(property "Res2" "27k"
 			(at 139.446 124.206 0)
 			(show_name yes)
 			(effects
@@ -6683,7 +6634,7 @@
 				(justify left top)
 			)
 		)
-		(property "Res1" "2k4"
+		(property "Res1" "2k2"
 			(at 128.524 44.196 0)
 			(show_name yes)
 			(effects
@@ -6818,7 +6769,7 @@
 				(justify left)
 			)
 		)
-		(property "Res2" "28k"
+		(property "Res2" "27k"
 			(at 139.7 102.362 0)
 			(show_name yes)
 			(effects
