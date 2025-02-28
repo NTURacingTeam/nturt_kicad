@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "INV_MainBoard_TI")
-		(date "2025-02-26")
-		(rev "1.2")
+		(date "2025-02-28")
+		(rev "1.3")
 		(company "NTURacing Team")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Powertrain Group")
@@ -12678,12 +12678,6 @@
 		(uuid "26a177f8-be5c-4f33-af41-38457574f00d")
 	)
 	(junction
-		(at 74.93 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "27e2bfdd-fafc-4b88-b6c3-f85fbfd4279b")
-	)
-	(junction
 		(at 121.92 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13174,6 +13168,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1a6af34-9fa7-413d-a7db-a14f6dad7b5b")
+	)
+	(junction
+		(at 72.39 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4c71463-e2e3-4bea-b8a3-f06054782e03")
 	)
 	(junction
 		(at 58.42 96.52)
@@ -13859,7 +13859,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 166.37) (xy 74.93 166.37)
+			(xy 48.26 166.37) (xy 72.39 166.37)
 		)
 		(stroke
 			(width 0)
@@ -14799,16 +14799,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 76.2) (xy 229.87 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "449f83f6-674c-42a1-bbee-c76dff46634a")
-	)
-	(wire
-		(pts
 			(xy 19.05 57.15) (xy 19.05 55.88)
 		)
 		(stroke
@@ -14886,6 +14876,16 @@
 			(type default)
 		)
 		(uuid "4a4c1def-8b44-46d5-8ed9-870fa4aecfbd")
+	)
+	(wire
+		(pts
+			(xy 229.87 76.2) (xy 245.11 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ad5e30e-3e52-4839-8cf4-4390e1dcc8ae")
 	)
 	(wire
 		(pts
@@ -17199,6 +17199,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 166.37) (xy 78.74 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebb37324-6490-4107-8928-67b6efff1dbc")
+	)
+	(wire
+		(pts
 			(xy 20.32 115.57) (xy 31.75 115.57)
 		)
 		(stroke
@@ -17296,16 +17306,6 @@
 			(type default)
 		)
 		(uuid "f2ea9859-c59a-4580-b56b-13204a6df18a")
-	)
-	(wire
-		(pts
-			(xy 76.2 166.37) (xy 74.93 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4557425-a5ef-4791-833b-b24a0e8a468b")
 	)
 	(wire
 		(pts
@@ -17541,7 +17541,7 @@
 	)
 	(text "Temperature_V"
 		(exclude_from_sim no)
-		(at 146.304 147.828 0)
+		(at 144.018 147.574 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17552,7 +17552,7 @@
 	)
 	(text "Temperature_U"
 		(exclude_from_sim no)
-		(at 146.304 145.288 0)
+		(at 144.018 145.034 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17563,7 +17563,7 @@
 	)
 	(text "Isense_DC"
 		(exclude_from_sim no)
-		(at 204.47 143.256 0)
+		(at 205.994 143.256 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17574,7 +17574,7 @@
 	)
 	(text "Vsense_U"
 		(exclude_from_sim no)
-		(at 146.304 137.668 0)
+		(at 144.018 137.414 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17585,7 +17585,7 @@
 	)
 	(text "Vsense_DC"
 		(exclude_from_sim no)
-		(at 146.304 135.128 0)
+		(at 144.018 134.874 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17596,7 +17596,7 @@
 	)
 	(text "Vsense_V"
 		(exclude_from_sim no)
-		(at 146.304 140.208 0)
+		(at 144.018 139.954 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17607,7 +17607,7 @@
 	)
 	(text "Isense_U"
 		(exclude_from_sim no)
-		(at 204.47 145.796 0)
+		(at 205.994 145.796 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17618,7 +17618,7 @@
 	)
 	(text "old pinout def"
 		(exclude_from_sim no)
-		(at 221.996 146.05 0)
+		(at 230.886 142.494 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17640,7 +17640,7 @@
 	)
 	(text "Vsense_W"
 		(exclude_from_sim no)
-		(at 146.304 142.748 0)
+		(at 144.018 142.494 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17651,7 +17651,7 @@
 	)
 	(text "Isense_W"
 		(exclude_from_sim no)
-		(at 204.47 150.876 0)
+		(at 205.994 150.876 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17662,7 +17662,7 @@
 	)
 	(text "Temperature_W"
 		(exclude_from_sim no)
-		(at 209.55 155.448 0)
+		(at 213.868 155.194 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17673,7 +17673,7 @@
 	)
 	(text "old pinout def"
 		(exclude_from_sim no)
-		(at 137.668 139.954 0)
+		(at 132.08 139.954 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17696,7 +17696,7 @@
 	)
 	(text "Isense_V"
 		(exclude_from_sim no)
-		(at 204.47 148.336 0)
+		(at 205.994 148.336 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17707,7 +17707,7 @@
 	)
 	(text "Temperature_Motor"
 		(exclude_from_sim no)
-		(at 209.55 157.988 0)
+		(at 213.868 157.988 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17836,7 +17836,7 @@
 		)
 		(uuid "391ad007-0668-4995-b954-22f9deb16237")
 	)
-	(label "PWMDAC_13"
+	(label "PWMDAC_14"
 		(at 179.07 55.88 0)
 		(effects
 			(font
@@ -17906,7 +17906,7 @@
 		)
 		(uuid "6f149ff2-4f8b-4226-b21b-2b3a2780e65f")
 	)
-	(label "PWMDAC_13"
+	(label "PWMDAC_14"
 		(at 199.39 107.95 0)
 		(effects
 			(font
@@ -17917,12 +17917,12 @@
 		(uuid "7197eb54-de59-4131-afbf-7d7230d3a8ef")
 	)
 	(label "TRST"
-		(at 76.2 166.37 0)
+		(at 78.74 166.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "7ad6337c-8997-4bb7-8e32-364a25f94c19")
 	)
@@ -22545,7 +22545,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 74.93 170.18 0)
+		(at 72.39 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22554,7 +22554,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c3c7b4c-da03-4561-a6d8-48eff5fd8a19")
 		(property "Reference" "R12"
-			(at 77.47 168.91 0)
+			(at 74.93 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22563,7 +22563,7 @@
 			)
 		)
 		(property "Value" "2k2"
-			(at 77.47 171.45 0)
+			(at 74.93 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22572,7 +22572,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 73.152 170.18 90)
+			(at 70.612 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22581,7 +22581,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 170.18 0)
+			(at 72.39 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22590,7 +22590,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 74.93 170.18 0)
+			(at 72.39 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25304,7 +25304,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 173.99 0)
+		(at 72.39 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25313,7 +25313,7 @@
 		(fields_autoplaced yes)
 		(uuid "b2828f57-d613-45a0-9fda-4933f9f8864a")
 		(property "Reference" "#PWR049"
-			(at 74.93 180.34 0)
+			(at 72.39 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25322,7 +25322,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 179.07 0)
+			(at 72.39 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25330,7 +25330,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 173.99 0)
+			(at 72.39 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25339,7 +25339,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 173.99 0)
+			(at 72.39 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25348,7 +25348,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 173.99 0)
+			(at 72.39 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
