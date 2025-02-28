@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "INV_GateDriver")
-		(date "2025-02-26")
-		(rev "1.3")
+		(date "2025-02-28")
+		(rev "1.4")
 		(company "NTURacing")
 		(comment 1 "Jack Kuo 郭哲明")
 	)
@@ -6550,9 +6550,9 @@
 		)
 		(uuid 993c2d5d-906c-4695-b1d9-df806113cd96)
 	)
-	(text "Power module : ACTRONAEPR25B12C1STJN"
+	(text "Power module :\nACTRONAEPR25B12C1STJN"
 		(exclude_from_sim no)
-		(at 15.24 191.008 0)
+		(at 16.764 176.276 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -6574,7 +6574,7 @@
 	)
 	(text "all logic using 3V3!"
 		(exclude_from_sim no)
-		(at 52.07 94.488 0)
+		(at 57.404 89.916 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -6584,6 +6584,16 @@
 			)
 		)
 		(uuid "50378f3a-44a1-4911-97b5-e0d2866563f1")
+	)
+	(text "Duty (%) = -20*V_AIN + 100"
+		(exclude_from_sim no)
+		(at 85.09 125.476 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "606d8d3b-baf1-4d05-b6e8-68cdf9b97661")
 	)
 	(text "400k PWM"
 		(exclude_from_sim no)
@@ -6652,7 +6662,7 @@
 	)
 	(text "voltage ratio: 33/6033 = 0.00547\n600V -> 3.28V"
 		(exclude_from_sim no)
-		(at 137.16 176.276 0)
+		(at 137.922 178.562 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6681,6 +6691,18 @@
 			(justify left bottom)
 		)
 		(uuid "d0391f6f-3248-407e-90dc-a3a9bfacccc3")
+	)
+	(text "https://drive.google.com/file/d/1twfUP7caTme2GUXKjxRJutl9a8DZNibf/view?usp=drive_link"
+		(exclude_from_sim no)
+		(at 16.764 184.404 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left top)
+			(href "https://drive.google.com/file/d/1twfUP7caTme2GUXKjxRJutl9a8DZNibf/view?usp=drive_link")
+		)
+		(uuid "e83c3b8c-4ba1-4fce-90ee-049ed680ebce")
 	)
 	(label "V_HV-"
 		(at 163.83 116.84 180)
@@ -8775,7 +8797,7 @@
 		(fields_autoplaced yes)
 		(uuid "40851d9e-ff3d-4c0b-bffe-4bc5a4f4fc88")
 		(property "Reference" "D14"
-			(at 76.2 151.0665 90)
+			(at 76.2 151.0664 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8783,8 +8805,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RED"
-			(at 76.2 153.6065 90)
+		(property "Value" "RED LED"
+			(at 76.2 153.6064 90)
 			(effects
 				(font
 					(size 1.27 1.27)
