@@ -7,7 +7,7 @@
 	(title_block
 		(title "INV_GateDriver")
 		(date "2025-02-28")
-		(rev "1.4")
+		(rev "1.5")
 		(company "NTURacing")
 		(comment 1 "Jack Kuo 郭哲明")
 	)
@@ -4133,6 +4133,108 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 29.21 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04798ebc-7a7f-478c-951c-c330945affb0")
 	)
 	(junction
 		(at 205.74 69.85)
@@ -4199,6 +4301,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51533d83-b027-4dd8-985c-ec837a2dcf46")
+	)
+	(junction
+		(at 66.04 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5971818d-8d68-41fa-b9a6-caa2fa2e5b46")
 	)
 	(junction
 		(at 214.63 33.02)
@@ -4333,6 +4441,12 @@
 		(uuid "e2a03296-34b9-4ba5-957f-1fc383ba1c88")
 	)
 	(junction
+		(at 74.93 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2630aa8-ad54-414b-8f65-676fa805fb33")
+	)
+	(junction
 		(at 78.74 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4453,6 +4567,16 @@
 			(type default)
 		)
 		(uuid "02bf896e-2eff-4550-90c4-725f4fd21270")
+	)
+	(wire
+		(pts
+			(xy 77.47 24.13) (xy 78.74 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0632c6cf-e6a8-4e00-a0db-463b71be7092")
 	)
 	(wire
 		(pts
@@ -5326,7 +5450,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 71.12) (xy 35.56 71.12)
+			(xy 21.59 71.12) (xy 29.21 71.12)
 		)
 		(stroke
 			(width 0)
@@ -5736,6 +5860,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 35.56) (xy 63.5 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d84f5e0-19a1-49f4-b15a-8045c946af6a")
+	)
+	(wire
+		(pts
 			(xy 240.03 93.98) (xy 240.03 88.9)
 		)
 		(stroke
@@ -5786,6 +5920,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 24.13) (xy 66.04 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a51db4ac-3d26-42e4-a022-90226683445b")
+	)
+	(wire
+		(pts
 			(xy 198.12 69.85) (xy 198.12 77.47)
 		)
 		(stroke
@@ -5796,7 +5940,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 35.56) (xy 63.5 35.56)
+			(xy 69.85 35.56) (xy 66.04 35.56)
 		)
 		(stroke
 			(width 0)
@@ -6246,6 +6390,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 24.13) (xy 78.74 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dec734f3-7be8-427c-825a-0bb8c6ab11a3")
+	)
+	(wire
+		(pts
 			(xy 91.44 186.69) (xy 96.52 186.69)
 		)
 		(stroke
@@ -6306,6 +6460,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 38.1) (xy 74.93 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e664c6dc-4e64-411b-8895-a6a0e392603b")
+	)
+	(wire
+		(pts
 			(xy 143.51 138.43) (xy 142.24 138.43)
 		)
 		(stroke
@@ -6313,6 +6477,16 @@
 			(type default)
 		)
 		(uuid "ec9669f3-9747-479f-971b-5bec5e748715")
+	)
+	(wire
+		(pts
+			(xy 29.21 71.12) (xy 35.56 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eec8b671-3e48-433e-b5cf-5196a4515058")
 	)
 	(wire
 		(pts
@@ -8924,6 +9098,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 29.21 71.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42af027d-f2e4-48dc-b744-a6ee8e307879")
+		(property "Reference" "#FLG03"
+			(at 29.21 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 29.21 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 29.21 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbec125b-f55c-4a32-9e32-19fea17ab754")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 168.91 187.96 0)
 		(unit 1)
@@ -11069,7 +11309,7 @@
 		(at 147.32 90.17 0)
 		(unit 2)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -12060,6 +12300,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 77.47 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0fc8e5c-dbd6-4d5b-acc8-8380318c76bd")
+		(property "Reference" "#FLG02"
+			(at 77.47 22.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 77.47 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 77.47 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16c22ffd-04e2-4736-8e57-ace736d23396")
+		)
+		(instances
+			(project "INV_GateDriver"
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 52.07 129.54 180)
 		(unit 1)
@@ -12777,6 +13083,72 @@
 				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
 					(reference "M1")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 66.04 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f059ae0c-dc34-4556-a826-aa6d88e20aec")
+		(property "Reference" "#FLG01"
+			(at 66.04 22.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 66.04 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 66.04 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57b6dc27-2240-4a87-a832-fef9cac1fc9c")
+		)
+		(instances
+			(project ""
+				(path "/f52daa8a-ade4-46df-b4d4-7640d4d77e35"
+					(reference "#FLG01")
+					(unit 1)
 				)
 			)
 		)
