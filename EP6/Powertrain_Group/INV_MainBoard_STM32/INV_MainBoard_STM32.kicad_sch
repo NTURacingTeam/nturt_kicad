@@ -6,7 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "INV_MainBoard_STM32")
-		(rev "2.0")
+		(date "2025-02-28")
+		(rev "2.1")
 		(company "NTURacing Team")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Powertrain Group")
@@ -3746,7 +3747,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 73.66) (xy 199.39 73.66)
+			(xy 156.21 76.2) (xy 199.39 76.2)
 		)
 		(stroke
 			(width 0)
@@ -4153,6 +4154,16 @@
 			(type default)
 		)
 		(uuid "621f7f74-60c0-4b14-bf61-04504384df25")
+	)
+	(wire
+		(pts
+			(xy 156.21 73.66) (xy 199.39 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63f46933-9c70-47a9-a877-a22bf2fafe92")
 	)
 	(wire
 		(pts
@@ -4786,7 +4797,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 81.28) (xy 199.39 81.28)
+			(xy 191.77 83.82) (xy 199.39 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4816,7 +4827,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 76.2) (xy 199.39 76.2)
+			(xy 191.77 78.74) (xy 199.39 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4906,7 +4917,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 78.74) (xy 199.39 78.74)
+			(xy 191.77 81.28) (xy 199.39 81.28)
 		)
 		(stroke
 			(width 0)
@@ -5184,7 +5195,7 @@
 		(uuid "0ba52e7b-9b36-45e4-ad1b-5065e0e72311")
 	)
 	(label "FLTN"
-		(at 191.77 76.2 180)
+		(at 191.77 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5274,7 +5285,7 @@
 		(uuid "2afa8bad-780f-46d2-9997-aaa49a60733c")
 	)
 	(label "GATE_EN"
-		(at 160.02 73.66 0)
+		(at 160.02 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5414,7 +5425,7 @@
 		(uuid "7ab3ed25-9fe8-4cb5-812d-cf2f2b17e335")
 	)
 	(label "OCPFLTN"
-		(at 191.77 78.74 180)
+		(at 191.77 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5534,7 +5545,7 @@
 		(uuid "a3421c0e-e819-4987-bfcf-65d9e6d93cfb")
 	)
 	(label "RDY"
-		(at 191.77 81.28 180)
+		(at 191.77 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5644,7 +5655,7 @@
 		(uuid "e675ce38-ef6f-4920-bbb1-a1af8a5dba10")
 	)
 	(label "GATE_EN"
-		(at 193.04 73.66 180)
+		(at 193.04 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6238,7 +6249,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RED"
+		(property "Value" "RED LED"
 			(at 168.91 139.6365 90)
 			(effects
 				(font
@@ -10262,7 +10273,7 @@
 	)
 	(sheet
 		(at 138.43 38.1)
-		(size 17.78 38.1)
+		(size 17.78 44.45)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -10282,7 +10293,7 @@
 			)
 		)
 		(property "Sheetfile" "Isense_OCP.kicad_sch"
-			(at 138.43 76.7846 0)
+			(at 138.43 83.1346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10331,7 +10342,7 @@
 			(uuid "821a3f65-1c83-4ef3-a122-1bfa0537cedc")
 		)
 		(pin "Gate_Enable" output
-			(at 156.21 73.66 0)
+			(at 156.21 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10349,6 +10360,16 @@
 				(justify right)
 			)
 			(uuid "60dc32e5-e3fa-4323-9525-dab32ad035ec")
+		)
+		(pin "Vref3V3" input
+			(at 156.21 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dde153ed-166c-41d5-9586-55f0a8d1a87e")
 		)
 		(instances
 			(project "INV_MainBoard_STM32"
@@ -10399,7 +10420,7 @@
 			(uuid "0bafad3b-7dd5-4852-af6f-781cad650dfc")
 		)
 		(pin "driverReady" input
-			(at 199.39 81.28 180)
+			(at 199.39 83.82 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10459,7 +10480,7 @@
 			(uuid "185f7831-133d-4658-bff4-66a61b214995")
 		)
 		(pin "GateEnableFeedback" input
-			(at 199.39 73.66 180)
+			(at 199.39 76.2 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10469,7 +10490,7 @@
 			(uuid "9de742f9-056d-43b0-9ee7-7ea24b61686a")
 		)
 		(pin "GateNfault" input
-			(at 199.39 76.2 180)
+			(at 199.39 78.74 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10679,7 +10700,7 @@
 			(uuid "575bfe31-d4cb-4be6-a647-a387c628a6b8")
 		)
 		(pin "OCPNfault" input
-			(at 199.39 78.74 180)
+			(at 199.39 81.28 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10747,6 +10768,16 @@
 				(justify left)
 			)
 			(uuid "d79b1702-649e-49ae-b23a-4d1632d65ec1")
+		)
+		(pin "Vref_3V3" output
+			(at 199.39 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "013da021-2d00-4dac-9230-ecd4b522b023")
 		)
 		(instances
 			(project "INV_MainBoard_STM32"

@@ -7,7 +7,7 @@
 	(title_block
 		(title "INV_MainBoard_STM32")
 		(date "2025-02-28")
-		(rev "2.0")
+		(rev "2.1")
 		(company "NTURacing Team")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Powertrain Group")
@@ -6853,6 +6853,12 @@
 		(uuid "7c50f0db-1b93-4d19-8c9e-cac898cc3b60")
 	)
 	(junction
+		(at 114.3 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85e3aad1-4297-4667-b455-8268589829f3")
+	)
+	(junction
 		(at 109.22 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7656,6 +7662,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 69.85) (xy 114.3 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f04f8f7-82bd-4908-8b1b-dff1cc9acb69")
+	)
+	(wire
+		(pts
 			(xy 143.51 40.64) (xy 154.94 40.64)
 		)
 		(stroke
@@ -8316,7 +8332,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 74.93) (xy 124.46 74.93)
+			(xy 109.22 74.93) (xy 114.3 74.93)
 		)
 		(stroke
 			(width 0)
@@ -8343,6 +8359,16 @@
 			(type default)
 		)
 		(uuid "608a906a-5ea5-49e0-891c-1721c9de23f4")
+	)
+	(wire
+		(pts
+			(xy 114.3 69.85) (xy 114.3 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6092948f-2cd2-448e-86b3-26e0438651b7")
 	)
 	(wire
 		(pts
@@ -8413,6 +8439,16 @@
 			(type default)
 		)
 		(uuid "659d51b9-cd2a-422e-85fc-4e237cf8bd33")
+	)
+	(wire
+		(pts
+			(xy 114.3 74.93) (xy 124.46 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66ee817c-7486-4748-ba05-ecf4fe9ab086")
 	)
 	(wire
 		(pts
@@ -10910,6 +10946,17 @@
 			(justify left)
 		)
 		(uuid "b3f688f2-99ed-4d4a-bfdb-dce8120b7fee")
+	)
+	(hierarchical_label "Vref_3V3"
+		(shape output)
+		(at 121.92 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b6096249-783c-4337-bae3-e0cff71a999d")
 	)
 	(hierarchical_label "Isense_W"
 		(shape input)
@@ -19562,7 +19609,7 @@
 				)
 			)
 		)
-		(property "Value" "REF3133AQDBZRQ1"
+		(property "Value" "REF3133AIDBZR"
 			(at 100.33 71.12 0)
 			(effects
 				(font

@@ -6,13 +6,14 @@
 	(paper "A4")
 	(title_block
 		(title "INV_MainBoard_STM32")
-		(rev "2.0")
+		(date "2025-02-28")
+		(rev "2.1")
 		(company "NTURacing Team")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Powertrain Group")
 	)
 	(lib_symbols
-		(symbol "Comparator:LM2903"
+		(symbol "Comparator:LM393"
 			(pin_names
 				(offset 0.127)
 			)
@@ -27,7 +28,7 @@
 					)
 				)
 			)
-			(property "Value" "LM2903"
+			(property "Value" "LM393"
 				(at 6.35 -3.81 0)
 				(effects
 					(font
@@ -53,7 +54,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8"
+			(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -88,7 +89,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM2903_1_1"
+			(symbol "LM393_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -169,7 +170,7 @@
 					)
 				)
 			)
-			(symbol "LM2903_2_1"
+			(symbol "LM393_2_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -250,7 +251,7 @@
 					)
 				)
 			)
-			(symbol "LM2903_3_1"
+			(symbol "LM393_3_1"
 				(pin power_in line
 					(at -2.54 -7.62 90)
 					(length 3.81)
@@ -1983,126 +1984,6 @@
 				)
 			)
 		)
-		(symbol "power:+3V3"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers hide)
@@ -2922,6 +2803,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 21.59) (xy 22.86 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "586b4378-f7fe-424d-b45b-fc9eb5ae621b")
+	)
+	(wire
+		(pts
 			(xy 156.21 36.83) (xy 168.91 36.83)
 		)
 		(stroke
@@ -3660,7 +3551,7 @@
 	)
 	(text "maybe one for each\nwe have plenty of space "
 		(exclude_from_sim no)
-		(at 20.574 36.322 0)
+		(at 23.114 36.322 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3754,7 +3645,7 @@
 		(uuid "6f74c416-c844-44f2-a220-bc6132ec70c4")
 	)
 	(label "Vref_1.65V"
-		(at 33.02 25.4 0)
+		(at 35.56 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3887,6 +3778,17 @@
 			(justify left)
 		)
 		(uuid "afe9b9ae-5107-4664-9768-aea4716b5cbc")
+	)
+	(hierarchical_label "Vref3V3"
+		(shape input)
+		(at 21.59 21.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c25fd0ff-dbde-498b-adc9-5fe4b7963c7d")
 	)
 	(hierarchical_label "Isense_V"
 		(shape output)
@@ -4204,7 +4106,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM2903")
+		(lib_id "Comparator:LM393")
 		(at 140.97 149.86 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -4221,7 +4123,7 @@
 				)
 			)
 		)
-		(property "Value" "LM2903"
+		(property "Value" "LM393"
 			(at 140.97 142.24 0)
 			(effects
 				(font
@@ -4247,7 +4149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8"
+		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
 			(at 140.97 149.86 0)
 			(effects
 				(font
@@ -4420,72 +4322,6 @@
 			(project "INV_MainBoard_TI"
 				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb"
 					(reference "C20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 69.85 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37dcc504-136a-4cee-b03e-ad7783a16fc7")
-		(property "Reference" "#PWR093"
-			(at 69.85 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 69.85 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 69.85 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf708f58-5921-4ee2-b89a-ed0bf607615a")
-		)
-		(instances
-			(project ""
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb"
-					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -4761,7 +4597,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM2903")
+		(lib_id "Comparator:LM393")
 		(at 130.81 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4778,7 +4614,7 @@
 				)
 			)
 		)
-		(property "Value" "LM2903"
+		(property "Value" "LM393"
 			(at 130.81 176.53 0)
 			(effects
 				(font
@@ -4804,7 +4640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8"
+		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
 			(at 130.81 184.15 0)
 			(effects
 				(font
@@ -5241,6 +5077,72 @@
 			(project "INV_MainBoard_STM32"
 				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb"
 					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 69.85 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82ebde31-82a6-424a-b71a-e5141c818c4a")
+		(property "Reference" "#PWR093"
+			(at 69.85 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 69.85 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 69.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1495f911-81c7-4b36-96ed-24dd86952d1e")
+		)
+		(instances
+			(project "INV_MainBoard_STM32"
+				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb"
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -5825,7 +5727,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM2903")
+		(lib_id "Comparator:LM393")
 		(at 114.3 184.15 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -5843,7 +5745,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LM2903"
+		(property "Value" "LM393"
 			(at 113.03 185.42 0)
 			(effects
 				(font
@@ -5870,7 +5772,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8"
+		(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"
 			(at 114.3 184.15 0)
 			(effects
 				(font
@@ -6919,8 +6821,8 @@
 		)
 	)
 	(sheet
-		(at 20.32 22.86)
-		(size 12.7 6.35)
+		(at 22.86 17.78)
+		(size 12.7 11.43)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -6931,7 +6833,7 @@
 		)
 		(uuid "dd92cad6-9a10-4627-9dab-df8419a856cb")
 		(property "Sheetname" "Vref1.65V_1"
-			(at 20.32 22.1484 0)
+			(at 22.86 17.0684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6940,7 +6842,7 @@
 			)
 		)
 		(property "Sheetfile" "Vref1.65V.kicad_sch"
-			(at 20.32 29.7946 0)
+			(at 22.86 29.7946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6949,7 +6851,7 @@
 			)
 		)
 		(pin "Vref1.65V" output
-			(at 33.02 25.4 0)
+			(at 35.56 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6957,6 +6859,16 @@
 				(justify right)
 			)
 			(uuid "8a52a9b9-e328-4b7a-b269-bfc01732351b")
+		)
+		(pin "3.3V_ref" input
+			(at 22.86 21.59 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d39b4210-1ea2-43cb-aca3-c9ce7c372d0d")
 		)
 		(instances
 			(project "INV_MainBoard_STM32"
