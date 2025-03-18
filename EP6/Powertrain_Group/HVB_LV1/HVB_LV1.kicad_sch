@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HVB_LV1")
-		(date "2024-12-05")
-		(rev "2.2")
+		(date "2025-03-19")
+		(rev "3.0")
 		(company "NTURacing")
 		(comment 1 "Powertrain")
 		(comment 2 "郭哲明 Jack Kuo")
@@ -1628,165 +1628,6 @@
 				)
 			)
 		)
-		(symbol "Device:L_Small"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "L"
-				(at 0.762 1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "L_Small"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Inductor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "L_Small_0_1"
-				(arc
-					(start 0 -2.032)
-					(mid 0.5058 -1.524)
-					(end 0 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.016)
-					(mid 0.5058 -0.508)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.5058 0.508)
-					(end 0 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.016)
-					(mid 0.5058 1.524)
-					(end 0 2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.508)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.508)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Jumper:SolderJumper_2_Bridged"
 			(pin_numbers hide)
 			(pin_names
@@ -2057,233 +1898,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-			)
-		)
-		(symbol "nturt_kicad_lib_EP6:AL8807"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 8.382 -17.272 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AL8807"
-				(at 8.128 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.5x1.8mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2009211103_Diodes-Incorporated-AL8807MP-13_C99346.pdf"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AL8807_0_0"
-				(pin input line
-					(at 0 0 0)
-					(length 2.54)
-					(name "SET"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -2.54 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -5.08 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -7.62 0)
-					(length 2.54)
-					(name "CTRL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 16.51 -7.62 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 16.51 -5.08 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 16.51 -2.54 180)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 16.51 0 180)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "AL8807_0_1"
-				(rectangle
-					(start 2.54 1.905)
-					(end 13.97 -13.335)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AL8807_1_0"
-				(pin free line
-					(at 0 -11.43 0)
-					(length 2.54)
-					(name "EP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 			)
@@ -2780,112 +2394,22 @@
 		(uuid "0e6aff86-f25a-47d3-927b-47aece9bf8d7")
 	)
 	(no_connect
-		(at 114.3 156.21)
-		(uuid "2bc66e53-cf65-411f-8463-b61e5f7011d7")
-	)
-	(no_connect
-		(at 114.3 151.13)
-		(uuid "3149c829-a75c-4faa-b3d7-233428fa3787")
-	)
-	(no_connect
-		(at 130.81 173.99)
-		(uuid "468a1b13-7eb3-4f05-9eeb-93ebdf7e73de")
-	)
-	(no_connect
-		(at 114.3 179.07)
-		(uuid "65050b8b-c594-45b6-b3ed-ae1d5bc127e8")
-	)
-	(no_connect
-		(at 149.86 160.02)
-		(uuid "7843495c-9154-4e7a-9e46-56fa1740e415")
-	)
-	(no_connect
-		(at 130.81 158.75)
-		(uuid "87890f3a-b605-452b-b67b-a87a5cb7082e")
-	)
-	(no_connect
 		(at 220.98 115.57)
 		(uuid "898619b1-af73-47ab-a122-20015b23dbcd")
-	)
-	(no_connect
-		(at 130.81 162.56)
-		(uuid "915c2eb1-4bd4-40e1-8aa3-37966d0ada4e")
-	)
-	(no_connect
-		(at 130.81 151.13)
-		(uuid "959a0b48-a24a-4c19-bde5-2ed4b19abacd")
-	)
-	(no_connect
-		(at 114.3 181.61)
-		(uuid "ad5166db-fc7b-4b05-af13-ad8ad2eede9c")
-	)
-	(no_connect
-		(at 130.81 181.61)
-		(uuid "b8774246-1a8b-4ac7-8a39-88604ec90576")
-	)
-	(no_connect
-		(at 114.3 158.75)
-		(uuid "bb658f63-61c1-4207-999a-f3f5dc9fbd53")
-	)
-	(no_connect
-		(at 130.81 185.42)
-		(uuid "c12afb05-108d-4b03-8d61-90d44b1c1781")
-	)
-	(no_connect
-		(at 130.81 179.07)
-		(uuid "cb2fede0-ccdf-460c-b001-78db9943884a")
-	)
-	(no_connect
-		(at 144.78 151.13)
-		(uuid "d69f339c-8705-4be0-9c0d-71969051765b")
-	)
-	(no_connect
-		(at 130.81 156.21)
-		(uuid "d789424a-e8c4-4fa3-92a4-6144e03bf142")
-	)
-	(no_connect
-		(at 144.78 160.02)
-		(uuid "d83f7148-75a0-4908-8f41-3f648acd3dcc")
-	)
-	(no_connect
-		(at 130.81 176.53)
-		(uuid "d9e58680-13af-4aec-9598-091087ae67b5")
-	)
-	(no_connect
-		(at 130.81 153.67)
-		(uuid "e82c8803-00c8-4e81-92e5-0a14a512bbc3")
-	)
-	(no_connect
-		(at 114.3 173.99)
-		(uuid "ea7f1f4a-272a-453e-bcc1-9ee8bc687d65")
 	)
 	(no_connect
 		(at 208.28 115.57)
 		(uuid "fc7db584-80e0-4e8f-b8cb-421f0bacac23")
 	)
-	(no_connect
-		(at 149.86 151.13)
-		(uuid "fe215209-aba1-4342-8c52-d2ce1551f862")
-	)
 	(wire
 		(pts
-			(xy 146.05 76.2) (xy 142.24 76.2)
+			(xy 162.56 76.2) (xy 142.24 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "000cfaad-c474-4317-a38c-3c3c3328735c")
-	)
-	(wire
-		(pts
-			(xy 31.75 77.47) (xy 31.75 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "031adf77-b30d-4662-bc90-4455ede93e86")
 	)
 	(wire
 		(pts
@@ -2929,7 +2453,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 82.55) (xy 92.71 82.55)
+			(xy 96.52 82.55) (xy 92.71 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2959,6 +2483,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 90.17) (xy 101.6 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cf21c7d-b675-4fdc-9a89-cd8f1d89cb60")
+	)
+	(wire
+		(pts
 			(xy 142.24 62.23) (xy 143.51 62.23)
 		)
 		(stroke
@@ -2966,6 +2500,16 @@
 			(type default)
 		)
 		(uuid "1f405fe8-a568-4487-9883-928ac5776933")
+	)
+	(wire
+		(pts
+			(xy 160.02 110.49) (xy 142.24 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20e7fbf6-67f7-47c2-8880-6f51193fdd17")
 	)
 	(wire
 		(pts
@@ -2989,7 +2533,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 59.69) (xy 142.24 59.69)
+			(xy 142.24 59.69) (xy 171.45 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2999,7 +2543,17 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 96.52) (xy 119.38 96.52)
+			(xy 171.45 59.69) (xy 171.45 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eed75e4-ecdf-47b1-966b-fed7b8407fb4")
+	)
+	(wire
+		(pts
+			(xy 104.14 102.87) (xy 119.38 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3049,16 +2603,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 99.06) (xy 119.38 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46bddf84-2090-4680-ad0e-b093a7eee6ea")
-	)
-	(wire
-		(pts
 			(xy 143.51 46.99) (xy 143.51 54.61)
 		)
 		(stroke
@@ -3099,7 +2643,27 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 44.45) (xy 149.86 44.45)
+			(xy 160.02 114.3) (xy 142.24 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f7165f4-ea76-4f5a-baed-197522a3070c")
+	)
+	(wire
+		(pts
+			(xy 160.02 104.14) (xy 142.24 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60715e11-3921-4326-ab9d-aac3b5b0bc3d")
+	)
+	(wire
+		(pts
+			(xy 142.24 44.45) (xy 173.99 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3116,6 +2680,16 @@
 			(type default)
 		)
 		(uuid "64de3fcb-2a77-48a1-a522-7b2151aecffc")
+	)
+	(wire
+		(pts
+			(xy 160.02 107.95) (xy 142.24 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f7fe70b-d533-420c-97de-caad9a5edc12")
 	)
 	(wire
 		(pts
@@ -3139,13 +2713,23 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 93.98) (xy 119.38 93.98)
+			(xy 109.22 100.33) (xy 119.38 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7560fe79-aff4-4602-a7bc-49b77befb3e2")
+	)
+	(wire
+		(pts
+			(xy 160.02 101.6) (xy 142.24 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a07a318-0b71-4388-b5be-d554fbcdc435")
 	)
 	(wire
 		(pts
@@ -3166,6 +2750,16 @@
 			(type default)
 		)
 		(uuid "9efe3a22-20e6-4ff9-845a-d0c57bc94deb")
+	)
+	(wire
+		(pts
+			(xy 104.14 102.87) (xy 104.14 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2606287-a4b2-4b84-bb4e-c082a6af8e91")
 	)
 	(wire
 		(pts
@@ -3209,6 +2803,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 124.46) (xy 142.24 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b298ab12-59c6-4513-b2b4-30b2982a3583")
+	)
+	(wire
+		(pts
 			(xy 99.06 76.2) (xy 119.38 76.2)
 		)
 		(stroke
@@ -3239,6 +2843,26 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 105.41) (xy 119.38 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb778c99-6928-45fe-b91d-493f5dca2f92")
+	)
+	(wire
+		(pts
+			(xy 104.14 92.71) (xy 173.99 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd65e29b-c222-4f77-98b5-69a57c914f16")
+	)
+	(wire
+		(pts
 			(xy 247.65 35.56) (xy 241.3 35.56)
 		)
 		(stroke
@@ -3249,7 +2873,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 82.55) (xy 95.25 101.6)
+			(xy 96.52 82.55) (xy 96.52 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3259,7 +2883,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 101.6) (xy 119.38 101.6)
+			(xy 173.99 92.71) (xy 173.99 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c841c48b-8479-4f32-8eac-0903093e98d3")
+	)
+	(wire
+		(pts
+			(xy 96.52 118.11) (xy 119.38 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3349,6 +2983,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 121.92) (xy 142.24 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edfee29a-4bdf-4d20-8e5f-d80d5bc7c6c3")
+	)
+	(wire
+		(pts
 			(xy 207.01 85.09) (xy 207.01 82.55)
 		)
 		(stroke
@@ -3376,6 +3020,26 @@
 			(type default)
 		)
 		(uuid "efabe403-f04e-40cf-95cb-2663e13cf929")
+	)
+	(wire
+		(pts
+			(xy 101.6 90.17) (xy 101.6 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4436dee-f624-42bd-8212-8e99ded6f495")
+	)
+	(wire
+		(pts
+			(xy 160.02 116.84) (xy 142.24 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f47b2286-28ff-4b4a-96ac-c9074488acc0")
 	)
 	(wire
 		(pts
@@ -3409,25 +3073,13 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 78.74) (xy 68.58 78.74)
+			(xy 46.99 78.74) (xy 68.58 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ffb5da00-0c67-4e29-84aa-1d27e9294f13")
-	)
-	(rectangle
-		(start 109.22 134.62)
-		(end 162.56 195.58)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 45434069-5a1e-4253-b897-6d47c831d4e1)
 	)
 	(rectangle
 		(start 36.83 92.71)
@@ -3461,7 +3113,7 @@
 		)
 		(uuid "295d888b-387a-4df8-8ac9-d624b26d97df")
 	)
-	(text "buttons are all active low\nlights are all high side\nerrors are all active high"
+	(text "buttons are all active low\nlights are all high side\nfault is before latching\nerror is after latching"
 		(exclude_from_sim no)
 		(at 35.814 16.764 0)
 		(effects
@@ -3472,15 +3124,17 @@
 		)
 		(uuid "3e1ac45a-6ed9-4535-8de3-c340d53930fb")
 	)
-	(text "spare"
+	(text "multiple problems found in actual testing of V2.2:\nLED driver need external PWM to control dimming, \nor else need to prepare different shunts\n\nTSSI not using latched signal but using the raw signal\nlatch circuit seems weird (but initial fault and reset function is working)\nBSPD not yet tested\nflashing circuit with 555 have 71% duty cicle rather than 50"
 		(exclude_from_sim no)
-		(at 121.92 139.446 0)
+		(at 15.494 33.274 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 255 0 0 1)
 			)
+			(justify left)
 		)
-		(uuid "6810a479-0ed8-4406-ade0-64a4b4ac512f")
+		(uuid "5a91a2cb-a286-48e2-9d5e-6bc7cdd2fb30")
 	)
 	(text "to inbox hall effect current sensing"
 		(exclude_from_sim no)
@@ -3515,7 +3169,6 @@
 	)
 	(label "DCDC_CONTROL"
 		(at 261.62 35.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3526,7 +3179,6 @@
 	)
 	(label "BMS_IND_LIGHT"
 		(at 149.86 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3537,7 +3189,6 @@
 	)
 	(label "BMS_RESET_BUTTON"
 		(at 220.98 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3548,7 +3199,6 @@
 	)
 	(label "IMD_RESET_BUTTON"
 		(at 97.79 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3558,19 +3208,17 @@
 		(uuid "1a7f6b20-5024-4a97-8190-e02f3e0f9fad")
 	)
 	(label "BRAKE_LIGHT+"
-		(at 142.24 115.57 0)
-		(fields_autoplaced yes)
+		(at 160.02 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "1dd533f7-b3f1-4b44-ba86-ec94d5e189ce")
 	)
 	(label "RTML_AMBER+"
 		(at 208.28 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3579,20 +3227,8 @@
 		)
 		(uuid "2cd97cd5-6c46-4bf8-bb62-a95f3e8b86a1")
 	)
-	(label "BMS_FAULT_SIG"
-		(at 104.14 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2f77358f-c025-440b-bb4e-c4cf208cbe23")
-	)
 	(label "DCDC_CONTROL"
 		(at 220.98 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3601,9 +3237,8 @@
 		)
 		(uuid "3644f1ec-4513-4efc-8c7e-869bd51093bf")
 	)
-	(label "BMS_FAULT_SIG"
+	(label "BMS_nFAULT_SIG"
 		(at 220.98 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3614,7 +3249,6 @@
 	)
 	(label "HVpresent"
 		(at 257.81 30.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3624,19 +3258,17 @@
 		(uuid "433cd582-cc89-4584-bfaa-24f593dd5584")
 	)
 	(label "TSSI_RED+"
-		(at 142.24 101.6 0)
-		(fields_autoplaced yes)
+		(at 160.02 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "4385f1fb-a502-4830-b207-a57c53b8f331")
 	)
 	(label "BMS_IND_LIGHT"
 		(at 208.28 95.25 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3647,7 +3279,6 @@
 	)
 	(label "BSPD_RESET_BUTTON"
 		(at 99.06 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3658,7 +3289,6 @@
 	)
 	(label "DC_CONTROL"
 		(at 208.28 90.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3669,7 +3299,6 @@
 	)
 	(label "SCout"
 		(at 208.28 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3680,7 +3309,6 @@
 	)
 	(label "BRAKE_SENSE_P"
 		(at 208.28 102.87 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3691,7 +3319,6 @@
 	)
 	(label "BRAKE_SENSE_N"
 		(at 220.98 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3700,9 +3327,8 @@
 		)
 		(uuid "5380f2ab-be9c-4aa5-a7b3-e38f15fc0307")
 	)
-	(label "IMD_FAULT_SIG"
+	(label "IMD_nFAULT_SIG"
 		(at 208.28 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3712,19 +3338,17 @@
 		(uuid "5467698c-7dd3-4f9d-83c0-1cee65c9fa45")
 	)
 	(label "TSSI_GREEN-"
-		(at 142.24 110.49 0)
-		(fields_autoplaced yes)
+		(at 160.02 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "5be43667-40b7-401f-81d3-af8ae33b2ac7")
 	)
 	(label "IMD_IND_LIGHT"
 		(at 208.28 97.79 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3733,9 +3357,8 @@
 		)
 		(uuid "5ff54f3b-e530-4f5e-8d91-6334603b03c4")
 	)
-	(label "BMS_FAULT_SIG"
+	(label "BMS_nFAULT_SIG"
 		(at 95.25 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3746,7 +3369,6 @@
 	)
 	(label "RTML_AMBER-"
 		(at 220.98 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3757,7 +3379,6 @@
 	)
 	(label "BRAKE_LIGHT+"
 		(at 208.28 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3768,7 +3389,6 @@
 	)
 	(label "BSPD_IND_LIGHT"
 		(at 208.28 100.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3779,7 +3399,6 @@
 	)
 	(label "CURRENT_MEASSURED"
 		(at 46.99 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3788,31 +3407,18 @@
 		)
 		(uuid "8da27066-d858-4614-b0e1-7ee681251260")
 	)
-	(label "IMD_FAULT_SIG"
-		(at 104.14 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "90869f40-ef87-46d2-b63d-90e2c7baced8")
-	)
 	(label "TSSI_RED-"
-		(at 142.24 104.14 0)
-		(fields_autoplaced yes)
+		(at 160.02 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "90b7172a-9961-4451-83eb-1d264bd6f665")
 	)
 	(label "CURRENT_MEASSURED"
 		(at 63.5 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3823,7 +3429,6 @@
 	)
 	(label "SCout"
 		(at 144.78 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3833,19 +3438,17 @@
 		(uuid "94cd3e10-9a5e-4f70-863d-037fe7abd7d2")
 	)
 	(label "BSPD_IND_LIGHT"
-		(at 146.05 76.2 0)
-		(fields_autoplaced yes)
+		(at 162.56 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "993dead7-fdd8-4ce8-85af-0f9a98ff257d")
 	)
 	(label "TSSI_GREEN+"
 		(at 208.28 107.95 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3855,19 +3458,17 @@
 		(uuid "a40af51e-d60a-4a04-9250-a4b8413ae571")
 	)
 	(label "BRAKE_SENSE_N"
-		(at 31.75 77.47 180)
-		(fields_autoplaced yes)
+		(at 46.99 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "ac64e12f-2655-4ed1-8a51-45380208a69b")
 	)
 	(label "TSSI_RED+"
 		(at 208.28 110.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3878,7 +3479,6 @@
 	)
 	(label "BMS_RESET_BUTTON"
 		(at 97.79 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3888,19 +3488,17 @@
 		(uuid "ba7a8365-e903-4305-a311-be1e4c19abf0")
 	)
 	(label "RTML_AMBER-"
-		(at 142.24 97.79 0)
-		(fields_autoplaced yes)
+		(at 160.02 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "bbb9357d-c747-4ac4-800a-a96d700afa68")
 	)
 	(label "BRAKE_LIGHT-"
 		(at 220.98 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3911,7 +3509,6 @@
 	)
 	(label "SCout"
 		(at 220.98 87.63 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3922,7 +3519,6 @@
 	)
 	(label "IMD_RESET_BUTTON"
 		(at 220.98 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3933,7 +3529,6 @@
 	)
 	(label "BRAKE_SENSE_P"
 		(at 46.99 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3942,9 +3537,8 @@
 		)
 		(uuid "cc376230-ae39-4004-8bad-5a3af568f5b6")
 	)
-	(label "IMD_FAULT_SIG"
+	(label "IMD_nFAULT_SIG"
 		(at 95.25 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3955,7 +3549,6 @@
 	)
 	(label "TSSI_GREEN-"
 		(at 220.98 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3966,7 +3559,6 @@
 	)
 	(label "BSPD_RESET_BUTTON"
 		(at 220.98 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3976,41 +3568,37 @@
 		(uuid "d710471f-0b9c-446a-91af-23a986546ee6")
 	)
 	(label "TSSI_GREEN+"
-		(at 142.24 107.95 0)
-		(fields_autoplaced yes)
+		(at 160.02 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "d9539412-5a53-454e-944a-48dfbac18e57")
 	)
 	(label "IMD_IND_LIGHT"
-		(at 148.59 59.69 0)
-		(fields_autoplaced yes)
+		(at 163.83 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "dc2e59f7-e149-4aef-9a6e-e9b2917dc8ce")
 	)
 	(label "RTML_AMBER+"
-		(at 142.24 95.25 0)
-		(fields_autoplaced yes)
+		(at 160.02 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "e0d1ed56-dea5-4520-b630-b599bf530fba")
 	)
 	(label "HVpresent"
-		(at 109.22 93.98 0)
-		(fields_autoplaced yes)
+		(at 109.22 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4019,20 +3607,28 @@
 		)
 		(uuid "e46c4dcd-57d6-412d-8268-5d5c2903f4d9")
 	)
-	(label "BRAKE_LIGHT-"
-		(at 142.24 118.11 0)
-		(fields_autoplaced yes)
+	(label "BSPD_nFAULT_SIG"
+		(at 99.06 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
+		(uuid "ec2d8d0f-8ad5-454c-9956-67313f8d64cf")
+	)
+	(label "BRAKE_LIGHT-"
+		(at 160.02 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
 		(uuid "ee948e5b-565a-4683-a5c9-8f054fc912e1")
 	)
 	(label "DC_CONTROL"
 		(at 261.62 38.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4043,7 +3639,6 @@
 	)
 	(label "TSSI_RED-"
 		(at 220.98 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4259,73 +3854,6 @@
 			(project "BMS_MASTER_STM32F105RC"
 				(path "/e5085236-ac30-4f83-9352-634c0444a0fb/e8402530-dda9-4333-b046-ba85c5039452"
 					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Small")
-		(at 147.32 151.13 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "14de20fa-a5f6-4737-baf5-a0ecd75536b6")
-		(property "Reference" "L2"
-			(at 147.32 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47u 1.6A (SRN6045TA-470M)"
-			(at 147.32 153.162 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA"
-			(at 147.32 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor, small symbol"
-			(at 147.32 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "abe185f4-a10e-4bba-adc0-df2123e2f0b6")
-		)
-		(pin "1"
-			(uuid "9695f276-130a-412c-bc84-77af9d9a4b3a")
-		)
-		(instances
-			(project "HVB_LV1"
-				(path "/e268df90-efd0-451f-9c39-af40eeef0439"
-					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -5038,7 +4566,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BSPDfault"
+		(property "Value" "BSPDnfault"
 			(at 93.98 74.93 0)
 			(effects
 				(font
@@ -5283,73 +4811,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L_Small")
-		(at 147.32 160.02 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7d04db7d-3395-44dc-af15-3fb048ff007e")
-		(property "Reference" "L3"
-			(at 147.32 157.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47u 1.6A (SRN6045TA-470M)"
-			(at 147.32 162.052 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA"
-			(at 147.32 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor, small symbol"
-			(at 147.32 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a873bb0f-53fb-497a-8de4-3ee171fea069")
-		)
-		(pin "1"
-			(uuid "0bceec72-b8c0-4c02-884c-142132b8c75e")
-		)
-		(instances
-			(project "HVB_LV1"
-				(path "/e268df90-efd0-451f-9c39-af40eeef0439"
-					(reference "L3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 16.51 184.15 0)
 		(unit 1)
@@ -5407,95 +4868,6 @@
 			(project "HVB_LV1"
 				(path "/e268df90-efd0-451f-9c39-af40eeef0439"
 					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "nturt_kicad_lib_EP6:AL8807")
-		(at 130.81 173.99 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "833b5b10-b14c-43b1-b3a0-3c244c66abdc")
-		(property "Reference" "U12"
-			(at 122.555 168.275 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AL8807"
-			(at 122.555 170.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.5x1.8mm"
-			(at 130.81 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2009211103_Diodes-Incorporated-AL8807MP-13_C99346.pdf"
-			(at 130.81 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "d39df3ce-82cf-48d9-bc25-5ad59f5b6fed")
-		)
-		(pin "8"
-			(uuid "b55f0f6e-42e6-45cd-94c6-f9a44fc4ed07")
-		)
-		(pin "2"
-			(uuid "5f50eadd-e8a4-4628-a40d-6d4c72cb0161")
-		)
-		(pin "1"
-			(uuid "b098e4ff-2305-401d-a137-658314cbb485")
-		)
-		(pin "5"
-			(uuid "a99837be-f35d-4d81-91b3-60914a3a9cda")
-		)
-		(pin "9"
-			(uuid "cd4bce72-154a-4d79-8911-171d928c92da")
-		)
-		(pin "6"
-			(uuid "ee5119cd-a9d6-46a5-a310-07c4e3332a63")
-		)
-		(pin "3"
-			(uuid "9037463b-faca-4e32-8293-fb40664e9b96")
-		)
-		(pin "4"
-			(uuid "7352f8b8-045c-410b-985c-6adaf379fd08")
-		)
-		(instances
-			(project "HVB_LV1"
-				(path "/e268df90-efd0-451f-9c39-af40eeef0439"
-					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -5572,95 +4944,6 @@
 			(project "HVB_LV1"
 				(path "/e268df90-efd0-451f-9c39-af40eeef0439"
 					(reference "J17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "nturt_kicad_lib_EP6:AL8807")
-		(at 130.81 151.13 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9952c027-0ac6-4bde-8c5b-ce371da8f51b")
-		(property "Reference" "U11"
-			(at 122.555 145.415 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AL8807"
-			(at 122.555 147.955 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.5x1.8mm"
-			(at 130.81 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2009211103_Diodes-Incorporated-AL8807MP-13_C99346.pdf"
-			(at 130.81 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "713bb8cf-f9e6-437b-ac7b-63b0cb8f9886")
-		)
-		(pin "8"
-			(uuid "4ad5b1e7-d05c-4631-b79c-5e83566d3fc7")
-		)
-		(pin "2"
-			(uuid "8061134b-96db-484b-8834-51cf86d29fa5")
-		)
-		(pin "1"
-			(uuid "496ee1ce-2217-498f-906b-ee506acc8cfd")
-		)
-		(pin "5"
-			(uuid "25ff40cd-34e6-4800-9a63-c55414e79153")
-		)
-		(pin "9"
-			(uuid "7d216dd2-d62e-4f54-9558-d4ca0395189e")
-		)
-		(pin "6"
-			(uuid "a4dbb090-0334-4d0c-94ee-c292999bab04")
-		)
-		(pin "3"
-			(uuid "c038f22b-83b0-4b56-8740-7fecc59cbfca")
-		)
-		(pin "4"
-			(uuid "a7bd2829-02f2-4503-b37e-08103654ac58")
-		)
-		(instances
-			(project "HVB_LV1"
-				(path "/e268df90-efd0-451f-9c39-af40eeef0439"
-					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -6470,7 +5753,7 @@
 		)
 	)
 	(sheet
-		(at 119.38 91.44)
+		(at 119.38 97.79)
 		(size 22.86 29.21)
 		(fields_autoplaced yes)
 		(stroke
@@ -6482,7 +5765,7 @@
 		)
 		(uuid "31a4d1dc-d951-4047-8c6c-fdc02eaab91b")
 		(property "Sheetname" "BrightLight"
-			(at 119.38 90.7284 0)
+			(at 119.38 97.0784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6491,7 +5774,7 @@
 			)
 		)
 		(property "Sheetfile" "AboveLight.kicad_sch"
-			(at 119.38 121.2346 0)
+			(at 119.38 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6500,7 +5783,7 @@
 			)
 		)
 		(pin "IMDerror" input
-			(at 119.38 99.06 180)
+			(at 119.38 105.41 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6510,7 +5793,7 @@
 			(uuid "ac4c4c70-dba9-4ee2-af5a-be49f7371692")
 		)
 		(pin "HVpresent" input
-			(at 119.38 93.98 180)
+			(at 119.38 100.33 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6520,7 +5803,7 @@
 			(uuid "09d5e339-5998-498d-a6d0-6911df8c3f5e")
 		)
 		(pin "BMSerror" input
-			(at 119.38 96.52 180)
+			(at 119.38 102.87 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6530,7 +5813,7 @@
 			(uuid "32c11a0c-3156-47b7-867b-91c31befc2fd")
 		)
 		(pin "BLon" input
-			(at 119.38 101.6 180)
+			(at 119.38 118.11 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6540,7 +5823,7 @@
 			(uuid "90dc8a99-e0a4-460b-beb5-c53f5c030454")
 		)
 		(pin "RTML_amber_N" output
-			(at 142.24 97.79 0)
+			(at 142.24 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6550,7 +5833,7 @@
 			(uuid "4e5817b6-6177-409c-b87a-9487a27190a0")
 		)
 		(pin "RTML_amber_P" output
-			(at 142.24 95.25 0)
+			(at 142.24 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6560,7 +5843,7 @@
 			(uuid "48ce68c9-a77a-41ce-aeac-2ba655f246a5")
 		)
 		(pin "TSSI_red_P" output
-			(at 142.24 101.6 0)
+			(at 142.24 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6570,7 +5853,7 @@
 			(uuid "2d3b2d64-39c7-41c3-8559-6d2f698b08b6")
 		)
 		(pin "TSSI_red_N" output
-			(at 142.24 104.14 0)
+			(at 142.24 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6580,7 +5863,7 @@
 			(uuid "20143eb5-934e-46f9-809d-7515126dbf18")
 		)
 		(pin "brakeLight_N" output
-			(at 142.24 118.11 0)
+			(at 142.24 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6590,7 +5873,7 @@
 			(uuid "0d9fde05-d348-4728-a40b-23eb893fc41b")
 		)
 		(pin "TSSI_green_P" output
-			(at 142.24 107.95 0)
+			(at 142.24 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6600,7 +5883,7 @@
 			(uuid "b7311b80-f307-47fa-ba3b-5b1e9228f3f9")
 		)
 		(pin "brakeLight_P" output
-			(at 142.24 115.57 0)
+			(at 142.24 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6610,7 +5893,7 @@
 			(uuid "94a44667-833b-4077-8875-903d1d682463")
 		)
 		(pin "TSSI_green_N" output
-			(at 142.24 110.49 0)
+			(at 142.24 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6687,7 +5970,7 @@
 			)
 			(uuid "6a8c951b-0022-4f4f-bda2-6625fc13a6b1")
 		)
-		(pin "Fault_OUT" input
+		(pin "nFault_OUT" input
 			(at 92.71 80.01 0)
 			(effects
 				(font
@@ -6755,17 +6038,7 @@
 			)
 			(uuid "840e9f0e-1e48-4cbb-abb6-8d2f3d109f58")
 		)
-		(pin "SC_OUT" input
-			(at 142.24 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "83f88293-e6ab-4271-bfe3-37be109faaae")
-		)
-		(pin "Fault_IN" input
+		(pin "nFault_IN" input
 			(at 119.38 73.66 180)
 			(effects
 				(font
@@ -6785,7 +6058,7 @@
 			)
 			(uuid "c722b47a-7cdf-45de-9724-b631fa7f10bc")
 		)
-		(pin "INDICATE_LED" input
+		(pin "INDICATE_LED" output
 			(at 142.24 76.2 0)
 			(effects
 				(font
@@ -6794,6 +6067,16 @@
 				(justify right)
 			)
 			(uuid "b5d4ffe7-f537-44e6-9f37-26528db8a161")
+		)
+		(pin "SC_OUT" output
+			(at 142.24 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "10f3325f-62ad-40fe-a764-671fca0f5238")
 		)
 		(instances
 			(project "HVB_LV1"
@@ -6881,17 +6164,7 @@
 			)
 			(uuid "96c22a8f-6212-49d8-8268-1bed876b95b9")
 		)
-		(pin "SC_OUT" input
-			(at 142.24 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "1c9cfb37-77bf-43ff-9269-1cfd3e8d5018")
-		)
-		(pin "Fault_IN" input
+		(pin "nFault_IN" input
 			(at 119.38 57.15 180)
 			(effects
 				(font
@@ -6911,7 +6184,7 @@
 			)
 			(uuid "1ad205a9-e99b-4907-89a3-663e60afacf8")
 		)
-		(pin "INDICATE_LED" input
+		(pin "INDICATE_LED" output
 			(at 142.24 59.69 0)
 			(effects
 				(font
@@ -6920,6 +6193,16 @@
 				(justify right)
 			)
 			(uuid "a2ac1307-c857-4cb5-a1cf-cdd67e3d90a1")
+		)
+		(pin "SC_OUT" output
+			(at 142.24 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0cf0db38-04f5-4358-b21d-9a57789592a6")
 		)
 		(instances
 			(project "HVB_LV1"
@@ -6969,17 +6252,7 @@
 			)
 			(uuid "1aabff5c-0aa3-4d98-ad6b-d8b8c28b73a3")
 		)
-		(pin "SC_OUT" input
-			(at 142.24 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "15b535e9-0adb-4975-91cb-b23b7a45da85")
-		)
-		(pin "Fault_IN" input
+		(pin "nFault_IN" input
 			(at 119.38 41.91 180)
 			(effects
 				(font
@@ -6999,7 +6272,7 @@
 			)
 			(uuid "527744ec-6d0a-495e-a982-fa3db717de8b")
 		)
-		(pin "INDICATE_LED" input
+		(pin "INDICATE_LED" output
 			(at 142.24 44.45 0)
 			(effects
 				(font
@@ -7008,6 +6281,16 @@
 				(justify right)
 			)
 			(uuid "a85a60a0-3a26-45f4-a0cc-d3cf89cbb567")
+		)
+		(pin "SC_OUT" output
+			(at 142.24 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4d24d38f-19fe-4c6f-a479-fcfa8b75a0fb")
 		)
 		(instances
 			(project "HVB_LV1"
