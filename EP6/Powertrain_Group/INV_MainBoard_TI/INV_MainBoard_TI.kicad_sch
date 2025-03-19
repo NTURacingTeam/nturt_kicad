@@ -4460,7 +4460,7 @@
 	)
 	(rectangle
 		(start 187.96 132.08)
-		(end 260.35 162.56)
+		(end 279.4 162.56)
 		(stroke
 			(width 0)
 			(type default)
@@ -4589,6 +4589,20 @@
 		)
 		(uuid "8f6d343e-c3ef-450b-8992-ba21e49dfb1b")
 	)
+	(text "JLCPCB 250301 comment:\nVINC Capacitor is placed incorrectly !!\ncurrent configuration will cause no 3.3 and 1.2V output\nOCPFLTN should fix, OCP OTP trigger should pull OCTPFLTN\n  then OCTPFLTN would then pull GATE_EN\ncan consider add gnd to SVPWM test pins\ncan use better 1.65V Vref (divided from Vref rather than PWR 3.3)\ncomment date: 25/03/20"
+		(exclude_from_sim no)
+		(at 65.786 71.12 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "a4adeca2-3a3f-461b-b9fc-75a9d8dd4366")
+	)
 	(text "disable gate if current OCP sensed overcurrent from curcuit"
 		(exclude_from_sim no)
 		(at 191.008 135.382 0)
@@ -4602,7 +4616,7 @@
 	)
 	(text "considering adding zener to protect current signal\nbut probably not necessary because OCP will trip first"
 		(exclude_from_sim no)
-		(at 67.31 97.79 0)
+		(at 65.786 107.188 0)
 		(effects
 			(font
 				(size 2.54 2.54)
