@@ -1,0 +1,16 @@
+(version 1)
+
+(rule cell_pins_copper_pour
+	(condition "A.Type == 'Zone' && B.NetClass == 'Danger' ")
+	(constraint physical_clearance (min 0.4mm))
+)
+
+(rule pwr_to_pwr
+	(condition "A.NetClass == 'Power' && B.NetClass == 'Power' && A.NetName != B.NetName && A.Type == 'Zone' && B.Type == 'Zone' ")
+	(constraint physical_clearance (min 0.6mm))
+)
+
+(rule pack_p_to_pack_n
+	(condition "A.NetName == '/PACK+' && B.NetName == '/PACK-' ")
+	(constraint physical_clearance (min 0.6mm))
+)
