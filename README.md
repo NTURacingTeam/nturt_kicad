@@ -4,7 +4,7 @@
 
 > [!NOTE]
 > Before you start, please include the appropriate libraries and path variables to ensure components and their resources can be loaded correctly!\
-> The exact paths and libraries required to be included is written in the README files located in each generation's directory. Images shown here is only for demonstration purposes only.
+> The exact paths and libraries required to be included is written in the README files located in each generation's directory. Images shown here are only for demonstration purposes only.
 
 ### Configuring path variable
 
