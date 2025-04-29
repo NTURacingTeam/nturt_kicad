@@ -10,6 +10,11 @@
 	(constraint physical_clearance (min 0.6mm))
 )
 
+(rule gnd_to_pwr
+	(condition "A.NetName == 'GND' && B.NetClass == 'Power' && A.Type == 'Zone' ")
+	(constraint physical_clearance (min 0.6mm))
+)
+
 (rule pack_p_to_pack_n
 	(condition "A.NetName == '/PACK+' && B.NetName == '/PACK-' ")
 	(constraint physical_clearance (min 0.6mm))

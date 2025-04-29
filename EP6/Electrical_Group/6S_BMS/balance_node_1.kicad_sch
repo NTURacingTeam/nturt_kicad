@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "c1c609f0-b75b-4040-81b4-b1158863157b")
 	(paper "A4")
 	(title_block
@@ -13,9 +13,13 @@
 	)
 	(lib_symbols
 		(symbol "Device:D_Zener_Small_Filled"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -83,18 +87,6 @@
 			(symbol "D_Zener_Small_Filled_0_1"
 				(polyline
 					(pts
-						(xy 0.762 0) (xy -0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -0.254 1.016) (xy -0.762 1.016) (xy -0.762 -1.016)
 					)
 					(stroke
@@ -115,6 +107,18 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -156,11 +160,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -242,7 +251,19 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 0) (xy -0.762 0)
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
 					)
 					(stroke
 						(width 0)
@@ -266,19 +287,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+						(xy 1.016 0) (xy -0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -327,11 +336,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -449,9 +463,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "PCM_Transistor_MOSFET_AKL:Q_PMOS-E_Generic_GSD"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -512,18 +529,6 @@
 			(symbol "Q_PMOS-E_Generic_GSD_0_1"
 				(polyline
 					(pts
-						(xy 0.254 -1.905) (xy 0.254 1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0.254 1.27) (xy -2.54 1.27)
 					)
 					(stroke
@@ -536,43 +541,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -2.286) (xy 0.762 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 2.54 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -0.508) (xy 0.762 0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.27) (xy 0.762 2.286)
+						(xy 0.254 -1.905) (xy 0.254 1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -596,7 +565,31 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 2.54 -1.778)
+						(xy 0.762 1.27) (xy 0.762 2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -0.508) (xy 0.762 0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 2.54 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -608,10 +601,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy 2.54 0) (xy 0.762 0)
+						(xy 0.762 -2.286) (xy 0.762 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -628,6 +621,30 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -709,7 +726,30 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "10R\nBalance current MAX: 420mA\nResistor power dissipation: 1.764W"
+		(exclude_from_sim no)
+		(at 146.05 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a92cacb-6269-41b8-a3bd-420f89613304")
+	)
+	(text "Circuit reference:\nhttps://www.ti.com/lit/ug/slvu925c/slvu925c.pdf\nBQ76930 Evaluation Module"
+		(exclude_from_sim no)
+		(at 146.05 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa58253a-9003-4301-8fff-89a4424d1e10")
 	)
 	(junction
 		(at 128.27 101.6)
@@ -1003,32 +1043,9 @@
 		)
 		(uuid "fc0256a5-a8ef-4127-9b03-48c8badc3994")
 	)
-	(text "10R\nBalance current MAX: 420mA\nResistor power dissipation: 1.764W"
-		(exclude_from_sim no)
-		(at 146.05 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8a92cacb-6269-41b8-a3bd-420f89613304")
-	)
-	(text "Circuit reference:\nhttps://www.ti.com/lit/ug/slvu925c/slvu925c.pdf\nBQ76930 Evaluation Module"
-		(exclude_from_sim no)
-		(at 146.05 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fa58253a-9003-4301-8fff-89a4424d1e10")
-	)
 	(hierarchical_label "cell-"
 		(shape input)
 		(at 121.92 116.84 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1040,7 +1057,6 @@
 	(hierarchical_label "VC+"
 		(shape input)
 		(at 184.15 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1052,7 +1068,6 @@
 	(hierarchical_label "cell+"
 		(shape input)
 		(at 120.65 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1064,7 +1079,6 @@
 	(hierarchical_label "VC-"
 		(shape input)
 		(at 184.15 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1083,7 +1097,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03d1f5e5-fcc6-4bcf-951c-899378e60455")
-		(property "Reference" "Q8"
+		(property "Reference" "Q7"
 			(at 124.46 91.44 0)
 			(effects
 				(font
@@ -1175,7 +1189,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3077c26b-98c2-4f42-909a-c88c4980e033")
-		(property "Reference" "R46"
+		(property "Reference" "R42"
 			(at 127 107.95 0)
 			(effects
 				(font
@@ -1265,7 +1279,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5614f9e0-b64c-47bd-a649-5f640ff7e827")
-		(property "Reference" "R47"
+		(property "Reference" "R43"
 			(at 135.89 111.76 0)
 			(effects
 				(font
@@ -1355,7 +1369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92896687-e0bb-4fa4-b86e-cf0be1da546c")
-		(property "Reference" "D14"
+		(property "Reference" "D11"
 			(at 176.53 97.79 90)
 			(effects
 				(font
@@ -1445,7 +1459,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5e8118d-2bad-4a97-a480-b64f8b393ee7")
-		(property "Reference" "D12"
+		(property "Reference" "D9"
 			(at 135.89 104.0764 90)
 			(effects
 				(font
@@ -1534,7 +1548,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cc197a0e-24d3-482f-a3c9-7f0789c37960")
-		(property "Reference" "R48"
+		(property "Reference" "R44"
 			(at 160.02 86.36 0)
 			(effects
 				(font
@@ -1624,7 +1638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9a3819b-a3ca-4b2a-a8bf-19165ebfc607")
-		(property "Reference" "D13"
+		(property "Reference" "D10"
 			(at 143.51 86.36 90)
 			(effects
 				(font
@@ -1713,7 +1727,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f300b53c-6919-4838-9d60-c8c0bb3a1e6d")
-		(property "Reference" "R49"
+		(property "Reference" "R45"
 			(at 165.1 93.98 90)
 			(effects
 				(font
