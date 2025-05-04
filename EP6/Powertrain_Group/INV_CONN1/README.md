@@ -14,6 +14,7 @@ It has 2 L-coded for 24V+CAN, 1 for SCio, 1 for debug (compatable with TI JTAG a
 |---------|------------|--------------|------------------------------|
 | 1.0     | 2025-03-10 | [Jack Kuo](https://github.com/chemmy-jack)  | Initial project creation.    |
 | 1.1     | 2025-04-27 | [Jack Kuo](https://github.com/chemmy-jack)  |  fix M12 L-coded hole too small mistake.  add fillet to board cut. add gournd under CAN trace for correct impedence match. sch not changed. |
+| 1.2     | 2025-05-04 | [Jack Kuo](https://github.com/chemmy-jack)  |  change a L-coded with SC T-coded for better hieght match (because L-coded is too short, the new form allows the two L-coded be easily cut out) |
 
 ## To-Do List
 
