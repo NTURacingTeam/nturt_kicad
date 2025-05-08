@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ACC_BMSmaster")
-		(date "2024-11-30")
-		(rev "1.0")
+		(date "2025-05-09")
+		(rev "2.0")
 		(company "NTURacing Team")
 		(comment 1 "Powertrain Group")
 		(comment 2 "Jack Kuo 郭哲明")
@@ -1375,22 +1375,20 @@
 		(uuid "8309f38a-2c93-40cc-9c18-b8fc99348703")
 	)
 	(no_connect
+		(at 50.8 149.86)
+		(uuid "11fe819a-ac0f-4744-8bbf-69725a8942de")
+	)
+	(no_connect
 		(at 53.34 157.48)
 		(uuid "2be0a654-bb78-4a09-8342-cc09a7a70966")
 	)
 	(no_connect
+		(at 50.8 152.4)
+		(uuid "72723ca9-da67-41bc-bd21-2a70d74a25e1")
+	)
+	(no_connect
 		(at 53.34 142.24)
 		(uuid "a711ce87-0528-4002-b9f8-b84b4ee41e5e")
-	)
-	(wire
-		(pts
-			(xy 34.29 91.44) (xy 52.07 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09f06eb8-f039-4fa4-be17-8ac4885581bb")
 	)
 	(wire
 		(pts
@@ -1491,16 +1489,6 @@
 			(type default)
 		)
 		(uuid "2cf062be-889d-42d9-a371-def51efc4bd1")
-	)
-	(wire
-		(pts
-			(xy 50.8 93.98) (xy 58.42 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e313f48-a87a-4364-b546-4c2d2b14fceb")
 	)
 	(wire
 		(pts
@@ -1674,16 +1662,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 93.98) (xy 45.72 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d58de41-326a-4f47-8251-047aa737b65b")
-	)
-	(wire
-		(pts
 			(xy 88.9 99.06) (xy 114.3 99.06)
 		)
 		(stroke
@@ -1801,16 +1779,6 @@
 			(type default)
 		)
 		(uuid "c49cbe6c-00cf-4720-a544-2e74ecaa4925")
-	)
-	(wire
-		(pts
-			(xy 57.15 91.44) (xy 58.42 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8197649-f0ff-42d4-b3c7-2576cb95e8f3")
 	)
 	(wire
 		(pts
@@ -2012,9 +1980,8 @@
 		)
 		(uuid "f1cf0581-70a1-41e3-8f6b-170ba4d90a39")
 	)
-	(label "errorOut"
+	(label "errorNFLTout"
 		(at 91.44 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2023,20 +1990,8 @@
 		)
 		(uuid "122cd584-45c6-47e1-9f93-98fa2d5059d5")
 	)
-	(label "UART1__RX"
-		(at 34.29 91.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4edbb972-6351-499f-be82-b506b6baf4af")
-	)
 	(label "UART2__TX"
 		(at 34.29 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2047,7 +2002,6 @@
 	)
 	(label "CANH"
 		(at 50.8 154.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2058,7 +2012,6 @@
 	)
 	(label "UART2__TX"
 		(at 50.8 147.32 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2069,7 +2022,6 @@
 	)
 	(label "CANL"
 		(at 45.72 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2080,7 +2032,6 @@
 	)
 	(label "UART2__RX"
 		(at 50.8 144.78 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2089,31 +2040,18 @@
 		)
 		(uuid "a5ec9621-cd75-4eef-bb34-a9b125540903")
 	)
-	(label "UART1__RX"
-		(at 50.8 149.86 180)
-		(fields_autoplaced yes)
+	(label "errorNFLTout"
+		(at 66.04 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "ba65f36d-79f0-42c2-9e50-c11f54ce3c98")
-	)
-	(label "UART1__TX"
-		(at 50.8 152.4 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bbe57d37-2822-401f-a234-69cd5bba77d1")
+		(uuid "c6dfd14f-8afc-4b77-899a-031d166bfd5f")
 	)
 	(label "UART2__RX"
 		(at 34.29 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2122,20 +2060,8 @@
 		)
 		(uuid "d0e6f1d6-f088-47dc-be94-b7cacb5fa4f2")
 	)
-	(label "UART1__TX"
-		(at 34.29 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d3050a4b-3330-4c4f-b01f-27c2461d0509")
-	)
 	(label "CANH"
 		(at 45.72 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2146,7 +2072,6 @@
 	)
 	(label "CANL"
 		(at 68.58 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2154,17 +2079,6 @@
 			(justify left bottom)
 		)
 		(uuid "ed6501c8-5d21-417b-9a9c-2d6dec32adf9")
-	)
-	(label "errorOut"
-		(at 66.04 142.24 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f21e8b44-7dfa-4c33-b606-8baefed103c5")
 	)
 	(symbol
 		(lib_id "Device:R_Small")
@@ -2184,7 +2098,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "20R"
 			(at 109.22 111.76 90)
 			(effects
 				(font
@@ -2229,6 +2143,70 @@
 			(project "ACC_BMSmaster"
 				(path "/267c771f-0521-43f0-b82e-9be5e7ffca48"
 					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 260.35 161.29 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01d6132f-a85f-4533-b728-4dd465734c3d")
+		(property "Reference" "H5"
+			(at 262.89 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 262.89 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 260.35 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 260.35 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ACC_BMSmaster"
+				(path "/267c771f-0521-43f0-b82e-9be5e7ffca48"
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -2433,74 +2411,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 54.61 91.44 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "13dcdd9f-63e0-4e69-bb62-9384cad2ec59")
-		(property "Reference" "R52"
-			(at 54.61 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 54.61 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 54.61 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 54.61 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "eaeba171-85b4-4ba2-8ddc-55fd84d804cf")
-		)
-		(pin "1"
-			(uuid "c27df635-6092-4927-bb60-5e53083a2f65")
-		)
-		(instances
-			(project "ACC_BMSmaster"
-				(path "/267c771f-0521-43f0-b82e-9be5e7ffca48"
-					(reference "R52")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
 		(at 123.19 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2517,7 +2427,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "20R"
 			(at 123.19 99.06 90)
 			(effects
 				(font
@@ -2585,7 +2495,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "20R"
 			(at 109.22 93.98 90)
 			(effects
 				(font
@@ -2793,7 +2703,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "20R"
 			(at 101.6 109.22 90)
 			(effects
 				(font
@@ -2838,6 +2748,70 @@
 			(project "ACC_BMSmaster"
 				(path "/267c771f-0521-43f0-b82e-9be5e7ffca48"
 					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 260.35 166.37 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56600d9c-1736-4432-a4d4-ba433b573833")
+		(property "Reference" "H6"
+			(at 262.89 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 262.89 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 260.35 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 260.35 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ACC_BMSmaster"
+				(path "/267c771f-0521-43f0-b82e-9be5e7ffca48"
+					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -3107,7 +3081,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "20R"
 			(at 116.84 114.3 90)
 			(effects
 				(font
@@ -3175,7 +3149,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "20R"
 			(at 93.98 106.68 90)
 			(effects
 				(font
@@ -3243,7 +3217,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "20R"
 			(at 116.84 96.52 90)
 			(effects
 				(font
@@ -3560,74 +3534,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 48.26 93.98 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b92cc975-299d-4dc9-aeb3-df08ff69aa40")
-		(property "Reference" "R53"
-			(at 48.26 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 48.26 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 48.26 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 48.26 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 48.26 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "22d8588b-48b0-4bdc-a412-1908e7ec4f49")
-		)
-		(pin "1"
-			(uuid "bd0a6afc-26c7-4f29-a85f-987928622b83")
-		)
-		(instances
-			(project "ACC_BMSmaster"
-				(path "/267c771f-0521-43f0-b82e-9be5e7ffca48"
-					(reference "R53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
 		(at 26.67 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3714,7 +3620,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "20R"
 			(at 123.19 116.84 90)
 			(effects
 				(font
@@ -3917,7 +3823,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "20R"
 			(at 101.6 91.44 90)
 			(effects
 				(font
@@ -4189,7 +4095,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "20R"
 			(at 93.98 88.9 90)
 			(effects
 				(font
@@ -4549,26 +4455,6 @@
 			)
 			(uuid "b0811e70-3e8a-4f40-9c26-533b8468dd41")
 		)
-		(pin "UART1_TX" output
-			(at 58.42 93.98 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "c48e48b0-66dd-443d-b938-1ee053333fd8")
-		)
-		(pin "UART1_RX" input
-			(at 58.42 91.44 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "cff79b2f-f117-4490-ab27-7c9241285915")
-		)
 		(pin "SPI1_MISO" input
 			(at 88.9 93.98 0)
 			(effects
@@ -4608,16 +4494,6 @@
 				(justify left)
 			)
 			(uuid "de11c3da-4c32-4a38-82f1-1643b34529eb")
-		)
-		(pin "ERR_OUT" output
-			(at 88.9 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "5b1ddda5-c22f-450e-9455-cecab1ce5f50")
 		)
 		(pin "UART2_RX" input
 			(at 58.42 104.14 180)
@@ -4708,6 +4584,16 @@
 				(justify right)
 			)
 			(uuid "cde22e87-8b6d-499d-ac4e-00497d7ffae2")
+		)
+		(pin "ERR_NFLT_OUT" output
+			(at 88.9 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0a398f8f-86b1-46e4-b3be-c9557d4929f3")
 		)
 		(instances
 			(project "ACC_BMSmaster"
