@@ -5,11 +5,11 @@
 	(uuid "c04015e6-7e66-46d2-972b-d1aebb688e83")
 	(paper "A4")
 	(title_block
-		(title "EP6 IMU DIY")
-		(date "2024-10-01")
-		(rev "1.0")
+		(title "IMU DIY")
+		(date "2025-05-08")
+		(rev "1.1")
 		(company "NTURacing")
-		(comment 1 "郭哲明")
+		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Electrical group")
 	)
 	(lib_symbols
@@ -1118,10 +1118,10 @@
 		)
 	)
 	(junction
-		(at 45.72 77.47)
+		(at 46.99 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b609b0ba-9045-4837-944c-e2dedd664e31")
+		(uuid "8cadc0d9-ae90-4ef2-9d1b-b88bf4979b49")
 	)
 	(junction
 		(at 54.61 77.47)
@@ -1157,7 +1157,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 77.47) (xy 45.72 77.47)
+			(xy 27.94 77.47) (xy 46.99 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1174,16 +1174,6 @@
 			(type default)
 		)
 		(uuid "13aaeb58-f0f0-4b53-a950-c0f0df72a482")
-	)
-	(wire
-		(pts
-			(xy 45.72 77.47) (xy 54.61 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bae7457-4f69-4e2f-86a6-c78edccc0487")
 	)
 	(wire
 		(pts
@@ -1227,7 +1217,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 85.09) (xy 45.72 77.47)
+			(xy 46.99 83.82) (xy 46.99 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1237,13 +1227,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 41.91) (xy 46.99 41.91)
+			(xy 50.8 44.45) (xy 46.99 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "64be1de5-a26b-421f-85fa-bc719d9d23c9")
+		(uuid "6eda95a5-4f9a-4434-9233-ebfb74bf646d")
 	)
 	(wire
 		(pts
@@ -1267,6 +1257,26 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 88.9) (xy 46.99 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85d1a5a8-8017-41c3-862f-3353f0f72688")
+	)
+	(wire
+		(pts
+			(xy 46.99 77.47) (xy 54.61 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93c9fc63-0441-490d-95a1-ef8e3c4ff50b")
+	)
+	(wire
+		(pts
 			(xy 74.93 30.48) (xy 74.93 41.91)
 		)
 		(stroke
@@ -1277,13 +1287,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 44.45) (xy 46.99 44.45)
+			(xy 50.8 41.91) (xy 46.99 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1c03241-2fb6-4198-a6ee-8d859624328b")
+		(uuid "c438f8ae-f47d-4ddb-bfb9-9fe5f9db5214")
 	)
 	(wire
 		(pts
@@ -1353,7 +1363,6 @@
 	)
 	(label "+24V_prefuse"
 		(at 27.94 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1364,7 +1373,6 @@
 	)
 	(label "+24V_proCMfilter"
 		(at 55.88 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1375,7 +1383,6 @@
 	)
 	(label "+24V_prefuse"
 		(at 78.74 30.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1474,16 +1481,16 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener_Small")
-		(at 45.72 87.63 270)
+		(at 46.99 86.36 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0b65baac-adab-472b-9018-298b1a78b5b6")
 		(property "Reference" "D32"
-			(at 48.26 86.3599 90)
+			(at 44.45 85.0899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1491,8 +1498,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "zener 27V"
-			(at 48.26 88.8999 90)
+		(property "Value" "27V MMSZ5254B-7-F"
+			(at 44.45 87.6299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1500,8 +1507,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMB"
-			(at 45.72 87.63 90)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 46.99 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1510,7 +1517,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 45.72 87.63 90)
+			(at 46.99 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1519,7 +1526,7 @@
 			)
 		)
 		(property "Description" "Zener diode, small symbol"
-			(at 45.72 87.63 0)
+			(at 46.99 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1882,8 +1889,7 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts_EP6:ACM70V-701-2PL-TL00")
-		(at 50.8 44.45 0)
-		(mirror x)
+		(at 71.12 44.45 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1907,7 +1913,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys_Parts_EP6:ACM70V7012PLTL00"
-			(at 67.31 -50.47 0)
+			(at 54.61 -50.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1917,7 +1923,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/datasheets/cmf_automotive_power_acm70v_en.pdf"
-			(at 67.31 -150.47 0)
+			(at 54.61 -150.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1927,7 +1933,7 @@
 			)
 		)
 		(property "Description" "Common Mode Choke 700R 4A R015 SMD TDK ACM-V Series Shielded SMD Common Mode Line Filter with a Ferrite Core, Wire-Wound 4A Idc"
-			(at 50.8 44.45 0)
+			(at 71.12 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1936,7 +1942,7 @@
 			)
 		)
 		(property "Height" "3"
-			(at 67.31 -350.47 0)
+			(at 54.61 -350.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1946,7 +1952,7 @@
 			)
 		)
 		(property "Mouser Part Number" "810-ACM70V7012PLTL00"
-			(at 67.31 -450.47 0)
+			(at 54.61 -450.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1956,7 +1962,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK/ACM70V-701-2PL-TL00?qs=YvrHl8DOVkzRE2uVQ82ErQ%3D%3D"
-			(at 67.31 -550.47 0)
+			(at 54.61 -550.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1966,7 +1972,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TDK"
-			(at 67.31 -650.47 0)
+			(at 54.61 -650.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1976,7 +1982,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "ACM70V-701-2PL-TL00"
-			(at 67.31 -750.47 0)
+			(at 54.61 -750.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2140,7 +2146,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 90.17 0)
+		(at 46.99 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2149,7 +2155,7 @@
 		(fields_autoplaced yes)
 		(uuid "8172fa22-90fa-4460-8f75-95026cd43b98")
 		(property "Reference" "#PWR0139"
-			(at 45.72 96.52 0)
+			(at 46.99 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2158,7 +2164,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 95.25 0)
+			(at 46.99 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2167,7 +2173,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 90.17 0)
+			(at 46.99 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2176,7 +2182,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 90.17 0)
+			(at 46.99 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2185,7 +2191,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 90.17 0)
+			(at 46.99 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)

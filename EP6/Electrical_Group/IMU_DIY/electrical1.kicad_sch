@@ -5,30 +5,30 @@
 	(uuid "51c11b4d-eba3-4a4f-b380-a0c686a3c0fd")
 	(paper "A4")
 	(title_block
-		(title "EP6 IMU DIY")
-		(date "2024-10-01")
-		(rev "1.0")
+		(title "IMU DIY")
+		(date "2025-05-08")
+		(rev "1.1")
 		(company "NTURacing")
-		(comment 1 "郭哲明")
+		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Electrical group")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_02x02_Odd_Even"
+		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 1.27 2.54 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_02x02_Odd_Even"
-				(at 1.27 -5.08 0)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -53,7 +53,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -71,7 +71,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_2x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -80,7 +80,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_02x02_Odd_Even_1_1"
+			(symbol "Conn_01x02_1_1"
 				(rectangle
 					(start -1.27 -2.413)
 					(end 0 -2.667)
@@ -105,35 +105,13 @@
 				)
 				(rectangle
 					(start -1.27 1.27)
-					(end 3.81 -3.81)
+					(end 1.27 -3.81)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
-					)
-				)
-				(rectangle
-					(start 3.81 -2.413)
-					(end 2.54 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 0.127)
-					(end 2.54 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(pin passive line
@@ -155,7 +133,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -165,42 +143,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -458,622 +400,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Power_Protection:NUP2105L"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 5.715 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "NUP2105L"
-				(at 5.715 0.635 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.715 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF"
-				(at 3.175 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Dual Line CAN Bus Protector, 24Vrwm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "can esd protection suppression transient"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NUP2105L_0_0"
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "NUP2105L_0_1"
-				(rectangle
-					(start -4.445 2.54)
-					(end 4.445 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -2.54 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 1.27) (xy -3.175 0.635) (xy -1.905 0.635) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0.635) (xy -2.54 -1.27) (xy 2.54 -1.27) (xy 2.54 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0.635) (xy -1.905 -0.635) (xy -3.175 -0.635) (xy -2.54 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0.635) (xy 1.905 -0.635) (xy 3.175 -0.635) (xy 2.54 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0.635) (xy 3.175 1.905) (xy 1.905 1.905) (xy 2.54 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0.635) (xy -3.175 1.905) (xy -1.905 1.905) (xy -2.54 0.635) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.905 0.635) (xy 2.54 0.635) (xy 3.175 0.635) (xy 3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NUP2105L_1_1"
-				(pin passive line
-					(at -2.54 5.08 270)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "SamacSys_Parts_EP6:EXC-X4CE900U"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "FL"
-				(at -0.254 1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "EXC-X4CE900U"
-				(at -0.254 -0.254 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "EXCX4CE900U"
-				(at 3.048 -92.126 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AWE0000/AWE0000C258.pdf"
-				(at 3.048 -192.126 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Series/Type: Common mode Filters (0202 small size), Size [LW] (mm): 0.650.50, Height (mm): 0.3, Impedance [Common Mode] (): 90, Rated Voltage [DC] (V): 5, Rated Current [DC] (mA): 100, DC Resistance [max.] (): 3.0+/-30%, Number of circuit: 1"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" ""
-				(at 3.048 -392.126 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "667-EXC-X4CE900U"
-				(at 3.048 -492.126 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EXC-X4CE900U?qs=r%2Fc3XikQTkKbkY%2FGNti4Lw%3D%3D"
-				(at 3.048 -592.126 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Panasonic"
-				(at 3.048 -692.126 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "EXC-X4CE900U"
-				(at 3.048 -792.126 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Simulation Data" "https://industrial.panasonic.com/content/data/CC/files/EXCX4CE900U.zip"
-				(at 3.048 -892.126 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "EXC-X4CE900U_1_1"
-				(arc
-					(start -2.488 -5.08)
-					(mid -1.2689 -3.81)
-					(end -2.488 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.488 -2.54)
-					(mid -1.2689 -1.27)
-					(end -2.488 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.488 0)
-					(mid -1.2689 1.27)
-					(end -2.488 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.488 2.54)
-					(mid -1.2689 3.81)
-					(end -2.488 5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -5.08) (xy -2.54 -7.366)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 5.08) (xy -2.54 7.366)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 5.08) (xy -0.635 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 5.08) (xy 0.635 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -5.08) (xy 2.54 -7.366)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 5.08) (xy 2.54 7.366)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.488 -2.54)
-					(mid 1.2689 -3.81)
-					(end 2.488 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.488 0)
-					(mid 1.2689 -1.27)
-					(end 2.488 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.488 2.54)
-					(mid 1.2689 1.27)
-					(end 2.488 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.488 5.08)
-					(mid 1.2689 3.81)
-					(end 2.488 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -2.54 -10.16 90)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -10.16 90)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 10.16 270)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 10.16 270)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1659,18 +985,6 @@
 		)
 	)
 	(junction
-		(at 107.95 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "57e76837-57b3-4421-919b-ab28a7328c03")
-	)
-	(junction
-		(at 152.4 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5d23acea-d7b8-4a84-bcfe-01a3161838d2")
-	)
-	(junction
 		(at 118.11 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1682,12 +996,6 @@
 		(color 0 0 0 0)
 		(uuid "9f08cea0-184b-4ce0-b0a1-4b9f2bf09d4b")
 	)
-	(junction
-		(at 102.87 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e052fa4d-7393-450d-9de4-1dcb2c33ec45")
-	)
 	(wire
 		(pts
 			(xy 53.34 86.36) (xy 54.61 86.36)
@@ -1697,26 +1005,6 @@
 			(type default)
 		)
 		(uuid "018f8014-6fbf-400b-a90a-6213089f70af")
-	)
-	(wire
-		(pts
-			(xy 144.78 95.25) (xy 152.4 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09563afd-2ce2-4fed-a9d1-9a5582b3324d")
-	)
-	(wire
-		(pts
-			(xy 144.78 91.44) (xy 142.24 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e17e951-bc49-48f9-b69e-2ce406ba019d")
 	)
 	(wire
 		(pts
@@ -1740,13 +1028,13 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 88.9) (xy 144.78 88.9)
+			(xy 81.28 87.63) (xy 118.11 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "25c288cb-6ebd-42d7-b2dc-e9d249ff7464")
+		(uuid "1b2cb9b0-50de-46d0-b6c9-69aa119476ab")
 	)
 	(wire
 		(pts
@@ -1780,46 +1068,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 87.63) (xy 107.95 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e82be95-563a-4ef9-969d-e1a1dabeb9a4")
-	)
-	(wire
-		(pts
-			(xy 144.78 82.55) (xy 144.78 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "590da730-78e9-4942-ab5c-f73070d68ad5")
-	)
-	(wire
-		(pts
-			(xy 107.95 87.63) (xy 107.95 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63c32a0b-3c90-4afc-9259-f2c236b242d9")
-	)
-	(wire
-		(pts
-			(xy 102.87 92.71) (xy 101.6 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8811b51e-b0fc-4226-a4e3-e7dcfe568671")
-	)
-	(wire
-		(pts
 			(xy 121.92 92.71) (xy 118.11 92.71)
 		)
 		(stroke
@@ -1830,23 +1078,13 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 92.71) (xy 80.01 92.71)
+			(xy 80.01 92.71) (xy 118.11 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "979b2123-e594-4b83-9b74-9c1a534e72e5")
-	)
-	(wire
-		(pts
-			(xy 152.4 90.17) (xy 152.4 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acf9f066-a365-43f5-9ba4-5fbe43476987")
 	)
 	(wire
 		(pts
@@ -1877,16 +1115,6 @@
 			(type default)
 		)
 		(uuid "c2e16027-b641-49db-b006-a5be33ad1515")
-	)
-	(wire
-		(pts
-			(xy 152.4 88.9) (xy 152.4 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c83714c2-442d-4cb5-8071-d653b2c563ff")
 	)
 	(wire
 		(pts
@@ -1930,36 +1158,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 92.71) (xy 102.87 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9a25f02-a41a-4efc-8219-55f090610b19")
-	)
-	(wire
-		(pts
-			(xy 144.78 91.44) (xy 144.78 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da977b19-3ace-4fed-bcc1-eba55ec0e3e4")
-	)
-	(wire
-		(pts
-			(xy 107.95 87.63) (xy 118.11 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc79dbac-b67c-4f32-818e-884a153cc993")
-	)
-	(wire
-		(pts
 			(xy 80.01 88.9) (xy 81.28 88.9)
 		)
 		(stroke
@@ -1967,26 +1165,6 @@
 			(type default)
 		)
 		(uuid "e084d5ec-1ebb-4ec6-b0c1-80fd8281db8c")
-	)
-	(wire
-		(pts
-			(xy 144.78 82.55) (xy 152.4 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1de2817-4a08-4e68-89c2-e16efcde6547")
-	)
-	(wire
-		(pts
-			(xy 102.87 92.71) (xy 118.11 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e46b657a-8704-4c25-a2be-70d95a13a13b")
 	)
 	(wire
 		(pts
@@ -2017,16 +1195,6 @@
 			(type default)
 		)
 		(uuid "efe5b639-022e-4bce-b804-8fc8cd58a5ac")
-	)
-	(wire
-		(pts
-			(xy 158.75 88.9) (xy 152.4 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f81b6827-f1c2-4d9c-b28b-0b7001b99689")
 	)
 	(wire
 		(pts
@@ -2063,7 +1231,6 @@
 	)
 	(label "CAN1_RX"
 		(at 262.89 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2074,7 +1241,6 @@
 	)
 	(label "CAN1_TX"
 		(at 262.89 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2085,7 +1251,6 @@
 	)
 	(label "CAN1_TX"
 		(at 39.37 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2096,7 +1261,6 @@
 	)
 	(label "CAN1_RX"
 		(at 39.37 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2105,54 +1269,31 @@
 		)
 		(uuid "e66d1957-33a2-4168-a740-79f041b4c240")
 	)
-	(global_label "CANH"
-		(shape input)
+	(hierarchical_label "CANH"
+		(shape bidirectional)
 		(at 118.11 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "49c18875-7244-4b85-aade-3ad827453424")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.9002 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "147f7dab-afde-4581-8d25-f4e635d258e0")
 	)
-	(global_label "CANL"
-		(shape input)
+	(hierarchical_label "CANL"
+		(shape bidirectional)
 		(at 118.11 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "79ccf111-23ef-4930-98b1-24f0f2a1258e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.7128 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "97a9f723-93eb-4056-9ea6-39b79fcd4811")
 	)
 	(hierarchical_label "CAN1_RX"
 		(shape input)
 		(at 271.78 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2164,7 +1305,6 @@
 	(hierarchical_label "CAN1_TX"
 		(shape input)
 		(at 271.78 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2199,29 +1339,6 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 146.05 82.55 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3abb4636-68f0-4595-adf7-7318dab67a95")
-		(property "Netclass" "CAN"
-			(at 146.7485 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
 		(at 105.41 87.63 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2239,29 +1356,6 @@
 					(italic yes)
 				)
 				(justify right)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 146.05 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "871fb4da-1521-48cb-a93a-4f06db47211f")
-		(property "Netclass" "CAN"
-			(at 146.7485 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -2784,143 +1878,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 152.4 92.71 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "51ab39e8-55d5-4f00-934d-c226eec8265a")
-		(property "Reference" "R54"
-			(at 154.94 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "60R"
-			(at 154.94 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 152.4 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 152.4 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 152.4 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4edce590-c8c7-4659-9453-e419c05f35b9")
-		)
-		(pin "2"
-			(uuid "bc86ed69-5b2f-4d7f-a89f-7287768c7461")
-		)
-		(instances
-			(project "VCU"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/ed0bcbe7-a049-4b9a-b2fb-c287c03bab61"
-					(reference "R54")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 163.83 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "528c2ee6-38cc-4d59-b594-0226d60379ff")
-		(property "Reference" "#PWR0129"
-			(at 163.83 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 163.83 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5691fbd8-a85b-427a-8311-df70495e6d44")
-		)
-		(instances
-			(project "VCU"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/ed0bcbe7-a049-4b9a-b2fb-c287c03bab61"
-					(reference "#PWR0129")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 20.32 92.71 0)
 		(unit 1)
@@ -3124,102 +2081,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 105.41 104.14 0)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 134.62 91.44 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "72d04a6b-65e6-42fb-8add-473840a90b07")
-		(property "Reference" "#PWR0152"
-			(at 105.41 110.49 0)
+		(uuid "9cea7265-c81d-4f44-a9c7-7e87fa790e0e")
+		(property "Reference" "J4"
+			(at 137.16 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 105.41 109.22 0)
+		(property "Value" "CAN"
+			(at 137.16 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 105.41 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 105.41 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e6c8e1b2-17d6-4cd9-a3d7-ecca167d0cac")
-		)
-		(instances
-			(project "VCU"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/ed0bcbe7-a049-4b9a-b2fb-c287c03bab61"
-					(reference "#PWR0152")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 152.4 85.09 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab4e08b3-6dcd-4bdc-bf8f-a33e00add633")
-		(property "Reference" "R53"
-			(at 154.94 83.8199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "60R"
-			(at 154.94 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 152.4 85.09 0)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 134.62 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3228,7 +2118,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 152.4 85.09 0)
+			(at 134.62 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3236,8 +2126,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 152.4 85.09 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 134.62 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3246,89 +2136,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4f052220-83df-46dd-b3ef-0eafeea415b0")
+			(uuid "94279eac-9ae0-47e5-91c6-25e2f9846c64")
 		)
 		(pin "2"
-			(uuid "d1df8861-ffb5-4103-b39f-a926b21783c7")
+			(uuid "019e1a3e-31fb-4323-8846-abab6b3e73ee")
 		)
 		(instances
-			(project "VCU"
+			(project "IMU_DIY"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/ed0bcbe7-a049-4b9a-b2fb-c287c03bab61"
-					(reference "R53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power_Protection:NUP2105L")
-		(at 105.41 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c014aff2-7333-444a-9a50-f958e157651a")
-		(property "Reference" "D19"
-			(at 111.76 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NUP2105L"
-			(at 111.76 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 111.125 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF"
-			(at 108.585 95.885 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Line CAN Bus Protector, 24Vrwm"
-			(at 105.41 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "04d7123a-8ba9-42a9-abda-65f1531fa1b3")
-		)
-		(pin "3"
-			(uuid "9f65ae12-8123-474f-9cb4-bc5a78545fe9")
-		)
-		(pin "1"
-			(uuid "3beed31c-afd7-42a7-a5a9-3d8598c6d6c6")
-		)
-		(instances
-			(project "VCU"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/ed0bcbe7-a049-4b9a-b2fb-c287c03bab61"
-					(reference "D19")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -3396,142 +2212,6 @@
 			(project "VCU"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/ed0bcbe7-a049-4b9a-b2fb-c287c03bab61"
 					(reference "#PWR0126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts_EP6:EXC-X4CE900U")
-		(at 91.44 90.17 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d1e84408-45ab-48d3-82c6-969301e99c61")
-		(property "Reference" "FL3"
-			(at 91.44 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "EXC-X4CE900U"
-			(at 91.44 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts_EP6:EXCX4CE900U"
-			(at -0.686 93.218 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AWE0000/AWE0000C258.pdf"
-			(at -100.686 93.218 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Series/Type: Common mode Filters (0202 small size), Size [LW] (mm): 0.650.50, Height (mm): 0.3, Impedance [Common Mode] (): 90, Rated Voltage [DC] (V): 5, Rated Current [DC] (mA): 100, DC Resistance [max.] (): 3.0+/-30%, Number of circuit: 1"
-			(at 91.44 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at -300.686 93.218 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "667-EXC-X4CE900U"
-			(at -400.686 93.218 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EXC-X4CE900U?qs=r%2Fc3XikQTkKbkY%2FGNti4Lw%3D%3D"
-			(at -500.686 93.218 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at -600.686 93.218 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EXC-X4CE900U"
-			(at -700.686 93.218 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Simulation Data" "https://industrial.panasonic.com/content/data/CC/files/EXCX4CE900U.zip"
-			(at -800.686 93.218 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f42f6c8f-fb91-47d4-b334-75dd268e7f1c")
-		)
-		(pin "4"
-			(uuid "e6c1a662-bdb9-477e-9e9f-716636e758ac")
-		)
-		(pin "3"
-			(uuid "adc8d3a2-9a9e-451d-bab9-d7e92caac175")
-		)
-		(pin "2"
-			(uuid "61390fc4-8fca-415f-ac7f-015dd0abebd0")
-		)
-		(instances
-			(project "VCU"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/ed0bcbe7-a049-4b9a-b2fb-c287c03bab61"
-					(reference "FL3")
 					(unit 1)
 				)
 			)
@@ -3692,147 +2372,6 @@
 			(project "VCU"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/ed0bcbe7-a049-4b9a-b2fb-c287c03bab61"
 					(reference "C65")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 161.29 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ec5a9644-0ec1-4942-9ffc-214a20098108")
-		(property "Reference" "C67"
-			(at 161.2963 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47n"
-			(at 161.2963 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 161.29 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 161.29 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 161.29 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "672abc85-93e7-4cfd-aeb4-d1e570d83aca")
-		)
-		(pin "2"
-			(uuid "50ffe709-767c-4380-838f-878282e17eaa")
-		)
-		(instances
-			(project "VCU"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/ed0bcbe7-a049-4b9a-b2fb-c287c03bab61"
-					(reference "C67")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
-		(at 134.62 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fd16321c-142b-4c61-920e-135d06824c54")
-		(property "Reference" "J4"
-			(at 135.89 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CAN1_termination"
-			(at 135.89 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
-			(at 134.62 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 134.62 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1235afd0-6c18-4ffa-b18f-efa42e3f733c")
-		)
-		(pin "2"
-			(uuid "4a7a1f40-0905-4c1b-9177-4d17c6635b2a")
-		)
-		(pin "3"
-			(uuid "feaf96a5-11cc-4780-9b45-f9b980d68b15")
-		)
-		(pin "4"
-			(uuid "c64ab9e9-5e86-40d2-b3e2-b912dd0f9b1e")
-		)
-		(instances
-			(project "IMU_DIY"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/ed0bcbe7-a049-4b9a-b2fb-c287c03bab61"
-					(reference "J4")
 					(unit 1)
 				)
 			)
