@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "STlink")
-		(date "2025-05-04")
-		(rev "1.1")
+		(date "2025-05-09")
+		(rev "1.2")
 		(company "NTURacing")
 		(comment 1 "Jack Kuo")
 	)
@@ -2433,7 +2433,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C13"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d0f2d955-6370-464e-acba-638205c38146")
@@ -2445,7 +2445,7 @@
 			)
 		)
 		(property "Value" "30p"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "50f87ba9-8661-48e1-9766-3688fd7c42d9")
 			(effects
@@ -2600,7 +2600,7 @@
 			(uuid "405ee17b-c647-4bcc-a7ca-b67cec14ccc5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "a4614d4b-eb49-4be1-a8a7-c4779bb7a7e2")
 			(effects
@@ -12773,16 +12773,89 @@
 			)
 		)
 	)
-	(gr_rect
-		(start 122 40.5)
-		(end 140 64.4)
+	(gr_line
+		(start 122 62.4)
+		(end 122 42.5)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
 		(layer "Edge.Cuts")
-		(uuid "b51221d4-6fb2-4b6e-b3c7-41a58930332e")
+		(uuid "04554c02-a304-4b03-a0f3-f484621ddbd4")
+	)
+	(gr_arc
+		(start 124 64.4)
+		(mid 122.585786 63.814214)
+		(end 122 62.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "1aa4bde2-8ac9-4131-adf0-71cfbf746713")
+	)
+	(gr_line
+		(start 124 40.5)
+		(end 138 40.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "1bb9dadd-7acb-4a67-8401-57ae6b1857de")
+	)
+	(gr_arc
+		(start 122 42.5)
+		(mid 122.585786 41.085786)
+		(end 124 40.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "62ccbbe0-7a8d-428e-83cd-2ab640544752")
+	)
+	(gr_line
+		(start 138 64.4)
+		(end 124 64.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "8ff2c3e7-3eb6-4ebe-bc55-22414263ccc4")
+	)
+	(gr_line
+		(start 140 42.5)
+		(end 140 62.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c42e9cf9-798d-4acc-8985-24341165a3d3")
+	)
+	(gr_arc
+		(start 140 62.4)
+		(mid 139.414214 63.814214)
+		(end 138 64.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d7e59257-ab60-48f7-981c-66216f06d0b9")
+	)
+	(gr_arc
+		(start 138 40.5)
+		(mid 139.414214 41.085786)
+		(end 140 42.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f03c8eea-f3fc-4307-87da-9a6db31d9f3b")
 	)
 	(gr_text "FUSE"
 		(at 123.7 43.7 -90)
@@ -12898,20 +12971,6 @@
 				(italic yes)
 			)
 			(justify left mirror)
-		)
-	)
-	(gr_text "+3V3"
-		(at 135.6 83.6 0)
-		(layer "F.SilkS")
-		(uuid "9335825f-7539-49ac-ba4b-58bccfe1d900")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
-				(italic yes)
-			)
-			(justify left)
 		)
 	)
 	(gr_text "S_RST"
