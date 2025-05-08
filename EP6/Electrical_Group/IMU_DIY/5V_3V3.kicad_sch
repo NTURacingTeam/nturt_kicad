@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "IMU DIY")
-		(date "2025-05-08")
-		(rev "1.1")
+		(date "2025-05-09")
+		(rev "1.2")
 		(company "NTURacing")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Electrical group")
@@ -604,127 +604,6 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 0.508)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:R"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -1882,22 +1761,6 @@
 		(color 0 0 0 0)
 		(uuid "da89d4b0-779d-4a28-b3a3-0b316eeb564f")
 	)
-	(junction
-		(at 196.85 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e13ddbbc-f642-4003-9441-5fdb52839bb6")
-	)
-	(wire
-		(pts
-			(xy 196.85 128.27) (xy 196.85 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "083d149b-f0a4-4dfc-9a13-f93a2bc4fed8")
-	)
 	(wire
 		(pts
 			(xy 113.03 58.42) (xy 113.03 55.88)
@@ -1907,16 +1770,6 @@
 			(type default)
 		)
 		(uuid "0e183929-36ed-4de7-bbcd-f29a81bded8b")
-	)
-	(wire
-		(pts
-			(xy 196.85 137.16) (xy 196.85 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ff954ca-fb5a-4fcf-9012-8f12c2689da9")
 	)
 	(wire
 		(pts
@@ -2017,16 +1870,6 @@
 			(type default)
 		)
 		(uuid "46555f20-72e6-498a-ab2f-78f40a71dc5a")
-	)
-	(wire
-		(pts
-			(xy 196.85 118.11) (xy 196.85 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49ac3e35-ae29-40b2-b573-ba27fe534886")
 	)
 	(wire
 		(pts
@@ -3194,73 +3037,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 196.85 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40871bdf-12f8-4099-a0e8-1bafa262fa4b")
-		(property "Reference" "#PWR0101"
-			(at 196.85 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 196.85 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 196.85 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 196.85 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 196.85 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f2e54ffd-7603-45cf-b39c-581ee54864b5")
-		)
-		(instances
-			(project "power board"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/cb17a738-4f3c-4f27-8532-9e3dda42f091"
-					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 57.15 33.02 0)
 		(unit 1)
@@ -3395,76 +3171,6 @@
 			(project "IMU_DIY"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/cb17a738-4f3c-4f27-8532-9e3dda42f091"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 196.85 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "591a099d-6bd3-475b-b0c3-754bc4a563e0")
-		(property "Reference" "R40"
-			(at 199.39 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "510R"
-			(at 199.39 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 195.072 132.08 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 196.85 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e42109ee-624d-4260-9356-dda23dda8bb8")
-		)
-		(pin "2"
-			(uuid "52984f40-bc41-4e8a-8d60-5b62c5499e33")
-		)
-		(instances
-			(project "power board"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/cb17a738-4f3c-4f27-8532-9e3dda42f091"
-					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -3731,76 +3437,6 @@
 			(project "IMU_DIY"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/cb17a738-4f3c-4f27-8532-9e3dda42f091"
 					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 196.85 123.19 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "76ce1387-2148-4684-9695-e38b0816e570")
-		(property "Reference" "D11"
-			(at 200.66 123.5075 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "RED 3V3"
-			(at 200.66 126.0475 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 196.85 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 196.85 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6026fbac-2982-4182-b48d-a203bc74b754")
-		)
-		(pin "2"
-			(uuid "7eb4cd86-4031-41b7-8b66-20d9738423f0")
-		)
-		(instances
-			(project "power board"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/cb17a738-4f3c-4f27-8532-9e3dda42f091"
-					(reference "D11")
 					(unit 1)
 				)
 			)

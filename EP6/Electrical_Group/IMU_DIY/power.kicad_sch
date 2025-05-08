@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "IMU DIY")
-		(date "2025-05-08")
-		(rev "1.1")
+		(date "2025-05-09")
+		(rev "1.2")
 		(company "NTURacing")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Electrical group")
@@ -142,6 +142,138 @@
 					(at 2.54 0 180)
 					(length 1.778)
 					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Fuse_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse_Small"
+				(at 0 1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_Small_0_1"
+				(rectangle
+					(start -1.27 0.508)
+					(end 1.27 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1157,7 +1289,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 77.47) (xy 46.99 77.47)
+			(xy 27.94 77.47) (xy 35.56 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1315,6 +1447,16 @@
 		)
 		(uuid "d6d77d7c-5805-4006-8a7f-802c1acafa94")
 	)
+	(wire
+		(pts
+			(xy 40.64 77.47) (xy 46.99 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1953171-3b27-4ff7-9e6a-ed7add0bb251")
+	)
 	(rectangle
 		(start 15.24 16.51)
 		(end 191.77 57.15)
@@ -1362,12 +1504,12 @@
 		(uuid "b7144809-9233-4441-97a0-1fdc965dbca7")
 	)
 	(label "+24V_prefuse"
-		(at 27.94 77.47 0)
+		(at 27.94 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "05a8e9bc-3f90-43d6-a886-3058e6fb8c64")
 	)
@@ -2404,6 +2546,74 @@
 			(project "power board"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/80d1c5c9-220d-48c3-82a0-691038908f33"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse_Small")
+		(at 38.1 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d114ba24-ba6a-4e1c-bb5e-676507df4e21")
+		(property "Reference" "F1"
+			(at 38.1 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.5A"
+			(at 38.1 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
+			(at 38.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse, small symbol"
+			(at 38.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ab738dc-cae3-4ce1-a1a6-aabba19eddd4")
+		)
+		(pin "2"
+			(uuid "69fc5e5b-b14e-42fd-8ac5-4257f24b404e")
+		)
+		(instances
+			(project "IMU_DIY"
+				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/80d1c5c9-220d-48c3-82a0-691038908f33"
+					(reference "F1")
 					(unit 1)
 				)
 			)
