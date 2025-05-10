@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "INV_PhaseIsense")
-		(date "2025-03-07")
-		(rev "1.1")
+		(date "2025-05-10")
+		(rev "1.2")
 		(company "NTURacing")
 		(comment 1 "郭哲明 Jack Kuo")
 	)
@@ -553,6 +553,88 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -1599,6 +1681,17 @@
 		)
 		(uuid "faa07af6-db1c-474f-893f-033fd2c0527d")
 	)
+	(text "V1.0 initial commit\nV1.1 shift connector left 6 mm\nV1.2 shift connector up about 6mm and right 6mm exactly (back to where V1.0 is)\n     for better bus assembly\n     add mounting hole for more sturdy mounting "
+		(exclude_from_sim no)
+		(at 42.672 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b766fc0a-98d0-412b-8440-9ad98e7e5b1d")
+	)
 	(label "W-"
 		(at 72.39 67.31 0)
 		(effects
@@ -1812,7 +1905,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LZSR80P"
+		(property "Footprint" "nturt_kicad_lib_EP6:LZSR80P"
 			(at 115.57 164.77 0)
 			(effects
 				(font
@@ -1953,7 +2046,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LZSR80P"
+		(property "Footprint" "nturt_kicad_lib_EP6:LZSR80P"
 			(at 115.57 188.9 0)
 			(effects
 				(font
@@ -2069,6 +2162,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 54.61 163.83 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b76363f-c7be-45fa-8741-8f1f51f40c40")
+		(property "Reference" "H1"
+			(at 57.15 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 57.15 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 54.61 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 54.61 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/c6725d55-5833-4586-96a2-48404258060f"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 60.96 91.44 0)
 		(unit 1)
@@ -2161,7 +2318,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LZSR80P"
+		(property "Footprint" "nturt_kicad_lib_EP6:LZSR80P"
 			(at 115.57 140.64 0)
 			(effects
 				(font
@@ -2405,6 +2562,70 @@
 			(project "INV_PhaseIsense"
 				(path "/c6725d55-5833-4586-96a2-48404258060f"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 54.61 170.18 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be468e51-e087-41ed-a104-1601129e0737")
+		(property "Reference" "H2"
+			(at 57.15 168.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 57.15 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 54.61 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 54.61 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "INV_PhaseIsense"
+				(path "/c6725d55-5833-4586-96a2-48404258060f"
+					(reference "H2")
 					(unit 1)
 				)
 			)
