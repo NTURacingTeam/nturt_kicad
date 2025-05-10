@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ACC_HVLV1")
-		(date "2025-05-05")
-		(rev "2.1")
+		(date "2025-05-10")
+		(rev "2.2")
 		(company "NTURacing")
 		(comment 1 "Jack Kuo")
 		(comment 2 "Powertrain")
@@ -1351,23 +1351,23 @@
 				)
 			)
 		)
-		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+		(symbol "Mechanical:MountingHole"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 6.35 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1392,7 +1392,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole with connection"
+			(property "Description" "Mounting Hole without connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1410,7 +1410,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
+			(property "ki_fp_filters" "MountingHole*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1419,9 +1419,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_Pad_0_1"
+			(symbol "MountingHole_0_1"
 				(circle
-					(center 0 1.27)
+					(center 0 0)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -1429,26 +1429,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 			)
@@ -2934,14 +2914,6 @@
 		(uuid "f9d15e1d-2835-4d12-bbbe-16d905d823b3")
 	)
 	(no_connect
-		(at 25.4 44.45)
-		(uuid "2b449343-280a-47c0-8b1e-04a65b80a79b")
-	)
-	(no_connect
-		(at 25.4 55.88)
-		(uuid "34906db6-24df-40c5-8bc8-9e4fc1735d16")
-	)
-	(no_connect
 		(at 209.55 110.49)
 		(uuid "362bb1be-47bb-474b-8a7e-475a20cef464")
 	)
@@ -2950,16 +2922,8 @@
 		(uuid "4b63a183-f515-4eda-ab9f-6921ded00da7")
 	)
 	(no_connect
-		(at 25.4 22.86)
-		(uuid "50cec07d-a10f-48a4-9f4f-26a6f607d950")
-	)
-	(no_connect
 		(at 209.55 100.33)
 		(uuid "6f77ed47-19a6-44d9-bb7f-a25d311ca9ff")
-	)
-	(no_connect
-		(at 25.4 34.29)
-		(uuid "e2ac0bac-b23b-4c12-9b0b-314e39b96e0b")
 	)
 	(no_connect
 		(at 72.39 36.83)
@@ -3809,6 +3773,17 @@
 		)
 		(uuid "1ea9a177-de83-4e37-983d-ccd73eb8c8e8")
 	)
+	(text "V2.2 shrink size from 100*100 to 100*80"
+		(exclude_from_sim no)
+		(at 22.606 133.858 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1ed2b29e-53e5-4087-a181-f882ab1c7e71")
+	)
 	(text "5V LDO"
 		(exclude_from_sim no)
 		(at 88.646 19.304 0)
@@ -4529,6 +4504,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 17.78 54.61 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "190c84ba-4055-4a4d-8ae5-0665daab788b")
+		(property "Reference" "H3"
+			(at 20.32 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 20.32 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 17.78 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 17.78 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 17.78 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ACC_HVLV1"
+				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 153.67 24.13 0)
 		(mirror y)
@@ -4898,71 +4937,6 @@
 			(project "ACC_HVLV1"
 				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
 					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 22.86 55.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33f51fff-f57e-4b1e-bbc1-af6b756b2ae5")
-		(property "Reference" "H4"
-			(at 21.59 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 21.59 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
-			(at 22.86 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 22.86 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 22.86 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "816a7998-eb07-4bbb-b4a1-14895278a3cc")
-		)
-		(instances
-			(project "ACC_HVLV1"
-				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
-					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -5372,71 +5346,6 @@
 			(project "ACC_HVLV1"
 				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 22.86 34.29 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5884d514-60ac-4606-a175-2cef00cf3ca9")
-		(property "Reference" "H2"
-			(at 21.59 27.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 21.59 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
-			(at 22.86 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 22.86 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 22.86 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d00e94b0-5e32-471f-8811-f9959b7d5bcc")
-		)
-		(instances
-			(project "ACC_HVLV1"
-				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
-					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -6131,71 +6040,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 22.86 44.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "992930dd-a7b2-4c00-84be-c5d7ef0f4fd5")
-		(property "Reference" "H3"
-			(at 21.59 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 21.59 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
-			(at 22.86 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 22.86 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 22.86 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f2dd241f-e816-44cc-97c3-f12f3eaf1763")
-		)
-		(instances
-			(project "ACC_HVLV1"
-				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 118.11 35.56 0)
 		(unit 1)
@@ -6260,6 +6104,70 @@
 			(project "ACC_HVLV1"
 				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 17.78 44.45 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a51d1d0c-8576-4618-bb3d-6c13b4753cfb")
+		(property "Reference" "H1"
+			(at 20.32 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 20.32 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 17.78 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 17.78 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 17.78 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -6716,6 +6624,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 17.78 59.69 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d985da6e-7b26-406b-9c8a-8dcec08595a3")
+		(property "Reference" "H4"
+			(at 20.32 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 20.32 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 17.78 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 17.78 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 17.78 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ACC_HVLV1"
+				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 167.64 82.55 90)
 		(unit 1)
@@ -6931,6 +6903,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 17.78 49.53 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e59e2cee-86df-4777-bc28-177ff63c2d32")
+		(property "Reference" "H2"
+			(at 20.32 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 20.32 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 17.78 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 17.78 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 17.78 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ACC_HVLV1"
+				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 139.7 90.17 90)
 		(unit 1)
@@ -7061,71 +7097,6 @@
 			(project "ACC_HVLV1"
 				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 22.86 22.86 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f1a15295-68f9-428c-89cb-00bc8f576de4")
-		(property "Reference" "H1"
-			(at 21.59 16.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 21.59 19.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
-			(at 22.86 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 22.86 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 22.86 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3425f7e1-a68f-407b-a219-2ac1524e72aa")
-		)
-		(instances
-			(project "ACC_HVLV1"
-				(path "/46105e9e-af66-459c-bb81-37b4c50fe11b"
-					(reference "H1")
 					(unit 1)
 				)
 			)
