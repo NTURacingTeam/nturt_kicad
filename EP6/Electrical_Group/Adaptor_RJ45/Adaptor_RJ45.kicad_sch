@@ -6,13 +6,13 @@
 	(paper "A4")
 	(title_block
 		(title "Adaptor_RJ45")
-		(date "2025-05-04")
-		(rev "1.0")
+		(date "2025-05-12")
+		(rev "1.1")
 		(company "NTURacing Team")
 		(comment 1 "Jack Kuo")
 	)
 	(lib_symbols
-		(symbol "Connector:RJ45"
+		(symbol "Connector:RJ45_Shielded"
 			(pin_names
 				(offset 1.016)
 			)
@@ -28,7 +28,7 @@
 					(justify right)
 				)
 			)
-			(property "Value" "RJ45"
+			(property "Value" "RJ45_Shielded"
 				(at 2.54 13.97 0)
 				(effects
 					(font
@@ -55,7 +55,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(property "Description" "RJ connector, 8P8C (8 positions 8 connected), Shielded"
 				(at 0 0 0)
 				(effects
 					(font
@@ -64,7 +64,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "8P8C RJ socket connector"
+			(property "ki_keywords" "8P8C RJ jack socket connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -82,7 +82,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "RJ45_0_1"
+			(symbol "RJ45_Shielded_0_1"
 				(polyline
 					(pts
 						(xy -5.08 4.445) (xy -6.35 4.445)
@@ -205,7 +205,7 @@
 					)
 				)
 			)
-			(symbol "RJ45_1_1"
+			(symbol "RJ45_Shielded_1_1"
 				(pin passive line
 					(at 10.16 -7.62 180)
 					(length 2.54)
@@ -343,6 +343,24 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -665,12 +683,120 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 63.5 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25a5bf7b-17e8-44c4-9042-5de949bbf31d")
+	)
+	(junction
+		(at 68.58 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "464c142e-0caf-40bd-989b-627104417684")
 	)
 	(junction
 		(at 63.5 60.96)
@@ -796,6 +922,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 78.74) (xy 68.58 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94436af2-dc29-485b-8934-7a83a30cc5e3")
+	)
+	(wire
+		(pts
 			(xy 58.42 63.5) (xy 63.5 63.5)
 		)
 		(stroke
@@ -823,6 +959,16 @@
 			(type default)
 		)
 		(uuid "aa81d7c9-6735-407b-857b-325eda6963b0")
+	)
+	(wire
+		(pts
+			(xy 48.26 78.74) (xy 68.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af166c7c-68f6-4346-a461-210b3e2580e8")
 	)
 	(wire
 		(pts
@@ -866,6 +1012,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 78.74) (xy 68.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e59e42-1c1b-42fb-99dd-b3ae388b5914")
+	)
+	(wire
+		(pts
 			(xy 58.42 71.12) (xy 63.5 71.12)
 		)
 		(stroke
@@ -896,6 +1052,27 @@
 			(justify left)
 		)
 		(uuid "aa8759e8-3873-40e7-94c4-b79319ba727d")
+	)
+	(text "V1.1 change to shielded RJ45"
+		(exclude_from_sim no)
+		(at 39.624 105.156 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ed3c93d9-9a3e-4d81-a48c-1c79fe7e9bc5")
+	)
+	(label "SH"
+		(at 74.93 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3b0e4d3-1194-4ee1-9822-94995041cf22")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
@@ -986,33 +1163,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:RJ45")
-		(at 48.26 66.04 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 68.58 86.36 180)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "77baee5d-77e5-4222-8a1d-985e03260e67")
-		(property "Reference" "J1"
-			(at 48.26 48.26 0)
+		(uuid "6a324f91-0e87-41da-a0a4-8c94182879b8")
+		(property "Reference" "H1"
+			(at 71.12 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "RJ45"
-			(at 48.26 50.8 0)
+		(property "Value" "SH"
+			(at 71.12 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
-			(at 48.26 65.405 90)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+			(at 68.58 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1021,7 +1200,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 65.405 90)
+			(at 68.58 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1029,50 +1208,29 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
-			(at 48.26 66.04 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 68.58 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "4"
-			(uuid "edd89980-7da8-4ba8-ae2d-12657e3fdad7")
-		)
-		(pin "5"
-			(uuid "3f00f25c-8e5f-403f-9be0-5bd931dae1ab")
-		)
-		(pin "8"
-			(uuid "a3355f3a-5b68-4ae0-b469-afbf9011d147")
 		)
 		(pin "1"
-			(uuid "de36bada-2bdf-4a80-bef3-8c4d86edc2c9")
-		)
-		(pin "7"
-			(uuid "c42255d9-4f9c-4f12-a0df-ce304e5a57aa")
-		)
-		(pin "2"
-			(uuid "3718b515-8282-4ab6-8cd8-1f2a7655ed76")
-		)
-		(pin "3"
-			(uuid "9bd4d996-0477-4c5d-a9cf-c11e1573ad6f")
-		)
-		(pin "6"
-			(uuid "83d78dd0-6a3c-4c21-bf83-dd8ff2e38d9b")
+			(uuid "840f2ce7-2965-473e-b02a-4c68d910aae1")
 		)
 		(instances
 			(project ""
 				(path "/95348ed1-804b-4136-815a-b01a479454e5"
-					(reference "J1")
+					(reference "H1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:RJ45")
+		(lib_id "Connector:RJ45_Shielded")
 		(at 96.52 66.04 0)
 		(mirror y)
 		(unit 1)
@@ -1080,24 +1238,27 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b326c14a-4d0d-410d-8210-6098578dd0a0")
+		(fields_autoplaced yes)
+		(uuid "b4e56385-cfd2-4353-88c1-0dee12f2e4f5")
 		(property "Reference" "J2"
-			(at 96.52 48.26 0)
+			(at 105.41 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "RJ45"
-			(at 96.52 50.8 0)
+		(property "Value" "RJ45_Shielded"
+			(at 105.41 66.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
+		(property "Footprint" "Connector_RJ:RJ45_Ninigi_GE"
 			(at 96.52 65.405 90)
 			(effects
 				(font
@@ -1115,7 +1276,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ connector, 8P8C (8 positions 8 connected), Shielded"
 			(at 96.52 66.04 0)
 			(effects
 				(font
@@ -1124,34 +1285,127 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "83b81655-4b6e-4dd0-9643-8123b65350d0")
-		)
-		(pin "5"
-			(uuid "7186d7bd-f4a9-4695-88ca-aec97a54879e")
-		)
 		(pin "8"
-			(uuid "88710b98-1c44-469c-bf37-475110d3d0df")
+			(uuid "607401c4-e7f2-4363-8804-535db1336295")
 		)
 		(pin "1"
-			(uuid "64d74502-24e3-4ec4-951e-d7d74cf3fc04")
+			(uuid "b05f9d40-7d9a-491f-9388-98f1d77dd258")
 		)
-		(pin "7"
-			(uuid "67e7bb91-6454-4967-bbbf-25cf7d913fd3")
-		)
-		(pin "2"
-			(uuid "65e6bce6-b027-4595-9c99-044fc19568de")
-		)
-		(pin "3"
-			(uuid "22dd2e37-3828-4cee-a445-130b64f0de10")
+		(pin "4"
+			(uuid "37df2701-346f-4d35-a47a-25b4a97d74af")
 		)
 		(pin "6"
-			(uuid "d5736139-de95-4034-929d-e087757a1b42")
+			(uuid "b49a6b32-211d-43d6-9d06-20c7634812a4")
+		)
+		(pin "3"
+			(uuid "21797039-7a00-4c0a-bc5b-d67978550fbf")
+		)
+		(pin "SH"
+			(uuid "c461bd37-05de-481f-a7bc-aa863f18f4f1")
+		)
+		(pin "5"
+			(uuid "3aa00bff-b324-42c9-80e2-1b6a520749d6")
+		)
+		(pin "7"
+			(uuid "e0092652-4cbf-447d-a955-d7523aec9bc2")
+		)
+		(pin "2"
+			(uuid "6ea179fe-336a-4ec6-a097-b119fed1a0bd")
+		)
+		(instances
+			(project ""
+				(path "/95348ed1-804b-4136-815a-b01a479454e5"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ45_Shielded")
+		(at 48.26 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d58f134f-eb63-4d5b-a725-c1f8f530b540")
+		(property "Reference" "J1"
+			(at 39.37 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RJ45_Shielded"
+			(at 39.37 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_RJ:RJ45_Ninigi_GE"
+			(at 48.26 65.405 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 65.405 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 8P8C (8 positions 8 connected), Shielded"
+			(at 48.26 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "005411e0-1afb-47d5-9f49-d95920f5688a")
+		)
+		(pin "1"
+			(uuid "98e2963d-819c-4aaa-b650-1275f5139611")
+		)
+		(pin "4"
+			(uuid "d6a8ac08-2936-4702-a9ae-86d758d32cfc")
+		)
+		(pin "6"
+			(uuid "b518853d-7d10-4bf5-9d7f-2c9e1a61523a")
+		)
+		(pin "3"
+			(uuid "a745bd4a-63b0-42a3-ac7b-68bfc7d440c6")
+		)
+		(pin "SH"
+			(uuid "b654f325-4707-4afd-b3c2-118855ec26ac")
+		)
+		(pin "5"
+			(uuid "b1daf800-73d6-4d1c-87a9-681cf389bc8a")
+		)
+		(pin "7"
+			(uuid "4243cc21-ac9e-4d5a-957f-1b8305ab8777")
+		)
+		(pin "2"
+			(uuid "498902a5-3cb5-4e98-b4f4-a080e058ff54")
 		)
 		(instances
 			(project "Adaptor_RJ45"
 				(path "/95348ed1-804b-4136-815a-b01a479454e5"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
