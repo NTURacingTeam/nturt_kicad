@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "2574b780-d5b0-4264-89ce-255660043a98")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -76,10 +80,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -100,7 +116,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -112,22 +128,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -173,9 +177,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -294,11 +301,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -416,6 +428,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "SamacSys_Parts:NX2301P,215"
 			(exclude_from_sim no)
@@ -585,6 +598,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -764,7 +778,6 @@
 	(hierarchical_label "CT"
 		(shape input)
 		(at 88.9 58.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -776,7 +789,6 @@
 	(hierarchical_label "bal"
 		(shape input)
 		(at 130.81 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -788,7 +800,6 @@
 	(hierarchical_label "CT_"
 		(shape input)
 		(at 130.81 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -800,7 +811,6 @@
 	(hierarchical_label "CT-"
 		(shape input)
 		(at 88.9 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -819,7 +829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e079d88-27ef-4da1-824b-3158f05bfbb4")
-		(property "Reference" "R105"
+		(property "Reference" "R52"
 			(at 90.17 69.8499 0)
 			(effects
 				(font
@@ -869,6 +879,254 @@
 		)
 		(pin "1"
 			(uuid "f1263489-4b6b-484b-a86b-cd4ff2c7c484")
+		)
+		(instances
+			(project "BMS_Slave_V1(ADBMS1818)"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/23ba7375-cf3b-4e17-af0a-ea411080fbe6"
+					(reference "R102")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/2567ab3c-074a-4b8c-b8fa-d510e4efec35"
+					(reference "R52")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/400128d5-bf56-4a99-a96e-504140277ee7"
+					(reference "R66")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/540f1557-bbd6-4479-992d-17ee533785f7"
+					(reference "R71")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/616c86aa-0fce-401f-9336-ff5ef97f2e2c"
+					(reference "R76")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/66671d39-14c4-4d74-8cdd-309f95ef1a24"
+					(reference "R91")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/67ea7722-82de-42e7-ab43-0f605c85ac66"
+					(reference "R97")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8c9a879d-6389-4188-b540-b9d6eaa17926"
+					(reference "R81")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/94c78d60-9d34-4c24-901d-488af279cfa1"
+					(reference "R56")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/9a34eff6-bf32-4dac-a8ae-1a59a0588817"
+					(reference "R118")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/bc0fa46b-1d88-4a3f-97ae-472c5629d10a"
+					(reference "R61")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/bd9b99c4-ebd7-4e1b-93dd-0dd20160fc58"
+					(reference "R86")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d966c51a-4795-4e1c-8fe6-88f38f4ae84c"
+					(reference "R114")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f40368b3-9743-4b71-8ab5-626ab1da2bd0"
+					(reference "R110")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/fd1be376-e431-4530-963d-9fde63a297d0"
+					(reference "R106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 100.33 80.01 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "72f87e7a-fc3c-44fa-8468-e444578b2ef8")
+		(property "Reference" "R53"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22R"
+			(at 95.25 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 102.108 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b42902b-da06-4873-8937-fae5bb555384")
+		)
+		(pin "2"
+			(uuid "0160a043-c7d4-4157-8902-17f029add1f1")
+		)
+		(instances
+			(project "BMS_Slave_V1(ADBMS1818)"
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/23ba7375-cf3b-4e17-af0a-ea411080fbe6"
+					(reference "R103")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/2567ab3c-074a-4b8c-b8fa-d510e4efec35"
+					(reference "R53")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/400128d5-bf56-4a99-a96e-504140277ee7"
+					(reference "R67")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/540f1557-bbd6-4479-992d-17ee533785f7"
+					(reference "R72")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/616c86aa-0fce-401f-9336-ff5ef97f2e2c"
+					(reference "R77")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/66671d39-14c4-4d74-8cdd-309f95ef1a24"
+					(reference "R92")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/67ea7722-82de-42e7-ab43-0f605c85ac66"
+					(reference "R98")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8c9a879d-6389-4188-b540-b9d6eaa17926"
+					(reference "R82")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/94c78d60-9d34-4c24-901d-488af279cfa1"
+					(reference "R57")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/9a34eff6-bf32-4dac-a8ae-1a59a0588817"
+					(reference "R119")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/bc0fa46b-1d88-4a3f-97ae-472c5629d10a"
+					(reference "R62")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/bd9b99c4-ebd7-4e1b-93dd-0dd20160fc58"
+					(reference "R87")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d966c51a-4795-4e1c-8fe6-88f38f4ae84c"
+					(reference "R115")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f40368b3-9743-4b71-8ab5-626ab1da2bd0"
+					(reference "R111")
+					(unit 1)
+				)
+				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/fd1be376-e431-4530-963d-9fde63a297d0"
+					(reference "R107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 125.73 67.31 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "890f3fcf-9c84-492c-b043-a18d58c8093e")
+		(property "Reference" "R55"
+			(at 125.73 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3k"
+			(at 125.73 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 125.73 65.532 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0e3d274-b579-418a-bdad-d55b50343da3")
+		)
+		(pin "2"
+			(uuid "f716d90d-3b50-4cc4-a264-1ba216b48e26")
 		)
 		(instances
 			(project "BMS_Slave_V1(ADBMS1818)"
@@ -936,254 +1194,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 100.33 80.01 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "72f87e7a-fc3c-44fa-8468-e444578b2ef8")
-		(property "Reference" "R106"
-			(at 95.25 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "22R"
-			(at 95.25 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
-			(at 102.108 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 100.33 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5b42902b-da06-4873-8937-fae5bb555384")
-		)
-		(pin "2"
-			(uuid "0160a043-c7d4-4157-8902-17f029add1f1")
-		)
-		(instances
-			(project "BMS_Slave_V1(ADBMS1818)"
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/23ba7375-cf3b-4e17-af0a-ea411080fbe6"
-					(reference "R106")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/2567ab3c-074a-4b8c-b8fa-d510e4efec35"
-					(reference "R56")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/400128d5-bf56-4a99-a96e-504140277ee7"
-					(reference "R70")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/540f1557-bbd6-4479-992d-17ee533785f7"
-					(reference "R75")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/616c86aa-0fce-401f-9336-ff5ef97f2e2c"
-					(reference "R80")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/66671d39-14c4-4d74-8cdd-309f95ef1a24"
-					(reference "R95")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/67ea7722-82de-42e7-ab43-0f605c85ac66"
-					(reference "R101")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8c9a879d-6389-4188-b540-b9d6eaa17926"
-					(reference "R85")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/94c78d60-9d34-4c24-901d-488af279cfa1"
-					(reference "R60")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/9a34eff6-bf32-4dac-a8ae-1a59a0588817"
-					(reference "R122")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/bc0fa46b-1d88-4a3f-97ae-472c5629d10a"
-					(reference "R65")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/bd9b99c4-ebd7-4e1b-93dd-0dd20160fc58"
-					(reference "R90")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d966c51a-4795-4e1c-8fe6-88f38f4ae84c"
-					(reference "R118")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f40368b3-9743-4b71-8ab5-626ab1da2bd0"
-					(reference "R114")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/fd1be376-e431-4530-963d-9fde63a297d0"
-					(reference "R110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 125.73 67.31 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "890f3fcf-9c84-492c-b043-a18d58c8093e")
-		(property "Reference" "R108"
-			(at 125.73 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3.3k"
-			(at 125.73 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 125.73 65.532 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 125.73 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 125.73 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f0e3d274-b579-418a-bdad-d55b50343da3")
-		)
-		(pin "2"
-			(uuid "f716d90d-3b50-4cc4-a264-1ba216b48e26")
-		)
-		(instances
-			(project "BMS_Slave_V1(ADBMS1818)"
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/23ba7375-cf3b-4e17-af0a-ea411080fbe6"
-					(reference "R108")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/2567ab3c-074a-4b8c-b8fa-d510e4efec35"
-					(reference "R58")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/400128d5-bf56-4a99-a96e-504140277ee7"
-					(reference "R72")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/540f1557-bbd6-4479-992d-17ee533785f7"
-					(reference "R77")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/616c86aa-0fce-401f-9336-ff5ef97f2e2c"
-					(reference "R82")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/66671d39-14c4-4d74-8cdd-309f95ef1a24"
-					(reference "R97")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/67ea7722-82de-42e7-ab43-0f605c85ac66"
-					(reference "R103")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8c9a879d-6389-4188-b540-b9d6eaa17926"
-					(reference "R87")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/94c78d60-9d34-4c24-901d-488af279cfa1"
-					(reference "R62")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/9a34eff6-bf32-4dac-a8ae-1a59a0588817"
-					(reference "R124")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/bc0fa46b-1d88-4a3f-97ae-472c5629d10a"
-					(reference "R67")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/bd9b99c4-ebd7-4e1b-93dd-0dd20160fc58"
-					(reference "R92")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d966c51a-4795-4e1c-8fe6-88f38f4ae84c"
-					(reference "R120")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f40368b3-9743-4b71-8ab5-626ab1da2bd0"
-					(reference "R116")
-					(unit 1)
-				)
-				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/fd1be376-e431-4530-963d-9fde63a297d0"
-					(reference "R112")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SamacSys_Parts:NX2301P,215")
 		(at 120.65 67.31 180)
 		(unit 1)
@@ -1192,7 +1202,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b0ffdad2-9ba4-4cc6-823d-42f8f873a256")
-		(property "Reference" "IC13"
+		(property "Reference" "IC3"
 			(at 110.547 71.4437 0)
 			(effects
 				(font
@@ -1370,7 +1380,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d6cb5c73-4fdb-41e7-8c95-13752aedf61a")
-		(property "Reference" "R107"
+		(property "Reference" "R54"
 			(at 106.68 78.74 0)
 			(effects
 				(font
@@ -1424,63 +1434,63 @@
 		(instances
 			(project "BMS_Slave_V1(ADBMS1818)"
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/23ba7375-cf3b-4e17-af0a-ea411080fbe6"
-					(reference "R107")
+					(reference "R104")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/2567ab3c-074a-4b8c-b8fa-d510e4efec35"
-					(reference "R57")
+					(reference "R54")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/400128d5-bf56-4a99-a96e-504140277ee7"
-					(reference "R71")
+					(reference "R68")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/540f1557-bbd6-4479-992d-17ee533785f7"
-					(reference "R76")
+					(reference "R73")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/616c86aa-0fce-401f-9336-ff5ef97f2e2c"
-					(reference "R81")
+					(reference "R78")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/66671d39-14c4-4d74-8cdd-309f95ef1a24"
-					(reference "R96")
+					(reference "R93")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/67ea7722-82de-42e7-ab43-0f605c85ac66"
-					(reference "R102")
+					(reference "R99")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/8c9a879d-6389-4188-b540-b9d6eaa17926"
-					(reference "R86")
+					(reference "R83")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/94c78d60-9d34-4c24-901d-488af279cfa1"
-					(reference "R61")
+					(reference "R58")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/9a34eff6-bf32-4dac-a8ae-1a59a0588817"
-					(reference "R123")
+					(reference "R120")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/bc0fa46b-1d88-4a3f-97ae-472c5629d10a"
-					(reference "R66")
+					(reference "R63")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/bd9b99c4-ebd7-4e1b-93dd-0dd20160fc58"
-					(reference "R91")
+					(reference "R88")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/d966c51a-4795-4e1c-8fe6-88f38f4ae84c"
-					(reference "R119")
+					(reference "R116")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/f40368b3-9743-4b71-8ab5-626ab1da2bd0"
-					(reference "R115")
+					(reference "R112")
 					(unit 1)
 				)
 				(path "/0942010f-46b1-4fe9-9f5e-a3ebd22b3e41/fd1be376-e431-4530-963d-9fde63a297d0"
-					(reference "R111")
+					(reference "R108")
 					(unit 1)
 				)
 			)
@@ -1496,7 +1506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff6a0948-00d1-46e8-909f-9b253f6382c8")
-		(property "Reference" "D12"
+		(property "Reference" "D2"
 			(at 91.44 79.0574 90)
 			(effects
 				(font
