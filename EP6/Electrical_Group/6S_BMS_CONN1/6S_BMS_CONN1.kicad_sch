@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "6S_BMS_CONN1")
-		(date "2025-05-05")
-		(rev "1.1")
+		(date "2025-06-28")
+		(rev "1.3")
 		(company "NTURacing")
 		(comment 1 "Jack Kuo")
 	)
@@ -3703,7 +3703,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 44.45) (xy 36.83 44.45)
+			(xy 19.05 44.45) (xy 33.02 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4053,7 +4053,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 41.91) (xy 36.83 41.91)
+			(xy 19.05 41.91) (xy 33.02 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4293,7 +4293,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 44.45) (xy 66.04 44.45)
+			(xy 50.8 45.72) (xy 64.77 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4333,7 +4333,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 41.91) (xy 66.04 41.91)
+			(xy 50.8 43.18) (xy 64.77 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4769,6 +4769,17 @@
 		)
 		(uuid "5454ad0d-59f5-4b2b-b547-b7136e23768f")
 	)
+	(text "V1.0 draft\nV1.1 first version, made using Galexy\nV1.2 fix XT60 reversed (J3,4)\nV1.3 add a 24V connector (maybe for grounding)"
+		(exclude_from_sim no)
+		(at 31.242 176.276 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7bafd05d-631f-42c7-9b34-b85f9848b915")
+	)
 	(text "Unswitched cell voltage\npresent at all times!"
 		(exclude_from_sim no)
 		(at 43.18 59.055 0)
@@ -4859,7 +4870,7 @@
 		(uuid "e43962fd-9f71-4221-bb96-dc5b0dbc1865")
 	)
 	(label "PACK-"
-		(at 52.07 44.45 0)
+		(at 50.8 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4879,7 +4890,7 @@
 		(uuid "0a078b0d-207d-463d-a0f8-7098c1c7572b")
 	)
 	(label "CHG_EXT"
-		(at 52.07 41.91 0)
+		(at 50.8 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4939,7 +4950,7 @@
 		(uuid "19b251e2-cf65-4210-9fa3-e10837f02423")
 	)
 	(label "PACK+"
-		(at 22.86 41.91 0)
+		(at 19.05 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5019,7 +5030,7 @@
 		(uuid "3de0f112-a1d0-4995-bd46-e25d8f21f42b")
 	)
 	(label "PACK-"
-		(at 22.86 44.45 0)
+		(at 19.05 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5974,16 +5985,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 71.12 41.91 0)
+		(at 69.85 45.72 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "28b771d9-1fc1-4318-ad09-d3ed9569ccaa")
 		(property "Reference" "J4"
-			(at 73.66 41.9099 0)
+			(at 72.39 45.7201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5992,7 +6003,7 @@
 			)
 		)
 		(property "Value" "Charge"
-			(at 73.66 44.4499 0)
+			(at 72.39 43.1801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6001,7 +6012,7 @@
 			)
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal"
-			(at 71.12 41.91 0)
+			(at 69.85 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6010,7 +6021,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 41.91 0)
+			(at 69.85 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6019,7 +6030,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 71.12 41.91 0)
+			(at 69.85 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7162,6 +7173,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+24V")
+		(at 173.99 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "732af1d2-705f-40eb-8779-687f19e2d609")
+		(property "Reference" "#PWR023"
+			(at 173.99 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+24V"
+			(at 173.99 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+24V\""
+			(at 173.99 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "beccf35d-b309-4943-ba63-c8ae4f6c7f36")
+		)
+		(instances
+			(project "6S_BMS_CONN1"
+				(path "/9884691b-b4ae-484d-8942-89c3cbeb0773"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDPWR")
 		(at 118.11 90.17 0)
 		(unit 1)
@@ -7581,6 +7658,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDPWR")
+		(at 173.99 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97fa5346-0425-46bc-a483-e12b5113ca05")
+		(property "Reference" "#PWR026"
+			(at 173.99 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 173.863 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 173.99 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b10e73dc-1e86-49be-8bbb-939c59594395")
+		)
+		(instances
+			(project "6S_BMS_CONN1"
+				(path "/9884691b-b4ae-484d-8942-89c3cbeb0773"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x10")
 		(at 109.22 132.08 0)
 		(unit 1)
@@ -7676,16 +7819,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 41.91 41.91 0)
+		(at 38.1 44.45 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9aa157f4-5fbf-4014-8de7-03c7477eaab7")
 		(property "Reference" "J3"
-			(at 44.45 41.9099 0)
+			(at 40.64 44.4501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7694,7 +7837,7 @@
 			)
 		)
 		(property "Value" "Power In"
-			(at 44.45 44.4499 0)
+			(at 40.64 41.9101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7703,7 +7846,7 @@
 			)
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
-			(at 41.91 41.91 0)
+			(at 38.1 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7712,7 +7855,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 41.91 41.91 0)
+			(at 38.1 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7721,7 +7864,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 41.91 41.91 0)
+			(at 38.1 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8695,6 +8838,75 @@
 			(project ""
 				(path "/9884691b-b4ae-484d-8942-89c3cbeb0773"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 179.07 91.44 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dfbcc45f-e0c9-450c-97c9-9abbada1809f")
+		(property "Reference" "J14"
+			(at 179.07 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "24V"
+			(at 179.07 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical"
+			(at 179.07 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 179.07 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9211ca1c-0f1e-4c1b-9d04-b4a99d402a22")
+		)
+		(pin "2"
+			(uuid "14919064-93ec-4413-b82c-815b02cd18ec")
+		)
+		(instances
+			(project "6S_BMS_CONN1"
+				(path "/9884691b-b4ae-484d-8942-89c3cbeb0773"
+					(reference "J14")
 					(unit 1)
 				)
 			)
