@@ -3,155 +3,16 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "b30f85e6-6763-4129-95da-31d81c51d771")
-	(paper "A4")
+	(paper "A3")
 	(title_block
-		(title "EP6 VCU")
-		(date "2024-12-05")
-		(rev "2.0")
+		(title "VCU")
+		(date "2025-06-29")
+		(rev "3.0")
 		(company "NTURacing")
-		(comment 1 "Jerrymk, ML Tsou, 郭哲明 Jack Kuo")
+		(comment 1 " 郭哲明 Jack Kuo, Jerrymk, ML Tsou")
 		(comment 2 "Electrical group")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x02"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x02_1_1"
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -393,187 +254,6 @@
 					(at 0 -2.54 90)
 					(length 0.762)
 					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Open"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Open_0_1"
-				(arc
-					(start -0.254 1.016)
-					(mid -1.2656 0)
-					(end -0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 1.016)
-					(mid -1.2656 0)
-					(end -0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 -1.016)
-					(mid 1.2656 0)
-					(end 0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 -1.016)
-					(mid 1.2656 0)
-					(end 0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Open_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1346,13 +1026,13 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 109.22) (xy 63.5 109.22)
+			(xy 58.42 109.22) (xy 63.5 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9105080f-ea0a-4e98-bd8c-b975da223810")
+		(uuid "8ab875d3-9890-4ac9-a3be-e9723a8c99da")
 	)
 	(wire
 		(pts
@@ -1386,16 +1066,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 110.49) (xy 223.52 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8f596d4-5db8-4f6c-8bfc-d66572ff2514")
-	)
-	(wire
-		(pts
 			(xy 63.5 110.49) (xy 63.5 109.22)
 		)
 		(stroke
@@ -1416,16 +1086,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 113.03) (xy 223.52 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cce1dd89-fcc3-41bc-b9fc-9843cc6c286b")
-	)
-	(wire
-		(pts
 			(xy 86.36 99.06) (xy 86.36 102.87)
 		)
 		(stroke
@@ -1436,7 +1096,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 109.22) (xy 52.07 109.22)
+			(xy 46.99 109.22) (xy 53.34 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1516,16 +1176,6 @@
 		)
 		(uuid "6f1dbeb6-5907-47ef-ada4-ef1de457bda7")
 	)
-	(label "SCL"
-		(at 219.71 110.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "75b0249b-225d-46fe-8843-0ca82790be30")
-	)
 	(label "SDA"
 		(at 229.87 45.72 0)
 		(effects
@@ -1545,16 +1195,6 @@
 			(justify left bottom)
 		)
 		(uuid "83d7ac39-5fd1-4de1-9e9b-2db177dbc9f0")
-	)
-	(label "SDA"
-		(at 219.71 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a6399e35-3dfd-4315-bd89-7fcca3567c79")
 	)
 	(label "LSM6D_INT1"
 		(at 53.34 125.73 0)
@@ -1948,74 +1588,6 @@
 			(project "power board"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/6b07e066-83b3-4447-a68e-5f9edbcb1e93"
 					(reference "#PWR0180")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 55.88 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3f4443a0-44eb-4294-8a44-3a4ef329268a")
-		(property "Reference" "JP1"
-			(at 55.88 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LSM6D_addr"
-			(at 55.88 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 55.88 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 55.88 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "656fcd2a-595b-4232-bd54-7e57c466267a")
-		)
-		(pin "2"
-			(uuid "ce57a58d-5b76-46fa-b668-a15567d02e3a")
-		)
-		(instances
-			(project "power board"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/6b07e066-83b3-4447-a68e-5f9edbcb1e93"
-					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -2517,6 +2089,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 55.88 109.22 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aaaa0bda-5d3f-459f-8353-98cad5c56e98")
+		(property "Reference" "R115"
+			(at 55.88 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 55.88 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 55.88 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 55.88 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e199bed-34be-4a2c-8c10-66539b645182")
+		)
+		(pin "2"
+			(uuid "e0489abb-75a2-43b5-ad9d-0c5fecb7cb5c")
+		)
+		(instances
+			(project "VCU"
+				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/6b07e066-83b3-4447-a68e-5f9edbcb1e93"
+					(reference "R115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 63.5 115.57 0)
 		(unit 1)
@@ -2714,75 +2354,6 @@
 			(project "power board"
 				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/6b07e066-83b3-4447-a68e-5f9edbcb1e93"
 					(reference "#PWR0176")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 228.6 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e0fbe175-1791-4d96-b4c1-30792fc38077")
-		(property "Reference" "J20"
-			(at 231.14 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "I2C"
-			(at 231.14 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 228.6 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 228.6 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 228.6 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f23020e-bd4d-48d3-8298-1bf3481384df")
-		)
-		(pin "2"
-			(uuid "5c8f2120-d6ee-453a-8d52-adbb2dbdbb7f")
-		)
-		(instances
-			(project "power board"
-				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378/6b07e066-83b3-4447-a68e-5f9edbcb1e93"
-					(reference "J20")
 					(unit 1)
 				)
 			)
