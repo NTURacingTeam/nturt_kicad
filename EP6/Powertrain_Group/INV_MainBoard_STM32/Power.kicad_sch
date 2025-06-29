@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "INV_MainBoard_STM32")
-		(date "2025-02-28")
-		(rev "2.1")
+		(date "2025-06-29")
+		(rev "3.0")
 		(company "NTURacing Team")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Powertrain Group")
@@ -1272,128 +1272,6 @@
 				)
 			)
 		)
-		(symbol "Device:R_Small"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "PCM_Diode_Schottky_AKL:SS54"
 			(pin_numbers hide)
 			(pin_names
@@ -1630,266 +1508,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "PCM_Transistor_MOSFET_AKL:AO3400A"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "AO3400A"
-				(at 5.08 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:SOT-23"
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.tme.eu/Document/d4ede4a51fd4cb2a092d6e1960f91635/AO3400A.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "SOT-23 N-MOSFET enchancement mode transistor, 30V, 5.7A, 1.4W, Alternate KiCAD Library"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "enchancement mosfet nmosfet n-mosfet nmos n-mos emos emosfet AO3400A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AO3400A_0_1"
-				(polyline
-					(pts
-						(xy 0.254 -1.27) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 2.54 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.1778)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "AO3400A_1_1"
-				(pin input line
-					(at -3.81 -1.27 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3191,12 +2809,6 @@
 		)
 	)
 	(junction
-		(at 38.1 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "03558b96-deab-4c60-b60a-f12735f519a8")
-	)
-	(junction
 		(at 143.51 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3387,12 +2999,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9fe3e4a9-38ff-488c-bcf7-200faf898bde")
-	)
-	(junction
-		(at 22.86 171.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "af15d0b5-599f-4aae-82df-c31210055ec1")
 	)
 	(junction
 		(at 214.63 78.74)
@@ -3842,16 +3448,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 170.18) (xy 22.86 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a0c802b-9895-4896-844a-2a798811b339")
-	)
-	(wire
-		(pts
 			(xy 231.14 26.67) (xy 240.03 26.67)
 		)
 		(stroke
@@ -4252,16 +3848,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 171.45) (xy 31.75 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73e6093a-abe8-44d7-ada7-0a4f54333099")
-	)
-	(wire
-		(pts
 			(xy 147.32 40.64) (xy 147.32 39.37)
 		)
 		(stroke
@@ -4319,16 +3905,6 @@
 			(type default)
 		)
 		(uuid "82c09a5f-eb72-48d6-b948-0e2b735c3073")
-	)
-	(wire
-		(pts
-			(xy 38.1 156.21) (xy 38.1 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8876f3df-056a-4368-9af0-3c5d8c79b375")
 	)
 	(wire
 		(pts
@@ -4402,16 +3978,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 182.88) (xy 22.86 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9390a634-e9fe-4fa9-874c-ccc47adbac8a")
-	)
-	(wire
-		(pts
 			(xy 104.14 88.9) (xy 104.14 90.17)
 		)
 		(stroke
@@ -4452,16 +4018,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 172.72) (xy 22.86 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "999dba70-0e91-400e-99ae-1dbd11102230")
-	)
-	(wire
-		(pts
 			(xy 77.47 92.71) (xy 77.47 91.44)
 		)
 		(stroke
@@ -4489,16 +4045,6 @@
 			(type default)
 		)
 		(uuid "9abf2c09-56e7-41c4-ab2b-4fa5832b455d")
-	)
-	(wire
-		(pts
-			(xy 38.1 157.48) (xy 38.1 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c84e42c-9c5a-4c75-8bf5-3ad03ba48390")
 	)
 	(wire
 		(pts
@@ -4722,16 +4268,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 161.29) (xy 22.86 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdedc585-9384-4464-9a54-02ae2e70dbea")
-	)
-	(wire
-		(pts
 			(xy 143.51 95.25) (xy 143.51 93.98)
 		)
 		(stroke
@@ -4789,16 +4325,6 @@
 			(type default)
 		)
 		(uuid "c68fd8d1-b929-41ae-9320-5866b9b08e86")
-	)
-	(wire
-		(pts
-			(xy 38.1 157.48) (xy 46.99 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c954d250-fe61-49e7-a062-85fea5a0b201")
 	)
 	(wire
 		(pts
@@ -4952,16 +4478,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 176.53) (xy 38.1 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e506c74c-e616-43bf-866d-1085602bb4f6")
-	)
-	(wire
-		(pts
 			(xy 54.61 34.29) (xy 54.61 43.18)
 		)
 		(stroke
@@ -5052,16 +4568,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 149.86) (xy 38.1 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9c0b4b5-d4e4-45f4-a9bf-500aa490817a")
-	)
-	(wire
-		(pts
 			(xy 223.52 140.97) (xy 226.06 140.97)
 		)
 		(stroke
@@ -5069,18 +4575,6 @@
 			(type default)
 		)
 		(uuid "fc9beafa-ce56-479a-9f95-47c60076090b")
-	)
-	(rectangle
-		(start 16.51 138.43)
-		(end 64.77 193.04)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 152c360b-dce7-48bf-a0bd-799dd595fdbc)
 	)
 	(rectangle
 		(start 196.85 15.24)
@@ -5162,16 +4656,6 @@
 		)
 		(uuid "709cca69-0b0c-4c14-8ff8-b7bdcac84762")
 	)
-	(text "no 24V in trigger"
-		(exclude_from_sim no)
-		(at 25.908 141.224 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7b542e8b-581b-4cf9-abf2-0d861d648942")
-	)
 	(text "FB Vref=1.221\nR_FBB = 10k ~ 100k\npossible R_FBT, R_FBB\n\n16,5.1 => 5.05 V\n18, 5.6 => 5.146 V\n7.5, 2.4 => 5.037 V\n5.1, 1.6 => 5.113 V"
 		(exclude_from_sim no)
 		(at 16.51 107.188 0)
@@ -5204,16 +4688,6 @@
 			(justify left bottom)
 		)
 		(uuid "ca0cdcf8-b93b-44e5-b2bd-8fea867a115a")
-	)
-	(text "VGS about .65~1.45, typ 1.05\nabout 16V trigger"
-		(exclude_from_sim no)
-		(at 42.164 184.658 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "db97e643-8309-4457-8e88-da8d3fd9957f")
 	)
 	(label "5V_buck_sw"
 		(at 101.6 76.2 0)
@@ -5304,17 +4778,6 @@
 			(justify left bottom)
 		)
 		(uuid "f2da5a8c-cbfe-43da-a9f2-6f6cc81c7804")
-	)
-	(hierarchical_label "24V_lowTrig"
-		(shape output)
-		(at 46.99 157.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "10771af5-a948-49cd-a68e-2c0057f87708")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -7584,7 +7047,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RED 5V"
+		(property "Value" "WHITE LED"
 			(at 200.66 87.9474 90)
 			(effects
 				(font
@@ -8124,76 +7587,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 22.86 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "70388e45-e5e3-4ec2-8117-3258f59da05c")
-		(property "Reference" "R85"
-			(at 25.4 175.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 25.4 177.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 21.082 176.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 22.86 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 22.86 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0e8ef2c7-fd57-4c65-bf2a-a51f6958d5e8")
-		)
-		(pin "2"
-			(uuid "252e5c88-a90b-44e6-9c25-c24443ef4431")
-		)
-		(instances
-			(project "INV_MainBoard_STM32"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
-					(reference "R85")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 143.51 97.79 0)
 		(unit 1)
@@ -8398,79 +7791,6 @@
 			(project "INV_MainBoard_STM32"
 				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_Transistor_MOSFET_AKL:AO3400A")
-		(at 35.56 170.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74b453c0-b992-4bd3-bdc4-d4348881c77a")
-		(property "Reference" "Q3"
-			(at 41.91 168.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AO3400A"
-			(at 41.91 171.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 40.64 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.tme.eu/Document/d4ede4a51fd4cb2a092d6e1960f91635/AO3400A.pdf"
-			(at 35.56 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SOT-23 N-MOSFET enchancement mode transistor, 30V, 5.7A, 1.4W, Alternate KiCAD Library"
-			(at 35.56 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "0033d7ea-76ed-404a-aa9d-df4ebbc8e745")
-		)
-		(pin "2"
-			(uuid "a3243aeb-cfd1-4f7a-96c1-5e7306b7f447")
-		)
-		(pin "1"
-			(uuid "d97a8138-1b37-48a9-b0cf-ff78b702ed0b")
-		)
-		(instances
-			(project "INV_MainBoard_STM32"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
-					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -9285,72 +8605,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 38.1 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa684276-dab0-4cac-b08d-d20f017bbb9e")
-		(property "Reference" "#PWR0161"
-			(at 38.1 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 38.1 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 38.1 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f570e329-2de5-4a69-9ce6-ff4ccf1f8bab")
-		)
-		(instances
-			(project "INV_MainBoard_STM32"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
-					(reference "#PWR0161")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Linear:AMS1117-3.3")
 		(at 242.57 140.97 0)
 		(unit 1)
@@ -9695,73 +8949,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 38.1 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c89ef447-6470-4811-8705-3e69f7eabc51")
-		(property "Reference" "#PWR0163"
-			(at 38.1 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 38.1 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2076917d-a77f-43d3-960a-8ef696d0ee65")
-		)
-		(instances
-			(project "INV_MainBoard_STM32"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
-					(reference "#PWR0163")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_Diode_Schottky_AKL:SS54")
 		(at 220.98 26.67 0)
 		(unit 1)
@@ -9977,7 +9164,7 @@
 		(fields_autoplaced yes)
 		(uuid "d47b48a9-c42a-471b-b1e5-ac7ea172d976")
 		(property "Reference" "D2"
-			(at 260.35 34.6075 90)
+			(at 260.35 34.6074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9985,8 +9172,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RED 24V"
-			(at 260.35 37.1475 90)
+		(property "Value" "WHITE LED"
+			(at 260.35 37.1474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10377,72 +9564,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+24V")
-		(at 22.86 161.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e85e7f2d-9ba3-4ab6-9581-13ed0cda058c")
-		(property "Reference" "#PWR0162"
-			(at 22.86 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+24V"
-			(at 22.86 156.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 22.86 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d3cfee4c-b306-4e59-a4b0-8cf1060000f0")
-		)
-		(instances
-			(project "INV_MainBoard_STM32"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
-					(reference "#PWR0162")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 143.51 80.01 0)
 		(unit 1)
@@ -10513,76 +9634,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 38.1 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f0e51024-617b-4a88-9e73-728c177b727e")
-		(property "Reference" "R79"
-			(at 40.64 152.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 40.64 154.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 38.1 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 38.1 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "af4639a3-fa09-417a-8132-efe17ee94cdb")
-		)
-		(pin "2"
-			(uuid "784a9bb6-a053-43f7-980b-681dedf9374b")
-		)
-		(instances
-			(project "INV_MainBoard_STM32"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
-					(reference "R79")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 218.44 78.74 0)
 		(mirror y)
@@ -10643,76 +9694,6 @@
 			(project "INV_MainBoard_STM32"
 				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 22.86 166.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6aaf122-60fe-4b62-91be-5f6831a468c8")
-		(property "Reference" "R84"
-			(at 25.4 165.0999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15k"
-			(at 25.4 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 21.082 166.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 22.86 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 22.86 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b048435d-3954-4d1c-87f2-8abc5bec273f")
-		)
-		(pin "2"
-			(uuid "48a3b7be-9351-47cf-9d96-95dc12dda458")
-		)
-		(instances
-			(project "INV_MainBoard_STM32"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
-					(reference "R84")
 					(unit 1)
 				)
 			)
@@ -10849,73 +9830,6 @@
 			(project "INV_MainBoard_STM32"
 				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
 					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 22.86 182.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f868f9bc-98a4-473d-a5c7-c6585c186018")
-		(property "Reference" "#PWR0164"
-			(at 22.86 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 22.86 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "70a849b3-c7b1-4a94-a56e-6b3aac5b79ea")
-		)
-		(instances
-			(project "INV_MainBoard_STM32"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/1fbe31ff-2616-447c-a0f3-fc1e6c14e58b"
-					(reference "#PWR0164")
 					(unit 1)
 				)
 			)

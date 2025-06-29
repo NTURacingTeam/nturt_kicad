@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "INV_MainBoard_STM32")
-		(date "2025-02-28")
-		(rev "2.1")
+		(date "2025-06-29")
+		(rev "3.0")
 		(company "NTURacing Team")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Powertrain Group")
@@ -261,230 +261,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Memory_EEPROM:CAT24C256"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -6.35 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "CAT24C256"
-				(at 1.27 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "256 kb CMOS Serial EEPROM, DIP-8/SOIC-8/TSSOP-8/DFN-8"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "I2C EEPROM Serial 256kb"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x4.9mm* TSSOP*4.4x3mm*P0.65mm* DFN*3x2mm*P0.5mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CAT24C256_1_1"
-				(rectangle
-					(start -7.62 5.08)
-					(end 7.62 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "A0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "WP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1101,6 +877,222 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "nturt_kicad_lib_EP6:APS6404L-3SQ"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "APS6404L-3SQ"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOP-8_3.76x4.96mm_P1.27mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.apmemory.com/tw/downloadFiles/0324112120ql593401"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "DRAM 64Mb QSPI PSRAM Sync Serial x1/x4 SDR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "DRAM 64Mb QSPI PSRAM Sync Serial x1/x4 SDR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "APS6404L-3SQ_0_1"
+				(rectangle
+					(start -11.43 8.89)
+					(end 2.54 -8.89)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "APS6404L-3SQ_1_1"
+				(pin input line
+					(at -13.97 6.35 0)
+					(length 2.54)
+					(name "~{CE}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -13.97 -1.27 0)
+					(length 2.54)
+					(name "SO/SIO_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -13.97 -3.81 0)
+					(length 2.54)
+					(name "SO/SIO_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -11.43 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -13.97 1.27 0)
+					(length 2.54)
+					(name "SO/SIO_0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -13.97 3.81 0)
+					(length 2.54)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -13.97 -6.35 0)
+					(length 2.54)
+					(name "SO/SIO_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 11.43 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1761,22 +1753,6 @@
 		(color 0 0 0 0)
 		(uuid "f91f0a33-d3ac-4fbc-9660-b5605c364789")
 	)
-	(no_connect
-		(at 33.02 124.46)
-		(uuid "25ada8a6-02b6-4f92-8f7c-bbd03f1d224f")
-	)
-	(no_connect
-		(at 33.02 121.92)
-		(uuid "798545ab-60bb-4c50-9ce7-dec64e7a1d1a")
-	)
-	(no_connect
-		(at 53.34 124.46)
-		(uuid "9af30a4e-45cb-411d-815a-2dd4048279fd")
-	)
-	(no_connect
-		(at 33.02 119.38)
-		(uuid "b24e9419-f3c2-40be-b3f1-716201a3b9e8")
-	)
 	(wire
 		(pts
 			(xy 96.52 78.74) (xy 106.68 78.74)
@@ -1806,6 +1782,16 @@
 			(type default)
 		)
 		(uuid "0d94a049-6e74-4630-9093-7139dddbf92f")
+	)
+	(wire
+		(pts
+			(xy 35.56 120.65) (xy 39.37 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f744941-dde7-46e1-b3d5-7a8d60fed1f3")
 	)
 	(wire
 		(pts
@@ -1989,6 +1975,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 111.76) (xy 53.34 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47a0c712-5b58-4930-b737-031a58c90304")
+	)
+	(wire
+		(pts
 			(xy 57.15 77.47) (xy 59.69 77.47)
 		)
 		(stroke
@@ -2069,6 +2065,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 118.11) (xy 39.37 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cebcb42-f54d-4ea2-9b71-81f504839896")
+	)
+	(wire
+		(pts
 			(xy 134.62 83.82) (xy 134.62 88.9)
 		)
 		(stroke
@@ -2116,6 +2122,16 @@
 			(type default)
 		)
 		(uuid "77bbe5ba-4a4f-4d6e-85c0-6bebada38ffc")
+	)
+	(wire
+		(pts
+			(xy 35.56 125.73) (xy 39.37 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bc8d4b3-7daa-4411-b5b0-35441b69ac6c")
 	)
 	(wire
 		(pts
@@ -2229,6 +2245,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 128.27) (xy 39.37 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc905f6-30b4-418a-82ad-76654cee4cde")
+	)
+	(wire
+		(pts
 			(xy 127 78.74) (xy 146.05 78.74)
 		)
 		(stroke
@@ -2299,6 +2325,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 130.81) (xy 39.37 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14e5548-5403-4712-a3f3-a8f5901e3fd5")
+	)
+	(wire
+		(pts
 			(xy 39.37 38.1) (xy 39.37 36.83)
 		)
 		(stroke
@@ -2326,6 +2362,16 @@
 			(type default)
 		)
 		(uuid "b98f6312-410d-4507-925c-9a6c1b42bba9")
+	)
+	(wire
+		(pts
+			(xy 53.34 138.43) (xy 53.34 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba66a4d4-9b8d-4bb6-9d95-6fb2b47bab4b")
 	)
 	(wire
 		(pts
@@ -2429,6 +2475,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 123.19) (xy 39.37 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9e60471-696f-4a36-ada0-1c89e37fc49a")
+	)
+	(wire
+		(pts
 			(xy 135.89 49.53) (xy 142.24 49.53)
 		)
 		(stroke
@@ -2490,18 +2546,6 @@
 		(uuid 4a26ccb3-79de-4033-91ee-4e22ebd5a087)
 	)
 	(rectangle
-		(start 13.97 104.14)
-		(end 63.5 140.335)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 6b0c1ba2-8bf9-4dd1-8ff3-c51e662011fd)
-	)
-	(rectangle
 		(start 13.97 59.69)
 		(end 203.2 100.965)
 		(stroke
@@ -2546,16 +2590,6 @@
 		)
 		(uuid "4be21d1d-0c1d-4e33-bac1-a4d55a892b53")
 	)
-	(text "Address inputs and WP has\non-chip pull-down resistors"
-		(exclude_from_sim no)
-		(at 26.162 135.382 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "9d6d3a9a-1e2a-4779-9da7-15599212ddcb")
-	)
 	(text "we use 1M => about 50pF to ground for both H and L\nbut 30pF already persist in NUP2105 => only 22pF added additionaly\nbut additionaly, TCAN1042 itself has 24pF to GND and 12pF H to L."
 		(exclude_from_sim no)
 		(at 134.62 25.908 0)
@@ -2566,16 +2600,17 @@
 		)
 		(uuid "c49916d1-487d-41b6-b98b-62a945a1a8e3")
 	)
-	(text "EEPROM"
-		(exclude_from_sim no)
-		(at 15.748 106.68 0)
+	(hierarchical_label "QSPI_SIO_0"
+		(shape bidirectional)
+		(at 35.56 123.19 180)
 		(effects
 			(font
-				(size 2.54 2.54)
+				(size 1.27 1.27)
+				(thickness 0.1588)
 			)
-			(justify left top)
+			(justify right)
 		)
-		(uuid "cfc5913b-a432-4f5e-88c8-4af48e1682c9")
+		(uuid "01629f1f-a9c7-4c69-9809-1ae722c4a9e3")
 	)
 	(hierarchical_label "CAN1H"
 		(shape bidirectional)
@@ -2587,17 +2622,6 @@
 			(justify left)
 		)
 		(uuid "025cc630-12d3-46d6-b4d3-d1da98ea3fff")
-	)
-	(hierarchical_label "I2C_SDA"
-		(shape bidirectional)
-		(at 53.34 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0cbe60ff-d852-4452-b362-70747d8f40d8")
 	)
 	(hierarchical_label "CAN2_TX"
 		(shape input)
@@ -2632,6 +2656,18 @@
 		)
 		(uuid "2b2cf9cf-252b-4d9b-a1c2-e99b2183bc22")
 	)
+	(hierarchical_label "QSPI_SIO_3"
+		(shape bidirectional)
+		(at 35.56 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "31f4b183-2b6f-42b1-b695-5cf908b9784d")
+	)
 	(hierarchical_label "CAN1L"
 		(shape bidirectional)
 		(at 190.5 83.82 0)
@@ -2643,16 +2679,29 @@
 		)
 		(uuid "329e840a-0ed0-4e71-9d99-97617facdfbd")
 	)
-	(hierarchical_label "I2C_SCL"
+	(hierarchical_label "QSPI_CS"
 		(shape input)
-		(at 53.34 121.92 0)
+		(at 35.56 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.1588)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "90e78c66-38ba-4a18-905a-a725101be642")
+		(uuid "487616b3-aa5f-4a99-8c93-d4c9310028bb")
+	)
+	(hierarchical_label "QSPI_SCLK"
+		(shape input)
+		(at 35.56 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "b0e27fcf-b598-4198-bc47-bc0b0a330bd7")
 	)
 	(hierarchical_label "CAN2L"
 		(shape bidirectional)
@@ -2664,6 +2713,18 @@
 			(justify left)
 		)
 		(uuid "b90ce054-cfb1-416c-85d3-25d158f92386")
+	)
+	(hierarchical_label "QSPI_SIO_2"
+		(shape bidirectional)
+		(at 35.56 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "bdd93f9e-90b2-45c9-8c31-06f23fa19d75")
 	)
 	(hierarchical_label "CAN1_RX"
 		(shape output)
@@ -2686,6 +2747,18 @@
 			(justify right)
 		)
 		(uuid "ee3a479d-3e4f-46d4-b10e-db26e6c329f9")
+	)
+	(hierarchical_label "QSPI_SIO_1"
+		(shape bidirectional)
+		(at 35.56 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "fbfc8e7d-3287-4d91-b9a1-e1bd23a115d3")
 	)
 	(netclass_flag ""
 		(length 2.54)
@@ -3643,94 +3716,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Memory_EEPROM:CAT24C256")
-		(at 43.18 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "318e1931-7455-4fa1-a5b6-e25792bf9cf0")
-		(property "Reference" "U5"
-			(at 45.4935 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CAT24C512"
-			(at 45.4935 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 43.18 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF"
-			(at 43.18 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "256 kb CMOS Serial EEPROM, DIP-8/SOIC-8/TSSOP-8/DFN-8"
-			(at 43.18 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "544b40aa-7644-4dac-b703-091768c8fedd")
-		)
-		(pin "4"
-			(uuid "446e3715-a316-4d82-b8a0-78923653cfa6")
-		)
-		(pin "6"
-			(uuid "a2a6a6ec-4a9e-4931-b3c2-049c7a9a7173")
-		)
-		(pin "1"
-			(uuid "4944f437-4923-4bd3-a44d-3b3af691836b")
-		)
-		(pin "5"
-			(uuid "0b08fcad-9fef-41f4-abbd-57c05d548792")
-		)
-		(pin "7"
-			(uuid "aeb1b80a-b5f9-4cd0-a5ee-a7f7115cdc59")
-		)
-		(pin "3"
-			(uuid "28f9179e-d212-46b7-ae7d-a07b396880a2")
-		)
-		(pin "8"
-			(uuid "e865a4e9-cbd0-496c-bc0b-e2c15360753f")
-		)
-		(instances
-			(project "INV_MainBoard_TI"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/43af1007-23d7-420f-9312-a31b9051bdb7"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 30.48 81.28 0)
 		(unit 1)
@@ -4343,6 +4328,94 @@
 		)
 	)
 	(symbol
+		(lib_id "nturt_kicad_lib_EP6:APS6404L-3SQ")
+		(at 53.34 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53706d98-1984-4c6f-948f-d0f08196668c")
+		(property "Reference" "U10"
+			(at 57.15 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "APS6404L-3SQ"
+			(at 57.15 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-8_3.76x4.96mm_P1.27mm"
+			(at 53.34 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.apmemory.com/tw/downloadFiles/0324112120ql593401"
+			(at 53.34 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DRAM 64Mb QSPI PSRAM Sync Serial x1/x4 SDR"
+			(at 53.34 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f8d112a-cca8-40ac-8111-73254f542071")
+		)
+		(pin "5"
+			(uuid "10d88ab8-7f2d-4c87-93db-eafc99b7eca5")
+		)
+		(pin "7"
+			(uuid "21068842-a111-4ffb-9894-5b0c1838627c")
+		)
+		(pin "8"
+			(uuid "fd29b87c-2843-4e17-ab9f-08ffd5ce160b")
+		)
+		(pin "6"
+			(uuid "a6ca4d52-ddb7-4f9a-bf2a-6445247e4265")
+		)
+		(pin "3"
+			(uuid "6d309ffe-513f-42e8-ac97-83e8dba54bb4")
+		)
+		(pin "4"
+			(uuid "fb5437c9-5d55-419a-9750-32d514907dd6")
+		)
+		(pin "2"
+			(uuid "a22abc2c-7c9d-4276-9900-4d4f3ae4787b")
+		)
+		(instances
+			(project ""
+				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/43af1007-23d7-420f-9312-a31b9051bdb7"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SamacSys_Parts_EP6:EXC-X4CE900U")
 		(at 116.84 36.83 270)
 		(unit 1)
@@ -4751,72 +4824,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 21.59 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60d389e0-4c74-471a-bf9f-6a3003251fe8")
-		(property "Reference" "#PWR060"
-			(at 21.59 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 21.59 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 21.59 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 21.59 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 21.59 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "de15b900-3b95-42e1-a4ff-6ee95a9197c9")
-		)
-		(instances
-			(project "INV_MainBoard_TI"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/43af1007-23d7-420f-9312-a31b9051bdb7"
-					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 30.48 36.83 0)
 		(unit 1)
@@ -5014,16 +5021,16 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 43.18 114.3 0)
+		(at 53.34 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "81e00c1f-8014-409f-91b9-496896d5c13b")
-		(property "Reference" "#PWR059"
-			(at 43.18 118.11 0)
+		(uuid "8216c300-38ea-4a55-9a9d-f6816bdb613c")
+		(property "Reference" "#PWR0154"
+			(at 53.34 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5032,7 +5039,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 43.18 109.22 0)
+			(at 53.34 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5040,7 +5047,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 114.3 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5049,7 +5056,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 114.3 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,7 +5065,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 43.18 114.3 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5067,79 +5074,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8ad7bd71-6a19-4fb2-a1b8-a84a16a1d810")
+			(uuid "ff5c6343-7f4d-4d32-bc33-d1880eb7693d")
 		)
 		(instances
-			(project "INV_MainBoard_TI"
+			(project "INV_MainBoard_STM32"
 				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/43af1007-23d7-420f-9312-a31b9051bdb7"
-					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 43.18 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "83339f28-f022-4617-b32e-3f8f3e127eeb")
-		(property "Reference" "#PWR062"
-			(at 43.18 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 43.18 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "897dc994-7b3f-4d08-b3e8-6b600f1c0655")
-		)
-		(instances
-			(project "INV_MainBoard_TI"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/43af1007-23d7-420f-9312-a31b9051bdb7"
-					(reference "#PWR062")
+					(reference "#PWR0154")
 					(unit 1)
 				)
 			)
@@ -5825,76 +5765,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 21.59 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aab8e9aa-97a4-4057-a276-298394ea4aac")
-		(property "Reference" "C35"
-			(at 24.13 120.6563 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 24.13 123.1963 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 21.59 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 21.59 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 21.59 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c57d8129-3f86-4796-829b-8e74951982e1")
-		)
-		(pin "1"
-			(uuid "a1002e5d-a295-4bea-a5cf-71aa566b75d7")
-		)
-		(instances
-			(project "INV_MainBoard_TI"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/43af1007-23d7-420f-9312-a31b9051bdb7"
-					(reference "C35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 20.32 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5964,16 +5834,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 21.59 124.46 0)
+		(at 53.34 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c2ad1e5e-e2e9-4129-be85-3c0ce38830e6")
-		(property "Reference" "#PWR061"
-			(at 21.59 130.81 0)
+		(uuid "c235cbff-5560-48e9-80ed-c04f8fedb4dc")
+		(property "Reference" "#PWR0152"
+			(at 53.34 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5982,7 +5852,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 21.59 129.54 0)
+			(at 53.34 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5991,7 +5861,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 21.59 124.46 0)
+			(at 53.34 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6000,7 +5870,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 21.59 124.46 0)
+			(at 53.34 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6009,7 +5879,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 21.59 124.46 0)
+			(at 53.34 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6018,12 +5888,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c806674d-4eb0-4d38-bc06-f8ec57eea230")
+			(uuid "64dd3e40-2c93-4b65-9292-c406b8b5795f")
 		)
 		(instances
-			(project "INV_MainBoard_TI"
+			(project "INV_MainBoard_STM32"
 				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/43af1007-23d7-420f-9312-a31b9051bdb7"
-					(reference "#PWR061")
+					(reference "#PWR0152")
 					(unit 1)
 				)
 			)
