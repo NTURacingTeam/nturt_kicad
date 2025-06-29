@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "TL_TSSI")
-		(date "2025-05-30")
-		(rev "1.0")
+		(date "2025-06-15")
+		(rev "1.2")
 		(company "NTURacing")
 		(comment 1 "Jack Kuo")
 	)
@@ -406,108 +406,6 @@
 				)
 			)
 		)
-		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mounting Hole with connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_Pad_0_1"
-				(circle
-					(center 0 1.27)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:Earth"
 			(power)
 			(pin_numbers hide)
@@ -654,16 +552,52 @@
 		(uuid "19499790-2bd9-450b-9a28-3523f12e8257")
 	)
 	(junction
+		(at 71.12 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39e00bf1-f015-4fe0-9b73-106021c40af1")
+	)
+	(junction
 		(at 54.61 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4be4a87a-61a5-4b5f-b7a9-ae4ed21670de")
 	)
 	(junction
+		(at 78.74 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "554becfe-e01d-41a5-9faf-960739bdc37c")
+	)
+	(junction
+		(at 71.12 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57ddf6bd-e37b-4b7f-a4ae-4f191613ac15")
+	)
+	(junction
+		(at 62.23 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ef8a2b0-4a00-4bc1-8c59-49ab80167849")
+	)
+	(junction
+		(at 62.23 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bf46687-23ad-428b-9aa2-43cf5436abd9")
+	)
+	(junction
 		(at 54.61 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b297706d-3ab4-45f7-8478-2d63bc5f5ea6")
+	)
+	(junction
+		(at 78.74 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b606d508-2bb7-43c1-84ca-12c282a9d51f")
 	)
 	(wire
 		(pts
@@ -677,6 +611,46 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 83.82) (xy 86.36 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11db9110-f3b8-4537-8168-d88725076793")
+	)
+	(wire
+		(pts
+			(xy 66.04 78.74) (xy 67.31 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e0537c3-a22b-49e4-8476-cb5ac26d2b9e")
+	)
+	(wire
+		(pts
+			(xy 90.17 78.74) (xy 93.98 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38dc99d2-4e8f-444e-a5e1-9c89ac1ac3e9")
+	)
+	(wire
+		(pts
+			(xy 71.12 83.82) (xy 78.74 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3baff7f6-4285-46e8-aca8-252a7d5f5a8b")
+	)
+	(wire
+		(pts
 			(xy 55.88 63.5) (xy 62.23 63.5)
 		)
 		(stroke
@@ -684,16 +658,6 @@
 			(type default)
 		)
 		(uuid "3ef6da0d-28f3-4742-aad5-7f3021229ef7")
-	)
-	(wire
-		(pts
-			(xy 69.85 58.42) (xy 66.04 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a603f6b-8f76-4ed9-bddb-c3961674885b")
 	)
 	(wire
 		(pts
@@ -727,6 +691,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 63.5) (xy 71.12 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6508e4d-2a90-4014-aff7-27f9cae05060")
+	)
+	(wire
+		(pts
 			(xy 39.37 58.42) (xy 43.18 58.42)
 		)
 		(stroke
@@ -734,6 +708,16 @@
 			(type default)
 		)
 		(uuid "ba3c10b1-1fa4-4049-9f06-d94af580d33d")
+	)
+	(wire
+		(pts
+			(xy 62.23 83.82) (xy 71.12 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbfdc6ba-f8b9-47e3-8412-64f7b4135f5c")
 	)
 	(wire
 		(pts
@@ -757,13 +741,54 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 78.74) (xy 66.04 78.74)
+			(xy 90.17 58.42) (xy 93.98 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e73ab195-5b82-4430-bfaa-155219a37b31")
+		(uuid "d7665836-85e6-46aa-a136-249f2970e4c8")
+	)
+	(wire
+		(pts
+			(xy 71.12 63.5) (xy 78.74 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8d9aebf-f008-44a2-9175-ed9783b0f005")
+	)
+	(wire
+		(pts
+			(xy 78.74 63.5) (xy 86.36 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea27ca55-4af6-4f27-acee-83c37902db48")
+	)
+	(wire
+		(pts
+			(xy 66.04 58.42) (xy 67.31 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f05f0de4-9048-4ab4-b048-c6a7cd012ef4")
+	)
+	(text "V1.0 3 leds x 2\nV1.1 change M6 to M3\nV1.2 change mounting hole configureation\n     (including removing middle hole and use M2 on 4 corner)\n     increase LED count fron 3*2 to 6*2"
+		(exclude_from_sim no)
+		(at 32.512 96.774 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b20016e9-9e21-49c0-8a5a-83f940470e4b")
 	)
 	(symbol
 		(lib_id "Device:LED_Pad")
@@ -912,7 +937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1392f79d-61ca-4855-b4a0-56edc4121f04")
-		(property "Reference" "D6"
+		(property "Reference" "D9"
 			(at 62.23 71.12 0)
 			(effects
 				(font
@@ -967,7 +992,7 @@
 		(instances
 			(project "TL_TSSI"
 				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
-					(reference "D6")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -1107,6 +1132,77 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Pad")
+		(at 86.36 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d835f59-d61d-41f9-bc47-4835eb1558ed")
+		(property "Reference" "D12"
+			(at 86.36 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 86.36 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1W_3W_R8"
+			(at 86.36 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode with pad"
+			(at 86.36 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4d55f7e8-98b0-4124-99d2-b8f45e917d3b")
+		)
+		(pin "1"
+			(uuid "08621b7b-a815-4d44-b5e3-72f9f461e0f9")
+		)
+		(pin "2"
+			(uuid "b350e35f-ad10-4b00-9af9-188ee373bbac")
+		)
+		(instances
+			(project "TL_TSSI"
+				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Pad")
 		(at 46.99 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1178,7 +1274,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 33.02 44.45 0)
+		(at 16.51 39.37 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -1186,8 +1282,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a351dd5-6ed2-45e1-8134-55c889b1bcd7")
-		(property "Reference" "H3"
-			(at 35.56 43.1799 0)
+		(property "Reference" "H2"
+			(at 19.05 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1196,7 +1292,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 35.56 45.7199 0)
+			(at 19.05 40.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1204,8 +1300,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 33.02 44.45 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 16.51 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1214,7 +1310,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 44.45 0)
+			(at 16.51 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1223,7 +1319,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 33.02 44.45 0)
+			(at 16.51 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1234,7 +1330,7 @@
 		(instances
 			(project "TL_TSSI"
 				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
-					(reference "H3")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -1242,7 +1338,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 69.85 78.74 0)
+		(at 93.98 78.74 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1251,7 +1347,7 @@
 		(dnp no)
 		(uuid "5bcbe41d-0d67-485e-9fcc-add13aaa06c8")
 		(property "Reference" "TP4"
-			(at 71.12 77.4699 0)
+			(at 95.25 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1260,7 +1356,7 @@
 			)
 		)
 		(property "Value" "RED_P"
-			(at 71.12 80.0099 0)
+			(at 95.25 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1269,7 +1365,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
-			(at 64.77 78.74 0)
+			(at 88.9 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1278,7 +1374,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 64.77 78.74 0)
+			(at 88.9 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1287,7 +1383,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 69.85 78.74 0)
+			(at 93.98 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1309,7 +1405,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 33.02 39.37 0)
+		(at 16.51 34.29 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -1317,8 +1413,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69a046c6-aa5f-44c0-b914-74d459ae3c94")
-		(property "Reference" "H2"
-			(at 35.56 38.0999 0)
+		(property "Reference" "H1"
+			(at 19.05 33.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1327,7 +1423,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 35.56 40.6399 0)
+			(at 19.05 35.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1335,8 +1431,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 33.02 39.37 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 16.51 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1345,7 +1441,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 39.37 0)
+			(at 16.51 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1354,7 +1450,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 33.02 39.37 0)
+			(at 16.51 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1365,41 +1461,40 @@
 		(instances
 			(project ""
 				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
-					(reference "H2")
+					(reference "H1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 58.42 39.37 0)
+		(lib_id "Device:LED_Pad")
+		(at 78.74 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "888b75d7-39a6-4bc5-a6a2-c8360e077c50")
-		(property "Reference" "#PWR03"
-			(at 58.42 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 58.42 44.45 0)
+		(uuid "7babb04e-e51d-4136-9cff-eab74c6dff20")
+		(property "Reference" "D11"
+			(at 78.74 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 58.42 39.37 0)
+		(property "Value" "GREEN"
+			(at 78.74 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1W_3W_R8"
+			(at 78.74 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1408,7 +1503,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 39.37 0)
+			(at 78.74 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1416,39 +1511,45 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 58.42 39.37 0)
+		(property "Description" "Light emitting diode with pad"
+			(at 78.74 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "3"
+			(uuid "939a26f8-80f7-4aa4-98ab-a8b9d963aa09")
 		)
 		(pin "1"
-			(uuid "0ca16efd-29db-453b-8f7c-e2af620e2df7")
+			(uuid "3b5398fd-0967-45f2-b401-08012ae1bb8b")
+		)
+		(pin "2"
+			(uuid "99ce5f7a-1e63-4b30-a45b-d5b908c75327")
 		)
 		(instances
 			(project "TL_TSSI"
 				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
-					(reference "#PWR03")
+					(reference "D11")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 58.42 36.83 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 16.51 59.69 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bce96fe2-9062-4ac7-bdac-e1194dff425d")
-		(property "Reference" "H1"
-			(at 60.96 34.2899 0)
+		(uuid "93829f1a-62bf-4432-a789-4994859a2865")
+		(property "Reference" "H6"
+			(at 19.05 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1456,8 +1557,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_Pad"
-			(at 60.96 36.8299 0)
+		(property "Value" "MountingHole"
+			(at 19.05 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1465,8 +1566,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_6.4mm_M6_Pad_Via"
-			(at 58.42 36.83 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 16.51 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1475,7 +1576,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 36.83 0)
+			(at 16.51 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1483,22 +1584,289 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 58.42 36.83 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 16.51 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "ae9af8ad-8664-41e9-8f7a-d0372814d582")
 		)
 		(instances
-			(project ""
+			(project "TL_TSSI"
 				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
-					(reference "H1")
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Pad")
+		(at 86.36 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d7b842d-d091-4c36-9173-3f5e6f6b6b94")
+		(property "Reference" "D6"
+			(at 86.36 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RED"
+			(at 86.36 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1W_3W_R8"
+			(at 86.36 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode with pad"
+			(at 86.36 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4847cf1a-36f6-4cca-b959-283b89ed7925")
+		)
+		(pin "1"
+			(uuid "32fe4da5-acb5-4d92-8629-9f7427e9dcf3")
+		)
+		(pin "2"
+			(uuid "7c8a7a93-d78c-4076-ac6e-d046c5b974b6")
+		)
+		(instances
+			(project "TL_TSSI"
+				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Pad")
+		(at 71.12 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac16d4f9-e3ca-45d4-a5a4-542f1e82d733")
+		(property "Reference" "D10"
+			(at 71.12 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 71.12 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1W_3W_R8"
+			(at 71.12 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode with pad"
+			(at 71.12 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "8c3fcac1-bbd8-42f2-a7bc-b60ce35ea3e5")
+		)
+		(pin "1"
+			(uuid "934e776c-9581-4534-9bf0-e2248f2c43d6")
+		)
+		(pin "2"
+			(uuid "db0492e9-961f-4f7f-beea-5e026978ada6")
+		)
+		(instances
+			(project "TL_TSSI"
+				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 16.51 44.45 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aeb54489-830c-4e44-9cd0-6757fb59d62a")
+		(property "Reference" "H3"
+			(at 19.05 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 19.05 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 16.51 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 16.51 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 16.51 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "TL_TSSI"
+				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 16.51 54.61 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6ea950b-5337-4e81-a66f-bfae4d65acde")
+		(property "Reference" "H5"
+			(at 19.05 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 19.05 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 16.51 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 16.51 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 16.51 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "TL_TSSI"
+				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -1577,7 +1945,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 69.85 58.42 0)
+		(at 93.98 58.42 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1586,7 +1954,7 @@
 		(dnp no)
 		(uuid "be211298-5d14-411a-94b1-349369f13686")
 		(property "Reference" "TP2"
-			(at 71.12 57.1499 0)
+			(at 95.25 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1595,7 +1963,7 @@
 			)
 		)
 		(property "Value" "RED_P"
-			(at 71.12 59.6899 0)
+			(at 95.25 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1604,7 +1972,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_4.0x4.0mm"
-			(at 64.77 58.42 0)
+			(at 88.9 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1613,7 +1981,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 64.77 58.42 0)
+			(at 88.9 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1622,7 +1990,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 69.85 58.42 0)
+			(at 93.98 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1718,7 +2086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0773d9a-0059-483d-9643-19775b07e3ae")
-		(property "Reference" "D4"
+		(property "Reference" "D7"
 			(at 46.99 71.12 0)
 			(effects
 				(font
@@ -1773,7 +2141,142 @@
 		(instances
 			(project "TL_TSSI"
 				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Pad")
+		(at 71.12 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4653909-45cc-43d5-8b59-d849cc35f613")
+		(property "Reference" "D4"
+			(at 71.12 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RED"
+			(at 71.12 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1W_3W_R8"
+			(at 71.12 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode with pad"
+			(at 71.12 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6b9dc420-74b2-4011-95b4-29cc4bca7be6")
+		)
+		(pin "1"
+			(uuid "6bf53be0-6377-4d9b-8080-f65c985fdf61")
+		)
+		(pin "2"
+			(uuid "f12586c4-a69e-4de4-89e5-34ebeb463b1b")
+		)
+		(instances
+			(project "TL_TSSI"
+				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 16.51 49.53 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c50d9499-2c0a-4772-a57f-f2aed9eb8d82")
+		(property "Reference" "H4"
+			(at 19.05 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 19.05 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 16.51 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 16.51 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 16.51 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "TL_TSSI"
+				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -1789,7 +2292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc18e7d8-8962-47e3-be36-0f317d5bb772")
-		(property "Reference" "D5"
+		(property "Reference" "D8"
 			(at 54.61 71.12 0)
 			(effects
 				(font
@@ -1840,6 +2343,77 @@
 		)
 		(pin "2"
 			(uuid "e6417d07-c8cf-4be6-82bb-79b453a6a070")
+		)
+		(instances
+			(project "TL_TSSI"
+				(path "/f274c0d9-7a7d-44c2-a2fd-5ef403cef412"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Pad")
+		(at 78.74 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb75b22c-b875-495d-973a-48b23195965c")
+		(property "Reference" "D5"
+			(at 78.74 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RED"
+			(at 78.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1W_3W_R8"
+			(at 78.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode with pad"
+			(at 78.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a3471632-9248-40a5-ade4-9e9075fa2ca8")
+		)
+		(pin "1"
+			(uuid "5f13b17e-d486-4fe1-8fcd-a016edf6e4df")
+		)
+		(pin "2"
+			(uuid "a10cb010-f157-4237-84a9-5cc851124515")
 		)
 		(instances
 			(project "TL_TSSI"
