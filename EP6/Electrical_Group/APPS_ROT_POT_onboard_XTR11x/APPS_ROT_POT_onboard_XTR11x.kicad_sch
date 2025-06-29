@@ -4,8 +4,15 @@
 	(generator_version "8.0")
 	(uuid "a7293933-7d5f-4c82-b372-ee2dff7ebca7")
 	(paper "A4")
+	(title_block
+		(title "APPS_ROT_POT_onboard_XTR11x")
+		(date "2025-06-27")
+		(rev "1.1")
+		(company "NTURacing Team")
+		(comment 1 "Jack Kuo 郭哲明")
+	)
 	(lib_symbols
-		(symbol "Amplifier_Operational:LM358"
+		(symbol "Amplifier_Operational:LM324"
 			(pin_names
 				(offset 0.127)
 			)
@@ -21,7 +28,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "LM358"
+			(property "Value" "LM324"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -31,7 +38,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at -1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -39,8 +46,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-				(at 0 0 0)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
+				(at 1.27 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -48,7 +55,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
 				(at 0 0 0)
 				(effects
 					(font
@@ -65,7 +72,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "dual opamp"
+			(property "ki_keywords" "quad opamp"
 				(at 0 0 0)
 				(effects
 					(font
@@ -74,7 +81,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
+			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -83,7 +90,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM358_1_1"
+			(symbol "LM324_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -151,7 +158,7 @@
 					)
 				)
 			)
-			(symbol "LM358_2_1"
+			(symbol "LM324_2_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -219,7 +226,143 @@
 					)
 				)
 			)
-			(symbol "LM358_3_1"
+			(symbol "LM324_3_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LM324_4_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LM324_5_1"
 				(pin power_in line
 					(at -2.54 -7.62 90)
 					(length 3.81)
@@ -230,7 +373,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -248,7 +391,142 @@
 							)
 						)
 					)
-					(number "8"
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -759,23 +1037,23 @@
 				)
 			)
 		)
-		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+		(symbol "Mechanical:MountingHole"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 6.35 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -800,7 +1078,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole with connection"
+			(property "Description" "Mounting Hole without connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -818,7 +1096,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
+			(property "ki_fp_filters" "MountingHole*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -827,9 +1105,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_Pad_0_1"
+			(symbol "MountingHole_0_1"
 				(circle
-					(center 0 1.27)
+					(center 0 0)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -837,26 +1115,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 			)
@@ -1742,16 +2000,16 @@
 		)
 	)
 	(junction
+		(at 67.31 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "026810ab-8796-44dc-a862-d67c0b525153")
+	)
+	(junction
 		(at 236.22 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "03ca9f85-57fb-4f49-b0d5-d10a021f11fd")
-	)
-	(junction
-		(at 102.87 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ece7682-25b6-4458-9a23-78f44232c69d")
 	)
 	(junction
 		(at 189.23 81.28)
@@ -1760,16 +2018,52 @@
 		(uuid "2c17abe8-6157-4a8f-b836-d8636ede7147")
 	)
 	(junction
-		(at 149.86 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "365191d2-7b0f-4e7e-9776-c5f7df44aebd")
-	)
-	(junction
 		(at 224.79 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a0b96e7-6734-44f4-bf70-eeff6e269e31")
+	)
+	(junction
+		(at 106.68 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44fae2f5-f653-4874-9418-73d4ada4b20a")
+	)
+	(junction
+		(at 82.55 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58f6f30a-4118-4b37-85e1-a2b405d189a5")
+	)
+	(junction
+		(at 82.55 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e4473ab-64b2-406b-85c1-0fd37b4c02d2")
+	)
+	(junction
+		(at 73.66 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "633750d8-d40f-4c48-b96f-4e0c0790e477")
+	)
+	(junction
+		(at 106.68 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74918803-c6f9-4181-b99e-0eb9db36882b")
+	)
+	(junction
+		(at 57.15 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d33a822-41e7-4cf4-8867-34d825a0c2c4")
+	)
+	(junction
+		(at 67.31 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88a4e9c3-451c-46aa-93bc-ccffdd3d1139")
 	)
 	(junction
 		(at 236.22 74.93)
@@ -1778,60 +2072,74 @@
 		(uuid "8c5bdbe6-890e-46e9-ae75-140e880695df")
 	)
 	(junction
+		(at 138.43 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90a46ae6-af9e-4fbf-bb12-a0779cc1109e")
+	)
+	(junction
 		(at 236.22 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "933402f3-8cb0-48f5-9c7c-0298e7c0ad04")
 	)
 	(junction
-		(at 154.94 69.85)
+		(at 120.65 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ad8f2c8c-25ed-4f2c-9367-d7d1d23a9244")
+		(uuid "b1af3400-3451-4996-bf43-3237ba3baf6b")
 	)
 	(junction
-		(at 110.49 107.95)
+		(at 120.65 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "eb8ab269-0f51-47c5-a21d-6c4f613a030a")
+		(uuid "c3113bff-d905-4250-806f-77f8c01b73b7")
+	)
+	(junction
+		(at 120.65 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1c9f95d-16af-466c-8714-5728fcf6d980")
+	)
+	(junction
+		(at 149.86 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da4eec5d-3501-4c81-930d-6bf5b5ce6946")
+	)
+	(junction
+		(at 149.86 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8be06f3-6bf7-4914-9ad2-57e7cb866d33")
+	)
+	(junction
+		(at 82.55 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f18f64bd-3365-438d-8851-5256c47e664b")
 	)
 	(no_connect
-		(at 38.1 135.89)
-		(uuid "254b0249-4569-4c7a-b81d-bb8a8bf7d56a")
+		(at 165.1 130.81)
+		(uuid "186f1bab-b7ee-436b-a6a2-eff9e7064f92")
 	)
 	(no_connect
-		(at 193.04 128.27)
-		(uuid "4ffa1e01-797b-4926-ae78-7b1dd27b4bd5")
+		(at 165.1 135.89)
+		(uuid "55d11d0d-e860-4183-8d20-131f2d858b38")
 	)
 	(no_connect
-		(at 83.82 135.89)
-		(uuid "7d169c68-03c0-40fc-8d52-31c7fbbaee50")
-	)
-	(no_connect
-		(at 208.28 130.81)
-		(uuid "a94a7605-f15d-4888-95ed-d82f9496c899")
-	)
-	(no_connect
-		(at 68.58 135.89)
-		(uuid "b096d6c8-5c3a-434d-86a6-0d8dadfd4ac3")
-	)
-	(no_connect
-		(at 53.34 135.89)
-		(uuid "bc78bd50-6893-4b79-b0b4-7ebd600e6576")
-	)
-	(no_connect
-		(at 193.04 133.35)
-		(uuid "f0827226-3fa6-4c2c-b7f4-e50153e4d70b")
+		(at 180.34 133.35)
+		(uuid "d1d233d7-6b63-40de-96bb-a141f4199b0d")
 	)
 	(wire
 		(pts
-			(xy 147.32 91.44) (xy 149.86 91.44)
+			(xy 120.65 99.06) (xy 121.92 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "021c7938-85f6-4dd8-9f97-9a0318342b71")
+		(uuid "09542964-aa4c-4c23-881e-3a093772a43e")
 	)
 	(wire
 		(pts
@@ -1855,6 +2163,26 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 121.92) (xy 106.68 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "127d60b1-9b65-4d72-aa8a-348b436c2a8c")
+	)
+	(wire
+		(pts
+			(xy 106.68 88.9) (xy 105.41 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13dda171-d3fd-444a-b6e6-6b1ab8fb50e4")
+	)
+	(wire
+		(pts
 			(xy 236.22 99.06) (xy 236.22 102.87)
 		)
 		(stroke
@@ -1865,7 +2193,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 105.41) (xy 116.84 107.95)
+			(xy 57.15 88.9) (xy 57.15 127)
 		)
 		(stroke
 			(width 0)
@@ -1885,37 +2213,57 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 107.95) (xy 102.87 102.87)
+			(xy 67.31 127) (xy 73.66 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b2d2244-26c6-4eca-bab7-f7194cf08e51")
+		(uuid "1d1ecf47-5d09-45c7-aa68-c3fbdb67ff20")
 	)
 	(wire
 		(pts
-			(xy 132.08 88.9) (xy 132.08 83.82)
+			(xy 67.31 86.36) (xy 90.17 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2c12ef4c-1296-4a44-b5e2-d8d51867a099")
+		(uuid "21af6930-d2b1-4a51-b0af-d52959d97fe6")
 	)
 	(wire
 		(pts
-			(xy 132.08 83.82) (xy 149.86 83.82)
+			(xy 149.86 69.85) (xy 161.29 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3127d14c-7b46-4152-9136-2f13756670f6")
+		(uuid "250b74db-7f72-42dd-a033-2a32a4bdc658")
 	)
 	(wire
 		(pts
-			(xy 158.75 96.52) (xy 158.75 116.84)
+			(xy 67.31 86.36) (xy 67.31 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2df9af7b-2440-485b-957f-9e17b1b2b0f3")
+	)
+	(wire
+		(pts
+			(xy 82.55 110.49) (xy 82.55 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e116b15-bdd9-4b7b-b810-d83f75673763")
+	)
+	(wire
+		(pts
+			(xy 158.75 96.52) (xy 158.75 127)
 		)
 		(stroke
 			(width 0)
@@ -1925,13 +2273,13 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 116.84) (xy 102.87 116.84)
+			(xy 73.66 127) (xy 82.55 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3434e5f0-f4f1-4c5c-977e-9166c33d4d1f")
+		(uuid "3532cc30-d79c-4567-b55e-b9bd74316ea1")
 	)
 	(wire
 		(pts
@@ -1945,7 +2293,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 91.44) (xy 153.67 91.44)
+			(xy 138.43 91.44) (xy 143.51 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1955,13 +2303,13 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 107.95) (xy 116.84 107.95)
+			(xy 129.54 86.36) (xy 120.65 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3c06b506-c5e2-46bd-87f6-643614bcaf57")
+		(uuid "3d912056-d70b-4ba1-b02e-06973c618432")
 	)
 	(wire
 		(pts
@@ -1975,13 +2323,33 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 93.98) (xy 132.08 93.98)
+			(xy 120.65 104.14) (xy 121.92 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "408359e2-80c4-4493-a772-10ab31daa1a7")
+	)
+	(wire
+		(pts
+			(xy 59.69 86.36) (xy 60.96 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "441ff6c8-d940-4e9e-90d8-3e81042c775e")
+	)
+	(wire
+		(pts
+			(xy 82.55 111.76) (xy 82.55 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4567e3c2-636d-4f38-83c1-5e7c84fb3261")
 	)
 	(wire
 		(pts
@@ -1995,7 +2363,17 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 81.28) (xy 153.67 86.36)
+			(xy 67.31 102.87) (xy 67.31 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bce2a68-35ef-4a7c-a6cb-81376fcd7b86")
+	)
+	(wire
+		(pts
+			(xy 153.67 76.2) (xy 153.67 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2005,13 +2383,13 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 96.52) (xy 116.84 100.33)
+			(xy 106.68 88.9) (xy 106.68 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "578ebc76-425b-4fcb-8d81-4d7e8ebfce11")
+		(uuid "4e125b3f-beb0-4293-8b64-41546d10435e")
 	)
 	(wire
 		(pts
@@ -2022,6 +2400,56 @@
 			(type default)
 		)
 		(uuid "58fcf2da-5312-4ef0-9194-31888f48072b")
+	)
+	(wire
+		(pts
+			(xy 73.66 119.38) (xy 73.66 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5950bf7d-0742-4f75-81f0-476a2241fb94")
+	)
+	(wire
+		(pts
+			(xy 106.68 114.3) (xy 106.68 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59a0b7d6-232d-464e-8ed8-95fea628135a")
+	)
+	(wire
+		(pts
+			(xy 106.68 104.14) (xy 106.68 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59b14e37-9683-4701-81c3-1c55a0d8863a")
+	)
+	(wire
+		(pts
+			(xy 106.68 114.3) (xy 105.41 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6771382e-bbd7-421d-a6c3-ebd4dff57e02")
+	)
+	(wire
+		(pts
+			(xy 82.55 111.76) (xy 90.17 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68541902-d241-49e8-b1fc-254b0429d130")
 	)
 	(wire
 		(pts
@@ -2045,7 +2473,27 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 90.17) (xy 95.25 102.87)
+			(xy 88.9 116.84) (xy 90.17 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74c12534-24bb-403b-9bb8-feac054fe9d8")
+	)
+	(wire
+		(pts
+			(xy 82.55 118.11) (xy 82.55 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75351a4b-eb31-4ed7-b500-0c3321dc59e9")
+	)
+	(wire
+		(pts
+			(xy 21.59 97.79) (xy 21.59 127)
 		)
 		(stroke
 			(width 0)
@@ -2075,7 +2523,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 69.85) (xy 95.25 74.93)
+			(xy 120.65 104.14) (xy 120.65 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c51833a-c67e-47e3-9fd3-27d2c450a150")
+	)
+	(wire
+		(pts
+			(xy 21.59 69.85) (xy 21.59 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2085,13 +2543,23 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 88.9) (xy 116.84 91.44)
+			(xy 120.65 86.36) (xy 120.65 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "805cbfe5-e176-479b-bf5b-64861c49f35d")
+		(uuid "83de06b1-0012-4496-a122-a32b20ca39a8")
+	)
+	(wire
+		(pts
+			(xy 120.65 115.57) (xy 120.65 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9162d038-9766-4ebd-94d6-1e4fe6cb21d0")
 	)
 	(wire
 		(pts
@@ -2105,13 +2573,23 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 69.85) (xy 154.94 69.85)
+			(xy 113.03 99.06) (xy 106.68 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9964954a-018c-4846-9fab-2a769735a331")
+		(uuid "96b6634d-37b1-4c07-8059-3c784ce47ef7")
+	)
+	(wire
+		(pts
+			(xy 118.11 104.14) (xy 120.65 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98582baa-db91-4b3d-92a6-246cfef298e9")
 	)
 	(wire
 		(pts
@@ -2135,7 +2613,17 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 81.28) (xy 153.67 81.28)
+			(xy 82.55 76.2) (xy 82.55 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f90cb5c-f127-40d9-895e-3edd33dd0800")
+	)
+	(wire
+		(pts
+			(xy 57.15 76.2) (xy 82.55 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2145,7 +2633,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 102.87) (xy 102.87 102.87)
+			(xy 21.59 127) (xy 57.15 127)
 		)
 		(stroke
 			(width 0)
@@ -2155,27 +2643,37 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 83.82) (xy 149.86 91.44)
+			(xy 138.43 101.6) (xy 137.16 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8678970-bc5e-43c8-8584-922425b131f7")
+		(uuid "a772a13c-8d3e-42fe-9f71-11196a588ad7")
 	)
 	(wire
 		(pts
-			(xy 102.87 116.84) (xy 102.87 107.95)
+			(xy 134.62 86.36) (xy 138.43 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aedf9507-da1e-47cc-92b5-5905b98a51cc")
+		(uuid "afb54e45-426d-4008-9dd9-10fb86bb84e1")
 	)
 	(wire
 		(pts
-			(xy 116.84 81.28) (xy 116.84 83.82)
+			(xy 88.9 116.84) (xy 88.9 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4af07cb-0b84-45b8-b762-1361c4539769")
+	)
+	(wire
+		(pts
+			(xy 57.15 76.2) (xy 57.15 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2185,7 +2683,17 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 91.44) (xy 161.29 91.44)
+			(xy 138.43 86.36) (xy 138.43 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bad3c5d8-0cca-4abd-b93a-c7af2802f560")
+	)
+	(wire
+		(pts
+			(xy 148.59 91.44) (xy 161.29 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2195,13 +2703,33 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 69.85) (xy 95.25 69.85)
+			(xy 21.59 69.85) (xy 149.86 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c581aaaa-d8dc-49cf-ad6d-81e66071eff9")
+	)
+	(wire
+		(pts
+			(xy 73.66 111.76) (xy 82.55 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cedfecb8-1e6b-41d8-8fdd-72c023842359")
+	)
+	(wire
+		(pts
+			(xy 118.11 99.06) (xy 120.65 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfba8155-0010-4661-9a49-cabfc043f3de")
 	)
 	(wire
 		(pts
@@ -2215,6 +2743,36 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 91.44) (xy 88.9 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d45ca3bd-c461-4971-a2e3-0b511be012d5")
+	)
+	(wire
+		(pts
+			(xy 57.15 127) (xy 67.31 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4ad34d5-b7ec-4cdc-852c-3c91ed49034d")
+	)
+	(wire
+		(pts
+			(xy 138.43 91.44) (xy 138.43 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7dcbdcd-edbc-4b75-a2d4-679e72f0bdf9")
+	)
+	(wire
+		(pts
 			(xy 161.29 81.28) (xy 161.29 69.85)
 		)
 		(stroke
@@ -2222,6 +2780,16 @@
 			(type default)
 		)
 		(uuid "d99c613d-187b-401d-8e1c-ea17edb6050b")
+	)
+	(wire
+		(pts
+			(xy 88.9 99.06) (xy 106.68 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da9c4fa5-952e-41f7-9293-9d51825c6952")
 	)
 	(wire
 		(pts
@@ -2245,13 +2813,43 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 107.95) (xy 110.49 107.95)
+			(xy 73.66 114.3) (xy 73.66 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e168bcaa-e5bb-47c5-abc8-91ba7107030a")
+		(uuid "dfc406e6-cf27-427c-a269-c92be0a15a58")
+	)
+	(wire
+		(pts
+			(xy 120.65 127) (xy 149.86 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e01d8854-d1af-477d-8060-86a94520e0e3")
+	)
+	(wire
+		(pts
+			(xy 113.03 104.14) (xy 106.68 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e28e97a4-e14d-43b0-99a0-a9762e56245f")
+	)
+	(wire
+		(pts
+			(xy 149.86 127) (xy 158.75 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4b87640-18a9-427e-93c6-f6ec70fdbcc7")
 	)
 	(wire
 		(pts
@@ -2262,6 +2860,26 @@
 			(type default)
 		)
 		(uuid "e500e8ec-9a32-4625-a70f-e1d10a0ff36f")
+	)
+	(wire
+		(pts
+			(xy 88.9 91.44) (xy 90.17 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e974d342-005c-441d-8837-66ac8c94f583")
+	)
+	(wire
+		(pts
+			(xy 82.55 76.2) (xy 153.67 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3b48839-87ba-4d77-aa56-408648dbf7e1")
 	)
 	(wire
 		(pts
@@ -2283,6 +2901,65 @@
 		)
 		(uuid "f8ad9f86-8568-4f54-808b-d80c16d5bcd5")
 	)
+	(wire
+		(pts
+			(xy 82.55 127) (xy 120.65 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f98b2f35-63c1-4ac8-ae17-5bc201c79a44")
+	)
+	(wire
+		(pts
+			(xy 66.04 86.36) (xy 67.31 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fef9399c-b788-4b6e-b567-616653f7d16e")
+	)
+	(text "R1"
+		(exclude_from_sim no)
+		(at 115.062 112.522 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(italic yes)
+				(color 255 0 255 1)
+			)
+		)
+		(uuid "0316e2a7-7b6a-43df-8df3-20191305f584")
+	)
+	(text "R1"
+		(exclude_from_sim no)
+		(at 115.57 91.186 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(italic yes)
+				(color 255 0 255 1)
+			)
+		)
+		(uuid "3680b8f7-6e22-4d6a-9d84-7c244efa9d1a")
+	)
+	(text "Vout = R2/R1 * (Vin-Vr)\nVout = 47/10 * (Vin-0.4*Vref)"
+		(exclude_from_sim no)
+		(at 93.98 137.668 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "40fae5e5-0967-474c-be78-a58e2c92ab66")
+	)
 	(text "I = I_in * 100\n\nI = 4~20mA\n"
 		(exclude_from_sim no)
 		(at 174.244 105.918 0)
@@ -2294,18 +2971,99 @@
 		)
 		(uuid "4cb30f8d-7c73-4fa2-87cc-b025f912cac9")
 	)
+	(text "RefLo"
+		(exclude_from_sim no)
+		(at 78.232 119.634 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.508)
+				(bold yes)
+				(italic yes)
+				(color 255 0 255 1)
+			)
+		)
+		(uuid "53c200ed-9944-4794-8700-793d8ae728f6")
+	)
+	(text "RefHi"
+		(exclude_from_sim no)
+		(at 78.232 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.508)
+				(bold yes)
+				(italic yes)
+				(color 255 0 255 1)
+			)
+		)
+		(uuid "abf05cd6-ac52-42ae-af4a-7e10d7979ec6")
+	)
+	(text "V1.0 first gen, made with JLCPCBA\nV1.1 add offset and gain to increase accuracy"
+		(exclude_from_sim no)
+		(at 39.116 172.212 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b3cfc675-7be2-43bb-837f-cc232d2e50e4")
+	)
+	(text "R2"
+		(exclude_from_sim no)
+		(at 136.906 83.058 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(italic yes)
+				(color 255 0 255 1)
+			)
+		)
+		(uuid "e126e92d-c0ad-4a2a-9754-2528abdb85c3")
+	)
+	(text "R2"
+		(exclude_from_sim no)
+		(at 129.286 113.284 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(italic yes)
+				(color 255 0 255 1)
+			)
+		)
+		(uuid "f0425d92-e51f-42bf-944b-c2ef2ef97166")
+	)
+	(text "Rin"
+		(exclude_from_sim no)
+		(at 146.304 87.884 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(italic yes)
+				(color 255 0 255 1)
+			)
+		)
+		(uuid "fad972ca-3788-4d44-8966-a85b3c8d51f2")
+	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 53.34 133.35 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 54.61 140.97 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "090d20ab-dd65-40be-807e-d13be39234af")
+		(uuid "0d05ee67-c35c-415f-a6f5-afdffc530e2b")
 		(property "Reference" "H2"
-			(at 55.88 130.8099 0)
+			(at 57.15 139.6999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2313,8 +3071,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_Pad"
-			(at 55.88 133.3499 0)
+		(property "Value" "MountingHole"
+			(at 57.15 142.2399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2322,8 +3080,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 53.34 133.35 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 54.61 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2332,7 +3090,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 133.35 0)
+			(at 54.61 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2340,20 +3098,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 53.34 133.35 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 54.61 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "77745893-3262-4c74-bcd6-d166e0184e2b")
 		)
 		(instances
-			(project "APPS_ROT_POT_onboard"
+			(project "APPS_ROT_POT_onboard_XTR11x"
 				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
 					(reference "H2")
 					(unit 1)
@@ -2362,17 +3117,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 116.84 102.87 0)
-		(mirror y)
+		(lib_id "Device:C_Small")
+		(at 67.31 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0a646a28-4449-4a50-87a9-878187400e6a")
-		(property "Reference" "R1"
-			(at 114.3 101.5999 0)
+		(fields_autoplaced yes)
+		(uuid "1152aad7-090c-4818-8108-67949b31a008")
+		(property "Reference" "C1"
+			(at 69.85 99.0662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2380,8 +3135,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 114.3 104.1399 0)
+		(property "Value" "1n"
+			(at 69.85 101.6062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2389,8 +3144,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 116.84 102.87 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 67.31 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2399,7 +3154,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 102.87 0)
+			(at 67.31 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2407,95 +3162,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 116.84 102.87 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 67.31 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "be4640d6-e5cb-4196-80c0-888b234dc842")
 		)
 		(pin "2"
-			(uuid "5f0ff67d-946f-4774-b238-2019ff165ceb")
+			(uuid "c25701b5-7869-4c80-918b-ee850348c415")
+		)
+		(pin "1"
+			(uuid "6be6b48b-8373-4540-9473-2de4328bf538")
 		)
 		(instances
 			(project ""
 				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 116.84 86.36 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1aa93dd7-1e85-4525-8678-a783db2d86a5")
-		(property "Reference" "R2"
-			(at 114.3 85.0899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 114.3 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 116.84 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 116.84 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "92523ead-8263-447a-bf68-64b33386e52d")
-		)
-		(pin "2"
-			(uuid "b3680144-5074-4c2c-bab1-075dac4a84bf")
-		)
-		(instances
-			(project "APPS_ROT_POT_onboard"
-				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
-					(reference "R2")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -2569,6 +3254,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 82.55 115.57 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e0b1bc8-a0c6-4e0f-b403-189b3d3d0213")
+		(property "Reference" "R2"
+			(at 80.01 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22k"
+			(at 80.01 116.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 82.55 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 82.55 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0b5c874-a319-4b9a-ba59-27155fef6b2d")
+		)
+		(pin "2"
+			(uuid "9f43cccb-c294-4d25-9b12-d8643c761e85")
+		)
+		(instances
+			(project "APPS_ROT_POT_onboard_XTR11x"
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_Diode_AKL:1N4148")
 		(at 224.79 95.25 90)
 		(unit 1)
@@ -2634,93 +3390,6 @@
 				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
 					(reference "D3")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 97.79 82.55 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2610041b-3538-4d81-b68e-91d583127c23")
-		(property "Reference" "U1"
-			(at 96.52 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LM358"
-			(at 96.52 83.8199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 97.79 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 97.79 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 97.79 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dbaccee8-5a64-45e9-914b-95734fa62e3d")
-		)
-		(pin "7"
-			(uuid "2f2974dc-38ad-437e-aab2-f7f9fd212ebc")
-		)
-		(pin "5"
-			(uuid "3d738a6b-a97c-4764-a132-04885cce6913")
-		)
-		(pin "4"
-			(uuid "36c01284-8135-4057-ae06-050438534cb8")
-		)
-		(pin "8"
-			(uuid "bd0ad6cb-8f1e-43d0-b51a-5034a2f83b20")
-		)
-		(pin "1"
-			(uuid "e9640577-32ab-4bb5-b1d4-6762362f11da")
-		)
-		(pin "3"
-			(uuid "fc36d5a2-e3d4-4e32-b55c-582afaecca6b")
-		)
-		(pin "6"
-			(uuid "c6aa636b-ec9d-4d63-84d5-978b931bfbd7")
-		)
-		(instances
-			(project ""
-				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
-					(reference "U1")
-					(unit 3)
 				)
 			)
 		)
@@ -2813,16 +3482,17 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 156.21 91.44 90)
+		(at 146.05 91.44 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "4ddcf7b2-3430-4a09-ad08-2c89746e6c6d")
 		(property "Reference" "R3"
-			(at 156.21 96.52 90)
+			(at 146.05 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2830,7 +3500,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 156.21 93.98 90)
+			(at 146.05 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2838,7 +3508,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 156.21 91.44 0)
+			(at 146.05 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2847,7 +3517,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 91.44 0)
+			(at 146.05 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2856,7 +3526,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 156.21 91.44 0)
+			(at 146.05 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2874,6 +3544,280 @@
 			(project "APPS_ROT_POT_onboard"
 				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 97.79 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "608e044a-651e-4961-8bb7-1b37764e00bb")
+		(property "Reference" "U1"
+			(at 97.79 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM324"
+			(at 97.79 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 96.52 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
+			(at 99.06 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 97.79 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "4445db32-a90f-4778-8159-75733083a160")
+		)
+		(pin "13"
+			(uuid "0c04d810-ad4e-41bc-985c-b9b1a85fd5fd")
+		)
+		(pin "6"
+			(uuid "09440f9c-e979-41bf-9158-44e61f175f30")
+		)
+		(pin "12"
+			(uuid "bdbec5e0-f3a7-4907-9dff-e84f2ccba97e")
+		)
+		(pin "9"
+			(uuid "1fac6a42-e1f5-41e3-98a7-2eff15582960")
+		)
+		(pin "3"
+			(uuid "e0854fca-7761-44ec-9f03-aeb8836f8b01")
+		)
+		(pin "7"
+			(uuid "08a5d7cf-ddef-4120-9119-7eed009258a0")
+		)
+		(pin "1"
+			(uuid "c760808d-d45d-46f0-98d4-061e3bbe1694")
+		)
+		(pin "14"
+			(uuid "bb0c9a1f-34e4-4848-a8d4-462c0fefaed6")
+		)
+		(pin "8"
+			(uuid "795c1799-06b0-4182-a534-22c621d265c7")
+		)
+		(pin "11"
+			(uuid "10a545ee-6c77-4fe4-9a6d-22a28d03d2b5")
+		)
+		(pin "10"
+			(uuid "32756f1c-056d-4786-b63f-e173581ff5a3")
+		)
+		(pin "5"
+			(uuid "43cb462a-1999-47d9-9e28-21c1f47058df")
+		)
+		(pin "2"
+			(uuid "25876ef7-e202-40ab-bd17-f6cf02f48b4a")
+		)
+		(instances
+			(project ""
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 24.13 90.17 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "608f86de-840c-4b61-81d1-7085422acd13")
+		(property "Reference" "U1"
+			(at 22.86 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LM324"
+			(at 22.86 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 22.86 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
+			(at 25.4 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 24.13 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "4445db32-a90f-4778-8159-75733083a160")
+		)
+		(pin "13"
+			(uuid "0c04d810-ad4e-41bc-985c-b9b1a85fd5fd")
+		)
+		(pin "6"
+			(uuid "09440f9c-e979-41bf-9158-44e61f175f30")
+		)
+		(pin "12"
+			(uuid "bdbec5e0-f3a7-4907-9dff-e84f2ccba97e")
+		)
+		(pin "9"
+			(uuid "1fac6a42-e1f5-41e3-98a7-2eff15582960")
+		)
+		(pin "3"
+			(uuid "e0854fca-7761-44ec-9f03-aeb8836f8b01")
+		)
+		(pin "7"
+			(uuid "08a5d7cf-ddef-4120-9119-7eed009258a0")
+		)
+		(pin "1"
+			(uuid "c760808d-d45d-46f0-98d4-061e3bbe1694")
+		)
+		(pin "14"
+			(uuid "bb0c9a1f-34e4-4848-a8d4-462c0fefaed6")
+		)
+		(pin "8"
+			(uuid "795c1799-06b0-4182-a534-22c621d265c7")
+		)
+		(pin "11"
+			(uuid "10a545ee-6c77-4fe4-9a6d-22a28d03d2b5")
+		)
+		(pin "10"
+			(uuid "32756f1c-056d-4786-b63f-e173581ff5a3")
+		)
+		(pin "5"
+			(uuid "43cb462a-1999-47d9-9e28-21c1f47058df")
+		)
+		(pin "2"
+			(uuid "25876ef7-e202-40ab-bd17-f6cf02f48b4a")
+		)
+		(instances
+			(project ""
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "U1")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 54.61 134.62 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6872944c-8a07-4603-8dc3-fc30b2cff0a9")
+		(property "Reference" "H1"
+			(at 57.15 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 57.15 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 54.61 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 54.61 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -2950,94 +3894,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 200.66 130.81 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6da27b5b-573d-40ec-a1e2-09d46296f3e7")
-		(property "Reference" "U1"
-			(at 200.66 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM358"
-			(at 200.66 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 200.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 200.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 200.66 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "665e81a7-2898-46c3-86b2-d24b0e14a4e6")
-		)
-		(pin "7"
-			(uuid "2f2974dc-38ad-437e-aab2-f7f9fd212ebe")
-		)
-		(pin "5"
-			(uuid "3d738a6b-a97c-4764-a132-04885cce6915")
-		)
-		(pin "4"
-			(uuid "36c01284-8135-4057-ae06-050438534cba")
-		)
-		(pin "8"
-			(uuid "bd0ad6cb-8f1e-43d0-b51a-5034a2f83b22")
-		)
-		(pin "1"
-			(uuid "d16b5a78-050b-4f3e-a2fd-70c8e6aaa32c")
-		)
-		(pin "3"
-			(uuid "60b48e22-814c-47f4-8fd3-7338ac162a84")
-		)
-		(pin "6"
-			(uuid "c6aa636b-ec9d-4d63-84d5-978b931bfbd9")
-		)
-		(instances
-			(project "APPS_ROT_POT_onboard"
-				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
-					(reference "U1")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Potentiometer_Small")
-		(at 116.84 93.98 0)
+		(at 57.15 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3046,7 +3904,7 @@
 		(fields_autoplaced yes)
 		(uuid "79738067-83d6-4bfc-8566-0776ccb46d24")
 		(property "Reference" "RV1"
-			(at 114.3 92.7099 0)
+			(at 54.61 85.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3055,7 +3913,7 @@
 			)
 		)
 		(property "Value" "100k PTN15-E100DB10-H"
-			(at 114.3 95.2499 0)
+			(at 54.61 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3064,7 +3922,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Potentiometer_THT_AKL:Potentiometer_Piher_PT-15-V15_Vertical_Hole"
-			(at 116.84 93.98 0)
+			(at 57.15 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3073,7 +3931,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 93.98 0)
+			(at 57.15 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3082,7 +3940,7 @@
 			)
 		)
 		(property "Description" "Potentiometer"
-			(at 116.84 93.98 0)
+			(at 57.15 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3117,9 +3975,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "7aa32023-032c-463a-97e0-9dd7e6ffe744")
 		(property "Reference" "D4"
-			(at 238.76 96.5201 90)
+			(at 238.76 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3128,7 +3987,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 238.76 93.9801 90)
+			(at 238.76 96.5199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3246,15 +4105,16 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 154.94 69.85 0)
+		(at 149.86 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "8cec9b20-e161-4b45-af15-4ecf51241665")
 		(property "Reference" "#FLG01"
-			(at 154.94 67.945 0)
+			(at 149.86 67.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3263,7 +4123,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 154.94 64.77 0)
+			(at 149.86 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3271,7 +4131,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 69.85 0)
+			(at 149.86 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3280,7 +4140,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 69.85 0)
+			(at 149.86 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3289,7 +4149,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 154.94 69.85 0)
+			(at 149.86 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3310,35 +4170,36 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 38.1 133.35 0)
+		(lib_id "Device:R_Small")
+		(at 120.65 113.03 0)
+		(mirror y)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9ca71a5d-6fc1-428a-9731-7c98cf41b8fa")
-		(property "Reference" "H1"
-			(at 40.64 130.8099 0)
+		(uuid "8ff5c0c4-b9c5-4036-9979-81c5da6d70a3")
+		(property "Reference" "R6"
+			(at 123.19 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "MountingHole_Pad"
-			(at 40.64 133.3499 0)
+		(property "Value" "47k"
+			(at 123.19 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 38.1 133.35 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 120.65 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3347,7 +4208,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 133.35 0)
+			(at 120.65 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3355,8 +4216,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 38.1 133.35 0)
+		(property "Description" "Resistor, small symbol"
+			(at 120.65 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3365,12 +4226,155 @@
 			)
 		)
 		(pin "1"
-			(uuid "929f98a1-79d5-4319-ad50-69438250f81b")
+			(uuid "7d86c032-6423-4ce9-b745-54766ad1900b")
+		)
+		(pin "2"
+			(uuid "960587c1-815a-4712-8ede-3d8b87962cc5")
 		)
 		(instances
-			(project ""
+			(project "APPS_ROT_POT_onboard_XTR11x"
 				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
-					(reference "H1")
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 82.55 107.95 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d03bcda-a91f-41cb-a36e-e221e2e89305")
+		(property "Reference" "R1"
+			(at 80.01 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33k"
+			(at 80.01 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 82.55 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 82.55 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43696108-a383-477c-a801-6b7e33d1addc")
+		)
+		(pin "2"
+			(uuid "e7a6da62-4fef-4830-a918-8904891d17f6")
+		)
+		(instances
+			(project "APPS_ROT_POT_onboard_XTR11x"
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 132.08 86.36 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9dd312c1-ce4b-41df-b63f-f0175f1c7fd0")
+		(property "Reference" "R7"
+			(at 132.08 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 132.08 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 132.08 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 132.08 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20bff592-66f7-4153-b3cd-8b7e7f017faf")
+		)
+		(pin "2"
+			(uuid "dda6b36d-51dc-45f6-b964-c26a70746339")
+		)
+		(instances
+			(project "APPS_ROT_POT_onboard_XTR11x"
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -3385,9 +4389,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "a1a83ab2-6355-4c07-ae02-178db7015c1c")
 		(property "Reference" "D1"
-			(at 238.76 83.8201 90)
+			(at 238.76 81.2799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3396,7 +4401,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 238.76 81.2801 90)
+			(at 238.76 83.8199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3447,6 +4452,179 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 97.79 114.3 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a21f785f-d392-4419-8439-45944a0d6233")
+		(property "Reference" "U1"
+			(at 97.79 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM324"
+			(at 97.79 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 96.52 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
+			(at 99.06 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 97.79 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "4445db32-a90f-4778-8159-75733083a160")
+		)
+		(pin "13"
+			(uuid "0c04d810-ad4e-41bc-985c-b9b1a85fd5fd")
+		)
+		(pin "6"
+			(uuid "09440f9c-e979-41bf-9158-44e61f175f30")
+		)
+		(pin "12"
+			(uuid "bdbec5e0-f3a7-4907-9dff-e84f2ccba97e")
+		)
+		(pin "9"
+			(uuid "1fac6a42-e1f5-41e3-98a7-2eff15582960")
+		)
+		(pin "3"
+			(uuid "e0854fca-7761-44ec-9f03-aeb8836f8b01")
+		)
+		(pin "7"
+			(uuid "08a5d7cf-ddef-4120-9119-7eed009258a0")
+		)
+		(pin "1"
+			(uuid "c760808d-d45d-46f0-98d4-061e3bbe1694")
+		)
+		(pin "14"
+			(uuid "bb0c9a1f-34e4-4848-a8d4-462c0fefaed6")
+		)
+		(pin "8"
+			(uuid "795c1799-06b0-4182-a534-22c621d265c7")
+		)
+		(pin "11"
+			(uuid "10a545ee-6c77-4fe4-9a6d-22a28d03d2b5")
+		)
+		(pin "10"
+			(uuid "32756f1c-056d-4786-b63f-e173581ff5a3")
+		)
+		(pin "5"
+			(uuid "43cb462a-1999-47d9-9e28-21c1f47058df")
+		)
+		(pin "2"
+			(uuid "25876ef7-e202-40ab-bd17-f6cf02f48b4a")
+		)
+		(instances
+			(project ""
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "U1")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 63.5 86.36 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b199c1e7-efba-4453-8fba-e5c79fc9da0c")
+		(property "Reference" "R8"
+			(at 63.5 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10R"
+			(at 63.5 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 63.5 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 63.5 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a0f6146-6771-4bc3-a581-f1d9cb57ee49")
+		)
+		(pin "2"
+			(uuid "b279798b-7b4b-4cd5-8578-a534b7ac0135")
+		)
+		(instances
+			(project "APPS_ROT_POT_onboard_XTR11x"
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_4ms_Connector:Conn_01x02")
 		(at 251.46 90.17 0)
 		(mirror x)
@@ -3455,23 +4633,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "bb516225-4e2c-4f44-99df-5e93d0d4e0f1")
 		(property "Reference" "J1"
-			(at 254 90.1701 0)
+			(at 251.46 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "current"
-			(at 254 87.6301 0)
+			(at 251.46 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
@@ -3541,6 +4718,241 @@
 			(project ""
 				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM324")
+		(at 129.54 101.6 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc019855-7fce-450a-9f0c-e896d222f48b")
+		(property "Reference" "U1"
+			(at 129.54 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM324"
+			(at 129.54 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 128.27 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
+			(at 130.81 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 129.54 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "4445db32-a90f-4778-8159-75733083a160")
+		)
+		(pin "13"
+			(uuid "0c04d810-ad4e-41bc-985c-b9b1a85fd5fd")
+		)
+		(pin "6"
+			(uuid "09440f9c-e979-41bf-9158-44e61f175f30")
+		)
+		(pin "12"
+			(uuid "bdbec5e0-f3a7-4907-9dff-e84f2ccba97e")
+		)
+		(pin "9"
+			(uuid "1fac6a42-e1f5-41e3-98a7-2eff15582960")
+		)
+		(pin "3"
+			(uuid "e0854fca-7761-44ec-9f03-aeb8836f8b01")
+		)
+		(pin "7"
+			(uuid "08a5d7cf-ddef-4120-9119-7eed009258a0")
+		)
+		(pin "1"
+			(uuid "c760808d-d45d-46f0-98d4-061e3bbe1694")
+		)
+		(pin "14"
+			(uuid "bb0c9a1f-34e4-4848-a8d4-462c0fefaed6")
+		)
+		(pin "8"
+			(uuid "795c1799-06b0-4182-a534-22c621d265c7")
+		)
+		(pin "11"
+			(uuid "10a545ee-6c77-4fe4-9a6d-22a28d03d2b5")
+		)
+		(pin "10"
+			(uuid "32756f1c-056d-4786-b63f-e173581ff5a3")
+		)
+		(pin "5"
+			(uuid "43cb462a-1999-47d9-9e28-21c1f47058df")
+		)
+		(pin "2"
+			(uuid "25876ef7-e202-40ab-bd17-f6cf02f48b4a")
+		)
+		(instances
+			(project ""
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "U1")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 54.61 153.67 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd884350-944a-4378-baa1-e0472f6d1d54")
+		(property "Reference" "H4"
+			(at 57.15 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 57.15 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 54.61 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 54.61 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "APPS_ROT_POT_onboard_XTR11x"
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 115.57 104.14 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be1742c9-02e0-49bc-8ea0-49eb507e0522")
+		(property "Reference" "R5"
+			(at 115.57 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 115.57 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 115.57 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 115.57 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23031f54-bf99-484f-b95e-36c1882d6db7")
+		)
+		(pin "2"
+			(uuid "c4b0faad-9c44-40f7-8bd5-ea589f4c75de")
+		)
+		(instances
+			(project "APPS_ROT_POT_onboard_XTR11x"
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3621,16 +5033,17 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 110.49 107.95 0)
+		(at 149.86 127 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "c83615ff-5194-4a27-9e25-39dc1ff482b7")
 		(property "Reference" "#FLG02"
-			(at 110.49 109.855 0)
+			(at 149.86 128.905 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3639,7 +5052,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 110.49 113.03 0)
+			(at 149.86 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3647,7 +5060,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 107.95 0)
+			(at 149.86 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3656,7 +5069,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 107.95 0)
+			(at 149.86 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3665,7 +5078,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 110.49 107.95 0)
+			(at 149.86 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3753,6 +5166,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 73.66 116.84 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cb472431-aefb-4e86-b34c-256f33a4765d")
+		(property "Reference" "C2"
+			(at 71.12 115.5762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 71.12 118.1162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 73.66 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 73.66 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1ade1f94-3e0d-4032-9580-25649cc673e8")
+		)
+		(pin "1"
+			(uuid "9e9267a4-e877-4a5b-92bd-1153c517af78")
+		)
+		(instances
+			(project "APPS_ROT_POT_onboard_XTR11x"
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 220.98 90.17 0)
 		(unit 1)
@@ -3819,17 +5302,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 68.58 133.35 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 54.61 147.32 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e77f53ba-c3f3-4a72-9ff8-deb88090252e")
+		(uuid "dc76ddaa-4c14-4c10-b147-1e59dad4f285")
 		(property "Reference" "H3"
-			(at 71.12 130.8099 0)
+			(at 57.15 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3837,8 +5320,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_Pad"
-			(at 71.12 133.3499 0)
+		(property "Value" "MountingHole"
+			(at 57.15 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3846,8 +5329,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 68.58 133.35 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 54.61 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3856,7 +5339,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 133.35 0)
+			(at 54.61 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3864,20 +5347,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 68.58 133.35 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 54.61 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "52ab7d20-8722-4b57-a537-878fae38c2d8")
 		)
 		(instances
-			(project "APPS_ROT_POT_onboard"
+			(project "APPS_ROT_POT_onboard_XTR11x"
 				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
 					(reference "H3")
 					(unit 1)
@@ -3886,35 +5366,138 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 83.82 133.35 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(lib_id "Amplifier_Operational:LM324")
+		(at 172.72 133.35 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fb136db9-f173-4f8a-a0d0-84a30ed84714")
-		(property "Reference" "H4"
-			(at 86.36 130.8099 0)
+		(uuid "f4c0b3db-5d26-499f-bd4f-2df50874a4e3")
+		(property "Reference" "U1"
+			(at 172.72 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_Pad"
-			(at 86.36 133.3499 0)
+		(property "Value" "LM324"
+			(at 172.72 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
-			(at 83.82 133.35 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 171.45 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
+			(at 173.99 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 172.72 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "4445db32-a90f-4778-8159-75733083a160")
+		)
+		(pin "13"
+			(uuid "0c04d810-ad4e-41bc-985c-b9b1a85fd5fd")
+		)
+		(pin "6"
+			(uuid "09440f9c-e979-41bf-9158-44e61f175f30")
+		)
+		(pin "12"
+			(uuid "bdbec5e0-f3a7-4907-9dff-e84f2ccba97e")
+		)
+		(pin "9"
+			(uuid "1fac6a42-e1f5-41e3-98a7-2eff15582960")
+		)
+		(pin "3"
+			(uuid "e0854fca-7761-44ec-9f03-aeb8836f8b01")
+		)
+		(pin "7"
+			(uuid "08a5d7cf-ddef-4120-9119-7eed009258a0")
+		)
+		(pin "1"
+			(uuid "c760808d-d45d-46f0-98d4-061e3bbe1694")
+		)
+		(pin "14"
+			(uuid "bb0c9a1f-34e4-4848-a8d4-462c0fefaed6")
+		)
+		(pin "8"
+			(uuid "795c1799-06b0-4182-a534-22c621d265c7")
+		)
+		(pin "11"
+			(uuid "10a545ee-6c77-4fe4-9a6d-22a28d03d2b5")
+		)
+		(pin "10"
+			(uuid "32756f1c-056d-4786-b63f-e173581ff5a3")
+		)
+		(pin "5"
+			(uuid "43cb462a-1999-47d9-9e28-21c1f47058df")
+		)
+		(pin "2"
+			(uuid "25876ef7-e202-40ab-bd17-f6cf02f48b4a")
+		)
+		(instances
+			(project ""
+				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
+					(reference "U1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 115.57 99.06 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff8e1569-6087-4633-85e1-4cefffbb4894")
+		(property "Reference" "R4"
+			(at 115.57 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 115.57 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 115.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3923,7 +5506,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 83.82 133.35 0)
+			(at 115.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3931,8 +5514,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 83.82 133.35 0)
+		(property "Description" "Resistor, small symbol"
+			(at 115.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3941,98 +5524,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c62377ee-f1db-47be-abf7-62531d1bfbdb")
-		)
-		(instances
-			(project "APPS_ROT_POT_onboard"
-				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:LM358")
-		(at 139.7 91.44 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fb5607b1-ebcf-455c-9f3a-cd49c9483d87")
-		(property "Reference" "U1"
-			(at 139.7 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM358"
-			(at 139.7 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 139.7 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+			(uuid "a5a33325-49e4-4c98-945f-3d4bfaa0598c")
 		)
 		(pin "2"
-			(uuid "dbaccee8-5a64-45e9-914b-95734fa62e3f")
-		)
-		(pin "7"
-			(uuid "2f2974dc-38ad-437e-aab2-f7f9fd212ebf")
-		)
-		(pin "5"
-			(uuid "3d738a6b-a97c-4764-a132-04885cce6916")
-		)
-		(pin "4"
-			(uuid "36c01284-8135-4057-ae06-050438534cbb")
-		)
-		(pin "8"
-			(uuid "bd0ad6cb-8f1e-43d0-b51a-5034a2f83b23")
-		)
-		(pin "1"
-			(uuid "e9640577-32ab-4bb5-b1d4-6762362f11dc")
-		)
-		(pin "3"
-			(uuid "fc36d5a2-e3d4-4e32-b55c-582afaecca6d")
-		)
-		(pin "6"
-			(uuid "c6aa636b-ec9d-4d63-84d5-978b931bfbda")
+			(uuid "ad8520c3-7d9e-4b00-83cd-d22e165fed6f")
 		)
 		(instances
-			(project ""
+			(project "APPS_ROT_POT_onboard_XTR11x"
 				(path "/a7293933-7d5f-4c82-b372-ee2dff7ebca7"
-					(reference "U1")
+					(reference "R4")
 					(unit 1)
 				)
 			)
