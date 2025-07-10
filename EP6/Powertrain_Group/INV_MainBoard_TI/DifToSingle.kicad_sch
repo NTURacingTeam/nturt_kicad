@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "INV_MainBoard_TI")
-		(date "2025-02-28")
-		(rev "1.4")
+		(date "2025-06-30")
+		(rev "2.0")
 		(company "NTURacing Team")
 		(comment 1 "郭哲明 Jack Kuo")
 		(comment 2 "Powertrain Group")
@@ -131,152 +131,6 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:FerriteBead"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "FB"
-				(at -3.81 0.635 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "FerriteBead"
-				(at 3.81 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Ferrite bead"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "L ferrite bead inductor filter"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "FerriteBead_0_1"
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.2192)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 1.2954)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FerriteBead_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.54)
 					(name "~"
 						(effects
 							(font
@@ -931,13 +785,33 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 138.43) (xy 132.08 138.43)
+			(xy 129.54 138.43) (xy 142.24 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1a4a902e-0e90-4383-99f4-213c4e87903b")
+	)
+	(wire
+		(pts
+			(xy 104.14 114.3) (xy 110.49 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "290a9f02-7826-4561-abd0-dcba85c743c8")
+	)
+	(wire
+		(pts
+			(xy 104.14 109.22) (xy 110.49 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2de705cb-05a3-4e57-b39a-1a14f03d09ad")
 	)
 	(wire
 		(pts
@@ -988,36 +862,6 @@
 			(type default)
 		)
 		(uuid "615ff874-0251-475c-ae42-295d6d9cb27f")
-	)
-	(wire
-		(pts
-			(xy 139.7 138.43) (xy 142.24 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6316d222-68a0-4703-a166-481c4c3c11ef")
-	)
-	(wire
-		(pts
-			(xy 105.41 114.3) (xy 110.49 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "699af66f-3972-4b4f-8bed-2ef795f91057")
-	)
-	(wire
-		(pts
-			(xy 105.41 109.22) (xy 110.49 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75f10f19-00dd-49db-be47-960235005975")
 	)
 	(wire
 		(pts
@@ -1144,7 +988,7 @@
 	)
 	(hierarchical_label "IN+"
 		(shape input)
-		(at 105.41 109.22 180)
+		(at 104.14 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1155,7 +999,7 @@
 	)
 	(hierarchical_label "IN-"
 		(shape input)
-		(at 105.41 114.3 180)
+		(at 104.14 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1244,90 +1088,6 @@
 				)
 				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/efaf255e-21cd-49b0-97ef-d31b1246f664"
 					(reference "C107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:FerriteBead")
-		(at 135.89 138.43 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "39cd67ae-2714-4fdb-a354-a114608db0b0")
-		(property "Reference" "FB15"
-			(at 135.9408 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GZ1608D601TF"
-			(at 135.9408 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 135.89 140.208 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Ferrite bead"
-			(at 135.89 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59b6d1cf-d7f4-4964-8f67-991ec54d61f5")
-		)
-		(pin "2"
-			(uuid "c0f13be4-7c49-4a8e-ba3c-462dbd44dd21")
-		)
-		(instances
-			(project "INV_MainBoard_TI"
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/74fc3311-ddff-43b5-ac8e-b50fc21a9c49"
-					(reference "FB15")
-					(unit 1)
-				)
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/97b2285d-e253-4192-9d34-3485d34b69ed"
-					(reference "FB6")
-					(unit 1)
-				)
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/9c5bbb0a-2580-4d02-8902-b12414adbbad"
-					(reference "FB13")
-					(unit 1)
-				)
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/ccffa259-b260-4956-b252-e9d1e4251166"
-					(reference "FB5")
-					(unit 1)
-				)
-				(path "/963ad98e-e494-4953-a7e0-8b20a365a35d/a8cbfb17-6eb3-4a23-8b1d-6aae5b32a7fb/efaf255e-21cd-49b0-97ef-d31b1246f664"
-					(reference "FB10")
 					(unit 1)
 				)
 			)
