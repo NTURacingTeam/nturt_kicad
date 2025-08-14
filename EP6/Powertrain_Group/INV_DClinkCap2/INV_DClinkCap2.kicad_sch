@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "INV_DClinkCap2")
-		(date "2025-03-07")
-		(rev "1.0")
+		(date "2025-08-12")
+		(rev "1.1")
 		(company "NTURacing")
 		(comment 1 "Jack Kuo")
 		(comment 2 "Powertrain")
@@ -1134,6 +1134,17 @@
 		)
 		(uuid 48a636e9-ae3f-4d58-922d-b3039bc51422)
 	)
+	(text "V1.0\nV1.1 fix edge will overlap power module and has to be cut of problem\n     fix different from cad DC bus connection point (reversed)\n     use bigger pad for cap soldering\n     use 3mm clearance"
+		(exclude_from_sim no)
+		(at 82.042 57.404 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "0762ee50-d408-45a8-8a22-e060f1b0a01b")
+	)
 	(text "DC Link Capacitors"
 		(exclude_from_sim no)
 		(at 23.876 16.002 0)
@@ -1152,7 +1163,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0c09ad34-5b02-48c3-a82a-efe3a73cd1f9")
 		(property "Reference" "C5"
 			(at 81.28 30.4799 0)
@@ -1289,7 +1299,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "284f77bc-470c-4335-bdde-9fce1e1fcdf1")
 		(property "Reference" "C1"
 			(at 22.86 30.4799 0)
@@ -1493,7 +1502,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e24481a-de8e-49c1-9897-2a6f52a37c61")
-		(property "Reference" "H2"
+		(property "Reference" "H1"
 			(at 29.21 40.6399 0)
 			(effects
 				(font
@@ -1544,7 +1553,7 @@
 		(instances
 			(project "EP_DCLink_Sebastian-Haltmair"
 				(path "/e651fbee-6203-4a83-bd6d-a87f225deeeb"
-					(reference "H2")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -1759,7 +1768,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8c4ac469-cc08-410b-92a8-ca357a32c548")
 		(property "Reference" "C3"
 			(at 52.07 30.4799 0)
@@ -1897,7 +1905,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fed9502-d389-4a2b-8033-901865ca491e")
-		(property "Reference" "H1"
+		(property "Reference" "H2"
 			(at 29.21 20.3199 0)
 			(effects
 				(font
@@ -1948,7 +1956,7 @@
 		(instances
 			(project "EP_DCLink_Sebastian-Haltmair"
 				(path "/e651fbee-6203-4a83-bd6d-a87f225deeeb"
-					(reference "H1")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -1964,7 +1972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9220a036-dfc9-49a3-822b-b1459342666e")
-		(property "Reference" "H6"
+		(property "Reference" "H5"
 			(at 87.63 40.6399 0)
 			(effects
 				(font
@@ -2015,7 +2023,7 @@
 		(instances
 			(project "EP_DCLink_Sebastian-Haltmair"
 				(path "/e651fbee-6203-4a83-bd6d-a87f225deeeb"
-					(reference "H6")
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -2031,7 +2039,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a990d889-66d1-4f4a-894a-c308058d5023")
-		(property "Reference" "H4"
+		(property "Reference" "H3"
 			(at 57.15 40.6399 0)
 			(effects
 				(font
@@ -2082,7 +2090,7 @@
 		(instances
 			(project "EP_DCLink_Sebastian-Haltmair"
 				(path "/e651fbee-6203-4a83-bd6d-a87f225deeeb"
-					(reference "H4")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -2162,7 +2170,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1f1533d-dcba-400f-8fc4-04b6d279dc09")
-		(property "Reference" "H5"
+		(property "Reference" "H6"
 			(at 87.63 20.3199 0)
 			(effects
 				(font
@@ -2213,7 +2221,7 @@
 		(instances
 			(project "EP_DCLink_Sebastian-Haltmair"
 				(path "/e651fbee-6203-4a83-bd6d-a87f225deeeb"
-					(reference "H5")
+					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -2295,7 +2303,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f72798d1-1ff9-4a52-a0bc-51684bc3e3b8")
-		(property "Reference" "H3"
+		(property "Reference" "H4"
 			(at 57.15 20.3199 0)
 			(effects
 				(font
@@ -2346,7 +2354,7 @@
 		(instances
 			(project "EP_DCLink_Sebastian-Haltmair"
 				(path "/e651fbee-6203-4a83-bd6d-a87f225deeeb"
-					(reference "H3")
+					(reference "H4")
 					(unit 1)
 				)
 			)
