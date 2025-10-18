@@ -126,20 +126,20 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.2,
+        "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 1,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.5,
-        "min_text_thickness": 0.06,
-        "min_through_hole_diameter": 0.3,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.08,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.3,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.005,
@@ -191,13 +191,18 @@
       ],
       "track_widths": [
         0.0,
+        0.1,
+        0.12,
+        0.1565,
+        0.18,
         0.2,
         0.25,
         0.3,
-        0.35,
-        0.45,
+        0.4,
         0.5,
-        0.8
+        0.6,
+        0.8,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -231,15 +236,15 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.6,
+          "diameter": 0.5,
           "drill": 0.3
         },
         {
-          "diameter": 0.9,
-          "drill": 0.5
+          "diameter": 0.6,
+          "drill": 0.3
         }
       ],
-      "zones_allow_external_fillets": true
+      "zones_allow_external_fillets": false
     },
     "ipc2581": {
       "dist": "",
@@ -501,9 +506,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1427,
-        "via_diameter": 0.4,
-        "via_drill": 0.2,
+        "track_width": 0.1565,
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -516,12 +521,18 @@
         "microvia_drill": 0.1,
         "name": "CAN",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "CL",
+        "pcb_color": "rgb(255, 0, 255)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       },
       {
         "bus_width": 12,
@@ -533,10 +544,10 @@
         "microvia_drill": 0.1,
         "name": "HDMI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -550,10 +561,10 @@
         "microvia_drill": 0.1,
         "name": "I2C",
         "pcb_color": "rgb(0, 132, 0)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -567,10 +578,10 @@
         "microvia_drill": 0.1,
         "name": "MDI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -584,10 +595,10 @@
         "microvia_drill": 0.1,
         "name": "MIPI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -601,10 +612,10 @@
         "microvia_drill": 0.1,
         "name": "PCIe",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -618,10 +629,10 @@
         "microvia_drill": 0.1,
         "name": "PWM",
         "pcb_color": "rgb(169, 169, 0)",
-        "priority": 6,
+        "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -635,10 +646,10 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 7,
+        "priority": 8,
         "schematic_color": "rgb(194, 0, 0)",
         "track_width": 0.3,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -652,10 +663,10 @@
         "microvia_drill": 0.1,
         "name": "SPI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 8,
+        "priority": 9,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -669,27 +680,27 @@
         "microvia_drill": 0.1,
         "name": "UART",
         "pcb_color": "rgb(191, 125, 43)",
-        "priority": 9,
+        "priority": 10,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.2032,
-        "diff_pair_width": 0.1468,
+        "diff_pair_gap": 0.15,
+        "diff_pair_width": 0.141,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 10,
+        "priority": 11,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       }
@@ -723,6 +734,30 @@
       ],
       "/5V_3V3/5V_premeasure_rpi": [
         "3A"
+      ],
+      "/CAN 1/CAN+": [
+        "CAN"
+      ],
+      "/CAN 1/CAN-": [
+        "CAN"
+      ],
+      "/CAN 2/CAN+": [
+        "CAN"
+      ],
+      "/CAN 2/CAN-": [
+        "CAN"
+      ],
+      "/CAN 3/CAN+": [
+        "CAN"
+      ],
+      "/CAN 3/CAN-": [
+        "CAN"
+      ],
+      "/CAN 4/CAN+": [
+        "CAN"
+      ],
+      "/CAN 4/CAN-": [
+        "CAN"
       ],
       "/EMI/24V_lowNoise": [
         "power_thick"
@@ -802,6 +837,51 @@
       "/power/5V_prefuse": [
         "power_thick"
       ],
+      "/vcu mcu/current loop sensors/CL_CH1": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH10": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH11": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH12": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH13": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH14": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH15": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH2": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH3": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH4": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH5": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH6": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH7": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH8": [
+        "CL"
+      ],
+      "/vcu mcu/current loop sensors/CL_CH9": [
+        "CL"
+      ],
       "GND": [
         "power_thick"
       ],
@@ -813,6 +893,51 @@
       ],
       "Net-(IC4-BOOT)": [
         "power_thick"
+      ],
+      "Net-(J11-Pin_1)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_11)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_13)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_15)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_17)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_19)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_21)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_23)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_25)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_27)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_29)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_3)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_5)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_7)": [
+        "CL"
+      ],
+      "Net-(J11-Pin_9)": [
+        "CL"
       ],
       "Net-(J16-Pin_2)": [
         "CAN"
@@ -934,6 +1059,12 @@
       "Net-(U20-CANL)": [
         "CAN"
       ],
+      "Net-(U3-CANH)": [
+        "CAN"
+      ],
+      "Net-(U3-CANL)": [
+        "CAN"
+      ],
       "brakelight_outboxN": [
         "power_thick"
       ],
@@ -993,7 +1124,7 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -1093,14 +1224,56 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field4",
+          "name": "Field4",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field5",
+          "name": "Field5",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field6",
+          "name": "Field6",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pin",
+          "name": "Sim.Pin",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field7",
+          "name": "Field7",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Simulation Data",
+          "name": "Simulation Data",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part Description",
+          "name": "Part Description",
+          "show": false
         }
       ],
-      "filter_string": "",
+      "filter_string": "R",
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -1162,6 +1335,10 @@
     [
       "8eabc399-0f1c-4f70-901b-7e116b6cc00a",
       "5v buck rpi"
+    ],
+    [
+      "dac5d6fa-7c6d-4724-9355-558a29bff4eb",
+      "CAN 4"
     ],
     [
       "bb1284bc-9c6c-4e5b-ba1e-7374c157f014",

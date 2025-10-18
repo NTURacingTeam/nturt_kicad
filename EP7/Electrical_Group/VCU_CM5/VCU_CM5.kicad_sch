@@ -821,26 +821,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 17.78) (xy 38.1 17.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6994435e-26b4-40c9-a0a5-6a52221372a6")
-	)
-	(wire
-		(pts
-			(xy 38.1 20.32) (xy 35.56 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74655350-92ad-491f-8501-4976ffee7d08")
-	)
-	(wire
-		(pts
 			(xy 173.99 73.66) (xy 177.8 73.66)
 		)
 		(stroke
@@ -851,7 +831,7 @@
 	)
 	(bus
 		(pts
-			(xy 115.57 73.66) (xy 121.92 73.66)
+			(xy 115.57 67.31) (xy 121.92 67.31)
 		)
 		(stroke
 			(width 0)
@@ -878,6 +858,16 @@
 			(type default)
 		)
 		(uuid "cc614222-a06a-44cf-9026-766709fcac0a")
+	)
+	(bus
+		(pts
+			(xy 115.57 78.74) (xy 121.92 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd681176-d3d6-43e6-830e-f40994114233")
 	)
 	(bus
 		(pts
@@ -979,16 +969,6 @@
 		)
 		(uuid "99680ea0-1ddd-4a94-80fe-8ab283c55cb1")
 	)
-	(label "24V_lowTrig"
-		(at 38.1 20.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9ce809b0-bf8a-41d6-bdfb-656d695f221f")
-	)
 	(label "DFP2{D+ D-}"
 		(at 157.48 46.99 0)
 		(effects
@@ -1018,16 +998,6 @@
 			(justify right bottom)
 		)
 		(uuid "d4370a50-6a42-4271-810f-c65b904e10de")
-	)
-	(label "24V_measureV"
-		(at 38.1 17.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e173f2df-a2e3-42df-a310-aef39888e814")
 	)
 	(label "USB3_1{USB3}"
 		(at 115.57 60.96 0)
@@ -1455,7 +1425,7 @@
 	)
 	(sheet
 		(at 73.66 39.37)
-		(size 41.91 36.83)
+		(size 41.91 44.45)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1479,7 +1449,7 @@
 			)
 		)
 		(property "Sheetfile" "computer.kicad_sch"
-			(at 73.66 76.7846 0)
+			(at 73.66 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1517,9 +1487,19 @@
 				(justify right)
 			)
 		)
-		(pin "CAN{TX RX}" output
-			(at 115.57 73.66 0)
-			(uuid "7e4688d2-1594-4cbe-a55b-dbaf3f2b87b7")
+		(pin "CAN0{TX RX}" output
+			(at 115.57 67.31 0)
+			(uuid "e49ae7af-ef62-4d24-92f8-d1fb7b70568a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN1{TX RX}" output
+			(at 115.57 78.74 0)
+			(uuid "83231e07-4b7b-4c68-a844-3adc642806a1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1680,8 +1660,8 @@
 		)
 	)
 	(sheet
-		(at 16.51 15.24)
-		(size 19.05 10.16)
+		(at 17.78 55.88)
+		(size 19.05 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1696,7 +1676,7 @@
 		)
 		(uuid "80d1c5c9-220d-48c3-82a0-691038908f33")
 		(property "Sheetname" "power"
-			(at 16.51 14.5284 0)
+			(at 17.78 55.1684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1705,7 +1685,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 16.51 25.9846 0)
+			(at 17.78 64.0846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1713,9 +1693,9 @@
 				(justify left top)
 			)
 		)
-		(pin "24Vmeasure_all" input
-			(at 35.56 17.78 0)
-			(uuid "49d6c542-1be6-4e12-b579-5f7af11c2176")
+		(pin "24V_SENSE" output
+			(at 36.83 60.96 0)
+			(uuid "e90e999e-9891-494c-8cd4-020dbdb154a2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1723,9 +1703,9 @@
 				(justify right)
 			)
 		)
-		(pin "24V_lowTrig" input
-			(at 35.56 20.32 0)
-			(uuid "59c2834a-df13-455c-8639-adec9370f5f1")
+		(pin "PWR_LOSS" output
+			(at 36.83 58.42 0)
+			(uuid "bdb425fd-fa8f-4e05-9fdb-a011a20f4a2b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1925,7 +1905,59 @@
 		)
 	)
 	(sheet
-		(at 121.92 71.12)
+		(at 121.92 76.2)
+		(size 15.24 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dac5d6fa-7c6d-4724-9355-558a29bff4eb")
+		(property "Sheetname" "CAN 4"
+			(at 121.92 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "can.kicad_sch"
+			(at 121.92 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CAN{TX RX}" input
+			(at 121.92 78.74 180)
+			(uuid "30108902-bc1e-4143-8b09-c7e19f9a415c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "VCU_CM5"
+				(path "/eb296f24-894e-4ea0-b0cd-3ba211155378"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 121.92 64.77)
 		(size 15.24 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1941,7 +1973,7 @@
 		)
 		(uuid "e71d6d58-9fb0-440d-9fcd-c3c491878936")
 		(property "Sheetname" "CAN 3"
-			(at 121.92 70.4084 0)
+			(at 121.92 64.0584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1950,7 +1982,7 @@
 			)
 		)
 		(property "Sheetfile" "can.kicad_sch"
-			(at 121.92 76.7846 0)
+			(at 121.92 70.4346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1959,7 +1991,7 @@
 			)
 		)
 		(pin "CAN{TX RX}" input
-			(at 121.92 73.66 180)
+			(at 121.92 67.31 180)
 			(uuid "800e24e4-ae03-4685-9832-8fd9b3f11f0d")
 			(effects
 				(font
